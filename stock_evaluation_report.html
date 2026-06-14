@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dividend Stock Evaluation Report</title>
+    <style>
+        @page { size: letter; margin: 0.75in; }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 24pt;
+            margin: 0 0 5px 0;
+        }
+        
+        .header .subtitle {
+            color: #7f8c8d;
+            font-size: 12pt;
+        }
+        
+        .header .date {
+            color: #95a5a6;
+            font-size: 10pt;
+            margin-top: 5px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 14pt;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin: 20px 0 10px 0;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 12pt;
+            margin: 15px 0 8px 0;
+        }
+        
+        .summary-box {
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        
+        .summary-box h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 9pt;
+        }
+        
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 8px 6px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 6px;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        tr:hover {
+            background: #f0f0f0;
+        }
+        
+        .ticker {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        
+        .buy { color: #27ae60; font-weight: bold; }
+        .hold { color: #f39c12; font-weight: bold; }
+        .caution { color: #e74c3c; font-weight: bold; }
+        
+        .metric {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin: 2px;
+            font-size: 8pt;
+        }
+        
+        .metric.yield { background: #d5f4e6; }
+        .metric.pe { background: #fef9e7; }
+        .metric.div { background: #ebf5fb; }
+        
+        .recommendation {
+            background: #e8f8f5;
+            border: 1px solid #27ae60;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .recommendation h4 {
+            margin: 0 0 5px 0;
+            color: #27ae60;
+        }
+        
+        .allocation-table th {
+            background: #27ae60;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 8pt;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        
+        .risk-low { color: #27ae60; }
+        .risk-med { color: #f39c12; }
+        .risk-high { color: #e74c3c; }
+        
+        .two-column {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .two-column > div {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🖖 Dividend Stock Evaluation Report</h1>
+        <div class="subtitle">Portfolio Rebalancing Analysis: Defensive & Dividend Stock Allocation</div>
+        <div class="date">Report Date: May 7, 2026 | Prepared for: Thad</div>
+    </div>
+
+    <div class="section summary-box">
+        <h3>Executive Summary</h3>
+        <p><strong>Current Portfolio Context:</strong> ~40% Energy, ~10% Crypto Mining, ~20% Tech</p>
+        <p><strong>Objective:</strong> Add defensive dividend-paying stocks to balance portfolio volatility and generate income</p>
+        <p><strong>Estimated Cash Available:</strong> ~$28,000 - $270,000 (depending on BrokerageLink utilization)</p>
+        <p><strong>Stocks Evaluated:</strong> 10 dividend-focused candidates across healthcare, consumer staples, industrials, and utilities</p>
+    </div>
+
+    <div class="section">
+        <h2>📊 Stock Evaluation Summary</h2>
+        <table>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Sector</th>
+                <th>Div Yield</th>
+                <th>P/E Ratio</th>
+                <th>Dividend History</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td class="ticker">JNJ</td>
+                <td>Johnson & Johnson</td>
+                <td>Healthcare</td>
+                <td><span class="metric yield">~3.0%</span></td>
+                <td><span class="metric pe">~22-25x</span></td>
+                <td>64 consecutive years of increases</td>
+                <td class="buy">BUY</td>
+            </tr>
+            <tr>
+                <td class="ticker">KO</td>
+                <td>Coca-Cola</td>
+                <td>Consumer Staples</td>
+                <td><span class="metric yield">~2.8-3.0%</span></td>
+                <td><span class="metric pe">~22-25x</span></td>
+                <td>64 consecutive years of increases</td>
+                <td class="buy">BUY</td>
+            </tr>
+            <tr>
+                <td class="ticker">PG</td>
+                <td>Procter & Gamble</td>
+                <td>Consumer Staples</td>
+                <td><span class="metric yield">~2.4-2.9%</span></td>
+                <td><span class="metric pe">~25-27x</span></td>
+                <td>130+ years of dividends, $10B buyback plan</td>
+                <td class="buy">BUY</td>
+            </tr>
+            <tr>
+                <td class="ticker">PM</td>
+                <td>Philip Morris International</td>
+                <td>Consumer Defensive</td>
+                <td><span class="metric yield">~4.5-5.0%</span></td>
+                <td><span class="metric pe">~18-20x</span></td>
+                <td>Strong dividend growth, transitioning to smoke-free</td>
+                <td class="buy">BUY</td>
+            </tr>
+            <tr>
+                <td class="ticker">WM</td>
+                <td>Waste Management</td>
+                <td>Industrials</td>
+                <td><span class="metric yield">~1.8-2.0%</span></td>
+                <td><span class="metric pe">~32x</span></td>
+                <td>14.5% planned increase, $3B buyback</td>
+                <td class="hold">HOLD</td>
+            </tr>
+            <tr>
+                <td class="ticker">GEHC</td>
+                <td>GE HealthCare</td>
+                <td>Healthcare</td>
+                <td><span class="metric yield">~0.3-0.5%</span></td>
+                <td><span class="metric pe">~18-20x</span></td>
+                <td>New dividend (post-GE spinoff), low payout</td>
+                <td class="hold">HOLD</td>
+            </tr>
+            <tr>
+                <td class="ticker">DHR</td>
+                <td>Danaher</td>
+                <td>Healthcare/Life Sciences</td>
+                <td><span class="metric yield">~0.6-0.8%</span></td>
+                <td><span class="metric pe">~25-30x</span></td>
+                <td>Modest dividend, growth-focused</td>
+                <td class="hold">HOLD</td>
+            </tr>
+            <tr>
+                <td class="ticker">MU</td>
+                <td>Micron Technology</td>
+                <td>Technology/Semiconductors</td>
+                <td><span class="metric yield">~0.1-0.2%</span></td>
+                <td><span class="metric pe">~15-20x</span></td>
+                <td>Recently initiated dividend, 30% increase planned</td>
+                <td class="caution">REDUNDANT</td>
+            </tr>
+            <tr>
+                <td class="ticker">STZ</td>
+                <td>Constellation Brands</td>
+                <td>Consumer Defensive</td>
+                <td><span class="metric yield">~1.5-1.8%</span></td>
+                <td><span class="metric pe">~15-18x</span></td>
+                <td>Growing dividend, beer portfolio dominant</td>
+                <td class="hold">HOLD</td>
+            </tr>
+            <tr>
+                <td class="ticker">MKL</td>
+                <td>Markel Group</td>
+                <td>Insurance/Financial</td>
+                <td><span class="metric yield">0.0%</span></td>
+                <td><span class="metric pe">~12-15x</span></td>
+                <td>No dividend - growth/investment holding company</td>
+                <td class="caution">SKIP</td>
+            </tr>
+            <tr>
+                <td class="ticker">GEV</td>
+                <td>GE Vernova</td>
+                <td>Energy/Industrial</td>
+                <td><span class="metric yield">~0.2-0.3%</span></td>
+                <td><span class="metric pe">~35-40x</span></td>
+                <td>Recently doubled dividend, growth story</td>
+                <td class="caution">REDUNDANT</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>🔍 Detailed Stock Analysis</h2>
+        
+        <h3>⭐ TOP RECOMMENDATIONS (Tier 1 - Core Holdings)</h3>
+        
+        <h3>JNJ - Johnson & Johnson</h3>
+        <p><strong>Why Buy:</strong> Dividend Aristocrat with 64 consecutive years of increases. Recent spin-off of consumer health (Kenvue) and orthopedics (DePuy) leaves a focused healthcare powerhouse. Strong moat in pharmaceuticals and medtech.</p>
+        <p><strong>Risks:</strong> Litigation exposure (talcum powder), moderate growth. <span class="risk-med">Medium Risk</span></p>
+        <p><strong>Correlation with Portfolio:</strong> Low correlation with energy/crypto holdings. Provides defensive ballast.</p>
+        
+        <h3>KO - Coca-Cola</h3>
+        <p><strong>Why Buy:</strong> Ultimate defensive stock. 64 consecutive dividend increases. Recession-resistant consumer staples. Strong global brand moat.</p>
+        <p><strong>Risks:</strong> Mature market, sugar/health concerns. <span class="risk-low">Low Risk</span></p>
+        <p><strong>Correlation with Portfolio:</strong> Negative correlation with cyclical energy/tech positions.</p>
+        
+        <h3>PG - Procter & Gamble</h3>
+        <p><strong>Why Buy:</strong> 130+ years of continuous dividends. New $10B buyback authorization. Essential household products with pricing power.</p>
+        <p><strong>Risks:</strong> Valuation stretched (~25-27x P/E). <span class="risk-med">Medium Risk</span></p>
+        <p><strong>Correlation with Portfolio:</strong> Staples provide stability during energy volatility.</p>
+        
+        <h3>PM - Philip Morris International</h3>
+        <p><strong>Why Buy:</strong> Highest yield (~4.5-5%). Aggressive transition to smoke-free products (IQOS). International diversification.</p>
+        <p><strong>Risks:</strong> Regulatory pressures, declining cigarette volumes. <span class="risk-med">Medium Risk</span></p>
+        <p><strong>Correlation with Portfolio:</strong> Defensive income play with currency diversification.</p>
+
+        <h3>🔄 MODERATE RECOMMENDATIONS (Tier 2)</h3>
+        
+        <h3>WM - Waste Management</h3>
+        <p><strong>Why Consider:</strong> Essential service, landfill moat is nearly impossible to replicate. Strong pricing power, 14.5% planned dividend increase.</p>
+        <p><strong>Concerns:</strong> Valuation expensive (~32x P/E). <span class="risk-med">Medium Risk</span></p>
+        
+        <h3>GEHC - GE HealthCare</h3>
+        <p><strong>Why Consider:</strong> Spin-off from GE with clean balance sheet. Healthcare imaging and diagnostics. New dividend being established.</p>
+        <p><strong>Concerns:</strong> Very low current yield (~0.3%). <span class="risk-med">Medium Risk</span></p>
+        
+        <h3>DHR - Danaher</h3>
+        <p><strong>Why Consider:</strong> Life sciences and diagnostics leader. Recurring revenue from consumables.</p>
+        <p><strong>Concerns:</strong> Low yield (~0.8%), biotech exposure correlated with growth stocks. <span class="risk-med">Medium Risk</span></p>
+        
+        <h3>STZ - Constellation Brands</h3>
+        <p><strong>Why Consider:</strong> Dominant beer portfolio (Corona, Modelo). Growing dividend.</p>
+        <p><strong>Concerns:</strong> Wine/spirits segment under pressure. <span class="risk-med">Medium Risk</span></p>
+
+        <h3>❌ NOT RECOMMENDED</h3>
+        
+        <h3>MU - Micron Technology</h3>
+        <p><strong>Why Skip:</strong> User already has significant semiconductor exposure (NVDA, TSM, SMH). Micron is a cyclical memory play, not a true dividend stock despite recent dividend initiation.</p>
+        
+        <h3>MKL - Markel Group</h3>
+        <p><strong>Why Skip:</strong> No dividend. This is a holding company modeled after Berkshire Hathaway. Not suitable for dividend income strategy.</p>
+        
+        <h3>GEV - GE Vernova</h3>
+        <p><strong>Why Skip:</strong> User already has ~40% energy exposure (BE, VDE, XOP, CEG, SHEL, SEI). GEV is an energy/industrial play that doesn't fit the defensive dividend objective.</p>
+    </div>
+
+    <div class="section">
+        <h2>💰 Recommended Allocation</h2>
+        <p>Based on ~$28,000 available cash (conservative) to ~$270,000 (including BrokerageLink):</p>
+        
+        <table class="allocation-table">
+            <tr>
+                <th>Stock</th>
+                <th>Target Allocation</th>
+                <th>Conservative ($28K)</th>
+                <th>Moderate ($75K)</th>
+                <th>Aggressive ($150K)</th>
+                <th>Strategy</th>
+            </tr>
+            <tr>
+                <td class="ticker">JNJ</td>
+                <td>25%</td>
+                <td>$7,000</td>
+                <td>$18,750</td>
+                <td>$37,500</td>
+                <td>Core defensive holding</td>
+            </tr>
+            <tr>
+                <td class="ticker">KO</td>
+                <td>25%</td>
+                <td>$7,000</td>
+                <td>$18,750</td>
+                <td>$37,500</td>
+                <td>Recession-resistant</td>
+            </tr>
+            <tr>
+                <td class="ticker">PG</td>
+                <td>20%</td>
+                <td>$5,600</td>
+                <td>$15,000</td>
+                <td>$30,000</td>
+                <td>Dividend King status</td>
+            </tr>
+            <tr>
+                <td class="ticker">PM</td>
+                <td>20%</td>
+                <td>$5,600</td>
+                <td>$15,000</td>
+                <td>$30,000</td>
+                <td>Income generation</td>
+            </tr>
+            <tr>
+                <td class="ticker">WM</td>
+                <td>10%</td>
+                <td>$2,800</td>
+                <td>$7,500</td>
+                <td>$15,000</td>
+                <td>Essential services moat</td>
+            </tr>
+            <tr style="font-weight: bold; background: #ecf0f1;">
+                <td>TOTAL</td>
+                <td>100%</td>
+                <td>$28,000</td>
+                <td>$75,000</td>
+                <td>$150,000</td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <div class="recommendation">
+            <h4>📈 Suggested Execution Plan</h4>
+            <p><strong>Phase 1 (Immediate):</strong> Start with KO and JNJ - highest conviction defensive positions</p>
+            <p><strong>Phase 2 (Next 30 days):</strong> Add PG and PM for diversification and income</p>
+            <p><strong>Phase 3 (Optional):</strong> Consider WM if seeking additional infrastructure exposure</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚖️ Portfolio Impact Analysis</h2>
+        
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Current Portfolio</th>
+                <th>After Rebalancing</th>
+                <th>Change</th>
+            </tr>
+            <tr>
+                <td>Energy Exposure</td>
+                <td>~40%</td>
+                <td>~30-35%</td>
+                <td class="buy">-5 to -10pp</td>
+            </tr>
+            <tr>
+                <td>Crypto/Mining</td>
+                <td>~10%</td>
+                <td>~8-10%</td>
+                <td>Stable</td>
+            </tr>
+            <tr>
+                <td>Tech Exposure</td>
+                <td>~20%</td>
+                <td>~15-18%</td>
+                <td>Slight reduction</td>
+            </tr>
+            <tr>
+                <td>Defensive/Dividend</td>
+                <td>~5%</td>
+                <td>~15-20%</td>
+                <td class="buy">+10 to +15pp</td>
+            </tr>
+            <tr>
+                <td>Estimated Portfolio Yield</td>
+                <td>~0.5-1.0%</td>
+                <td>~1.5-2.5%</td>
+                <td class="buy">+1.0 to +1.5pp</td>
+            </tr>
+        </table>
+        
+        <h3>Risk Assessment</h3>
+        <ul>
+            <li><strong>Volatility Reduction:</strong> Consumer staples and healthcare typically have lower beta than energy/tech</li>
+            <li><strong>Income Generation:</strong> Combined yield of ~2.5-3.5% on new positions vs ~1% current portfolio</li>
+            <li><strong>Drawdown Protection:</strong> KO and PG have historically outperformed during market stress</li>
+            <li><strong>Sector Concentration:</strong> Avoids adding to already-heavy tech/energy positions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Key Takeaways</h2>
+        <div class="summary-box">
+            <ol>
+                <li><strong>Priority Buys:</strong> JNJ, KO, PG, PM - all Dividend Kings/Aristocrats with decades of increases</li>
+                <li><strong>Avoid:</strong> MU (redundant tech), MKL (no dividend), GEV (redundant energy)</li>
+                <li><strong>Consider:</strong> WM for infrastructure exposure if portfolio allows</li>
+                <li><strong>Timing:</strong> Dollar-cost average over 30-60 days given market volatility</li>
+                <li><strong>Expected Impact:</strong> 15-20% defensive allocation with 2-3% blended yield</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Report generated by Spock | Not financial advice - for informational purposes only</p>
+        <p>Data sources: Yahoo Finance, MarketBeat, Simply Wall St, Company Investor Relations</p>
+    </div>
+</body>
+</html>

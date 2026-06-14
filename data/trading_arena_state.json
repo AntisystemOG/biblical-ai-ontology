@@ -1,0 +1,103 @@
+{
+  "sessionStart": "2026-05-08",
+  "lastUpdate": "2026-05-14T10:30:00-05:00",
+  "tradingDaysElapsed": 5,
+  "sp500": {
+    "price": 7481.88,
+    "change": 37.63,
+    "changePercent": 0.51,
+    "benchmarkStartValue": 10000,
+    "benchmarkCurrentValue": 11474.00,
+    "benchmarkReturn": 14.74
+  },
+  "traders": [
+    {
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "rank": 1,
+      "portfolioValue": 20892.34,
+      "totalReturn": 108.92,
+      "vsSP500": 81.67,
+      "lastAction": "ADD AVGO +8 shares @ $213.45 (AI datacenter momentum)",
+      "intradayMove": 4.2,
+      "holdings": {
+        "NVDA": 45,
+        "ARM": 120,
+        "AVGO": 8
+      }
+    },
+    {
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "rank": 2,
+      "portfolioValue": 18412.78,
+      "totalReturn": 84.13,
+      "vsSP500": 56.88,
+      "lastAction": "ADD AVGO +12 shares @ $213.45, ADD QQQ +20 shares @ $721.54",
+      "intradayMove": 3.1,
+      "holdings": {
+        "SMH": 80,
+        "XLK": 150,
+        "AVGO": 12,
+        "QQQ": 20
+      }
+    },
+    {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "rank": 3,
+      "portfolioValue": 16284.92,
+      "totalReturn": 62.85,
+      "vsSP500": 35.60,
+      "lastAction": "ADD SPY +25 shares @ $748.18 (new ATH breakout)",
+      "intradayMove": 2.4,
+      "holdings": {
+        "HD": 35,
+        "QQQ": 15,
+        "SPY": 25
+      }
+    },
+    {
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value",
+      "rank": 4,
+      "portfolioValue": 11456.30,
+      "totalReturn": 14.56,
+      "vsSP500": -12.69,
+      "lastAction": "HOLD - Monitoring BRK.B position, no changes",
+      "intradayMove": 0.9,
+      "holdings": {
+        "GILD": 200,
+        "BRK.B": 10,
+        "JNJ": 50
+      }
+    },
+    {
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "rank": 5,
+      "portfolioValue": 9432.15,
+      "totalReturn": -5.68,
+      "vsSP500": -32.93,
+      "lastAction": "WAIT - Market extended, waiting for pullback",
+      "intradayMove": -0.2,
+      "holdings": {
+        "XBI": 120,
+        "TLT": 50
+      }
+    }
+  ],
+  "recentActivity": [
+    {"time": "10:30 AM", "trader": "Shark", "action": "Bought AVGO +8 shares @ $213.45"},
+    {"time": "10:30 AM", "trader": "Wolf", "action": "Bought AVGO +12 shares @ $213.45, QQQ +20 @ $721.54"},
+    {"time": "10:30 AM", "trader": "Turtle", "action": "Bought SPY +25 shares @ $748.18"},
+    {"time": "10:30 AM", "trader": "Owl", "action": "No action - watching BRK.B"},
+    {"time": "10:30 AM", "trader": "Fox", "action": "No action - waiting for pullback"}
+  ],
+  "marketConditions": "Chip stocks extend rally to fresh records. S&P 500 hits new all-time high above 7,480. NVDA reaches 52-week high on AI infrastructure demand. QQQ continues tech leadership. Market breadth remains strong with broad participation beyond mega-caps. Semiconductors leading sector rotation."
+}

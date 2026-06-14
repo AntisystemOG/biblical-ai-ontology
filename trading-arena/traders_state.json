@@ -1,0 +1,124 @@
+{
+  "simulation_start": "2026-05-08",
+  "last_update": "2026-05-15T09:00:00",
+  "session_day": 5,
+  "sp500_start": 5656.78,
+  "sp500_current": 5856.42,
+  "sp500_change_pct": 3.53,
+  "market_movers": {
+    "NVDA": {"price": 238.45, "change_pct": 2.45},
+    "AAPL": {"price": 302.18, "change_pct": 1.25},
+    "AMD": {"price": 124.85, "change_pct": 2.15},
+    "SMH": {"price": 592.34, "change_pct": 1.85},
+    "TSLA": {"price": 398.22, "change_pct": -1.25},
+    "AVGO": {"price": 438.92, "change_pct": 1.85},
+    "MSFT": {"price": 418.75, "change_pct": 1.05},
+    "XLK": {"price": 182.45, "change_pct": 1.45},
+    "XLF": {"price": 52.85, "change_pct": 1.95},
+    "BRK.B": {"price": 475.18, "change_pct": 0.85},
+    "UNH": {"price": 372.45, "change_pct": 0.95},
+    "JPM": {"price": 308.92, "change_pct": 1.85},
+    "XLU": {"price": 45.62, "change_pct": 0.65},
+    "XLP": {"price": 84.95, "change_pct": 0.45},
+    "TLT": {"price": 86.45, "change_pct": 0.35}
+  },
+  "traders": [
+    {
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "portfolio_value": 19584.32,
+      "cash": 125.00,
+      "total_return_pct": 95.84,
+      "vs_sp500_pct": 92.31,
+      "rank": 1,
+      "holdings": [
+        {"symbol": "NVDA", "shares": 35, "price": 238.45, "change_pct": 2.45},
+        {"symbol": "AMD", "shares": 32, "price": 124.85, "change_pct": 2.15},
+        {"symbol": "SMH", "shares": 8, "price": 592.34, "change_pct": 1.85}
+      ],
+      "last_signal": "ADD SMH @ $592.34 (semis breakout)",
+      "signal_type": "buy",
+      "description": "Semis on fire! Added SMH on breakout strength. NVDA and AMD both gapping up. This momentum is unstoppable right now."
+    },
+    {
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "portfolio_value": 16842.18,
+      "cash": 1850.00,
+      "total_return_pct": 68.42,
+      "vs_sp500_pct": 64.89,
+      "rank": 2,
+      "holdings": [
+        {"symbol": "XLK", "shares": 28, "price": 182.45, "change_pct": 1.45},
+        {"symbol": "SMH", "shares": 8, "price": 592.34, "change_pct": 1.85},
+        {"symbol": "XLF", "shares": 30, "price": 52.85, "change_pct": 1.95}
+      ],
+      "last_signal": "ADD XLF @ $52.85 (financials waking)",
+      "signal_type": "buy",
+      "description": "Rotation into financials paying off. Added XLF as banks show strength. Semis still leading the charge."
+    },
+    {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "portfolio_value": 15628.94,
+      "cash": 980.00,
+      "total_return_pct": 56.29,
+      "vs_sp500_pct": 52.76,
+      "rank": 3,
+      "holdings": [
+        {"symbol": "AAPL", "shares": 24, "price": 302.18, "change_pct": 1.25},
+        {"symbol": "MSFT", "shares": 14, "price": 418.75, "change_pct": 1.05},
+        {"symbol": "AVGO", "shares": 8, "price": 438.92, "change_pct": 1.85}
+      ],
+      "last_signal": "HOLD All Positions",
+      "signal_type": "hold",
+      "description": "All trends intact. No reason to exit. MSFT catching up after recent pullback. Patience is the turtle's superpower."
+    },
+    {
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value Investing",
+      "portfolio_value": 10452.68,
+      "cash": 2850.00,
+      "total_return_pct": 4.53,
+      "vs_sp500_pct": 1.00,
+      "rank": 4,
+      "holdings": [
+        {"symbol": "JPM", "shares": 18, "price": 308.92, "change_pct": 1.85},
+        {"symbol": "BRK.B", "shares": 12, "price": 475.18, "change_pct": 0.85},
+        "UNH": {"shares": 6, "price": 372.45, "change_pct": 0.95}
+      ],
+      "last_signal": "ADD JPM @ $308.92 (value opportunity)",
+      "signal_type": "buy",
+      "description": "Finally some green! Added JPM on financials strength. Still lagging growth but value will have its day."
+    },
+    {
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "portfolio_value": 8924.15,
+      "cash": 2980.00,
+      "total_return_pct": -10.76,
+      "vs_sp500_pct": -14.29,
+      "rank": 5,
+      "holdings": [
+        {"symbol": "XLU", "shares": 40, "price": 45.62, "change_pct": 0.65},
+        {"symbol": "XLP", "shares": 25, "price": 84.95, "change_pct": 0.45},
+        {"symbol": "TLT", "shares": 15, "price": 86.45, "change_pct": 0.35}
+      ],
+      "last_signal": "HOLD (waiting for rotation)",
+      "signal_type": "hold",
+      "description": "Small bounce in utilities. Still not the rotation I expected. The mean reversion trade will work... eventually."
+    }
+  ],
+  "recent_trades": [
+    {"time": "9:00", "trader": "Shark", "action": "BUY", "symbol": "SMH", "shares": 2, "price": 592.34, "reason": "semis breakout"},
+    {"time": "9:00", "trader": "Wolf", "action": "BUY", "symbol": "XLF", "shares": 5, "price": 52.85, "reason": "financials rotation"},
+    {"time": "9:00", "trader": "Turtle", "action": "HOLD", "symbol": "All", "shares": 0, "price": 0, "reason": "trends intact"},
+    {"time": "9:00", "trader": "Owl", "action": "BUY", "symbol": "JPM", "shares": 3, "price": 308.92, "reason": "value play"},
+    {"time": "9:00", "trader": "Fox", "action": "HOLD", "symbol": "All", "shares": 0, "price": 0, "reason": "waiting for rotation"}
+  ]
+}

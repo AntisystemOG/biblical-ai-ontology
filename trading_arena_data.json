@@ -1,0 +1,505 @@
+{
+  "start_date": "2026-05-11T12:34:17.804392",
+  "last_update": "2026-05-15T18:00:00Z",
+  "traders": {
+    "Turtle": {
+      "cash": 587.2026,
+      "positions": {
+        "MSFT": 16.4,
+        "GOOGL": 10.0,
+        "AMZN": 15.120000000000001,
+        "TSLA": 14.096,
+        "META": 13.7676,
+        "PG": 12.097152,
+        "MA": 8.0,
+        "JPM": 2.62144
+      },
+      "history": [
+        {
+          "date": "2026-05-11T12:34:17.804392",
+          "value": 10000.0
+        },
+        {
+          "date": "2026-05-11T12:34:17.804465",
+          "value": 10221.72
+        },
+        {
+          "date": "2026-05-13T13:30:49.603736",
+          "value": 10271.83
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 28701.72
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 28491.01
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 28725.09
+        }
+      ],
+      "current_value": 28725.09
+    },
+    "Shark": {
+      "cash": 5800.0,
+      "positions": {
+        "TSLA": 7.2971,
+        "PG": 10.0,
+        "MSFT": 5.0,
+        "BAC": 5.0,
+        "META": 5.7974,
+        "COIN": 4.0
+      },
+      "history": [
+        {
+          "date": "2026-05-11T12:34:17.804392",
+          "value": 10000.0
+        },
+        {
+          "date": "2026-05-11T12:34:17.804465",
+          "value": 10065.95
+        },
+        {
+          "date": "2026-05-13T13:30:49.603736",
+          "value": 10133.79
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 14608.62
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 14164.18
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 14181.08
+        }
+      ],
+      "current_value": 14181.08
+    },
+    "Owl": {
+      "cash": 6733.9261,
+      "positions": {
+        "AAPL": 10.0,
+        "JNJ": 8.7372,
+        "KO": 9.3414,
+        "PG": 3.4748
+      },
+      "history": [
+        {
+          "date": "2026-05-11T12:34:17.804392",
+          "value": 10000.0
+        },
+        {
+          "date": "2026-05-11T12:34:17.804465",
+          "value": 9956.07
+        },
+        {
+          "date": "2026-05-13T13:30:49.603736",
+          "value": 10011.5
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 11248.38
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 11320.21
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 11306.7
+        }
+      ],
+      "current_value": 11306.7
+    },
+    "Wolf": {
+      "cash": 7600.0,
+      "positions": {
+        "JNJ": 4.8866,
+        "UNH": 3.0,
+        "PG": 3.0,
+        "JPM": 3.0,
+        "BAC": 3.0,
+        "MA": 3.6021
+      },
+      "history": [
+        {
+          "date": "2026-05-11T12:34:17.804392",
+          "value": 10000.0
+        },
+        {
+          "date": "2026-05-11T12:34:17.804465",
+          "value": 10015.61
+        },
+        {
+          "date": "2026-05-13T13:30:49.603736",
+          "value": 10042.71
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 13141.59
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 13104.56
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 13261.0
+        }
+      ],
+      "current_value": 13261.0
+    },
+    "Fox": {
+      "cash": 8300.0,
+      "positions": {
+        "AAPL": 4.0,
+        "JPM": 4.0,
+        "JNJ": 4.0,
+        "PFE": 17.5932
+      },
+      "history": [
+        {
+          "date": "2026-05-11T12:34:17.804392",
+          "value": 10000.0
+        },
+        {
+          "date": "2026-05-11T12:34:17.804465",
+          "value": 9972.88
+        },
+        {
+          "date": "2026-05-13T13:30:49.603736",
+          "value": 9998.23
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 11022.56
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 11051.52
+        },
+        {
+          "date": "2026-05-15T18:00:00Z",
+          "value": 11062.54
+        }
+      ],
+      "current_value": 11062.54
+    }
+  },
+  "sp500_benchmark": {
+    "value": 10127.06,
+    "history": [
+      {
+        "date": "2026-05-11T12:34:17.804392",
+        "value": 10000.0
+      },
+      {
+        "date": "2026-05-11T12:34:17.804465",
+        "value": 10037.99
+      },
+      {
+        "date": "2026-05-13T13:30:49.603736",
+        "value": 10222.3
+      },
+      {
+        "date": "2026-05-15T18:00:00Z",
+        "value": 10231.1
+      },
+      {
+        "date": "2026-05-15T18:00:00Z",
+        "value": 10092.18
+      },
+      {
+        "date": "2026-05-15T18:00:00Z",
+        "value": 10127.06
+      }
+    ]
+  },
+  "trades": [
+    {
+      "type": "BUY",
+      "ticker": "MSFT",
+      "amount": 1000,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "GOOGL",
+      "amount": 1000,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "AMZN",
+      "amount": 1000,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "TSLA",
+      "amount": 1000,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "META",
+      "amount": 1000,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "PG",
+      "amount": 1000,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "MA",
+      "amount": 800.0,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "TSLA",
+      "amount": 500,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "PG",
+      "amount": 500,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "MSFT",
+      "amount": 500,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "AAPL",
+      "amount": 500,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 500,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "BAC",
+      "amount": 500,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JNJ",
+      "amount": 300,
+      "reason": "HEALTH sector strength",
+      "trader": "Wolf",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "UNH",
+      "amount": 300,
+      "reason": "HEALTH sector strength",
+      "trader": "Wolf",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "PG",
+      "amount": 300,
+      "reason": "HEALTH sector strength",
+      "trader": "Wolf",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "AAPL",
+      "amount": 400,
+      "reason": "Contrarian play",
+      "trader": "Fox",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 400,
+      "reason": "Contrarian play",
+      "trader": "Fox",
+      "time": "2026-05-11T12:34:17.804465"
+    },
+    {
+      "type": "BUY",
+      "ticker": "MSFT",
+      "amount": 640.0,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "AMZN",
+      "amount": 512.0,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "TSLA",
+      "amount": 409.6,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "META",
+      "amount": 327.68000000000006,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 262.144,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "PG",
+      "amount": 209.7152,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "PG",
+      "amount": 500,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "BAC",
+      "amount": 500,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "META",
+      "amount": 500,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JNJ",
+      "amount": 500,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "AAPL",
+      "amount": 500,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "SELL",
+      "ticker": "JPM",
+      "amount": 514.5231937011888,
+      "reason": "Take profits",
+      "trader": "Owl",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "SELL",
+      "ticker": "BAC",
+      "amount": 519.4029312761826,
+      "reason": "Take profits",
+      "trader": "Owl",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "BAC",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "MA",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-05-13T13:30:49.603736"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JNJ",
+      "amount": 400,
+      "reason": "Contrarian play",
+      "trader": "Fox",
+      "time": "2026-05-13T13:30:49.603736"
+    }
+  ]
+}

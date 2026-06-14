@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Whale Watch Report - Q4 2025</title>
+    <style>
+        @media print {
+            @page { size: letter; margin: 0.75in; }
+            body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+        }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            font-size: 10pt; 
+            line-height: 1.4;
+            color: #333;
+            max-width: 8in;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #1a5276;
+            font-size: 28pt;
+            margin: 0;
+        }
+        .header .subtitle {
+            color: #666;
+            font-size: 12pt;
+            margin-top: 5px;
+        }
+        .header .date {
+            color: #999;
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #1a5276;
+            border-bottom: 1px solid #3498db;
+            font-size: 14pt;
+            margin-top: 25px;
+            padding-bottom: 5px;
+            page-break-after: avoid;
+        }
+        h3 {
+            color: #2874a6;
+            font-size: 12pt;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+        .summary {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #1a5276;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        .fund-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            page-break-inside: avoid;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 9pt;
+        }
+        th {
+            background: #1a5276;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .positive { color: #27ae60; font-weight: bold; }
+        .negative { color: #e74c3c; font-weight: bold; }
+        .overlaps { 
+            margin: 20px 0; 
+            background: #fef9e7;
+            padding: 15px;
+            border: 1px solid #f9e79f;
+            page-break-inside: avoid;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 8pt;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Whale Watch Report</h1>
+        <div class="subtitle">Q4 2025 13F Hedge Fund Holdings Analysis</div>
+        <div class="date">Generated: May 07, 2026</div>
+    </div>
+    
+    <div class="summary">
+        <strong>Executive Summary:</strong> This report tracks Q4 2025 13F filings for major hedge funds. 
+        Point72 leads with $89.4B AUM (+49.6% QoQ), followed by D1 Capital at $10.7B (+22.9% QoQ), 
+        and Appaloosa at $6.9B (-6.2% QoQ). Key overlaps identified in NVDA and META represent high-conviction 
+        themes across multiple managers.
+    </div>
+    
+    <h2>📊 Manager Holdings Overview</h2>
+    
+    <div class="fund-section">
+        <h3>Point72 (Steven Cohen)</h3>
+        <table>
+            <tr><td><strong>AUM:</strong> $89.42B</td><td><strong>Holdings:</strong> 3,862 positions</td><td><strong>QoQ Change:</strong> <span class="positive">+49.64%</span></td></tr>
+        </table>
+        <p><strong>Allocation:</strong> Stocks 68.18% | Options 28.67% | Debt 2.99%</p>
+        <p><strong>Top Positions:</strong> NVDA (Long), SPY Puts, TSM (Long), QQQ Puts</p>
+    </div>
+    
+    <div class="fund-section">
+        <h3>D1 Capital (Daniel Sundheim)</h3>
+        <table>
+            <tr><td><strong>AUM:</strong> $10.70B</td><td><strong>Holdings:</strong> 42 positions</td><td><strong>QoQ Change:</strong> <span class="positive">+22.90%</span></td></tr>
+        </table>
+        <p><strong>Allocation:</strong> Stocks 100% (Concentrated, no options)</p>
+        <p><strong>Top Positions:</strong> CART ($1.01B), APP ($451M), SE ($445M), CLH ($652M), META ($248M)</p>
+    </div>
+    
+    <div class="fund-section">
+        <h3>Appaloosa (David Tepper)</h3>
+        <table>
+            <tr><td><strong>AUM:</strong> $6.93B</td><td><strong>Holdings:</strong> 39 positions</td><td><strong>QoQ Change:</strong> <span class="negative">-6.21%</span></td></tr>
+        </table>
+        <p><strong>Allocation:</strong> Stocks 98.97% | Options 1.03%</p>
+        <p><strong>Top Positions:</strong> BABA (Top Buy +$285M), NVDA, META, AMZN</p>
+    </div>
+    
+    <h2>🔥 High-Conviction Overlaps</h2>
+    <p>Positions held by multiple whale managers indicate strong consensus:</p>
+    <div class="overlaps">
+        <table>
+            <tr><th>Ticker</th><th>Company</th><th>Whales Holding</th><th>Conviction</th></tr>
+            <tr><td>NVDA</td><td>NVIDIA CORP</td><td>Point72, D1 Capital, Appaloosa</td><td>🔥 HIGH</td></tr>
+            <tr><td>META</td><td>META PLATFORMS</td><td>D1 Capital, Appaloosa</td><td>🔥🔥 MEDIUM</td></tr>
+            <tr><td>AMZN</td><td>AMAZON.COM</td><td>D1 Capital, Appaloosa</td><td>🔥🔥 MEDIUM</td></tr>
+        </table>
+    </div>
+    
+    <h2>📈 Key Insights</h2>
+    <ul>
+        <li><strong>NVIDIA (NVDA)</strong> appears as a top holding across multiple funds — strongest consensus play</li>
+        <li><strong>Point72</strong> dramatically increased AUM by nearly 50%, indicating significant new capital deployment</li>
+        <li><strong>D1 Capital</strong> shows strong growth (+22.9%) with concentrated positions in tech/growth names</li>
+        <li><strong>Appaloosa</strong> reduced positions slightly (-6.2%) while maintaining core equity exposure</li>
+        <li>Options activity elevated at Point72 (28.7% of portfolio) suggests hedging or tactical positioning</li>
+    </ul>
+    
+    <h2>⚠️ Important Disclaimers</h2>
+    <ul>
+        <li>Data sourced from SEC 13F filings as of Q4 2025 (filed February 2026)</li>
+        <li>13F filings have a 45-day delay and may not reflect current positions</li>
+        <li>Short positions are not required to be disclosed on 13F forms</li>
+        <li>This report is for informational purposes only — not investment advice</li>
+    </ul>
+    
+    <div class="footer">
+        Whale Watch Report | Q4 2025 13F Analysis | Data: SEC EDGAR<br>
+        Generated by Spock 🖖
+    </div>
+</body>
+</html>

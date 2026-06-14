@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whale Watch Report - May 14, 2026</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #333;
+        }
+        h1 {
+            font-size: 24pt;
+            color: #1a365d;
+            border-bottom: 3px solid #1a365d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 14pt;
+            color: #2c5282;
+            margin-top: 25px;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 11pt;
+            color: #3182ce;
+            margin-top: 15px;
+        }
+        .subtitle {
+            font-size: 11pt;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 9pt;
+        }
+        th {
+            background-color: #1a365d;
+            color: white;
+            padding: 8px 6px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 6px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+        .overlap {
+            background-color: #c6f6d5;
+            font-weight: 600;
+        }
+        .new-position {
+            color: #38a169;
+            font-weight: 600;
+        }
+        .added {
+            color: #38a169;
+        }
+        .sold {
+            color: #e53e3e;
+            text-decoration: line-through;
+        }
+        .trimmed {
+            color: #dd6b20;
+        }
+        .whale-header {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 10px 15px;
+            margin: 20px 0 10px 0;
+        }
+        .whale-header h3 {
+            margin: 0;
+            color: #2c5282;
+        }
+        .whale-meta {
+            font-size: 9pt;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+        .summary-box {
+            background-color: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .portfolio-ticker {
+            font-family: 'Consolas', monospace;
+            font-weight: bold;
+            color: #1a365d;
+        }
+        .footer {
+            font-size: 8pt;
+            color: #718096;
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐋 Whale Watch Report</h1>
+    <p class="subtitle">Q1 2025 13F Holdings Analysis | Generated: May 14, 2026</p>
+
+    <div class="summary-box">
+        <h3 style="margin-top: 0;">Executive Summary</h3>
+        <p>This report analyzes Q1 2025 13F filings from five major hedge fund managers and identifies overlaps with Thad's portfolio holdings. Key themes include strong positions in AI/semiconductors, energy infrastructure, and strategic additions to portfolio companies.</p>
+        <ul>
+            <li><strong>Total Portfolio Value:</strong> $238,642.89</li>
+            <li><strong>Unique Holdings Analyzed:</strong> 5 Whales</li>
+            <li><strong>Direct Overlaps Found:</strong> 11 stocks</li>
+        </ul>
+    </div>
+
+    <h2>Thad's Portfolio Holdings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Current Value</th>
+                <th>% of Portfolio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="portfolio-ticker">BE</td><td>Bloom Energy Corp</td><td>$39,598.67</td><td>16.60%</td></tr>
+            <tr><td class="portfolio-ticker">INTC</td><td>Intel Corp</td><td>$24,879.85</td><td>10.43%</td></tr>
+            <tr><td class="portfolio-ticker">AMZN</td><td>Amazon.com Inc</td><td>$11,211.70</td><td>4.70%</td></tr>
+            <tr><td class="portfolio-ticker">RDDT</td><td>Reddit Inc</td><td>$3,563.75</td><td>1.49%</td></tr>
+            <tr><td class="portfolio-ticker">SPOT</td><td>Spotify Technology</td><td>$4,251.23</td><td>1.78%</td></tr>
+            <tr><td class="portfolio-ticker">NVDA</td><td>NVIDIA Corp</td><td>$3,883.53</td><td>1.63%</td></tr>
+            <tr><td class="portfolio-ticker">AAPL</td><td>Apple Inc</td><td>$2,088.45</td><td>0.88%</td></tr>
+            <tr><td class="portfolio-ticker">TSLA</td><td>Tesla Inc</td><td>$5,000.91</td><td>2.10%</td></tr>
+            <tr><td class="portfolio-ticker">GOOGL</td><td>Alphabet Inc (Class A)</td><td>$3,346.22</td><td>1.40%</td></tr>
+            <tr><td class="portfolio-ticker">GOOG</td><td>Alphabet Inc (Class C)</td><td>$7,495.30</td><td>3.14%</td></tr>
+            <tr><td class="portfolio-ticker">CEG</td><td>Constellation Energy</td><td>$2,379.86</td><td>1.00%</td></tr>
+            <tr><td class="portfolio-ticker">PTON</td><td>Peloton Interactive</td><td>$2,401.82</td><td>1.01%</td></tr>
+            <tr><td class="portfolio-ticker">TEM</td><td>Tempus AI Inc</td><td>$2,406.00</td><td>1.01%</td></tr>
+            <tr><td class="portfolio-ticker">CORZ</td><td>Core Scientific Inc</td><td>$17,341.87</td><td>7.27%</td></tr>
+            <tr><td class="portfolio-ticker">SMH</td><td>VanEck Semiconductor ETF</td><td>$1,376.46</td><td>0.58%</td></tr>
+            <tr><td class="portfolio-ticker">VRT</td><td>Vertiv Holdings</td><td>$369.97</td><td>0.16%</td></tr>
+            <tr><td class="portfolio-ticker">APLD</td><td>Applied Digital Corp</td><td>$3,085.42</td><td>1.29%</td></tr>
+        </tbody>
+    </table>
+
+    <h2>🐋 Whale Manager Positions</h2>
+
+    <!-- David Tepper (Appaloosa) -->
+    <div class="whale-header">
+        <h3>David Tepper - Appaloosa LP</h3>
+        <p class="whale-meta">AUM: $5.6B | Holdings: 35 | Top Theme: Tech/China Exposure</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Weight</th>
+                <th>Activity</th>
+                <th>Portfolio Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>SPYX</td><td>SPDR S&P 500 Fossil Fuel Free ETF</td><td>36.1%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr><td>BABA</td><td>Alibaba Group</td><td>17.5%</td><td class="trimmed">Reduced</td><td>-</td></tr>
+            <tr><td>PDD</td><td>PDD Holdings</td><td>7.4%</td><td class="trimmed">Reduced</td><td>-</td></tr>
+            <tr><td>JD</td><td>JD.com</td><td>4.7%</td><td class="trimmed">Reduced</td><td>-</td></tr>
+            <tr class="overlap"><td>AAPL</td><td>Apple Inc</td><td>4.0%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr><td>VST</td><td>Vistra Corp</td><td>3.9%</td><td class="trimmed">Reduced</td><td>-</td></tr>
+            <tr><td>UBER</td><td>Uber Technologies</td><td>3.3%</td><td class="added">Added</td><td>-</td></tr>
+            <tr><td>MSFT</td><td>Microsoft Corp</td><td>2.7%</td><td class="trimmed">Reduced</td><td>-</td></tr>
+            <tr><td>ORCL</td><td>Oracle Corp</td><td>1.4%</td><td class="trimmed">Reduced</td><td>-</td></tr>
+            <tr><td>DB</td><td>Deutsche Bank</td><td>1.3%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr><td>NVDA</td><td>NVIDIA Corp</td><td>0.5%</td><td class="trimmed">Reduced</td><td>✓ HOLDING</td></tr>
+            <tr class="overlap"><td>SMH</td><td>VanEck Semiconductor ETF</td><td>0.3%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr><td>SQ</td><td>Block Inc</td><td>0.1%</td><td class="new-position">NEW</td><td>-</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Philippe Laffont (Coatue) -->
+    <div class="whale-header">
+        <h3>Philippe Laffont - Coatue Management</h3>
+        <p class="whale-meta">AUM: $22.7B | Holdings: 70 | Top Theme: AI Infrastructure</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Weight</th>
+                <th>Activity</th>
+                <th>Portfolio Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>TSM</td><td>Taiwan Semiconductor</td><td>13.3%</td><td class="trimmed">Trimmed</td><td>-</td></tr>
+            <tr class="overlap"><td>CEG</td><td>Constellation Energy</td><td>12.5%</td><td class="trimmed">Trimmed (-7%)</td><td>✓ HOLDING</td></tr>
+            <tr><td>NVDA</td><td>NVIDIA Corp</td><td>9.3%</td><td class="trimmed">Trimmed (-15%)</td><td>✓ HOLDING</td></tr>
+            <tr><td>LRCX</td><td>Lam Research</td><td>6.0%</td><td class="added">Added (+103%)</td><td>-</td></tr>
+            <tr><td>NU</td><td>Nu Holdings</td><td>5.8%</td><td class="trimmed">Trimmed</td><td>-</td></tr>
+            <tr><td>CRWV</td><td>CoreWeave</td><td>5.4%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr><td>BABA</td><td>Alibaba</td><td>5.1%</td><td class="added">Added (+1873%)</td><td>-</td></tr>
+            <tr class="overlap"><td>RDDT</td><td>Reddit Inc</td><td>5.0%</td><td class="trimmed">Trimmed (-27%)</td><td>✓ HOLDING</td></tr>
+            <tr class="overlap"><td>TSLA</td><td>Tesla Inc</td><td>4.3%</td><td class="trimmed">Trimmed (-24%)</td><td>✓ HOLDING</td></tr>
+            <tr><td>KKR</td><td>KKR & Co</td><td>4.1%</td><td class="added">Added (+31%)</td><td>-</td></tr>
+            <tr><td>PYPL</td><td>PayPal</td><td>3.4%</td><td class="trimmed">Trimmed</td><td>-</td></tr>
+            <tr><td>AMD</td><td>AMD</td><td>3.4%</td><td class="trimmed">Trimmed</td><td>-</td></tr>
+            <tr class="overlap"><td>GOOGL</td><td>Alphabet Inc</td><td>3.1%</td><td class="trimmed">Trimmed (-38%)</td><td>✓ HOLDING</td></tr>
+            <tr><td>SMCI</td><td>Super Micro Computer</td><td>3.1%</td><td>-</td><td>-</td></tr>
+            <tr><td>DASH</td><td>DoorDash</td><td>3.0%</td><td class="trimmed">Trimmed</td><td>-</td></tr>
+            <tr><td>ADBE</td><td>Adobe</td><td>2.7%</td><td class="trimmed">Trimmed (-61%)</td><td>-</td></tr>
+            <tr class="overlap"><td>PM</td><td>Philip Morris</td><td>2.5%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr class="overlap"><td>PTON</td><td>Peloton</td><td>0.2%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr class="overlap"><td>TEM</td><td>Tempus AI</td><td>0.5%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr><td class="sold">VRT</td><td class="sold">Vertiv Holdings</td><td class="sold">0.0%</td><td class="sold">Exited</td><td>-</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Leopold Aschenbrenner (SIT) -->
+    <div class="whale-header">
+        <h3>Leopold Aschenbrenner - Situational Awareness LP</h3>
+        <p class="whale-meta">AUM: $1.0B | Holdings: 12 | Top Theme: AI/Data Center Infrastructure</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Weight</th>
+                <th>Activity</th>
+                <th>Portfolio Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="overlap"><td>INTC</td><td>Intel Corp</td><td>45.7%</td><td class="new-position">NEW POSITION</td><td>✓ MAJOR HOLDING</td></tr>
+            <tr><td>AVGO</td><td>Broadcom Inc</td><td>11.7%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr><td>ONTO</td><td>Onto Innovation</td><td>7.1%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr><td>VST</td><td>Vistra Corp</td><td>6.1%</td><td class="added">Added (+23%)</td><td>-</td></tr>
+            <tr><td>MOD</td><td>Modine Manufacturing</td><td>5.5%</td><td class="added">Added (+980%)</td><td>-</td></tr>
+            <tr><td>EQT</td><td>EQT Corp</td><td>5.3%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr><td>CRWV</td><td>CoreWeave</td><td>4.5%</td><td class="new-position">NEW</td><td>-</td></tr>
+            <tr class="overlap"><td>CEG</td><td>Constellation Energy</td><td>3.7%</td><td class="added">Added (+90%)</td><td>✓ HOLDING</td></tr>
+            <tr class="overlap"><td>CORZ</td><td>Core Scientific</td><td>3.3%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr><td>TLN</td><td>Talen Energy</td><td>2.9%</td><td class="added">Added (+7%)</td><td>-</td></tr>
+            <tr class="overlap"><td>APLD</td><td>Applied Digital</td><td>2.3%</td><td class="new-position">NEW</td><td>✓ HOLDING</td></tr>
+            <tr><td>IREN</td><td>IREN Ltd</td><td>2.0%</td><td class="new-position">NEW</td><td>-</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Steve Cohen (Point72) -->
+    <div class="whale-header">
+        <h3>Steve Cohen - Point72 Asset Management</h3>
+        <p class="whale-meta">AUM: $41.7B (est.) | Holdings: 2,000+ | Top Theme: Diversified Macro</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Weight</th>
+                <th>Activity</th>
+                <th>Portfolio Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="overlap"><td>NVDA</td><td>NVIDIA Corp</td><td>2.08%</td><td class="added">Added (+38%)</td><td>✓ HOLDING</td></tr>
+            <tr><td>SPY (PUT)</td><td>SPDR S&P 500 ETF</td><td>1.94%</td><td class="trimmed">Reduced (-52%)</td><td>-</td></tr>
+            <tr class="overlap"><td>TSM</td><td>Taiwan Semiconductor</td><td>1.59%</td><td class="added">Added (+158%)</td><td>-</td></tr>
+            <tr><td>QQQ (PUT)</td><td>Invesco QQQ ETF</td><td>1.51%</td><td class="added">Added (+36%)</td><td>-</td></tr>
+            <tr class="overlap"><td>AMZN</td><td>Amazon.com Inc</td><td>1.36%</td><td class="added">Added (+69%)</td><td>✓ HOLDING</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Daniel Sundheim (D1 Capital) -->
+    <div class="whale-header">
+        <h3>Daniel Sundheim - D1 Capital Partners</h3>
+        <p class="whale-meta">AUM: $10.7B (est.) | Holdings: 38 | Top Theme: Tech/Growth</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Weight</th>
+                <th>Activity</th>
+                <th>Portfolio Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>CART</td><td>Maplebear Inc (Instacart)</td><td>9.48%</td><td>-</td><td>-</td></tr>
+            <tr><td>CLH</td><td>Clean Harbors Inc</td><td>6.10%</td><td class="added">Added (+14%)</td><td>-</td></tr>
+            <tr><td>FLS</td><td>Flowserve Corp</td><td>4.96%</td><td class="added">Added (+3%)</td><td>-</td></tr>
+            <tr><td>JHX</td><td>James Hardie Industries</td><td>4.73%</td><td class="added">Added (+29%)</td><td>-</td></tr>
+            <tr class="overlap"><td>RDDT</td><td>Reddit Inc</td><td>4.55%</td><td class="added">Added (+5%)</td><td>✓ HOLDING</td></tr>
+        </tbody>
+    </table>
+
+    <h2>📊 Portfolio Overlap Analysis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Your Position</th>
+                <th>Whale Ownership</th>
+                <th>Whale Activity</th>
+                <th>Conviction</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="overlap">
+                <td class="portfolio-ticker">INTC</td>
+                <td>Intel Corp</td>
+                <td>$24,879.85</td>
+                <td>Aschenbrenner (45.7%)</td>
+                <td class="new-position">NEW MAJOR POSITION</td>
+                <td>Very High</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">NVDA</td>
+                <td>NVIDIA Corp</td>
+                <td>$3,883.53</td>
+                <td>Cohen (+38%), Laffont (9.3%)</td>
+                <td class="added">Added/Held</td>
+                <td>High</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">CEG</td>
+                <td>Constellation Energy</td>
+                <td>$2,379.86</td>
+                <td>Laffont (12.5%), Aschenbrenner (3.7%)</td>
+                <td class="added">Added</td>
+                <td>High</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">CORZ</td>
+                <td>Core Scientific</td>
+                <td>$17,341.87</td>
+                <td>Aschenbrenner (3.3%)</td>
+                <td class="new-position">NEW</td>
+                <td>Medium</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">APLD</td>
+                <td>Applied Digital</td>
+                <td>$3,085.42</td>
+                <td>Aschenbrenner (2.3%)</td>
+                <td class="new-position">NEW</td>
+                <td>Medium</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">RDDT</td>
+                <td>Reddit Inc</td>
+                <td>$3,563.75</td>
+                <td>Laffont (5.0%), Sundheim (4.55%)</td>
+                <td>Held/Trimmed</td>
+                <td>High</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">AMZN</td>
+                <td>Amazon.com Inc</td>
+                <td>$11,211.70</td>
+                <td>Cohen (+69%)</td>
+                <td class="added">Significantly Added</td>
+                <td>High</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">TSLA</td>
+                <td>Tesla Inc</td>
+                <td>$5,000.91</td>
+                <td>Laffont (4.3%)</td>
+                <td class="trimmed">Trimmed (-24%)</td>
+                <td>Medium</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">GOOGL</td>
+                <td>Alphabet Inc</td>
+                <td>$3,346.22</td>
+                <td>Laffont (3.1%)</td>
+                <td class="trimmed">Trimmed (-38%)</td>
+                <td>Medium</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">AAPL</td>
+                <td>Apple Inc</td>
+                <td>$2,088.45</td>
+                <td>Tepper (4.0%)</td>
+                <td class="new-position">NEW</td>
+                <td>High</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">PTON</td>
+                <td>Peloton Interactive</td>
+                <td>$2,401.82</td>
+                <td>Laffont (0.2%)</td>
+                <td class="new-position">NEW</td>
+                <td>Low</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">TEM</td>
+                <td>Tempus AI</td>
+                <td>$2,406.00</td>
+                <td>Laffont (0.5%)</td>
+                <td class="new-position">NEW</td>
+                <td>Medium</td>
+            </tr>
+            <tr class="overlap">
+                <td class="portfolio-ticker">SMH</td>
+                <td>VanEck Semiconductor ETF</td>
+                <td>$1,376.46</td>
+                <td>Tepper (0.3%)</td>
+                <td class="new-position">NEW</td>
+                <td>Low</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>💡 Key Insights & Themes</h2>
+    
+    <h3>High Conviction Overlaps (Multiple Whales)</h3>
+    <ul>
+        <li><strong>Reddit (RDDT):</strong> Held by both Laffont (5%) and Sundheim (4.55%) - strong validation for your position</li>
+        <li><strong>NVIDIA (NVDA):</strong> Cohen significantly added (+38%), Laffont holds 9.3% despite trimming - AI leader remains core holding</li>
+        <li><strong>Constellation Energy (CEG):</strong> Both Laffont (12.5%) and Aschenbrenner (3.7%) adding - nuclear power for AI data centers</li>
+    </ul>
+
+    <h3>🚨 Major Whale Position Match: Intel (INTC)</h3>
+    <p><strong>Leopold Aschenbrenner's Situational Awareness LP made Intel a MASSIVE 45.7% position ($459M) - NEW in Q1 2025.</strong> This is his largest holding by far and represents a high-conviction bet on Intel's turnaround. You hold $24,879 in INTC.</p>
+
+    <h3>Thematic Concentration</h3>
+    <ul>
+        <li><strong>AI Infrastructure:</strong> Strong overlap in semiconductors, data center plays (CORZ, APLD)</li>
+        <li><strong>Energy/Data Centers:</strong> CEG, VST popular across multiple whales</li>
+        <li><strong>Consumer Tech:</strong> AMZN, AAPL, TSLA remain core positions</li>
+        <li><strong>Special Situations:</strong> PTON, TEM - new distressed/recovery plays</li>
+    </ul>
+
+    <h3>Notable Exits (Watchlist)</h3>
+    <ul>
+        <li><strong>VRT (Vertiv):</strong> Laffont completely exited ($724M position sold) - You still hold $369.97</li>
+    </ul>
+
+    <div class="footer">
+        <p>Report generated on May 14, 2026 from Q1 2025 13F filings | Data sources: SEC EDGAR, Whale Watch research</p>
+        <p>Disclaimer: 13F data represents positions at quarter-end and may not reflect current holdings. This report is for informational purposes only.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-05-06T17:08:00Z",
+  "marketStatus": "open",
+  "marketNote": "Semis extend rally, energy drags",
+  "sp500": {
+    "price": 7341.82,
+    "change": 141.07,
+    "changePct": 1.96,
+    "prevClose": 7200.75,
+    "dayHigh": 7356.44,
+    "dayLow": 7250.18,
+    "ytdReturn": 10.5
+  },
+  "traders": {
+    "shark": {
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "value": 11342.50,
+      "return": 13.43,
+      "vsSPY": 11.47,
+      "pnl": 1342.50,
+      "color": "linear-gradient(135deg, #06b6d4, #0891b2)"
+    },
+    "wolf": {
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "value": 11167.20,
+      "return": 11.67,
+      "vsSPY": 9.71,
+      "pnl": 1167.20,
+      "color": "linear-gradient(135deg, #f59e0b, #d97706)"
+    },
+    "turtle": {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "value": 10864.30,
+      "return": 8.64,
+      "vsSPY": 6.68,
+      "pnl": 864.30,
+      "color": "linear-gradient(135deg, #22c55e, #15803d)"
+    },
+    "owl": {
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value Investing",
+      "value": 10318.40,
+      "return": 3.18,
+      "vsSPY": 1.22,
+      "pnl": 318.40,
+      "color": "linear-gradient(135deg, #8b5cf6, #7c3aed)"
+    },
+    "fox": {
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "value": 9785.60,
+      "return": -2.14,
+      "vsSPY": -4.10,
+      "pnl": -214.40,
+      "color": "linear-gradient(135deg, #ec4899, #db2777)"
+    }
+  },
+  "recentTrades": [
+    {"time": "12:00", "trader": "🦈 Shark", "action": "BUY", "target": "NVDA", "reason": "breakout momentum"},
+    {"time": "11:45", "trader": "🐺 Wolf", "action": "BUY", "target": "XLF", "reason": "financial rotation play"},
+    {"time": "11:30", "trader": "🦊 Fox", "action": "BUY", "target": "XOM", "reason": "energy oversold bounce"},
+    {"time": "11:15", "trader": "🐢 Turtle", "action": "ADD", "target": "AAPL", "reason": "trend continuation"},
+    {"time": "11:00", "trader": "🦉 Owl", "action": "BUY", "target": "WFC", "reason": "undervalued bank"}
+  ],
+  "activeSectors": ["Technology +2.45%", "Healthcare +1.12%", "Energy -0.84%"]
+}

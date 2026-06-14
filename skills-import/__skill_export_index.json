@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "source": "active-profile",
+      "expected_skill_md": 134,
+      "actual_skill_md": 134,
+      "complete": true,
+      "size_bytes": 16961995
+    },
+    {
+      "source": "default-profile",
+      "expected_skill_md": 127,
+      "actual_skill_md": 127,
+      "complete": true,
+      "size_bytes": 9409451
+    },
+    {
+      "source": "builtin",
+      "expected_skill_md": 73,
+      "actual_skill_md": 73,
+      "complete": true,
+      "size_bytes": 5938222
+    },
+    {
+      "source": "optional",
+      "expected_skill_md": 97,
+      "actual_skill_md": 97,
+      "complete": true,
+      "size_bytes": 5841065
+    }
+  ],
+  "destination": "/mnt/c/Users/thadd/Desktop/LLM Skills"
+}

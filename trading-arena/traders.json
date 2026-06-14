@@ -1,0 +1,144 @@
+{
+  "lastUpdate": "2026-05-11T13:30:00Z",
+  "tradingDay": "2026-05-11",
+  "marketStatus": "open",
+  "sp500": {
+    "price": 7382.15,
+    "change": 40.60,
+    "changePct": 0.55,
+    "prevClose": 7341.55,
+    "dayHigh": 7395.20,
+    "dayLow": 7350.40,
+    "ytdReturn": 12.58
+  },
+  "traders": {
+    "shark": {
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "portfolioValue": 12789.45,
+      "return": 27.89,
+      "vsSPY": 15.31,
+      "pnl": 2789.45,
+      "holdings": ["NVDA", "TSLA", "AMD", "AVGO", "TSM", "MU"],
+      "color": "linear-gradient(135deg, #06b6d4, #0891b2)"
+    },
+    "wolf": {
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "portfolioValue": 12376.82,
+      "return": 23.77,
+      "vsSPY": 11.19,
+      "pnl": 2376.82,
+      "holdings": ["XLF", "XLK", "XLI", "AVGO", "SMH"],
+      "color": "linear-gradient(135deg, #f59e0b, #d97706)"
+    },
+    "turtle": {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "portfolioValue": 11928.33,
+      "return": 19.28,
+      "vsSPY": 6.70,
+      "pnl": 1928.33,
+      "holdings": ["AAPL", "MSFT", "NVDA", "QQQ", "GOOGL"],
+      "color": "linear-gradient(135deg, #22c55e, #15803d)"
+    },
+    "owl": {
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value Investing",
+      "portfolioValue": 11147.52,
+      "return": 11.48,
+      "vsSPY": -1.10,
+      "pnl": 1147.52,
+      "holdings": ["BRK.B", "WFC", "JPM", "BAC", "GS"],
+      "color": "linear-gradient(135deg, #8b5cf6, #7c3aed)"
+    },
+    "fox": {
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "portfolioValue": 10245.91,
+      "return": 2.46,
+      "vsSPY": -10.12,
+      "pnl": 245.91,
+      "holdings": ["XLU", "XLE", "CVX", "TLT", "VZ"],
+      "color": "linear-gradient(135deg, #ec4899, #db2777)"
+    }
+  },
+  "recentTrades": [
+    {
+      "time": "13:15",
+      "trader": "Shark",
+      "action": "BUY",
+      "symbol": "MU",
+      "price": 98.45,
+      "reason": "memory chip demand spike"
+    },
+    {
+      "time": "13:10",
+      "trader": "Wolf",
+      "action": "ADD",
+      "symbol": "SMH",
+      "price": 298.75,
+      "reason": "semi sector rotation in play"
+    },
+    {
+      "time": "13:00",
+      "trader": "Turtle",
+      "action": "ADD",
+      "symbol": "GOOGL",
+      "price": 185.30,
+      "reason": "cloud trend continuation"
+    },
+    {
+      "time": "12:45",
+      "trader": "Owl",
+      "action": "HOLD",
+      "symbol": "BRK.B",
+      "price": 518.20,
+      "reason": "fair value range"
+    },
+    {
+      "time": "12:30",
+      "trader": "Fox",
+      "action": "ADD",
+      "symbol": "VZ",
+      "price": 42.15,
+      "reason": "defensive dividend yield"
+    },
+    {
+      "time": "12:15",
+      "trader": "Shark",
+      "action": "ADD",
+      "symbol": "TSLA",
+      "price": 284.55,
+      "reason": "EV momentum building"
+    },
+    {
+      "time": "12:00",
+      "trader": "Wolf",
+      "action": "HOLD",
+      "symbol": "XLK",
+      "price": 245.80,
+      "reason": "tech weight optimal"
+    },
+    {
+      "time": "11:45",
+      "trader": "Turtle",
+      "action": "ADD",
+      "symbol": "AAPL",
+      "price": 208.45,
+      "reason": "trend remains strong"
+    }
+  ],
+  "activeSectors": [
+    "Technology +0.82%",
+    "Semiconductors +2.45%",
+    "Financials +0.15%",
+    "Utilities +0.08%",
+    "Energy -0.35%"
+  ]
+}

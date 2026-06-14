@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a237e"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="100%" style="stop-color:#b8956a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#ffaa00"/>
+      <stop offset="100%" style="stop-color:#ff8c00"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg)" stroke="#3949ab" stroke-width="4"/>
+  
+  <!-- Subtle starfield dots -->
+  <circle cx="120" cy="140" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="400" cy="110" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="380" cy="380" r="2.5" fill="#fff" opacity="0.5"/>
+  <circle cx="130" cy="350" r="1.5" fill="#fff" opacity="0.7"/>
+  <circle cx="200" cy="100" r="1" fill="#fff" opacity="0.5"/>
+  <circle cx="340" cy="420" r="2" fill="#fff" opacity="0.4"/>
+  
+  <!-- Starfleet Delta Insignia (background element) -->
+  <path d="M256 60 L290 170 L256 150 L222 170 Z" fill="url(#gold)" opacity="0.9" filter="url(#glow)"/>
+  
+  <!-- Head silhouette -->
+  <ellipse cx="256" cy="220" rx="70" ry="85" fill="url(#skin)"/>
+  
+  <!-- Pointed ears -->
+  <path d="M186 215 Q170 200 175 180 Q180 170 188 185 L195 205 Z" fill="url(#skin)"/>
+  <path d="M326 215 Q342 200 337 180 Q332 170 324 185 L317 205 Z" fill="url(#skin)"/>
+  
+  <!-- Hair (black bowl cut) -->
+  <path d="M185 200 Q190 130 256 125 Q322 130 327 200 Q325 180 256 165 Q187 180 185 200 Z" fill="#1a1a2e"/>
+  <path d="M185 200 Q180 210 186 225 L190 210 Z" fill="#1a1a2e"/>
+  <path d="M327 200 Q332 210 326 225 L322 210 Z" fill="#1a1a2e"/>
+  
+  <!-- Eyebrows (arched Vulcan style) -->
+  <path d="M200 210 Q220 195 240 210" fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  <path d="M272 210 Q292 195 312 210" fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="220" cy="225" rx="12" ry="8" fill="#fff"/>
+  <circle cx="220" cy="225" r="5" fill="#3e2723"/>
+  <circle cx="222" cy="223" r="2" fill="#fff"/>
+  
+  <ellipse cx="292" cy="225" rx="12" ry="8" fill="#fff"/>
+  <circle cx="292" cy="225" r="5" fill="#3e2723"/>
+  <circle cx="294" cy="223" r="2" fill="#fff"/>
+  
+  <!-- Nose -->
+  <path d="M256 225 L250 255 L256 260 L262 255 Z" fill="#a0826d"/>
+  
+  <!-- Mouth (neutral/logical) -->
+  <line x1="245" y1="275" x2="267" y2="275" stroke="#8d6e63" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Vulcan Salute Hand -->
+  <g transform="translate(256, 380)">
+    <!-- Palm -->
+    <rect x="-35" y="-30" width="70" height="50" rx="10" fill="url(#skin)"/>
+    <!-- Thumb -->
+    <rect x="-38" y="-15" width="16" height="35" rx="8" fill="url(#skin)"/>
+    <!-- Index finger (split left) -->
+    <rect x="-22" y="-70" width="14" height="50" rx="7" fill="url(#skin)"/>
+    <!-- Middle finger (split right) -->
+    <rect x="-6" y="-70" width="14" height="50" rx="7" fill="url(#skin)"/>
+    <!-- Ring finger (together with pinky) -->
+    <rect x="10" y="-50" width="14" height="30" rx="7" fill="url(#skin)"/>
+    <!-- Pinky -->
+    <rect x="26" y="-50" width="14" height="30" rx="7" fill="url(#skin)"/>
+  </g>
+  
+  <!-- "Live Long and Prosper" text arc -->
+  <path id="textArc" d="M 120 430 A 180 180 0 0 0 392 430" fill="none"/>
+  <text fill="#ffd700" font-family="Arial, sans-serif" font-size="18" font-weight="bold" letter-spacing="3">
+    <textPath href="#textArc" startOffset="50%" text-anchor="middle">LIVE LONG AND PROSPER</textPath>
+  </text>
+  
+  <!-- LLAP stylized -->
+  <text x="256" y="485" text-anchor="middle" fill="#ffd700" font-family="monospace" font-size="14" opacity="0.8" letter-spacing="4">🖖</text>
+</svg>

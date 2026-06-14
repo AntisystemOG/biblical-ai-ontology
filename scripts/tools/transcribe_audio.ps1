@@ -1,0 +1,1 @@
+$env:PATH = $env:PATH + ';C:\Users\thada\ffmpeg\bin'\nC:\Python314\python.exe -m whisper 'C:\Users\thada\.openclaw\media\inbound\file_2---f7a5e0a9-51a2-43d8-ac78-289a6c4aadb7.ogg' --model tiny --language English --task transcribe

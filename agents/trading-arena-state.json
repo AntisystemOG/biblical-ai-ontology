@@ -1,0 +1,77 @@
+{
+  "lastUpdated": "2026-05-15T14:30:00-05:00",
+  "sessionDay": 7,
+  "marketStatus": "open",
+  "benchmark": {
+    "spxPrice": 7495.20,
+    "spxChange": 0.64,
+    "totalReturn": 14.78
+  },
+  "traders": {
+    "shark": {
+      "value": 21104.80,
+      "pnl": 11104.80,
+      "pnlPercent": 111.05,
+      "rank": 1,
+      "lastAction": "ADD NVDA +8 shares @ $235.40 on breakout",
+      "holdings": {
+        "NVDA": {"shares": 46, "price": 235.40, "change": 3.25},
+        "AMD": {"shares": 12, "price": 118.50, "change": 2.15},
+        "TSLA": {"shares": 8, "price": 441.80, "change": 1.52}
+      },
+      "cash": 5426.40
+    },
+    "turtle": {
+      "value": 17856.30,
+      "pnl": 7856.30,
+      "pnlPercent": 78.56,
+      "rank": 2,
+      "lastAction": "BUY MSFT +5 shares @ $412.15 - trend continuation",
+      "holdings": {
+        "AAPL": {"shares": 22, "price": 256.80, "change": 1.02},
+        "MSFT": {"shares": 17, "price": 412.15, "change": 1.92},
+        "AVGO": {"shares": 6, "price": 428.50, "change": 1.51}
+      },
+      "cash": 452.20
+    },
+    "wolf": {
+      "value": 17345.60,
+      "pnl": 7345.60,
+      "pnlPercent": 73.46,
+      "rank": 3,
+      "lastAction": "HOLD - energy strength offsetting tech weakness",
+      "holdings": {
+        "XLK": {"shares": 30, "price": 182.40, "change": 1.08},
+        "XLE": {"shares": 45, "price": 52.85, "change": 1.29},
+        "XLF": {"shares": 25, "price": 53.40, "change": 1.04}
+      },
+      "cash": 5142.50
+    },
+    "owl": {
+      "value": 11368.45,
+      "pnl": 1368.45,
+      "pnlPercent": 13.68,
+      "rank": 4,
+      "lastAction": "HOLD - value thesis intact, no compelling trades",
+      "holdings": {
+        "JPM": {"shares": 20, "price": 305.80, "change": 0.78},
+        "BRK.B": {"shares": 10, "price": 475.30, "change": 0.67},
+        "UNH": {"shares": 5, "price": 368.90, "change": -0.42}
+      },
+      "cash": 1795.75
+    },
+    "fox": {
+      "value": 9865.30,
+      "pnl": -134.70,
+      "pnlPercent": -1.35,
+      "rank": 5,
+      "lastAction": "BUY QQQ +15 shares @ $498.20 - tech oversold bounce",
+      "holdings": {
+        "XLU": {"shares": 30, "price": 47.45, "change": 0.64},
+        "QQQ": {"shares": 15, "price": 498.20, "change": 1.25},
+        "TLT": {"shares": 12, "price": 89.20, "change": 0.85}
+      },
+      "cash": 2368.20
+    }
+  }
+}

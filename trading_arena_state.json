@@ -1,0 +1,176 @@
+{
+  "lastUpdate": "2026-05-15T15:30:00Z",
+  "tradingDay": "2026-05-15",
+  "marketStatus": "open",
+  "sp500": {
+    "price": 7385.42,
+    "change": 33.24,
+    "changePct": 0.45,
+    "prevClose": 7352.18,
+    "dayHigh": 7398.15,
+    "dayLow": 7341.80,
+    "ytdReturn": 12.3
+  },
+  "traders": {
+    "shark": {
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "portfolioValue": 12642.18,
+      "return": 26.42,
+      "vsSPY": 14.12,
+      "pnl": 2642.18,
+      "holdings": [
+        "NVDA",
+        "TSLA",
+        "AMD",
+        "AVGO",
+        "TSM",
+        "PLTR"
+      ],
+      "color": "linear-gradient(135deg, #06b6d4, #0891b2)"
+    },
+    "wolf": {
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "portfolioValue": 12115.89,
+      "return": 21.16,
+      "vsSPY": 8.86,
+      "pnl": 2115.89,
+      "holdings": [
+        "XLF",
+        "XLK",
+        "XLI",
+        "NVDA",
+        "XLC"
+      ],
+      "color": "linear-gradient(135deg, #f59e0b, #d97706)"
+    },
+    "turtle": {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "portfolioValue": 11728.55,
+      "return": 17.29,
+      "vsSPY": 4.99,
+      "pnl": 1728.55,
+      "holdings": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "GOOGL"
+      ],
+      "color": "linear-gradient(135deg, #22c55e, #15803d)"
+    },
+    "owl": {
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value Investing",
+      "portfolioValue": 10984.22,
+      "return": 9.84,
+      "vsSPY": -2.46,
+      "pnl": 984.22,
+      "holdings": [
+        "BRK.B",
+        "WFC",
+        "JPM",
+        "BAC",
+        "USB"
+      ],
+      "color": "linear-gradient(135deg, #8b5cf6, #7c3aed)"
+    },
+    "fox": {
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "portfolioValue": 10218.76,
+      "return": 2.19,
+      "vsSPY": -10.11,
+      "pnl": 218.76,
+      "holdings": [
+        "XLU",
+        "XLE",
+        "CVX",
+        "TLT",
+        "VZ"
+      ],
+      "color": "linear-gradient(135deg, #ec4899, #db2777)"
+    }
+  },
+  "recentTrades": [
+    {
+      "time": "10:30",
+      "trader": "Shark",
+      "action": "BUY",
+      "symbol": "PLTR",
+      "price": 118.45,
+      "reason": "AI momentum breakout"
+    },
+    {
+      "time": "10:24",
+      "trader": "Wolf",
+      "action": "ADD",
+      "symbol": "XLC",
+      "price": 78.32,
+      "reason": "communications sector strength"
+    },
+    {
+      "time": "10:18",
+      "trader": "Turtle",
+      "action": "ADD",
+      "symbol": "GOOGL",
+      "price": 184.65,
+      "reason": "trend continuation confirmed"
+    },
+    {
+      "time": "10:12",
+      "trader": "Owl",
+      "action": "BUY",
+      "symbol": "USB",
+      "price": 52.18,
+      "reason": "regional bank value play"
+    },
+    {
+      "time": "10:06",
+      "trader": "Fox",
+      "action": "ADD",
+      "symbol": "VZ",
+      "price": 38.95,
+      "reason": "oversold telecom opportunity"
+    },
+    {
+      "time": "10:00",
+      "trader": "Shark",
+      "action": "ADD",
+      "symbol": "NVDA",
+      "price": 168.85,
+      "reason": "pre-market momentum continues"
+    },
+    {
+      "time": "09:54",
+      "trader": "Wolf",
+      "action": "ADD",
+      "symbol": "XLK",
+      "price": 245.15,
+      "reason": "tech rotation accelerating"
+    },
+    {
+      "time": "09:48",
+      "trader": "Turtle",
+      "action": "HOLD",
+      "symbol": "QQQ",
+      "price": 518.75,
+      "reason": "strong trend intact"
+    }
+  ],
+  "activeSectors": [
+    "Technology +0.82%",
+    "Semiconductors +2.15%",
+    "Financials +0.18%",
+    "Utilities -0.12%",
+    "Energy -0.35%",
+    "Communications +0.55%"
+  ]
+}

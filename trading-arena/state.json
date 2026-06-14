@@ -1,0 +1,100 @@
+{
+  "startDate": "2026-05-08",
+  "startSPYPrice": 731.58,
+  "startValue": 10000,
+  "lastUpdate": "2026-05-08T12:00:00-05:00",
+  "spyPrice": 736.73,
+  "spyChangePct": 0.70,
+  "traders": {
+    "Turtle": {
+      "name": "Turtle",
+      "strategy": "Trend Following",
+      "description": "Rides momentum. Buys on 20-day highs, sells on 10-day lows.",
+      "cash": 3500,
+      "holdings": {
+        "AAPL": {"shares": 3, "cost": 195.50},
+        "NVDA": {"shares": 2, "cost": 118.25},
+        "MSFT": {"shares": 4, "cost": 352.80}
+      },
+      "tradesToday": 2,
+      "lastSignal": "BUY NVDA @ $118.25"
+    },
+    "Shark": {
+      "name": "Shark",
+      "strategy": "Momentum",
+      "description": "Attacks fast movers. High volatility plays.",
+      "cash": 800,
+      "holdings": {
+        "TSLA": {"shares": 8, "cost": 305.20},
+        "COIN": {"shares": 5, "cost": 185.40},
+        "MSTR": {"shares": 2, "cost": 412.00}
+      },
+      "tradesToday": 4,
+      "lastSignal": "BUY MSTR @ $412.00"
+    },
+    "Owl": {
+      "name": "Owl",
+      "strategy": "Value",
+      "description": "Patient value hunter. Dividend aristocrats and beaten-down quality.",
+      "cash": 4800,
+      "holdings": {
+        "JNJ": {"shares": 12, "cost": 158.30},
+        "PG": {"shares": 8, "cost": 168.50},
+        "KO": {"shares": 20, "cost": 72.40}
+      },
+      "tradesToday": 0,
+      "lastSignal": "HOLD"
+    },
+    "Wolf": {
+      "name": "Wolf",
+      "strategy": "Sector Rotation",
+      "description": "Follows institutional money. Rotates between sector ETFs.",
+      "cash": 1200,
+      "holdings": {
+        "XLF": {"shares": 50, "cost": 48.20},
+        "XLE": {"shares": 30, "cost": 88.50},
+        "SMH": {"shares": 8, "cost": 215.40}
+      },
+      "tradesToday": 3,
+      "lastSignal": "SELL XLK / BUY XLF"
+    },
+    "Fox": {
+      "name": "Fox",
+      "strategy": "Contrarian",
+      "description": "Goes against the crowd. Buys fear, sells greed.",
+      "cash": 2800,
+      "holdings": {
+        "INTC": {"shares": 60, "cost": 18.75},
+        "DIS": {"shares": 15, "cost": 98.30},
+        "VZ": {"shares": 25, "cost": 40.80}
+      },
+      "tradesToday": 1,
+      "lastSignal": "BUY INTC @ $18.75"
+    }
+  },
+  "priceCache": {
+    "AAPL": 197.25,
+    "NVDA": 124.50,
+    "MSFT": 358.20,
+    "TSLA": 312.80,
+    "COIN": 178.90,
+    "MSTR": 418.50,
+    "JNJ": 159.80,
+    "PG": 169.30,
+    "KO": 73.15,
+    "XLF": 49.10,
+    "XLE": 89.20,
+    "SMH": 218.75,
+    "INTC": 19.45,
+    "DIS": 99.80,
+    "VZ": 41.20
+  },
+  "tradeHistory": [
+    {"time": "2026-05-08T09:30:00", "trader": "Turtle", "action": "BUY", "symbol": "AAPL", "shares": 3, "price": 195.50},
+    {"time": "2026-05-08T10:15:00", "trader": "Turtle", "action": "BUY", "symbol": "NVDA", "shares": 2, "price": 118.25},
+    {"time": "2026-05-08T09:45:00", "trader": "Shark", "action": "BUY", "symbol": "TSLA", "shares": 8, "price": 305.20},
+    {"time": "2026-05-08T10:30:00", "trader": "Shark", "action": "BUY", "symbol": "COIN", "shares": 5, "price": 185.40},
+    {"time": "2026-05-08T11:00:00", "trader": "Wolf", "action": "SELL", "symbol": "XLK", "shares": 15, "price": 210.50},
+    {"time": "2026-05-08T11:15:00", "trader": "Fox", "action": "BUY", "symbol": "INTC", "shares": 60, "price": 18.75}
+  ]
+}

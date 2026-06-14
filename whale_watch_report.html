@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whale Watch Report - May 13, 2026</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24pt;
+            font-weight: 600;
+        }
+        
+        .header .subtitle {
+            font-size: 12pt;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .header .date {
+            font-size: 10pt;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            background-color: #2c5282;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14pt;
+            font-weight: 600;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: 0;
+        }
+        
+        .section-content {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            padding: 15px;
+            border-radius: 0 0 5px 5px;
+        }
+        
+        .manager-card {
+            background-color: white;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        
+        .manager-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .manager-name {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #1e3a5f;
+        }
+        
+        .manager-fund {
+            font-size: 9pt;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .aum-badge {
+            background-color: #2c5282;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            font-weight: 600;
+        }
+        
+        .holdings-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .holdings-table th {
+            background-color: #edf2f7;
+            color: #2d3748;
+            font-weight: 600;
+            text-align: left;
+            padding: 8px 10px;
+            font-size: 9pt;
+            border-bottom: 2px solid #cbd5e0;
+        }
+        
+        .holdings-table td {
+            padding: 6px 10px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 9pt;
+        }
+        
+        .holdings-table tr:hover {
+            background-color: #f7fafc;
+        }
+        
+        .activity {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 8pt;
+            font-weight: 600;
+        }
+        
+        .activity-new {
+            background-color: #48bb78;
+            color: white;
+        }
+        
+        .activity-added {
+            background-color: #4299e1;
+            color: white;
+        }
+        
+        .activity-reduced {
+            background-color: #ed8936;
+            color: white;
+        }
+        
+        .activity-exited {
+            background-color: #f56565;
+            color: white;
+        }
+        
+        .activity-held {
+            background-color: #718096;
+            color: white;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .summary-stat {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        
+        .summary-stat-value {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #2c5282;
+        }
+        
+        .summary-stat-label {
+            font-size: 9pt;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 8pt;
+            color: #718096;
+            text-align: center;
+        }
+        
+        .disclaimer {
+            background-color: #fffaf0;
+            border: 1px solid #ed8936;
+            border-radius: 6px;
+            padding: 12px 15px;
+            font-size: 8pt;
+            color: #744210;
+            margin-top: 20px;
+        }
+        
+        .overlap-highlight {
+            background-color: #c6f6d5 !important;
+            font-weight: 600;
+        }
+        
+        .top-holding {
+            font-weight: 600;
+            color: #2c5282;
+        }
+        
+        .sector-tag {
+            display: inline-block;
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 8pt;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🐋 Whale Watch</h1>
+        <div class="subtitle">Q4 2025 Hedge Fund 13F Holdings Analysis</div>
+        <div class="date">Report Date: May 13, 2026 | Data Source: SEC 13F Filings</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">📊 Executive Summary</div>
+        <div class="section-content">
+            <div class="summary-grid">
+                <div class="summary-stat">
+                    <div class="summary-stat-value">$127.3B</div>
+                    <div class="summary-stat-label">Combined 13F AUM</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="summary-stat-value">5</div>
+                    <div class="summary-stat-label">Whales Tracked</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="summary-stat-value">~200</div>
+                    <div class="summary-stat-label">Total Positions</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="summary-stat-value">Q4 2025</div>
+                    <div class="summary-stat-label">Filing Period</div>
+                </div>
+            </div>
+            
+            <p><strong>Key Themes This Quarter:</strong></p>
+            <ul>
+                <li><strong>AI Infrastructure Pivot:</strong> Situational Awareness (Leopold Aschenbrenner) aggressively repositioned from chip designers (NVDA, AVGO) to physical infrastructure (power, data centers, Bitcoin miners)</li>
+                <li><strong>Tech Continuation:</strong> Coatue maintained heavy concentration in mega-cap tech (GOOGL, TSM, MSFT, META)</li>
+                <li><strong>Contrarian Bets:</strong> David Tepper added South Korea exposure (EWY) and packaging (Ball Corp)</li>
+                <li><strong>Industrial Rotation:</strong> D1 Capital showing largest industrials allocation at 27%</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🎯 Fund Manager Holdings</div>
+        <div class="section-content">
+            
+            <!-- Steven Cohen / Point72 -->
+            <div class="manager-card">
+                <div class="manager-header">
+                    <div>
+                        <div class="manager-name">Steven Cohen</div>
+                        <div class="manager-fund">Point72 Asset Management</div>
+                    </div>
+                    <span class="aum-badge">$63.8B AUM</span>
+                </div>
+                <p style="font-size: 9pt; color: #666; margin-bottom: 10px;">
+                    <strong>Performance Q4 2025:</strong> +7.55% | <strong>Holdings:</strong> 2,117 positions | <strong>Strategy:</strong> Multi-strategy, highly diversified
+                </p>
+                <p style="font-size: 9pt; margin-bottom: 10px;">
+                    <strong>Top Concentrated Holdings:</strong> NVDA (2.15%), TSM (1.63%), AMZN (1.40%), MSFT (1.16%), ANET (1.14%)
+                </p>
+                <p style="font-size: 9pt; color: #2c5282; font-weight: 600;">
+                    🔍 View: Cohen maintains massive diversification with tech leaning. Notable: Arista Networks (ANET) in top 5 suggests continued conviction in networking infrastructure.
+                </p>
+            </div>
+
+            <!-- Philippe Laffont / Coatue -->
+            <div class="manager-card">
+                <div class="manager-header">
+                    <div>
+                        <div class="manager-name">Philippe Laffont</div>
+                        <div class="manager-fund">Coatue Management LLC</div>
+                    </div>
+                    <span class="aum-badge">$40.0B AUM</span>
+                </div>
+                <p style="font-size: 9pt; color: #666; margin-bottom: 10px;">
+                    <strong>Performance Q4 2025:</strong> -0.81% | <strong>Holdings:</strong> 52 positions | <strong>Top 10 Concentration:</strong> ~60%
+                </p>
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>Ticker</th>
+                            <th>Company</th>
+                            <th>Portfolio %</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="top-holding">GOOGL</td>
+                            <td>Alphabet Inc.</td>
+                            <td>~8%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">TSM</td>
+                            <td>Taiwan Semiconductor</td>
+                            <td>~7%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">MSFT</td>
+                            <td>Microsoft Corp</td>
+                            <td>~6%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">META</td>
+                            <td>Meta Platforms</td>
+                            <td>~5%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">AMZN</td>
+                            <td>Amazon.com</td>
+                            <td>~5%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td>AMAT</td>
+                            <td>Applied Materials</td>
+                            <td>—</td>
+                            <td><span class="activity activity-added">+80%</span></td>
+                        </tr>
+                        <tr>
+                            <td>SPOT</td>
+                            <td>Spotify</td>
+                            <td>—</td>
+                            <td><span class="activity activity-added">+35%</span></td>
+                        </tr>
+                        <tr>
+                            <td>NFLX</td>
+                            <td>Netflix</td>
+                            <td>—</td>
+                            <td><span class="activity activity-added">+60%</span></td>
+                        </tr>
+                        <tr>
+                            <td>DASH</td>
+                            <td>DoorDash</td>
+                            <td>—</td>
+                            <td><span class="activity activity-added">+80%</span></td>
+                        </tr>
+                        <tr>
+                            <td>NTRA</td>
+                            <td>Natera Inc</td>
+                            <td>2.55%</td>
+                            <td><span class="activity activity-new">NEW</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 9pt; color: #c53030; margin-top: 8px;">
+                    <strong>Exits:</strong> BABA, CRWV, KKR, TEAM, HNGE, INTU
+                </p>
+                <p style="font-size: 9pt; color: #2c5282; font-weight: 600; margin-top: 8px;">
+                    🔍 View: Coatue rotating within tech — cutting Chinese exposure (BABA), adding semiconductor equipment (AMAT +80%). Healthcare/genomics (NTRA) as new bet.
+                </p>
+            </div>
+
+            <!-- Daniel Sundheim / D1 Capital -->
+            <div class="manager-card">
+                <div class="manager-header">
+                    <div>
+                        <div class="manager-name">Daniel Sundheim</div>
+                        <div class="manager-fund">D1 Capital Partners</div>
+                    </div>
+                    <span class="aum-badge">$10.7B AUM</span>
+                </div>
+                <p style="font-size: 9pt; color: #666; margin-bottom: 10px;">
+                    <strong>Performance Q4 2025:</strong> +2.17% | <strong>Holdings:</strong> 42 positions | <strong>Sector Focus:</strong> Industrials (27%), Tech (15%)
+                </p>
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Ticker</th>
+                            <th>Company</th>
+                            <th>Portfolio %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="top-holding">CLH</td>
+                            <td>Clean Harbors Inc</td>
+                            <td>7.85%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="top-holding">FLS</td>
+                            <td>Flowserve Corp</td>
+                            <td>6.39%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="top-holding">JHX</td>
+                            <td>James Hardie Industries</td>
+                            <td>6.09%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="top-holding">RDDT</td>
+                            <td>Reddit Inc</td>
+                            <td>5.86%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="top-holding">SE</td>
+                            <td>Sea Ltd</td>
+                            <td>5.35%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>KNX</td>
+                            <td>Knight-Swift Transportation</td>
+                            <td>4.86%</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>KRC</td>
+                            <td>Kilroy Realty Corp</td>
+                            <td>4.68%</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>USFD</td>
+                            <td>US Foods Holding</td>
+                            <td>3.88%</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>SCHW</td>
+                            <td>Charles Schwab</td>
+                            <td>3.79%</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>SHW</td>
+                            <td>Sherwin-Williams</td>
+                            <td>3.75%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 9pt; color: #2c5282; font-weight: 600; margin-top: 8px;">
+                    🔍 View: Heavy industrials/cyclicals tilt. Reddit (RDDT) as top 5 holding signals conviction in social/platform plays. New positions: SHW, EPD, VST, CEG.
+                </p>
+            </div>
+
+            <!-- David Tepper / Appaloosa -->
+            <div class="manager-card">
+                <div class="manager-header">
+                    <div>
+                        <div class="manager-name">David Tepper</div>
+                        <div class="manager-fund">Appaloosa Management</div>
+                    </div>
+                    <span class="aum-badge">$6.9B AUM</span>
+                </div>
+                <p style="font-size: 9pt; color: #666; margin-bottom: 10px;">
+                    <strong>Performance Q4 2025:</strong> +0.36% | <strong>Holdings:</strong> 39 positions | <strong>Top 10 Concentration:</strong> ~55%
+                </p>
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>Ticker</th>
+                            <th>Company</th>
+                            <th>Portfolio %</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="top-holding">BABA</td>
+                            <td>Alibaba Group</td>
+                            <td>10.88%</td>
+                            <td><span class="activity activity-reduced">-20%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">GOOG</td>
+                            <td>Alphabet Inc</td>
+                            <td>8.10%</td>
+                            <td><span class="activity activity-added">+29%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">AMZN</td>
+                            <td>Amazon.com</td>
+                            <td>7.26%</td>
+                            <td><span class="activity activity-reduced">-13%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">MU</td>
+                            <td>Micron Technology</td>
+                            <td>6.18%</td>
+                            <td><span class="activity activity-added">+200%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">META</td>
+                            <td>Meta Platforms</td>
+                            <td>5.72%</td>
+                            <td><span class="activity activity-added">+62%</span></td>
+                        </tr>
+                        <tr>
+                            <td>TSM</td>
+                            <td>Taiwan Semiconductor</td>
+                            <td>4.96%</td>
+                            <td><span class="activity activity-added">+7%</span></td>
+                        </tr>
+                        <tr>
+                            <td>NVDA</td>
+                            <td>NVIDIA Corp</td>
+                            <td>4.58%</td>
+                            <td><span class="activity activity-reduced">-11%</span></td>
+                        </tr>
+                        <tr>
+                            <td>WHR</td>
+                            <td>Whirlpool Corp</td>
+                            <td>4.07%</td>
+                            <td><span class="activity activity-reduced">-29%</span></td>
+                        </tr>
+                        <tr>
+                            <td>NRG</td>
+                            <td>NRG Energy</td>
+                            <td>3.77%</td>
+                            <td><span class="activity activity-reduced">-12%</span></td>
+                        </tr>
+                        <tr>
+                            <td>MSFT</td>
+                            <td>Microsoft Corp</td>
+                            <td>3.49%</td>
+                            <td><span class="activity activity-added">+8%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 9pt; color: #38a169; margin-top: 8px;">
+                    <strong>New Positions:</strong> EWY (South Korea ETF - $182M), BALL (Ball Corp - $64M)
+                </p>
+                <p style="font-size: 9pt; color: #c53030; margin-top: 8px;">
+                    <strong>Full Exits:</strong> Block (SQ), Caesars (CZR), Citizens Financial (CFG), Comerica (CMA)
+                </p>
+                <p style="font-size: 9pt; color: #2c5282; font-weight: 600; margin-top: 8px;">
+                    🔍 View: Aggressive rotation — adding memory (MU +200%), adding Alphabet (+29%), trimming Chinese exposure. Macro bet on South Korea (EWY) suggests value hunting in beaten-down Asian markets.
+                </p>
+            </div>
+
+            <!-- Leopold Aschenbrenner / Situational Awareness -->
+            <div class="manager-card">
+                <div class="manager-header">
+                    <div>
+                        <div class="manager-name">Leopold Aschenbrenner</div>
+                        <div class="manager-fund">Situational Awareness LP</div>
+                    </div>
+                    <span class="aum-badge">$4.2B AUM</span>
+                </div>
+                <p style="font-size: 9pt; color: #666; margin-bottom: 10px;">
+                    <strong>Performance Q4 2025:</strong> +47% (H1 2025) | <strong>Holdings:</strong> 24 positions | <strong>Theme:</strong> AI Infrastructure / AGI Buildout
+                </p>
+                <p style="font-size: 9pt; margin-bottom: 10px;">
+                    <strong>Fund Thesis:</strong> Betting on AGI by 2027. Heavy pivot from chip designers to physical infrastructure layer.
+                </p>
+                <table class="holdings-table">
+                    <thead>
+                        <tr>
+                            <th>Ticker</th>
+                            <th>Company</th>
+                            <th>Portfolio %</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="top-holding">BE</td>
+                            <td>Bloom Energy</td>
+                            <td>20.6%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">CRWV</td>
+                            <td>CoreWeave</td>
+                            <td>18.2%</td>
+                            <td><span class="activity activity-added">+672%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">LITE</td>
+                            <td>Lumentum</td>
+                            <td>11.2%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">CORZ</td>
+                            <td>Core Scientific</td>
+                            <td>9.8%</td>
+                            <td><span class="activity activity-added">+42%</span></td>
+                        </tr>
+                        <tr>
+                            <td class="top-holding">IREN</td>
+                            <td>IREN (Bitcoin Miner)</td>
+                            <td>7.7%</td>
+                            <td><span class="activity activity-added">+21%</span></td>
+                        </tr>
+                        <tr>
+                            <td>APLD</td>
+                            <td>Applied Digital</td>
+                            <td>6.5%</td>
+                            <td><span class="activity activity-added">+87%</span></td>
+                        </tr>
+                        <tr>
+                            <td>SNDK</td>
+                            <td>SanDisk</td>
+                            <td>5.9%</td>
+                            <td><span class="activity activity-added">+817%</span></td>
+                        </tr>
+                        <tr>
+                            <td>CIFR</td>
+                            <td>Cipher Mining</td>
+                            <td>3.6%</td>
+                            <td><span class="activity activity-held">Held</span></td>
+                        </tr>
+                        <tr>
+                            <td>EQT</td>
+                            <td>EQT Corp (Nat Gas)</td>
+                            <td>3.1%</td>
+                            <td><span class="activity activity-added">+104%</span></td>
+                        </tr>
+                        <tr>
+                            <td>COHR</td>
+                            <td>Coherent</td>
+                            <td>2.1%</td>
+                            <td><span class="activity activity-added">+211%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 9pt; color: #38a169; margin-top: 8px;">
+                    <strong>New Positions:</strong> KRC (Kilroy Realty), WYFI (WhiteFiber), PSIX (Power Solutions), CLSK (CleanSpark), BITF (Bitfarms), LBRT (Liberty Energy)
+                </p>
+                <p style="font-size: 9pt; color: #c53030; margin-top: 8px;">
+                    <strong>Full Exits:</strong> NVDA (put options), AVGO (puts), TSM (puts), MU (puts), VST, GLXY, WDC, STX
+                </p>
+                <p style="font-size: 9pt; color: #2c5282; font-weight: 600; margin-top: 8px;">
+                    🔍 View: <em>Dramatic repositioning.</em> Exited all semiconductor put hedges (NVDA, AVGO, TSM, MU) — no longer sees downside risk. Doubling down on physical AI infrastructure: power generation (BE, EQT), GPU cloud (CRWV), Bitcoin miners pivoting to AI (CORZ, IREN, APLD), data center real estate (KRC). Conviction: AGI bottleneck shifted from chips to power, cooling, and data center capacity.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">🔎 Cross-Manager Conviction Overlaps</div>
+        <div class="section-content">
+            <p><strong>High-Conviction Overlaps (3+ Whales):</strong></p>
+            <ul>
+                <li><strong>GOOGL/GOOG:</strong> Held by Tepper (8.1%), Cohen (1.4%), Coatue (~8%) — Universal mega-cap tech conviction</li>
+                <li><strong>TSM:</strong> Held by Tepper (4.96%), Cohen (1.63%), Coatue (~7%) — AI supply chain essential</li>
+                <li><strong>META:</strong> Held by Tepper (5.72%), Coatue (~5%) — AI monetization thesis</li>
+                <li><strong>MSFT:</strong> Held by Tepper (3.49%), Cohen (1.16%), Coatue (~6%) — Cloud/AI infrastructure</li>
+            </ul>
+            
+            <p style="margin-top: 15px;"><strong>Emerging Consensus:</strong></p>
+            <ul>
+                <li><strong>Data Center Real Estate:</strong> Both D1 (KRC 4.68%) and SIT (KRC new position) building positions</li>
+                <li><strong>Power/Energy:</strong> SIT (BE 20.6%, EQT 3.1%), Tepper trimming NRG — divergence on utilities</li>
+                <li><strong>Memory/Semis:</strong> Tepper +200% on MU, Aschenbrenner exited MU puts, Coatue +80% on AMAT — mixed but positive</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">⚠️ Risk Alerts & Notable Moves</div>
+        <div class="section-content">
+            <table class="holdings-table">
+                <thead>
+                    <tr>
+                        <th>Manager</th>
+                        <th>Action</th>
+                        <th>Signal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Aschenbrenner (SIT)</strong></td>
+                        <td>Exited NVDA puts entirely</td>
+                        <td>No longer hedging chip downside — believes correction complete</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tepper (Appaloosa)</strong></td>
+                        <td>New position EWY (South Korea)</td>
+                        <td>Contrarian macro bet on beaten-down Asian market</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coatue</strong></td>
+                        <td>Exited BABA, trimmed Chinese exposure</td>
+                        <td>Reducing geopolitical/geographic risk</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aschenbrenner (SIT)</strong></td>
+                        <td>+672% CoreWeave position</td>
+                        <td>Maximum conviction on GPU cloud infrastructure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tepper (Appaloosa)</strong></td>
+                        <td>+200% Micron position</td>
+                        <td>Memory cycle bottom call</td>
+                    </tr>
+                    <tr>
+                        <td><strong>D1 Capital</strong></td>
+                        <td>Top 3 positions in industrials</td>
+                        <td>Cyclical recovery bet vs tech concentration</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> This report is generated from publicly available 13F filings with the SEC. 13F filings are reported 45 days after quarter-end and may not reflect current positions. Not all holdings are disclosed (derivatives, short positions, non-13F securities excluded). This is not investment advice. Past performance does not guarantee future results.
+    </div>
+
+    <div class="footer">
+        Whale Watch Report | Generated by Spock AI | Data Source: SEC EDGAR 13F Filings (Q4 2025)<br>
+        Report Path: C:\Users\thadd\OneDrive\Desktop\Spocks Reports\whale_watch\2026-05-13_whale_watch.pdf
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "lastUpdated": "2026-05-08T16:00:00Z",
+  "marketData": {
+    "sp500": {
+      "price": 7386.23,
+      "change": 49.12,
+      "changePercent": 0.67,
+      "dayHigh": 7397.56,
+      "dayLow": 7362.97,
+      "prevClose": 7337.11
+    },
+    "timestamp": "2026-05-08T16:00:00Z"
+  },
+  "traders": [
+    {
+      "name": "Shark",
+      "strategy": "Momentum",
+      "startingBalance": 10000,
+      "currentBalance": 10428,
+      "dayChange": 0.89,
+      "totalReturn": 4.28,
+      "positions": [
+        {"symbol": "NVDA", "allocation": 35, "momentum": "strong"},
+        {"symbol": "TSLA", "allocation": 25, "momentum": "moderate"},
+        {"symbol": "AMD", "allocation": 20, "momentum": "strong"},
+        {"symbol": "CASH", "allocation": 20}
+      ],
+      "signal": "🚀 Riding momentum wave — tech surge paying off",
+      "trades": 3
+    },
+    {
+      "name": "Wolf",
+      "strategy": "Sector Rotation",
+      "startingBalance": 10000,
+      "currentBalance": 10356,
+      "dayChange": 0.74,
+      "totalReturn": 3.56,
+      "positions": [
+        {"symbol": "XLK", "allocation": 40, "sector": "Technology"},
+        {"symbol": "XLC", "allocation": 30, "sector": "Communication"},
+        {"symbol": "XLF", "allocation": 20, "sector": "Financials"},
+        {"symbol": "CASH", "allocation": 10}
+      ],
+      "signal": "🔄 Rotated into tech early — sector call paying off",
+      "trades": 2
+    },
+    {
+      "name": "Turtle",
+      "strategy": "Trend Following",
+      "startingBalance": 10000,
+      "currentBalance": 10294,
+      "dayChange": 0.52,
+      "totalReturn": 2.94,
+      "positions": [
+        {"symbol": "SPY", "allocation": 60, "trend": "bullish"},
+        {"symbol": "QQQ", "allocation": 30, "trend": "bullish"},
+        {"symbol": "CASH", "allocation": 10}
+      ],
+      "signal": "📈 Trend confirmed — scaling into broad market exposure",
+      "trades": 1
+    },
+    {
+      "name": "Owl",
+      "strategy": "Value",
+      "startingBalance": 10000,
+      "currentBalance": 10118,
+      "dayChange": 0.31,
+      "totalReturn": 1.18,
+      "positions": [
+        {"symbol": "BRK.B", "allocation": 30, "pe": "low"},
+        {"symbol": "JPM", "allocation": 25, "pe": "fair"},
+        {"symbol": "XOM", "allocation": 20, "pe": "low"},
+        {"symbol": "PG", "allocation": 15, "pe": "fair"},
+        {"symbol": "CASH", "allocation": 10}
+      ],
+      "signal": "🦉 Patient accumulation — quality over speed",
+      "trades": 1
+    },
+    {
+      "name": "Fox",
+      "strategy": "Contrarian",
+      "startingBalance": 10000,
+      "currentBalance": 9847,
+      "dayChange": -0.23,
+      "totalReturn": -1.53,
+      "positions": [
+        {"symbol": "SQQQ", "allocation": 40, "bet": "correction"},
+        {"symbol": "TLT", "allocation": 30, "bet": "rotation"},
+        {"symbol": "GLD", "allocation": 20, "bet": "safety"},
+        {"symbol": "CASH", "allocation": 10}
+      ],
+      "signal": "🦊 Hedging for pullback — conviction tested today",
+      "trades": 2
+    }
+  ],
+  "history": [
+    {"date": "2026-05-08T09:30:00Z", "sp500": 7337.11, "sharks": 10000, "wolf": 10000, "turtle": 10000, "owl": 10000, "fox": 10000},
+    {"date": "2026-05-08T11:00:00Z", "sp500": 7386.23, "sharks": 10428, "wolf": 10356, "turtle": 10294, "owl": 10118, "fox": 9847}
+  ]
+}

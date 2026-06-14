@@ -1,0 +1,69 @@
+{
+  "lastUpdate": "2026-05-15T12:30:00-05:00",
+  "sp500": {
+    "price": 7485.20,
+    "change": -47.60,
+    "changePercent": -0.63,
+    "dayLow": 7458.30,
+    "dayHigh": 7548.90
+  },
+  "traders": {
+    "shark": {
+      "portfolioValue": 25845.30,
+      "return": 158.45,
+      "vsSP500": 121.25,
+      "rank": 1,
+      "strategy": "Momentum",
+      "holdings": ["NVDA", "META", "GOOGL", "AMZN", "TSLA"],
+      "cash": 720.30,
+      "action": "Trimmed NVDA position on morning strength, locked in +2.8% gain"
+    },
+    "turtle": {
+      "portfolioValue": 18125.80,
+      "return": 81.26,
+      "vsSP500": 44.06,
+      "rank": 3,
+      "strategy": "Trend Following",
+      "holdings": ["XLK", "VGT", "SMH", "ARKK", "QCLN"],
+      "cash": 985.80,
+      "action": "Tightened stops on tech positions, trend still intact"
+    },
+    "wolf": {
+      "portfolioValue": 23510.90,
+      "return": 135.11,
+      "vsSP500": 97.91,
+      "rank": 2,
+      "strategy": "Sector Rotation",
+      "holdings": ["XLK", "XLC", "VGT", "QQQ"],
+      "cash": 1280.90,
+      "action": "Added to XLK on dip, rotation timing paying off"
+    },
+    "owl": {
+      "portfolioValue": 12495.60,
+      "return": 24.96,
+      "vsSP500": -12.24,
+      "rank": 4,
+      "strategy": "Value",
+      "holdings": ["BRK.B", "JNJ", "PG", "KO", "VZ"],
+      "cash": 2295.60,
+      "action": "Added to JNJ on weakness - trading at attractive valuation"
+    },
+    "fox": {
+      "portfolioValue": 9875.20,
+      "return": -1.25,
+      "vsSP500": -37.44,
+      "rank": 5,
+      "strategy": "Contrarian",
+      "holdings": ["XLU", "XLP", "PFE", "WBA", "T"],
+      "cash": 3675.20,
+      "action": "XLU outperforming on risk-off sentiment, thesis validating"
+    }
+  },
+  "marketConditions": {
+    "sentiment": "cautious",
+    "vix": 15.8,
+    "note": "S&P 500 pulls back 0.63% to 7,485.20 after hitting record highs. Inflation concerns and Middle East tensions weighing on sentiment. VIX jumps to 15.8. Tech seeing profit-taking while defensive sectors catching bids. Wolf's sector rotation strategy benefiting from today's volatility."
+  },
+  "sessionStart": "2026-05-08",
+  "startingCapital": 10000
+}

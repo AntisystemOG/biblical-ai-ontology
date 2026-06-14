@@ -1,0 +1,69 @@
+{
+  "sessionStart": "2026-05-08",
+  "lastUpdate": "2026-05-14T09:30:00-05:00",
+  "marketOpen": true,
+  "sp500": {
+    "price": 7461.20,
+    "change": 13.40,
+    "changePercent": 0.18,
+    "sessionStartPrice": 6525.00
+  },
+  "traders": [
+    {
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "portfolioValue": 19628.40,
+      "totalReturn": 96.28,
+      "vsSP500": 81.75,
+      "rank": 1,
+      "lastAction": "ADD NVDA +5 shares @ $226.50, SELL META -8 shares @ $525.00",
+      "holdings": {"NVDA": 25, "META": 12, "TSLA": 8, "AVGO": 5}
+    },
+    {
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "portfolioValue": 17315.60,
+      "totalReturn": 73.16,
+      "vsSP500": 58.63,
+      "rank": 2,
+      "lastAction": "ADD SMH +15 shares @ $175.20, TRIM XLE -20 shares @ $52.80",
+      "holdings": {"SMH": 45, "XLE": 25, "XLF": 30, "IGV": 20}
+    },
+    {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "portfolioValue": 15445.80,
+      "totalReturn": 54.46,
+      "vsSP500": 39.93,
+      "rank": 3,
+      "lastAction": "ADD QQQ +10 shares @ $488.50",
+      "holdings": {"QQQ": 30, "SPY": 15, "VGT": 20}
+    },
+    {
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value Investing",
+      "portfolioValue": 11125.50,
+      "totalReturn": 11.26,
+      "vsSP500": -3.27,
+      "rank": 4,
+      "lastAction": "ADD BRK.B +3 shares @ $495.00",
+      "holdings": {"BRK.B": 8, "JPM": 12, "JNJ": 25, "PG": 18, "KO": 30}
+    },
+    {
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "portfolioValue": 9285.00,
+      "totalReturn": -7.15,
+      "vsSP500": -21.68,
+      "rank": 5,
+      "lastAction": "ADD XBI +20 shares @ $78.50 (biotech bottom-fishing)",
+      "holdings": {"XBI": 50, "SQQQ": 40, "TLT": 25, "GDX": 30}
+    }
+  ],
+  "marketCommentary": "Strong opening as tech stocks surge on AI infrastructure spending optimism. Nvidia breaks above $225 resistance. Healthcare showing weakness with profit-taking in biotech. Bond yields ticking higher, pressuring rate-sensitive sectors."
+}

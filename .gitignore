@@ -1,0 +1,14 @@
+.openclaw/
+.clawhub/
+temp/
+logs/
+cron_logs/
+cron-logs/
+*.log
+*.tmp
+*.lock
+.temp_old_memory.md
+temp_*.wav
+temp_*.html
+temp_*.json
+temp_*.py
