@@ -17,9 +17,10 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - Status: Working
 
 ### Python 3.14
-- Location: `C:\Python314\python.exe`
-- Packages: torch, whisper, numpy, pandas, pyannote.audio, speechbrain, torchaudio
-- Status: Working
+- Location: `C:\Users\thadd\AppData\Local\Programs\Python\Python314\python.exe`
+  - Packages: torch, whisper, numpy, pandas, pyannote.audio, speechbrain, torchaudio
+  - Status: Working
+  - Note: Previous path `C:\Python314\python.exe` is stale; use the AppData path above.
 
 ### Ollama (✅ Running)
 - Location: `C:\Users\thada\AppData\Local\Programs\Ollama`
@@ -35,6 +36,31 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - Status: Models loading on first use
 - Security: Verifies 95%+ voice similarity before sensitive actions
 - Location: voice_biometric_auth.py in workspace
+
+## AI Tools and Skills Library (Updated 2026-08-07)
+
+- **Location:** `C:\AI Projects\AI Tools and Skills`
+- **Purpose:** Consolidated reference library of reusable skills, tools, plugins, and MCP patterns from OpenClaw, Claude, Codex, Hermes, Agents, and Hermes-Web-UI.
+- **Rule:** Check here first before building anything new; reuse existing capabilities whenever possible.
+- **Key files:** `README.md` (full catalog), `manifest.json` (skill index), `AGENTS.md` (maintenance rules).
+- Notable custom skills/tools:
+  - `industrial-app-build-protocol` — no-phantom PyInstaller/compile workflow.
+  - `ab-logix-l5x-analysis` / `pycomm3-pyside6-plc-monitor` — Rockwell PLC tooling.
+  - `codex-vision` — image review via Codex.
+  - `master-config-restore` / `snapshot` — Windows + AI-tools snapshot/restore.
+  - `smart-home-workflow` / `smart-home-ui` — Smart Home project maintenance.
+  - `Codex/tools/image-inspector` — local image metadata/ASCII preview for Codex.
+  - `Codex/tools/configure-codex-kimi` — point Codex at Moonshot Kimi 2.7.
+  - `Codex/tools/ollama-image-describer` — local Ollama vision image describer.
+
+## Project Folders (Updated 2026-08-07)
+
+All AI projects are now under `C:\AI Projects`. Active ones to remember:
+- `MagneMotionMonitor` — PySide6 desktop monitor for Rockwell/MagneMotion LITE.
+- `Degater PLC Tool BST33 and 35` — PySide6 desktop app for Micro870 PLC diagnostics.
+- `Smart Home` — Commercial smart-home platform (Store + UI + Gateway).
+- `Scheduled Jobs` — utility/project folder (inspect as needed).
+- `Wittman Boot Disk` — utility/project folder (inspect as needed).
 
 ## Local Systems Built
 

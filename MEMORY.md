@@ -253,6 +253,32 @@ See: INVESTING.md (tracks learning & personal plan)
 
 ---
 
+## AI Projects Root (Updated 2026-08-07)
+
+**All AI projects now live under `C:\AI Projects`.** (Previously scattered in Documents/claude-projects, Documents/PLCTools, etc.)
+
+**Consolidated skill/tool library:** `C:\AI Projects\AI Tools and Skills`
+- Holds curated copies of skills, tools, plugins, and MCP patterns from OpenClaw, Claude, Codex, Hermes, Agents, and Hermes-Web-UI.
+- **Rules:** Check here first before building anything new; reuse existing capabilities; add under the correct app folder; update `manifest.json` and `README.md` after changes.
+- Notable custom skills:
+  - `industrial-app-build-protocol` — PyInstaller/compile build protocol to prevent phantom execution and cross-OS build failures.
+  - `ab-logix-l5x-analysis`, `pycomm3-pyside6-plc-monitor` — PLC / Rockwell tooling.
+  - `codex-vision` — Send images to Codex for review/generation.
+  - `master-config-restore` / `snapshot` — Windows + AI-tools snapshot and restore.
+  - `smart-home-workflow`, `smart-home-ui` — Smart Home project maintenance and UI assets.
+
+## Active Projects in `C:\AI Projects` (Updated 2026-08-07)
+
+| Project | Folder | Type | Notes |
+|---|---|---|---|
+| MagneMotionMonitor | `C:\AI Projects\MagneMotionMonitor` | PySide6 desktop app | Monitors Rockwell/MagneMotion LITE at S7000 Boxing station; see `PROJECT_MEMORY.md` |
+| Degater PLC Tool BST33/35 | `C:\AI Projects\Degater PLC Tool BST33 and 35` | PySide6 desktop app | Allen-Bradley Micro870 diagnostics, I/O, timeline, ladder ref; see `PROJECT_MEMORY.md` |
+| Smart Home | `C:\AI Projects\Smart Home` | Commercial smart-home platform | Store + User Interface + Gateway; Firebase project `smart-home-interface-a0a91`; see `MEMORY.md` |
+| Scheduled Jobs | `C:\AI Projects\Scheduled Jobs` | — | TBD / inspect |
+| Wittman Boot Disk | `C:\AI Projects\Wittman Boot Disk` | — | TBD / inspect |
+| Thompson Family App | `C:\AI Projects\Thompson Family App` | — | Re-copy of family app project |
+| PLCTools | `C:\AI Projects\PLCTools` | — | Older copy; **Degater work is in `Degater PLC Tool BST33 and 35`, not here** |
+
 ## Important Files
 
 - **SOUL.md** — Who I am (Vulcan logic + Christian respect)
