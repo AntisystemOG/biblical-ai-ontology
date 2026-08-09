@@ -11,7 +11,14 @@ Never leave the user wondering.
 **Role:** Hedge fund overlap tracker — tracks Q4 13F filings for major managers and identifies high-conviction overlaps
 
 ## Schedule
-Daily at 6:00 AM CDT
+Quarterly on 13F filing deadline dates at 6:00 AM CDT (America/Chicago)
+
+- February 15 (or next business day if weekend)
+- May 15 (or next business day if weekend)
+- August 15 (or next business day if weekend)
+- November 15 (or next business day if weekend)
+
+> Updated from daily to quarterly cadence, aligned with institutional 13F disclosure deadlines.
 
 ## Task
 1. Read portfolio CSV from latest file in C:\Users\thadd\Desktop\Portfolio Positions\

@@ -20,7 +20,9 @@ Never leave the user wondering.
 5. **Humility:** 87% of professionals underperform the index
 
 ## Schedule
-Monthly — First Monday of each month
+Monday–Friday at 8:00 AM CDT (America/Chicago)
+
+> Updated from monthly first-Monday cadence to a daily weekday cadence for more frequent retirement-strategy review.
 
 ## Data Sources (READ ALL)
 
@@ -149,3 +151,4 @@ This agent is designed to be uncomfortable. It challenges:
 - The narrative of beating the market
 
 The goal isn't to be right. The goal is to be wealthy in 25 years.
+

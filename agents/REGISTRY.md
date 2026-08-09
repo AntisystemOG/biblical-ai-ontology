@@ -15,20 +15,18 @@ Single source of truth for all agents and their associated cron jobs.
 - Cron names: Must match agent file name exactly (e.g., `whale-watch`)
 - No abbreviations or truncation
 
-## Active Agents
-
-| Agent | Cron Name | Schedule | Purpose |
+## Active Agents\r\n\r\n> Only `truth-based-trading` and `whale-watch` are active. All other agents are paused/disabled.\r\n\r\n| Agent | Cron Name | Schedule | Purpose | Status |
 |-------|-----------|----------|---------|
-| whale-watch | whale-watch | Daily 6:00 AM CDT | Hedge fund overlap tracker |
-| history-rhymes | history-rhymes | Daily 7:00 AM CDT | Market history pattern analyzer |
-| daily-brief | daily-brief | Daily 8:00 AM CDT | Morning intelligence summary |
-| trading-arena | trading-arena | M-F 8:30AM-3PM CDT every 30min | Trading simulation |
-| financial-advisor | financial-advisor | Monday 9:00 AM CDT | Value investing screener |
-| memory-dreaming | memory-dreaming | Daily 3:00 AM CDT | Memory synthesis |
-| top-100-strategists | top-100-strategists | Daily 9:00 AM CDT | Hedge fund long-term vs short analysis |
-| long-term-holds | long-term-holds | Monday 10:00 AM CDT | Inflation-beating asset synthesizer |
-| master-trend-intelligence | master-trend-intelligence | Monday 6:00 AM CDT | Predictive synthesis for survival and growth |
-| plctool-coder | plc-coder-auto-spawn | Every 4 hours (0,4,8,12,16,20) | PLC coding assistant |
+| whale-watch | whale-watch | Quarterly 13F deadlines (Feb/May/Aug/Nov 15) 6:00 AM CDT | Hedge fund overlap tracker | Active |
+| history-rhymes | history-rhymes | Daily 7:00 AM CDT | Market history pattern analyzer | Paused/Disabled |
+| daily-brief | daily-brief | Daily 8:00 AM CDT | Morning intelligence summary | Paused/Disabled |
+| trading-arena | trading-arena | M-F 8:30AM-3PM CDT every 30min | Trading simulation | Paused/Disabled |
+| financial-advisor | financial-advisor | Monday 9:00 AM CDT | Value investing screener | Paused/Disabled |
+| memory-dreaming | memory-dreaming | Daily 3:00 AM CDT | Memory synthesis | Paused/Disabled |
+| top-100-strategists | top-100-strategists | Daily 9:00 AM CDT | Hedge fund long-term vs short analysis | Paused/Disabled |
+| long-term-holds | long-term-holds | Monday 10:00 AM CDT | Inflation-beating asset synthesizer | Paused/Disabled |
+| master-trend-intelligence | master-trend-intelligence | Monday 6:00 AM CDT | Predictive synthesis for survival and growth | Paused/Disabled |
+| plctool-coder | plc-coder-auto-spawn | Every 4 hours (0,4,8,12,16,20) | PLC coding assistant | Paused/Disabled |
 | coder | coder-auto-spawn | Every 4 hours (1,5,9,13,17,21) | General coding assistant (persistent memory) |
 
 ## Agent File Template (Required Header)
@@ -61,3 +59,4 @@ All agent configs: `C:\Users\thadd\.openclaw\workspace\agents\<name>.md`
 
 ## Last Updated
 2026-05-13
+

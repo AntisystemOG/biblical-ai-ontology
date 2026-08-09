@@ -1,0 +1,6 @@
+[main/sessions/main/a1ad93f3-1e07-4f10-bfd1-fbe64d27a4cb.jsonl#L422] Assistant: Gateway is up and listening on 127.0.0.1:18789 (PID 7384). Two established connections. All clear. HEARTBEAT_OK
+[main/sessions/main/a1ad93f3-1e07-4f10-bfd1-fbe64d27a4cb.jsonl#L426] Assistant: Gateway is running. Port 18789 listening on PID 7384 since 11:01 PM last night. Some stale FIN_WAIT_2/CLOSE_WAIT connections but nothing critical. HEARTBEAT_OK
+[main/sessions/main/a1ad93f3-1e07-4f10-bfd1-fbe64d27a4cb.jsonl#L432] Assistant: Gateway is healthy: listening on 127.0.0.1:18789 since 11:01 PM last night, PID 7384. HEARTBEAT_OK
+[main/sessions/main/a1ad93f3-1e07-4f10-bfd1-fbe64d27a4cb.jsonl#L436] Assistant: Gateway is up and listening on 127.0.0.1:18789 (PID 7384). Two active connections established. HEARTBEAT_OK
+[main/sessions/main/a1ad93f3-1e07-4f10-bfd1-fbe64d27a4cb.jsonl#L446] Assistant: Gateway is up and listening on 127.0.0.1:18789 (PID 7384). Everything looks healthy. HEARTBEAT_OK
+[main/sessions/main/a1ad93f3-1e07-4f10-bfd1-fbe64d27a4cb.jsonl#L454] Assistant: `openclaw status --fast` got killed, but port 18789 is listening with active connections. Gateway appears healthy. HEARTBEAT_OK

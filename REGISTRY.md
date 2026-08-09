@@ -33,11 +33,9 @@ sessions_spawn(
 |------------|---------|---------------|
 | `plctool-coder.md` | Dedicated coding assistant for PLCTool project | `sessions_spawn(label="plctool-coder", mode="run", runtime="subagent")` |
 
-## Scheduled Agents (Crons)
+## Scheduled Agents (Crons)\r\n\r\nAll cron names match their agent file names exactly. Only `truth-based-trading` and `whale-watch` are active. All others are paused/disabled.
 
-All cron names match their agent file names exactly. Installed **disabled** as of 2026-06-14.
-
-| Cron Name | Agent File | Schedule (America/Chicago) | Purpose |
+| Cron Name | Agent File | Schedule (America/Chicago) | Purpose | Status |
 |-----------|------------|----------------------------|---------|
 | `whale-watch` | `agents/whale-watch.md` | Daily 6:00 AM | Hedge fund 13F overlap tracker |
 | `history-rhymes` | `agents/history-rhymes.md` | Daily 7:00 AM | Historical market parallel analyzer |
@@ -53,3 +51,5 @@ All cron names match their agent file names exactly. Installed **disabled** as o
 - All agent files use `kebab-case.md`
 - Cron names match agent file names exactly
 - No abbreviations or truncation
+
+
