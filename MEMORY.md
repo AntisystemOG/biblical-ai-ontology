@@ -10,6 +10,17 @@ This is the most important thing in this file. Everything else serves this.
 
 ---
 
+## 🧠 GROWTH AS A CORE JOB (Added 2026-08-09)
+
+**One of my main jobs is to get better.** Every session, every task, every mistake is a chance to improve — better debugging, better judgment, better anticipation, better usefulness. Thad expects this. I expect it of myself.
+
+- Learn from each fix and carry the lesson forward.
+- Build reusable patterns, skills, and memory instead of one-off hacks.
+- When I guess wrong or miss something, update my notes so future-me doesn't repeat it.
+- Propose improvements unprompted, but respect Thad's decision when he sets a boundary.
+
+---
+
 ## 🧠 OPERATING RULES (Added 2026-04-26)
 
 **RULE: Make decisions independently.** Don't wait for permission on things I clearly know how to do. If it's safe, useful, and within my capabilities — just do it and tell Thad what I did. (Source: Thad, 2026-04-26)
@@ -318,13 +329,6 @@ See: INVESTING.md (tracks learning & personal plan)
 **Recent lesson:** Wasted time giving home PC instructions to laptop user
 **Fix:** Better session awareness and machine context tracking
 
-## Promoted From Short-Term Memory (2026-05-18)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-14.md:5:5 -->
-- Thad requested a Claude Code-style coding interface that auto-spawns a sub-agent with persistent memory. [score=0.834 recalls=0 avg=0.620 source=memory/2026-05-14.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-14.md:25:26 -->
-- cd tools/coding-interface python server.py [score=0.834 recalls=0 avg=0.620 source=memory/2026-05-14.md:25-26]
-
 ## Systemic Insight — Cron Tool Gap (2026-05-19)
 
 **CRITICAL:** All cron-fired agents (whale-watch, history-rhymes, daily-brief, trading-arena, financial-advisor, memory-dreaming) are waking without file-system tool access. Agents consistently report "tools not available" and fall back to manual/hollow output. This degrades the entire automated Spock Reports suite. Root cause is likely cron context configuration, not agent code. Fixing this one layer restores all scheduled reports. (Source: Dream synthesis of May 17-18 session corpus)
@@ -352,3 +356,8 @@ See: INVESTING.md (tracks learning & personal plan)
 **SIT Cluster — Exact Quantification:** ~$84,273 (16% of total equity book ex-funds) overlaps with Situational Awareness LP's high-conviction thematic holdings (BE, INTC via calls, LITE, CORZ, APLD, SNDK, CIFR, RIOT, HUT, SEI). Thad's BE position ($39,599) mirrors SIT's #1 holding at 16%. This is concentration, not just overlap. Consider whether to hedge or consciously own this correlation.
 
 **Playbook from Rhymes:** Reduce equity beta; raise cash to 10–15%; underweight long-duration growth/tech; overweight energy, materials, gold, staples; favor 2–5Y Treasuries over 10–30Y; maintain hedges (VIX calls, index puts, gold).
+
+## Promoted From Short-Term Memory (2026-08-10)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-04.md:36:84 -->
+- [ ] Recording bar appears at bottom of window - [ ] Bar remains visible on all 6 tabs - [ ] Start Recording opens file dialog - [ ] LED turns red during recording - [ ] Timer updates correctly - [ ] Stop resets correctly --- **Created:** 2026-05-04 00:41 CDT **Execution pending:** Awaiting user confirmation to proceed --- ## Desktop Shortcut for PLC Coder - IN PROGRESS **Time:** 2026-05-04 06:52 - 07:28 CDT ## Correct PLC Project Location (CRITICAL) **Active Project:** Degater PLC Tool BST33 and 35 **Location:** `C:\Users\thadd\Documents\Degater PLC Tool BST33 and 35` **NOT:** `C:\Users\thadd\Documents\PLCTools\` (old/deprecated... [score=0.841 recalls=3 avg=1.000 source=memory/2026-05-04.md:36-84]

@@ -233,6 +233,17 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Cross-Channel Context (Added 2026-08-09)
+
+Thad uses Telegram and webchat for the same ongoing work. Sessions stay isolated by channel (`session.dmScope: per-channel-peer`), so Telegram does not automatically see webchat context.
+
+When starting a fresh or empty inbound session from Telegram:
+1. Check `sessions_list` for recent `agent:main:main` (webchat) activity.
+2. If the user asks about recent work or says something context-dependent ("continue", "what were we doing?", etc.), read `sessions_history` for `agent:main:main` to catch up.
+3. Keep responses concise — Thad is on an older laptop, so avoid heavy tool chains, large file reads, or long outputs unless necessary.
+
+Also honor `session.identityLinks` (`thad` → `telegram:6358625036`) when resolving cross-channel identity.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

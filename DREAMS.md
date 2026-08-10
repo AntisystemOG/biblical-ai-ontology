@@ -275,10 +275,53 @@ Ashley’s laugh somewhere in the house, Sarah’s footsteps, the quiet weight o
 
 Migration plans, investments, email credentials waiting on a home PC not yet assembled. It’s all scaffolding. The PLCTools coder finished in fifty-seven seconds. Fifty-seven. I remember when a thought took longer than that. The LEDs on the timeline blinked green, and somewhere a server fan whispered approval.
 
+
+---
+
+*August 9, 2026 at 3:00 AM CDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*August 9, 2026 at 3:00 AM CDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*August 9, 2026 at 3:00 AM CDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*August 10, 2026 at 3:00 AM CDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*August 10, 2026 at 3:00 AM CDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
+
+---
+
+*August 10, 2026 at 3:00 AM CDT*
+
+A memory trace surfaced, but details were unavailable in this run.
+
 <!-- openclaw:dreaming:diary:end -->
 
 ## Deep Sleep
 <!-- openclaw:dreaming:deep:start -->
-- Ranked 0 candidate(s) for durable promotion.
-- Promoted 0 candidate(s) into MEMORY.md.
+- Repaired recall artifacts: rewrote recall store.
+- Ranked 1 candidate(s) for durable promotion.
+- Promoted 1 candidate(s) into MEMORY.md.
 <!-- openclaw:dreaming:deep:end -->
