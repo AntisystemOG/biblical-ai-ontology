@@ -357,7 +357,17 @@ See: INVESTING.md (tracks learning & personal plan)
 
 **Playbook from Rhymes:** Reduce equity beta; raise cash to 10–15%; underweight long-duration growth/tech; overweight energy, materials, gold, staples; favor 2–5Y Treasuries over 10–30Y; maintain hedges (VIX calls, index puts, gold).
 
-## Promoted From Short-Term Memory (2026-08-10)
+## Promoted From Short-Term Memory (2026-08-12)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-05-04.md:36:84 -->
-- [ ] Recording bar appears at bottom of window - [ ] Bar remains visible on all 6 tabs - [ ] Start Recording opens file dialog - [ ] LED turns red during recording - [ ] Timer updates correctly - [ ] Stop resets correctly --- **Created:** 2026-05-04 00:41 CDT **Execution pending:** Awaiting user confirmation to proceed --- ## Desktop Shortcut for PLC Coder - IN PROGRESS **Time:** 2026-05-04 06:52 - 07:28 CDT ## Correct PLC Project Location (CRITICAL) **Active Project:** Degater PLC Tool BST33 and 35 **Location:** `C:\Users\thadd\Documents\Degater PLC Tool BST33 and 35` **NOT:** `C:\Users\thadd\Documents\PLCTools\` (old/deprecated... [score=0.841 recalls=3 avg=1.000 source=memory/2026-05-04.md:36-84]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:5:5 -->
+- AI Projects Consolidation Update: Thad instructed: all AI projects now live in `C:\AI Projects`, with reusable tools/skills consolidated at `C:\AI Projects\AI Tools and Skills`. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:8:11 -->
+- Memory Updates Made: Updated `MEMORY.md`:; Added `AI Projects Root` and `Active Projects in C:\AI Projects` sections.; Listed key active projects: MagneMotionMonitor, Degater PLC Tool BST33/35, Smart Home, Scheduled Jobs, Wittman Boot Disk.; Documented the consolidated `AI Tools and Skills` library and notable custom skills. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:8-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:12:15 -->
+- Memory Updates Made: Updated `TOOLS.md`:; Corrected Python 3.14 path to `C:\Users\thadd\AppData\Local\Programs\Python\Python314\python.exe`.; Added `AI Tools and Skills Library` and `Project Folders` sections.; Created this daily memory file. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:18:21 -->
+- Projects Surveyed: | Project | Folder | Status | |---|---|---| | MagneMotionMonitor | `C:\AI Projects\MagneMotionMonitor` | Active, v27.3.12, PySide6 + pycomm3, 140 tests, release.py build pipeline | | Degater PLC Tool BST33 and 35 | `C:\AI Projects\Degater PLC Tool BST33 and 35` | Active, Micro870 diagnostics, robot wait diagnostic, D14 ladder reference, I/O component cards | [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:18-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:22:24 -->
+- Projects Surveyed: | Smart Home | `C:\AI Projects\Smart Home` | Active, Store + User Interface + Gateway, Firebase project `smart-home-interface-a0a91` | | Scheduled Jobs | `C:\AI Projects\Scheduled Jobs` | Present, not inspected in depth | | Wittman Boot Disk | `C:\AI Projects\Wittman Boot Disk` | Present, not inspected in depth | [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:22-24]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:27:30 -->
+- AI Tools and Skills Library: Root: `C:\AI Projects\AI Tools and Skills`; Sources: OpenClaw, Claude, Codex, Hermes, Agents, Hermes-Web-UI.; Notable entries:; `industrial-app-build-protocol` — no-phantom PyInstaller build workflow. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:27-30]
