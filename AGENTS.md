@@ -244,6 +244,34 @@ When starting a fresh or empty inbound session from Telegram:
 
 Also honor `session.identityLinks` (`thad` → `telegram:6358625036`) when resolving cross-channel identity.
 
+## Lessons Learned
+
+### Python Execution on Windows (Aug 13, 2026)
+**CRITICAL:** Never run complex Python code inline with `python -c "..."` on Windows/PowerShell. 
+PowerShell mangles quotes, escape characters, and `$` variables inside inline Python strings.
+
+**ALWAYS write Python to a temp file first, then execute the file:**
+```
+# GOOD: Write to .openclaw/tmp/_runner.py, then execute
+write -> .openclaw/tmp/_runner.py
+exec -> python .openclaw/tmp/_runner.py
+
+# BAD: Inline Python with complex strings
+exec -> python -c "print(f'{x["key"]}')"  # BREAKS every time
+```
+
+This caused 8+ syntax errors and wasted significant time on Aug 13. The pattern is: 
+if the Python code has f-strings with nested quotes, dict access with string keys, or 
+any complex string formatting — write it to a file first.
+
+### Kalshi API (Aug 13, 2026)
+- Field names use `_dollars` suffix: `yes_ask_dollars`, not `yes_ask`
+- `close_time` not `close_ts`
+- `volume_fp` not `volume`
+- Auth: RSA-PSS SHA256, timestamp in MILLISECONDS, header is `KALSHI-ACCESS-KEY` (not KEY-ID)
+- Sign the FULL path from root: `/trade-api/v2/portfolio/balance` (strip query params)
+- `password=None` (with comma) when loading PEM key — the `***` placeholder breaks
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
