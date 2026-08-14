@@ -357,17 +357,25 @@ See: INVESTING.md (tracks learning & personal plan)
 
 **Playbook from Rhymes:** Reduce equity beta; raise cash to 10–15%; underweight long-duration growth/tech; overweight energy, materials, gold, staples; favor 2–5Y Treasuries over 10–30Y; maintain hedges (VIX calls, index puts, gold).
 
-## Promoted From Short-Term Memory (2026-08-12)
+## Promoted From Short-Term Memory (2026-08-14)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:5:5 -->
-- AI Projects Consolidation Update: Thad instructed: all AI projects now live in `C:\AI Projects`, with reusable tools/skills consolidated at `C:\AI Projects\AI Tools and Skills`. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:8:11 -->
-- Memory Updates Made: Updated `MEMORY.md`:; Added `AI Projects Root` and `Active Projects in C:\AI Projects` sections.; Listed key active projects: MagneMotionMonitor, Degater PLC Tool BST33/35, Smart Home, Scheduled Jobs, Wittman Boot Disk.; Documented the consolidated `AI Tools and Skills` library and notable custom skills. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:8-11]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:12:15 -->
-- Memory Updates Made: Updated `TOOLS.md`:; Corrected Python 3.14 path to `C:\Users\thadd\AppData\Local\Programs\Python\Python314\python.exe`.; Added `AI Tools and Skills Library` and `Project Folders` sections.; Created this daily memory file. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:18:21 -->
-- Projects Surveyed: | Project | Folder | Status | |---|---|---| | MagneMotionMonitor | `C:\AI Projects\MagneMotionMonitor` | Active, v27.3.12, PySide6 + pycomm3, 140 tests, release.py build pipeline | | Degater PLC Tool BST33 and 35 | `C:\AI Projects\Degater PLC Tool BST33 and 35` | Active, Micro870 diagnostics, robot wait diagnostic, D14 ladder reference, I/O component cards | [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:18-21]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:22:24 -->
-- Projects Surveyed: | Smart Home | `C:\AI Projects\Smart Home` | Active, Store + User Interface + Gateway, Firebase project `smart-home-interface-a0a91` | | Scheduled Jobs | `C:\AI Projects\Scheduled Jobs` | Present, not inspected in depth | | Wittman Boot Disk | `C:\AI Projects\Wittman Boot Disk` | Present, not inspected in depth | [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:22-24]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-07.md:27:30 -->
-- AI Tools and Skills Library: Root: `C:\AI Projects\AI Tools and Skills`; Sources: OpenClaw, Claude, Codex, Hermes, Agents, Hermes-Web-UI.; Notable entries:; `industrial-app-build-protocol` — no-phantom PyInstaller build workflow. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-07.md:27-30]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:5:8 -->
+- MagneMotionMonitor Track Alignment (Early Morning 5:00-5:45 AM): Thad re-ran the Track Alignment tool with new `full_track_grid.png` layout; Updated `mm_monitor/track_photo.py` with hand-aligned waypoints; Reset `REAL_TO_PIXEL_BREAKPOINTS` for paths 2 and 4 to identity (dense waypoints encode U-turn directly); Added `load_adjusted_station_pixels()` to load `track_points_adjusted.csv` for exact station pixel positions [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-08.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:9:12 -->
+- MagneMotionMonitor Track Alignment (Early Morning 5:00-5:45 AM): Modified `track_panel.py` to use CSV positions for station dots in photo mode; Copied `track_points_adjusted.csv` into `mm_monitor/data/` for EXE bundling; Built v32.6.1, v32.6.2, v32.6.3, v32.6.4; Removed yellow station dots in photo mode (photo labels are enough) [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-08.md:9-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:13:14 -->
+- MagneMotionMonitor Track Alignment (Early Morning 5:00-5:45 AM): Disabled hard 26px pallet-spacing resolver in photo mode (was causing bunch/skip near junctions); All 46 tests passed after each change [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-08.md:13-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:18:21 -->
+- Homing Feedback Features (11:15-11:31 PM): Thad's biggest pain point: no feedback during homing/cleanout — can't tell if it's progressing normally or stuck; Suggested 7 features, Thad chose Feature 1 (dwell timer) + Feature 5 (diagnostic banner); **Feature 1 — Live Dwell Timer:** [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-08.md:18-20]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:22:25 -->
+- Homing Feedback Features (11:15-11:31 PM): Progress bar now shows ⏱ timer with green/yellow/red color coding; **Feature 5 — "What's Blocking Me?" Diagnostic Banner:**; Added `_DiagBanner` widget above track canvas; Green banner with step + timer when progressing normally [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-08.md:22-25]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:26:29 -->
+- Homing Feedback Features (11:15-11:31 PM): Red/orange banner with exact root cause + what to check when stuck; Uses existing `homing_diagnosis()` for root-cause analysis; Hidden when system is running normally; Both features work in live mode and playback (playback uses recording timestamps) [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-08.md:26-29]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-09.md:4:6 -->
+- 00:07-00:33 CDT — Telegram Session Context Issue: Thad reported that Telegram could not see current work/context from webchat — only memory updates.; Root cause: `session.dmScope: per-channel-peer` gives Telegram its own isolated session.; Decided on option 3: keep sessions isolated, but widen cross-session visibility. [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-09.md:4-6]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-09.md:9:12 -->
+- Changes Made: Set `tools.sessions.visibility: agent` — allows sessions tools to read any `main` agent session.; Added `session.identityLinks: { thad: ["telegram:6358625036"] }`.; Updated `AGENTS.md` with "Cross-Channel Context" rule instructing future sessions to check `agent:main:main` webchat history when Telegram context seems thin.; Verified by reading `agent:main:main` history and listing all `main` agent sessions. [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-09.md:9-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-09.md:16:18 -->
+- 01:02 CDT — Heartbeat: Created today's memory file.; No stuck sessions; no urgent alerts.; Late night, no proactive outreach needed. [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-09.md:16-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-09.md:21:21 -->
+- 02:00 CDT — Heartbeat: Memory file exists. No new alerts. Sessions healthy. [score=0.809 recalls=0 avg=0.620 source=memory/2026-08-09.md:21-21]
