@@ -1,69 +1,135 @@
 {
-  "sessionStart": "2026-05-08",
-  "lastUpdate": "2026-05-14T09:30:00-05:00",
+  "sessionStart": "2026-08-14",
+  "lastUpdate": "2026-08-14T11:34:49.455031-05:00",
+  "tradingDaysElapsed": 1,
   "marketOpen": true,
-  "sp500": {
-    "price": 7461.20,
-    "change": 13.40,
-    "changePercent": 0.18,
-    "sessionStartPrice": 6525.00
+  "benchmark": {
+    "symbol": "SPY",
+    "price": 776.3699951171875,
+    "priceAtStart": 776.3699951171875,
+    "change": -1.510009765625,
+    "changePercent": -0.19411859877442872,
+    "returnPercent": 0.0
   },
   "traders": [
     {
-      "name": "Shark",
-      "emoji": "🦈",
-      "strategy": "Momentum",
-      "portfolioValue": 19628.40,
-      "totalReturn": 96.28,
-      "vsSP500": 81.75,
-      "rank": 1,
-      "lastAction": "ADD NVDA +5 shares @ $226.50, SELL META -8 shares @ $525.00",
-      "holdings": {"NVDA": 25, "META": 12, "TSLA": 8, "AVGO": 5}
-    },
-    {
-      "name": "Wolf",
-      "emoji": "🐺",
-      "strategy": "Sector Rotation",
-      "portfolioValue": 17315.60,
-      "totalReturn": 73.16,
-      "vsSP500": 58.63,
-      "rank": 2,
-      "lastAction": "ADD SMH +15 shares @ $175.20, TRIM XLE -20 shares @ $52.80",
-      "holdings": {"SMH": 45, "XLE": 25, "XLF": 30, "IGV": 20}
-    },
-    {
+      "id": "turtle",
       "name": "Turtle",
-      "emoji": "🐢",
+      "emoji": "\ud83d\udc22",
       "strategy": "Trend Following",
-      "portfolioValue": 15445.80,
-      "totalReturn": 54.46,
-      "vsSP500": 39.93,
-      "rank": 3,
-      "lastAction": "ADD QQQ +10 shares @ $488.50",
-      "holdings": {"QQQ": 30, "SPY": 15, "VGT": 20}
+      "cash": 1418.2458190917969,
+      "holdings": {
+        "NFLX": 38,
+        "TSLA": 8,
+        "COST": 3
+      },
+      "portfolioValue": 10000.0,
+      "totalReturn": 0.0,
+      "vsSP500": 0.0,
+      "rank": 1,
+      "lastAction": "BUY NFLX +38 shares @ $78.26; BUY TSLA +8 shares @ $339.92; BUY COST +3 shares @ $962.78",
+      "intradayMove": 0.0
     },
     {
+      "id": "shark",
+      "name": "Shark",
+      "emoji": "\ud83e\udd88",
+      "strategy": "Momentum",
+      "cash": 984.0599365234375,
+      "holdings": {
+        "AMD": 6,
+        "MU": 3,
+        "NFLX": 40
+      },
+      "portfolioValue": 10000.0,
+      "totalReturn": 0.0,
+      "vsSP500": 0.0,
+      "rank": 2,
+      "lastAction": "BUY AMD +6 shares @ $499.75; BUY MU +3 shares @ $962.28; BUY NFLX +40 shares @ $78.26",
+      "intradayMove": 0.0
+    },
+    {
+      "id": "owl",
       "name": "Owl",
-      "emoji": "🦉",
-      "strategy": "Value Investing",
-      "portfolioValue": 11125.50,
-      "totalReturn": 11.26,
-      "vsSP500": -3.27,
-      "rank": 4,
-      "lastAction": "ADD BRK.B +3 shares @ $495.00",
-      "holdings": {"BRK.B": 8, "JPM": 12, "JNJ": 25, "PG": 18, "KO": 30}
+      "emoji": "\ud83e\udd89",
+      "strategy": "Value",
+      "cash": 2132.1297760009766,
+      "holdings": {
+        "JPM": 7,
+        "BRK-B": 5,
+        "XLU": 63
+      },
+      "portfolioValue": 10000.0,
+      "totalReturn": 0.0,
+      "vsSP500": 0.0,
+      "rank": 3,
+      "lastAction": "BUY JPM +7 shares @ $362.89; BUY BRK-B +5 shares @ $506.97; BUY XLU +63 shares @ $44.33",
+      "intradayMove": 0.0
     },
     {
+      "id": "wolf",
+      "name": "Wolf",
+      "emoji": "\ud83d\udc3a",
+      "strategy": "Sector Rotation",
+      "cash": 1125.2799530029297,
+      "holdings": {
+        "XLE": 48,
+        "XLU": 67,
+        "XLP": 34
+      },
+      "portfolioValue": 10000.0,
+      "totalReturn": 0.0,
+      "vsSP500": 0.0,
+      "rank": 4,
+      "lastAction": "BUY XLE +48 shares @ $61.97; BUY XLU +67 shares @ $44.33; BUY XLP +34 shares @ $86.18",
+      "intradayMove": 0.0
+    },
+    {
+      "id": "fox",
       "name": "Fox",
-      "emoji": "🦊",
+      "emoji": "\ud83e\udd8a",
       "strategy": "Contrarian",
-      "portfolioValue": 9285.00,
-      "totalReturn": -7.15,
-      "vsSP500": -21.68,
+      "cash": 1892.1150512695312,
+      "holdings": {
+        "AVGO": 7,
+        "HD": 8,
+        "AMZN": 10
+      },
+      "portfolioValue": 10000.0,
+      "totalReturn": 0.0,
+      "vsSP500": 0.0,
       "rank": 5,
-      "lastAction": "ADD XBI +20 shares @ $78.50 (biotech bottom-fishing)",
-      "holdings": {"XBI": 50, "SQQQ": 40, "TLT": 25, "GDX": 30}
+      "lastAction": "BUY AVGO +7 shares @ $393.82; BUY HD +8 shares @ $338.76; BUY AMZN +10 shares @ $264.11",
+      "intradayMove": 0.0
     }
   ],
-  "marketCommentary": "Strong opening as tech stocks surge on AI infrastructure spending optimism. Nvidia breaks above $225 resistance. Healthcare showing weakness with profit-taking in biotech. Bond yields ticking higher, pressuring rate-sensitive sectors."
+  "recentActivity": [
+    {
+      "time": "11:34 AM",
+      "trader": "Turtle",
+      "action": "BUY NFLX +38 shares @ $78.26; BUY TSLA +8 shares @ $339.92; BUY COST +3 shares @ $962.78"
+    },
+    {
+      "time": "11:34 AM",
+      "trader": "Shark",
+      "action": "BUY AMD +6 shares @ $499.75; BUY MU +3 shares @ $962.28; BUY NFLX +40 shares @ $78.26"
+    },
+    {
+      "time": "11:34 AM",
+      "trader": "Owl",
+      "action": "BUY JPM +7 shares @ $362.89; BUY BRK-B +5 shares @ $506.97; BUY XLU +63 shares @ $44.33"
+    },
+    {
+      "time": "11:34 AM",
+      "trader": "Wolf",
+      "action": "BUY XLE +48 shares @ $61.97; BUY XLU +67 shares @ $44.33; BUY XLP +34 shares @ $86.18"
+    },
+    {
+      "time": "11:34 AM",
+      "trader": "Fox",
+      "action": "BUY AVGO +7 shares @ $393.82; BUY HD +8 shares @ $338.76; BUY AMZN +10 shares @ $264.11"
+    }
+  ],
+  "marketConditions": "S&P 500 (SPY) is at $776.37, -0.19% today and +0.40% over 5 sessions. Leading sectors: XLE +7.77%, XLU +1.65%, XLP +1.25%. Tech momentum +0.55% (NVDA 5d). Market status: 12:34 PM ET.",
+  "marketNote": "12:34 PM ET"
 }
