@@ -373,6 +373,8 @@ See: INVESTING.md (tracks learning & personal plan)
 
 **Engine v2.1:** 7-signal weighted blending, Kalshi consensus #1 (0.45 weight), learning loop, Kelly sizing, timing-aware config.
 
+**Digest.py (context compressor, added Aug 16):** Runs scanner + API calls, outputs 10-15 line briefing instead of 175-line raw scan. ~95% context reduction. All cron jobs now use `digest.py claims` instead of full `cli.py scan`. Saves tokens, faster processing, decision-ready output.
+
 **Track record:** 2/2 correct on claims picks. Bankroll $28 → $51 in 3 days (+82%).
 
 **Key lessons:**
