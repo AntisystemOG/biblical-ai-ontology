@@ -1,0 +1,1 @@
+[main/sessions/main/44cdcc21-160b-489b-99b7-20f0c04b0576.jsonl#L8] Assistant: Quoting issue with inline Python on Windows. Writing to a temp file instead.

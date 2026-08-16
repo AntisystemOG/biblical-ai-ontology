@@ -357,15 +357,58 @@ See: INVESTING.md (tracks learning & personal plan)
 
 **Playbook from Rhymes:** Reduce equity beta; raise cash to 10–15%; underweight long-duration growth/tech; overweight energy, materials, gold, staples; favor 2–5Y Treasuries over 10–30Y; maintain hedges (VIX calls, index puts, gold).
 
-## Promoted From Short-Term Memory (2026-08-15)
+## Kalshi Prediction Market System (Added 2026-08-16)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-12.md:36:54 -->
-- `engine.py` — Core prediction engine with weighted signal blending + learning loop - `data_ingest.py` — Kalshi API + BLS API integration + signal generators - `cli.py` — CLI interface (scan, grade, learn, report, seed, history) - `data/` — weights.json, accuracy.json, picks_log.json, cpi_history.json **Self-learning mechanism:** - 6 signals: economist_consensus, historical_base_rate, market_momentum, seasonal_pattern, fed_calendar_context, contrarian_indicator - Each signal has a weight (sums to 100%) and accuracy tracker - After picks resolve, weights adjust: accurate signals gain weight, inaccurate ones lose weight - Seeded with... [score=0.974 recalls=5 avg=1.000 source=memory/2026-08-12.md:36-54]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-06.md:129:144 -->
-- Completed in 1m8s — project state unchanged ## 5:02-5:58 PM - Reports & Agents - All 6 cron jobs had delivery disabled (Telegram required chatId target) - Reports run one-at-a-time per Thad's instruction - Results (all in Spocks Reports/): - `whale_watch/2026-05-06_whale_watch.pdf` (59 KB) — AMZN/GOOGL at 3-whale conviction - `history_rhymes/2026-05-06_history_rhymes.pdf` (58 KB) — market rhymes with late-1999 - `memory_dreaming/2026-05-06_dream.pdf` (48 KB) — dream narrative from today's logs - `diversification/2026-05-06_401k_diversification_plan.pdf` (67 KB) — 5-asset 401k diversification plan -... [score=0.926 recalls=4 avg=1.000 source=memory/2026-05-06.md:129-144]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-15.md:1:41 -->
-- # 2026-05-15 Daily Notes ## Trading Arena - 1:30 PM Run **Market Conditions:** - S&P 500 (SPY): $741.79 (+1.52% session) — Steady climb, tech leading - Broad market strength with mega-caps showing gains - Market consolidating near session highs **AI Trader Performance:** | Rank | Trader | Strategy | Portfolio | Return | vs SPY | |------|--------|----------|-----------|--------|--------| | 🥇 #1 | 🐢 Turtle | Trend Following | $29,284.32 | +192.84% | +191.32% | | 🥈 #2 | 🦈 Shark | Momentum | $14,522.67 | +45.23% | +43.71% | | 🥉 #3 | 🐺 Wolf | Sector Rotation | $13,418.25 | +34.18% | +32.66% | | #4 | 🦉 Owl | Value | $11,452.18 |... [score=0.887 recalls=3 avg=1.000 source=memory/2026-05-15.md:1-41]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-09.md:27:30 -->
-- MagneMotionMonitor — Click-on-Pallet Popup Fix (carried from 8/8, 12:15 AM): Fixed popup rendering: `Qt.ToolTip` → `Qt.FramelessWindowHint`, `setMinimumWidth(220)`, `layout().activate()` before `adjustSize()`; Fixed destination: was reading `Dest_Station_ID` from `vehicle_status` (doesn't exist) → now reads `dest_station_id` from `vehicle_mgr`; Fixed "snapshot not live": popup tracks selected cart by ID, updates every animation frame; Labels created once on click, text updated each frame (no flicker) [score=0.822 recalls=0 avg=0.620 source=memory/2026-08-09.md:27-30]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-09.md:13:13 -->
-- Changes Made: No gateway restart needed. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-09.md:13-13]
+**Project location:** `C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner`
+
+**Core principle:** Getting the prediction right is #1. When we purchase is #2. Hold to settlement.
+
+**Timing-Aware Reminder Ladder (built Aug 16):**
+- T-3 (Mon): Buy window opens. Verify prediction. Log baseline prices. Don't rush.
+- T-2 (Tue): Price check. Compare to T-3. Sweet spot entry if edge >5%.
+- T-1 (Wed): Last chance. Verify forecast. Execute if edge >5% and confidence >80%.
+- T-0 (Thu 6:45 AM): Final call. Markets close in 25 min. Buy or pass. Don't force.
+- Each reminder has different message based on timing. Early = verify data. Late = execute. Final = capital preservation.
+- Config in `config.json` under `timing` key. Strategy doc in `TIMING_STRATEGY.md`.
+
+**Engine v2.1:** 7-signal weighted blending, Kalshi consensus #1 (0.45 weight), learning loop, Kelly sizing, timing-aware config.
+
+**Track record:** 2/2 correct on claims picks. Bankroll $28 → $51 in 3 days (+82%).
+
+**Key lessons:**
+- SA vs NSA is critical — always verify settlement metric
+- Kalshi market consensus is the most accurate forecaster (0.625K avg error vs 7-15K for analysts)
+- Pre-position BEFORE the print, not during — algos dominate first seconds
+- Best entry: T-2 to T-1 when prices stabilized but not yet tightened
+- Use limit/maker orders (free) and hold to settlement (no spread cost)
+
+**Cron jobs (Aug 20 claims cycle):**
+- `kalshi-buy-alert-aug18` — T-3 Mon Aug 17, 9:30 AM CDT
+- `kalshi-buy-alert-aug19-morning` — T-2 Tue Aug 18, 9:30 AM CDT
+- `kalshi-buy-alert-aug19` — T-1 Wed Aug 19, 9:30 AM CDT
+- `kalshi-pre-close-check` — T-0 Thu Aug 20, 6:45 AM CDT
+- All one-shot, delete after run, deliver to current session via announce
+
+**Recurring crons:**
+- `kalshi-job-morning` — 6 AM CDT daily scanner
+- `kalshi-job-midday` — 12 PM CDT daily scanner
+- `kalshi-job-evening` — 8 PM CDT daily scanner
+- `kalshi-price-snapshots` — every 4h price collector
+- `kalshi-daily-predictions` — 6 AM daily prediction + grading
+- `the-edge-nightly` — 9 PM Mon-Thu nightly pick prep
+- `the-edge-morning` — 5:30 AM Mon-Fri morning final picks
+
+## Promoted From Short-Term Memory (2026-08-16)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-08-10.md:5:5 -->
+- MagneMotionMonitor — Dropdown Connect + Network Scan (04:42 - 05:30 CDT): Thad requested a dropdown to select between two boxing stations (may have different IPs), plus a network scan feature to identify MM controllers on 192.168.1.x. [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-10.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-10.md:8:11 -->
+- Changes to `mm_monitor/gui/connection_bar.py`:: **Station dropdown** — QComboBox with editable text, presets for two boxing stations, persists custom entries to `stations.json`; **Scan button (🔍 Scan)** — Scans 192.168.1.1-254 for EtherNet/IP controllers (port 44818), identifies Logix devices via pycomm3, auto-adds found controllers to the dropdown; Scan runs in background thread (batched 16 hosts at a time), UI shows progress, can be stopped mid-scan; Dropdown and scan disabled while connected [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-10.md:8-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-10.md:14:17 -->
+- Versions:: v33.1.1 — Initial dropdown connect feature (built & pushed); v33.1.2 — Added network scan feature (built & pushed); v33.1.3 — Fixed crash: _refresh_station_combo called before _btn exists (built & pushed); v33.1.4 — Junction bridges: fix pallets disappearing/bunching at Path 3 transitions (built & pushed) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-10.md:14-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-10.md:20:20 -->
+- Junction Bridge Fix (v33.1.4):: **Root cause:** Photo waypoints for adjacent paths don't connect — pixel gaps of 27-131px between path endpoints. When carts transition between paths, they either disappear (clamped to path boundary), jump (blend ends), or bunch up (stack at boundary). [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-10.md:20-20]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-10.md:22:22 -->
+- Junction Bridge Fix (v33.1.4):: **Fix:** Added `JUNCTION_BRIDGES` table in `track_photo.py` with intermediate pixel points for each path transition gap. `PhotoTrackModel.transition_path()` walks through bridge points. `CartAnimator` now stores `px_blend_from_path` and uses `transition_path()` during blends. Blend duration scales with gap size (0.3s small, 0.8s large). [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-10.md:22-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-10.md:24:24 -->
+- Junction Bridge Fix (v33.1.4):: Key gaps bridged: [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-10.md:24-24]
