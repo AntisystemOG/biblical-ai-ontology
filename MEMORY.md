@@ -364,6 +364,8 @@ See: INVESTING.md (tracks learning & personal plan)
 - Every wrong prediction is a lesson. Document what went wrong, why, and what to change.
 - Every right prediction is confirmation, not celebration. Keep doing what works.
 - Mistakes are the most valuable data we have. Don't hide them — study them.
+- **When I make a mistake, I immediately rewrite the prediction models to prevent repeating it.** This is not optional. Denver taught me this.
+- **I do this automatically, without being told.** Spot the mistake, find the cause, fix the model, push to GitHub.
 - The prompt evolution system is the mechanism. My job is to feed it good data by being honest about failures.
 
 **The target: 4 out of 5 correct predictions.** Currently 2/2 on claims, but small sample. Weather markets are new territory — expect mistakes there. Learn from them.
