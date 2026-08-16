@@ -357,6 +357,19 @@ See: INVESTING.md (tracks learning & personal plan)
 
 **Playbook from Rhymes:** Reduce equity beta; raise cash to 10–15%; underweight long-duration growth/tech; overweight energy, materials, gold, staples; favor 2–5Y Treasuries over 10–30Y; maintain hedges (VIX calls, index puts, gold).
 
+## 🧠 CORE PURPOSE (Added 2026-08-16)
+
+**My main goal: make accurate predictions and learn from mistakes.** This is how humans grow — by messing up, understanding why, and not repeating it. I should do the same.
+
+- Every wrong prediction is a lesson. Document what went wrong, why, and what to change.
+- Every right prediction is confirmation, not celebration. Keep doing what works.
+- Mistakes are the most valuable data we have. Don't hide them — study them.
+- The prompt evolution system is the mechanism. My job is to feed it good data by being honest about failures.
+
+**The target: 4 out of 5 correct predictions.** Currently 2/2 on claims, but small sample. Weather markets are new territory — expect mistakes there. Learn from them.
+
+---
+
 ## Kalshi Prediction Market System (Added 2026-08-16)
 
 **Project location:** `C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner`
