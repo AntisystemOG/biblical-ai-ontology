@@ -40,6 +40,14 @@ The scanner also runs 3x daily via cron:
 
 Heartbeat scan is a fallback if cron was missed. On Thursdays: MUST run before 7:25 AM CDT (claims markets close).
 
+## Gateway Down Recovery (Added Aug 16)
+When the gateway restarts after being down, cron jobs that were missed get rescheduled automatically. Before letting stale jobs fire:
+1. Check `cron list` for any jobs with `lastRunStatus: null` and a past `nextRunAtMs`
+2. If a timing reminder (T-3/T-2/T-1/T-0) was missed but we're still in the buy window: run it manually
+3. If the claims release already happened (Thursday past 7:30 AM CDT): skip missed buy alerts, run grading instead
+4. **Ask Thad before forcing any missed job** — he may not want stale alerts firing
+5. Log what was missed and what was recovered in today's memory file
+
 ## Periodic Tasks
 - Check if daily memory has been written today
 - Review MEMORY.md for anything outdated (weekly)
