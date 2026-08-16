@@ -388,7 +388,9 @@ See: INVESTING.md (tracks learning & personal plan)
 
 **Digest.py (context compressor, added Aug 16):** Runs scanner + API calls, outputs 10-15 line briefing instead of 175-line raw scan. ~95% context reduction. All cron jobs now use `digest.py claims` instead of full `cli.py scan`. Saves tokens, faster processing, decision-ready output.
 
-**Prompt Evolution System (added Aug 16):** `prompt_evolution.py` analyzes grading results every Friday and rewrites cron prompts with learned lessons. Injects into digest output too. Tracks: signal reliability, YES/NO win patterns, threshold avoidance, forecast accuracy, goal progress (4/5 target). Prompts get smarter every week.
+**Prompt Evolution System (added Aug 16):** `prompt_evolution.py` analyzes grading results every Friday and rewrites cron prompts with learned lessons. Injects into digest output too. Tracks: signal reliability, YES/NO win patterns, threshold avoidance, forecast accuracy, goal progress (4/5 target). Categorizes data sources as FACT (actually predicts) vs SPECULATION (sounds good but doesn't help). Prompts get smarter every week.
+
+**Weekly Review (added Aug 16):** Every Saturday at 10 AM, `kalshi-weekly-review` cron runs full grading + digest + prompt evolution + builds a report showing what we got right, what we got wrong, which data mattered, and which was speculation. Delivers to Telegram.
 
 **Track record:** 2/2 correct on claims picks. Bankroll $28 → $51 in 3 days (+82%).
 
