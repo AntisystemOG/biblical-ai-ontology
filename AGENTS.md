@@ -248,7 +248,12 @@ Also honor `session.identityLinks` (`thad` → `telegram:6358625036`) when resol
 
 ### Kalshi URL Format (Aug 17, 2026)
 Direct ticker links like `kalshi.com/markets/kxjoblessclaims-26aug20-195000` do NOT work.
-Working format is the series page: `kalshi.com/markets/kxjoblessclaims/weekly-initial-jobless-claims/kxjoblessclaims-26aug20` — then click into the specific threshold from there.
+Working format is the series page with full descriptive name:
+- Claims: `kalshi.com/markets/kxjoblessclaims/weekly-initial-jobless-claims/kxjoblessclaims-26aug20`
+- Denver weather: `kalshi.com/markets/kxhighden/highest-temperature-in-denver/kxhighden-26aug17`
+- Chicago weather: `kalshi.com/markets/kxhighchicago/highest-temperature-in-chicago/kxhighchi-26aug17`
+Format: `kalshi.com/markets/{series_ticker}/{descriptive-name}/{event_ticker}`
+Then click into the specific threshold from there.
 
 ### Python Execution on Windows (Aug 13, 2026)
 **CRITICAL:** Never run complex Python code inline with `python -c "..."` on Windows/PowerShell. 
