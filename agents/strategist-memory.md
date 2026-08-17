@@ -123,11 +123,11 @@
 **Current Candidates:** GE/GEHC — watch for fresh activist filings.
 
 #### STRATEGY: Bitcoin Miner Squeeze (AVOID as long-term hold)
-**Trigger:** Short interest >20% + declining SI trend + BTC catalyst.
+**Trigger:** Short interest >15% + declining SI trend + BTC catalyst.
 **Confidence:** LOW-MEDIUM
 **Hold Time:** 1-3 months
 **Risk:** HIGH
-**Current Candidates:** CLSK, CORZ, RIOT, WULF, HUT, CIFR — treat as trades, not conviction holds.
+**Current Candidates:** CLSK (18.5% SI, declining), CORZ, RIOT, WULF, HUT, CIFR — treat as trades, not conviction holds.
 
 #### STRATEGY: Tepper Exit Reversal Warning
 **Trigger:** Appaloosa exits a position that previously had multi-manager support.
