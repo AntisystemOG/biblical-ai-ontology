@@ -1,17 +1,89 @@
 {
   "sessionStart": "2026-08-14",
-  "lastUpdate": "2026-08-14T11:34:49.455031-05:00",
+  "lastUpdate": "2026-08-17T12:33:19.759313",
   "tradingDaysElapsed": 1,
   "marketOpen": true,
   "benchmark": {
     "symbol": "SPY",
-    "price": 776.3699951171875,
+    "price": 773.58,
     "priceAtStart": 776.3699951171875,
-    "change": -1.510009765625,
-    "changePercent": -0.19411859877442872,
-    "returnPercent": 0.0
+    "change": -2.789995117187459,
+    "changePercent": -0.35936410921783873,
+    "returnPercent": -0.35936410921783873
   },
   "traders": [
+    {
+      "id": "owl",
+      "name": "Owl",
+      "emoji": "\ud83e\udd89",
+      "strategy": "Value",
+      "cash": 1621.9297760009765,
+      "holdings": {
+        "JPM": 7,
+        "BRK-B": 6,
+        "XLU": 63
+      },
+      "portfolioValue": 10061.229776000977,
+      "totalReturn": 61.229776000976926,
+      "vsSP500": 97.1661869227608,
+      "rank": 1,
+      "lastAction": "BUY BRK-B +1 share @ $510.2",
+      "intradayMove": 0.13
+    },
+    {
+      "id": "fox",
+      "name": "Fox",
+      "emoji": "\ud83e\udd8a",
+      "strategy": "Contrarian",
+      "cash": 1556.7150512695312,
+      "holdings": {
+        "AVGO": 7,
+        "HD": 9,
+        "AMZN": 10
+      },
+      "portfolioValue": 10046.815051269532,
+      "totalReturn": 46.81505126953198,
+      "vsSP500": 82.75146219131585,
+      "rank": 2,
+      "lastAction": "BUY HD +1 share @ $335.4",
+      "intradayMove": -0.13
+    },
+    {
+      "id": "shark",
+      "name": "Shark",
+      "emoji": "\ud83e\udd88",
+      "strategy": "Momentum",
+      "cash": 825.8599365234375,
+      "holdings": {
+        "AMD": 6,
+        "MU": 3,
+        "NFLX": 42
+      },
+      "portfolioValue": 10035.859936523437,
+      "totalReturn": 35.85993652343677,
+      "vsSP500": 71.79634744522065,
+      "rank": 3,
+      "lastAction": "BUY NFLX +2 shares @ $79.1",
+      "intradayMove": 0.11
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf",
+      "emoji": "\ud83d\udc3a",
+      "strategy": "Sector Rotation",
+      "cash": 1122.1799530029298,
+      "holdings": {
+        "XLE": 43,
+        "XLU": 74,
+        "XLP": 34
+      },
+      "portfolioValue": 10021.47995300293,
+      "totalReturn": 21.479953002930415,
+      "vsSP500": 57.41636392471429,
+      "rank": 4,
+      "lastAction": "ROTATED: XLE -5 -> XLU +7",
+      "intradayMove": 0.03
+    },
     {
       "id": "turtle",
       "name": "Turtle",
@@ -23,87 +95,50 @@
         "TSLA": 8,
         "COST": 3
       },
-      "portfolioValue": 10000.0,
-      "totalReturn": 0.0,
-      "vsSP500": 0.0,
-      "rank": 1,
-      "lastAction": "BUY NFLX +38 shares @ $78.26; BUY TSLA +8 shares @ $339.92; BUY COST +3 shares @ $962.78",
-      "intradayMove": 0.0
-    },
-    {
-      "id": "shark",
-      "name": "Shark",
-      "emoji": "\ud83e\udd88",
-      "strategy": "Momentum",
-      "cash": 984.0599365234375,
-      "holdings": {
-        "AMD": 6,
-        "MU": 3,
-        "NFLX": 40
-      },
-      "portfolioValue": 10000.0,
-      "totalReturn": 0.0,
-      "vsSP500": 0.0,
-      "rank": 2,
-      "lastAction": "BUY AMD +6 shares @ $499.75; BUY MU +3 shares @ $962.28; BUY NFLX +40 shares @ $78.26",
-      "intradayMove": 0.0
-    },
-    {
-      "id": "owl",
-      "name": "Owl",
-      "emoji": "\ud83e\udd89",
-      "strategy": "Value",
-      "cash": 2132.1297760009766,
-      "holdings": {
-        "JPM": 7,
-        "BRK-B": 5,
-        "XLU": 63
-      },
-      "portfolioValue": 10000.0,
-      "totalReturn": 0.0,
-      "vsSP500": 0.0,
-      "rank": 3,
-      "lastAction": "BUY JPM +7 shares @ $362.89; BUY BRK-B +5 shares @ $506.97; BUY XLU +63 shares @ $44.33",
-      "intradayMove": 0.0
-    },
-    {
-      "id": "wolf",
-      "name": "Wolf",
-      "emoji": "\ud83d\udc3a",
-      "strategy": "Sector Rotation",
-      "cash": 1125.2799530029297,
-      "holdings": {
-        "XLE": 48,
-        "XLU": 67,
-        "XLP": 34
-      },
-      "portfolioValue": 10000.0,
-      "totalReturn": 0.0,
-      "vsSP500": 0.0,
-      "rank": 4,
-      "lastAction": "BUY XLE +48 shares @ $61.97; BUY XLU +67 shares @ $44.33; BUY XLP +34 shares @ $86.18",
-      "intradayMove": 0.0
-    },
-    {
-      "id": "fox",
-      "name": "Fox",
-      "emoji": "\ud83e\udd8a",
-      "strategy": "Contrarian",
-      "cash": 1892.1150512695312,
-      "holdings": {
-        "AVGO": 7,
-        "HD": 8,
-        "AMZN": 10
-      },
-      "portfolioValue": 10000.0,
-      "totalReturn": 0.0,
-      "vsSP500": 0.0,
+      "portfolioValue": 10000.945819091798,
+      "totalReturn": 0.9458190917976026,
+      "vsSP500": 36.88223001358148,
       "rank": 5,
-      "lastAction": "BUY AVGO +7 shares @ $393.82; BUY HD +8 shares @ $338.76; BUY AMZN +10 shares @ $264.11",
-      "intradayMove": 0.0
+      "lastAction": "HOLDING: Trend remains intact",
+      "intradayMove": 0.05
     }
   ],
   "recentActivity": [
+    {
+      "time": "12:33 PM",
+      "trader": "Owl",
+      "action": "BUY BRK-B +1 share @ $510.2"
+    },
+    {
+      "time": "12:33 PM",
+      "trader": "Wolf",
+      "action": "ROTATED: XLE -5 -> XLU +7"
+    },
+    {
+      "time": "12:33 PM",
+      "trader": "Fox",
+      "action": "BUY HD +1 share @ $335.4"
+    },
+    {
+      "time": "12:33 PM",
+      "trader": "Turtle",
+      "action": "HOLDING: Trend remains intact"
+    },
+    {
+      "time": "12:33 PM",
+      "trader": "Shark",
+      "action": "BUY NFLX +2 shares @ $79.1"
+    },
+    {
+      "time": "11:36 AM",
+      "trader": "Owl",
+      "action": "REBALANCED: Adjusted positions based on Value strategy"
+    },
+    {
+      "time": "11:36 AM",
+      "trader": "Wolf",
+      "action": "REBALANCED: Adjusted positions based on Sector Rotation strategy"
+    },
     {
       "time": "11:34 AM",
       "trader": "Turtle",
@@ -130,6 +165,6 @@
       "action": "BUY AVGO +7 shares @ $393.82; BUY HD +8 shares @ $338.76; BUY AMZN +10 shares @ $264.11"
     }
   ],
-  "marketConditions": "S&P 500 (SPY) is at $776.37, -0.19% today and +0.40% over 5 sessions. Leading sectors: XLE +7.77%, XLU +1.65%, XLP +1.25%. Tech momentum +0.55% (NVDA 5d). Market status: 12:34 PM ET.",
-  "marketNote": "12:34 PM ET"
+  "marketConditions": "S&P 500 (SPY) is at $773.58, -0.36% total return.",
+  "marketNote": "12:33 PM"
 }
