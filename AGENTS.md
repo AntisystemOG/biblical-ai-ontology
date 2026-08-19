@@ -281,6 +281,15 @@ any complex string formatting — write it to a file first.
 - Sign the FULL path from root: `/trade-api/v2/portfolio/balance` (strip query params)
 - `password=None` (with comma) when loading PEM key — the `***` placeholder breaks
 
+### Kalshi Position Direction (Aug 18, 2026)
+- **YES = claims >= threshold ("at least X")** — you're betting the number hits or exceeds the threshold
+- **NO = claims < threshold ("below X")** — you're betting the number stays below the threshold
+- **195K NO means betting claims < 195K** (risky if forecast is 204K+)
+- **210K NO means betting claims < 210K** (safe if forecast is 204K)
+- **ALWAYS read `rules_primary` before placing a trade** — don't guess from ticker name
+- **digest.py now validates positions automatically** — warnings appear when position direction conflicts with forecast
+- Positive `position_fp` = YES side | Negative `position_fp` = NO side
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
