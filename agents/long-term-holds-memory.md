@@ -8,19 +8,19 @@
 
 ## Portfolio Holdings
 
-### ACTIVE POSITIONS (as of 2026-08-15)
+### ACTIVE POSITIONS (as of 2026-08-17)
 
 | Ticker | Entry Date | Entry Price | Current Price | Tier | Thesis Status | Manager Signal |
 |--------|-----------|-------------|---------------|------|---------------|----------------|
 | AMZN | Q4 2025 | — | — | Tier 1 | HOLD / ACCUMULATE | 5-manager overlap (Coatue, D1, Point72, Appaloosa, SIT) |
-| GOOGL | Q4 2025 | — | — | Tier 1 | HOLD | 3-manager overlap (Coatue, Point72, Appaloosa) |
+| GOOGL | Q4 2025 | — | — | Tier 1 | HOLD | 4-manager overlap (Coatue, Point72, Appaloosa, SIT) |
 | SPOT | Q4 2025 | — | — | Tier 1 | HOLD | 4-manager overlap (Point72, Coatue, D1, SIT) |
 | V | Portfolio | — | — | Tier 1 | HOLD | Point72; implied multi-manager quality |
 | TSM | Q4 2025 | — | — | Tier 2 | HOLD / ACCUMULATE | Appaloosa, Coatue, SIT |
 | CEG | Q4 2025 | — | — | Tier 2 / Hedge | ACCUMULATING | Coatue, SIT, Point72 (AI Power theme) |
 | GEV | Q4 2025 | — | — | Tier 2 / Hedge | ACCUMULATING | Coatue, SIT, Point72 |
 | VRT | Q4 2025 | — | — | Tier 2 / Hedge | ACCUMULATING | Coatue, Point72 |
-| NFLX | Q4 2025 | — | — | Tier 2 | HOLD | Coatue |
+| NFLX | Q4 2025 | — | — | Tier 2 | HOLD | Coatue, Point72, SIT |
 | AMD | Q4 2025 | — | — | Tier 2 | HOLD | Coatue, Point72 |
 | INTC | Portfolio | — | — | REVIEW / TRIM | WATCH | Tepper EXIT; Point72-only overlap now |
 | BRK.B | Portfolio | — | — | Tier 1 | HOLD | Buffett permanent capital |

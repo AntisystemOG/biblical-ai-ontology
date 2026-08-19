@@ -1,4 +1,4 @@
-# Strategist Memory — Learning System (Updated 2026-08-13)
+# Strategist Memory — Learning System (Updated 2026-08-17)
 
 **Purpose:** Track patterns, lessons, and strategies learned from analyzing top 100 hedge fund holdings over time.
 
@@ -59,17 +59,19 @@
 
 ---
 
-## Portfolio Tracking (As of 2026-08-13)
+## Portfolio Tracking (As of 2026-08-17)
 
 ### Current High-Conviction Holds (Portfolio + Strategists)
 | Ticker | Entry Signal | Managers | Status |
 |--------|--------------|----------|--------|
-| AMZN | Multi-Manager | Coatue, D1, Point72, SIT | HELD |
-| GOOGL | Multi-Manager | Point72, Coatue, SIT | HELD |
-| CEG | Multi-Manager | Coatue, SIT, Point72 | HELD |
-| GEV | Multi-Manager | Coatue, SIT, Point72 | HELD |
-| SPOT | Multi-Manager | Point72, Coatue, D1, SIT | HELD |
-| INTC | Turnaround | Tepper (EXITED) | REVIEW |
+| AMZN | Multi-Manager | Point72, D1, Appaloosa, Coatue, SIT | HELD |
+| GOOGL | Multi-Manager | Point72, Appaloosa, Coatue, SIT | HELD |
+| SPOT | Multi-Manager | Point72, D1, Coatue, SIT | HELD |
+| CEG | Multi-Manager | Point72, Coatue, SIT | HELD |
+| GEV | Multi-Manager | Point72, Coatue, SIT | HELD |
+| TSM | Multi-Manager | Point72, Coatue, SIT | HELD |
+| NFLX | Multi-Manager | Point72, Coatue, SIT | HELD |
+| MU | Multi-Manager | Point72, Appaloosa, SIT | HELD |
 
 ### Portfolio Positions WITHOUT Strategist Support
 | Ticker | Weight | Issue | Action |
@@ -90,56 +92,10 @@
 
 ---
 
-## Q3 2026 Update (August 14, 2026)
+## Q3 2026 Update (August 17, 2026)
 **Analysis:**
-- Portfolio now shows strong alignment with "Smart Money" in AI Infrastructure (CEG, GEV, SPOT) and AI/semiconductors (AMZN, GOOG, TSM, MU, AMD, NFLX).
-- **Long-term conviction holds (3+ managers incl. SIT high tier):** AMZN, SPOT, GOOG, TSM, MU, TSLA, CEG, NFLX, GEV.
-- **Highest portfolio-weight conviction:** AMZN (9.44% account weight, 5-manager overlap), SPOT (2.12%, 4 managers), MU (2.83%, 3 managers).
-- BE concentration remains reduced (1.63% account weight, only Point72 coverage) — isolated risk controlled.
-- INTC remains a point of concern due to Tepper's exit; Point72-only overlap now = REVIEW/TRADE, not high-conviction.
-- Bitcoin miners (CLSK 0.66%, CORZ 2.94%, RIOT 2.31%, WULF 0.94%, HUT 0.87%, CIFR 0.42%) have high short interest and almost no multi-manager support beyond Point72; classify as trades/speculation, not long-term conviction.
-
-### Latest Learned Patterns (Added 2026-08-14)
-- **Multi-manager conviction is strongest when SIT participates.** SIT's low-turnover quality approach validates Coatue/Point72/D1 momentum plays.
-- **5-manager overlap is rare and significant:** AMZN is the only 5-manager overlap in the current portfolio — top conviction.
-- **Bitcoin miners are a crowded retail/speculative cluster, not smart-money consensus.** No top-tier manager overlap beyond Point72 (trader). Treat as high-risk tactical positions.
-- **Tepper exit continues to be a reliable reversal warning:** INTC downgrade sticks.
-
-### Active Strategies (Updated 2026-08-14)
-
-#### STRATEGY: Multi-Manager Conviction
-**Trigger:** 3+ top-tier managers increasing same position for 2+ quarters.
-**Confidence:** HIGH
-**Hold Time:** 12+ months
-**Risk:** Low (diversified smart money)
-**Current Candidates:** AMZN, SPOT, GOOG/GOOGL, TSM, MU, CEG, GEV, NFLX
-
-#### STRATEGY: Quality Compounder Sector Rotation
-**Trigger:** Terry Smith/Fundsmith liquidates long-held quality name for new position.
-**Current Candidates:** ZTS — no new signal yet.
-
-#### STRATEGY: Activist Industrial Turnaround
-**Trigger:** Chris Hohn/TCI accumulating single industrial to >15%.
-**Current Candidates:** GE/GEHC — watch for fresh activist filings.
-
-#### STRATEGY: Bitcoin Miner Squeeze (AVOID as long-term hold)
-**Trigger:** Short interest >15% + declining SI trend + BTC catalyst.
-**Confidence:** LOW-MEDIUM
-**Hold Time:** 1-3 months
-**Risk:** HIGH
-**Current Candidates:** CLSK (18.5% SI, declining), CORZ, RIOT, WULF, HUT, CIFR — treat as trades, not conviction holds.
-
-#### STRATEGY: Tepper Exit Reversal Warning
-**Trigger:** Appaloosa exits a position that previously had multi-manager support.
-**Confidence:** HIGH
-**Action:** Downgrade to REVIEW/TRADE; wait for new sponsorship.
-**Current Flag:** INTC.
-
----
-
-## Q3 2026 Update (August 13, 2026)
-**Analysis:**
-- Portfolio now shows strong alignment with "Smart Money" in AI Infrastructure (CEG, GEV, VRT, SPOT).
-- AMZN and GOOGL remain core overlapping holds.
-- BE concentration has decreased (now 1.76% vs previous ~14%), significantly reducing isolated risk.
-- INTC remains a point of concern due to Tepper's exit.
+- Portfolio alignment remains strong in AI Infrastructure (CEG, GEV, SPOT) and AI/semiconductors (AMZN, GOOGL, TSM, MU, NFLX).
+- **Long-term conviction holds (3+ managers incl. SIT):** AMZN (5), GOOGL (4), SPOT (4), TSM (3), CEG (3), GEV (3), NFLX (3).
+- **Highest portfolio-weight conviction:** AMZN remains the top conviction hold (9.95% weight, 5-manager overlap).
+- **INTC Warning:** Tepper exit remains the primary reversal signal; downgraded to REVIEW/TRADE.
+- **BTC Miner Cluster:** Confirmed as tactical trades. High short interest but no multi-manager support. Treat as high-risk speculation.
