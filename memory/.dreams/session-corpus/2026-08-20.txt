@@ -1,0 +1,6 @@
+[main/sessions/main/02b62ece-14aa-45cc-8208-518e3da57480.jsonl#L10] Assistant: Gateway Healthy
+[main/sessions/main/898e9027-aee0-43cc-98e1-6505f46c0501.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[main/sessions/main/898e9027-aee0-43cc-98e1-6505f46c0501.jsonl#L12] Assistant: Gateway Healthy
+[main/sessions/main/eab8f7f4-4255-4767-95d0-7e373ce4cf50.jsonl#L8] Assistant: Quote escaping issue. Writing to a temp file instead.
+[main/sessions/main/eab8f7f4-4255-4767-95d0-7e373ce4cf50.jsonl#L10] Assistant: All four market snapshots collected and saved successfully. HEARTBEAT_OK
+[main/sessions/main/f8ffbb3e-66d8-4be9-9e3e-ba71901471d7.jsonl#L8] Assistant: Gateway Healthy
