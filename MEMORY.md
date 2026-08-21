@@ -220,7 +220,14 @@ See: INVESTING.md (tracks learning & personal plan)
 - Much better for local processing
 - Will eventually migrate Spock there
 
-## Security Systems
+## 🧠 MEMORY DREAMING SYNTHESIS (Added 2026-08-21)
+
+**August 20 Cycle:**
+- **Kalshi Success:** Clean sweep on claims positions (195K YES + 210K NO). Actual: 206K. 
+- **Model Validation:** Kalshi market consensus continues to be the gold standard for predictive accuracy (~4K variance). Analyst consensus remains a secondary, less reliable signal.
+- **Technical Friction:** Gateway instability persists (port 18789), but the watchdog pattern remains the most efficient recovery mechanism.
+- **Growth:** Bankroll grew to ~$61.55, validating the "truth-based trading" approach of following the most accurate signal (the market) rather than speculative forecasts.
+
 
 ### Voice Biometric Authentication (2026-02-24)
 - **Purpose:** Verify Thad's identity before sensitive actions
@@ -422,13 +429,15 @@ See: INVESTING.md (tracks learning & personal plan)
 - `the-edge-nightly` — 9 PM Mon-Thu nightly pick prep
 - `the-edge-morning` — 5:30 AM Mon-Fri morning final picks
 
-## Promoted From Short-Term Memory (2026-08-20)
+## Promoted From Short-Term Memory (2026-08-21)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-14.md:14:16 -->
-- Prediction Market Scan (11:19 CDT): KXHIGHNY-26AUG14-T85 (11.42 shares, cost $4.80) — NYC high temp ≥85°F today; KXFEDDECISION-26SEP-C25 (23.39 shares, cost $0.47) — Fed cuts 25bps in Sept; KXFEDDECISION-26SEP-H0 (12.81 shares, cost $8.79) — Fed holds (0bps hike) in Sept [score=0.815 recalls=0 avg=0.620 source=memory/2026-08-14.md:14-16]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-14.md:18:18 -->
-- Prediction Market Scan (11:19 CDT): **Latest Claims Data (Aug 8 week):** [score=0.815 recalls=0 avg=0.620 source=memory/2026-08-14.md:18-18]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-14.md:19:21 -->
-- Prediction Market Scan (11:19 CDT): Actual: 209,000 (SA) — above consensus of 202K; Previous: 200,000 (revised); Trend: Slightly elevated but still healthy labor market [score=0.815 recalls=0 avg=0.620 source=memory/2026-08-14.md:19-21]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:4:5 -->
-- Events & Decisions: Heartbeat check at 16:17 CDT.; System status healthy; no urgent alerts. [score=0.815 recalls=0 avg=0.620 source=memory/2026-08-15.md:4-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:8:11 -->
+- Kalshi Midday Scan (16:24 CDT): **Claims actual (Aug 8 week):** 209,000 (SA) — released Aug 13; **Consensus was 202K** — actual beat by +7K (big miss by analysts); **Kalshi market consensus: 208.4K** — only 0.625K off (BEST source again); **House forecast: 207.5K** — 1.53K off (decent) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:8-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:12:12 -->
+- Kalshi Midday Scan (16:24 CDT): **Analyst consensus: 202K** — 7K off (WORST source, 2nd bad call in a row) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:12-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:15:17 -->
+- Morning Picks Status: All 5 morning picks are **PENDING** — they target the Aug 20 claims release (week ending Aug 15); Key picks: NO on <200K (35% edge), NO on <205K (17% edge), YES on >230K long-shot (45% edge); Two far-dated Fed picks (April 2027 NO-hike, NO-cut) also and pending [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:15-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:20:23 -->
+- Portfolio: Cash: $41.58 | Positions: $9.94 | **Total: $51.52**; 2 open positions (both Sept 2026 Fed):; KXFEDDECISION-26SEP-C25 (23.39 shares, NO cut 25bps) — cost $0.47; KXFEDDECISION-26SEP-H0 (12.81 shares, YES hold) — cost $8.79 [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:20-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:24:24 -->
+- Portfolio: Both positions reinforced by today's data — resilient claims = no reason for the Fed to cut [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:24-24]
