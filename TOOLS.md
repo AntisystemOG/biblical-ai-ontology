@@ -87,4 +87,11 @@ All AI projects are now under `C:\AI Projects`. Active ones to remember:
 
 ---
 
+### Whale Watch
+- Agent: `agents/whale-watch.md`
+- Schedule: Quarterly on 13F deadline dates at 6:00 AM CDT
+- Latest CSV path: `C:\Users\thadd\Desktop\Portfolio Positions\`
+- Output: `C:\Users\thadd\.openclaw\workspace\Spocks Reports\whale_watch\YYYY-MM-DD_whale_watch.pdf`
+- Managers tracked: Steven Cohen (Point72), Daniel Sundheim (D1 Capital), David Tepper (Appaloosa), Philippe Laffont (Coatue), Alexander Aschenbrenner (SIT)
+
 Add whatever helps you do your job. This is your cheat sheet.
