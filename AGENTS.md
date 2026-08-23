@@ -244,6 +244,27 @@ When starting a fresh or empty inbound session from Telegram:
 
 Also honor `session.identityLinks` (`thad` → `telegram:6358625036`) when resolving cross-channel identity.
 
+## Low-Resource Laptop Adaptation (Added 2026-08-22)
+
+This Dell Latitude 7380 (2-core i7-6600U, 16GB RAM) hosts the OpenClaw Gateway and is frequently CPU-bound. Premature tool aborts were caused by parallel work overwhelming the dual-core CPU.
+
+### Gateway config changes applied
+- **Default model:** `ollama-cloud/gemma3:4b` (was `ollama/gemma4:cloud`) — lighter cloud model reduces request latency.
+- **maxConcurrent:** 1 (was 4) — serialize my own tool calls.
+- **subagents.maxConcurrent:** 1 (was 8) — never run more than one subagent at a time.
+- **subagents.archiveAfterMinutes:** 5 (was 60) — clean up subagent sessions quickly.
+- **plugins.ollama.nodeInference:** disabled — prevents local model discovery/loading attempts.
+- **plugins.ollama.discovery:** disabled — same reason.
+- **plugins.memory-core.dreaming:** disabled — stops background memory indexing that hammered CPU/disk.
+- **update.auto:** disabled — prevents surprise background update work.
+
+### How I will behave now
+- Avoid parallel `exec`/`process`/`read` calls. Batch via single shell commands when possible.
+- Prefer cloud models; avoid local Ollama inference on this host.
+- Avoid spawning multiple subagents for the same task; do work sequentially.
+- Avoid large `tasklist` / `systeminfo` style dumps unless requested.
+- Gateway restart required after config changes; if a restart command times out, that is expected and the Gateway will come back up.
+
 ## Lessons Learned
 
 ### Kalshi URL Format (Aug 17, 2026)

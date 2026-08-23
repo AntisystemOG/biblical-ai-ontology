@@ -258,6 +258,7 @@ See: INVESTING.md (tracks learning & personal plan)
 - Local models: nomic-embed-text only
 - Cloud: minimax-m2.5:cloud, minimax-m2.7:cloud (Ollama Pro)
 - Less secure network profile
+- **Low-resource adaptation applied 2026-08-22:** default model gemma3:4b, maxConcurrent=1, subagents.maxConcurrent=1, memory dreaming off, ollama discovery off, auto-update off.
 
 ### Home PC (3060 Ti)
 - Behind router (more secure)
@@ -429,15 +430,17 @@ See: INVESTING.md (tracks learning & personal plan)
 - `the-edge-nightly` — 9 PM Mon-Thu nightly pick prep
 - `the-edge-morning` — 5:30 AM Mon-Fri morning final picks
 
-## Promoted From Short-Term Memory (2026-08-21)
+## Promoted From Short-Term Memory (2026-08-22)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:8:11 -->
-- Kalshi Midday Scan (16:24 CDT): **Claims actual (Aug 8 week):** 209,000 (SA) — released Aug 13; **Consensus was 202K** — actual beat by +7K (big miss by analysts); **Kalshi market consensus: 208.4K** — only 0.625K off (BEST source again); **House forecast: 207.5K** — 1.53K off (decent) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:8-11]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:12:12 -->
-- Kalshi Midday Scan (16:24 CDT): **Analyst consensus: 202K** — 7K off (WORST source, 2nd bad call in a row) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:12-12]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:15:17 -->
-- Morning Picks Status: All 5 morning picks are **PENDING** — they target the Aug 20 claims release (week ending Aug 15); Key picks: NO on <200K (35% edge), NO on <205K (17% edge), YES on >230K long-shot (45% edge); Two far-dated Fed picks (April 2027 NO-hike, NO-cut) also and pending [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:15-17]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:20:23 -->
-- Portfolio: Cash: $41.58 | Positions: $9.94 | **Total: $51.52**; 2 open positions (both Sept 2026 Fed):; KXFEDDECISION-26SEP-C25 (23.39 shares, NO cut 25bps) — cost $0.47; KXFEDDECISION-26SEP-H0 (12.81 shares, YES hold) — cost $8.79 [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:20-23]
-<!-- openclaw-memory-promotion:memory:memory/2026-08-15.md:24:24 -->
-- Portfolio: Both positions reinforced by today's data — resilient claims = no reason for the Fed to cut [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-15.md:24-24]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:6:9 -->
+- Bubble Timeline Analysis: Thad asked about historical bubbles (AI, railroad, canal, dot-com) and loan maturity dates; Created comprehensive HTML dashboard with 7 charts:; Phase Timeline Comparison (all 4 bubbles); Correlation Matrix (risk metrics) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:6-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:10:13 -->
+- Bubble Timeline Analysis: Valuation Trajectories (overlay); Loan Maturity Dates timeline (when bills come due per bubble); AI Infrastructure Debt Maturity Wall (live DebtCanary data); Portfolio Debt Risk Heatmap (Thad's holdings vs debt) [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:10-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:14:15 -->
+- Bubble Timeline Analysis: Portfolio Maturity Timeline (when YOUR debt comes due); Hosted at http://127.0.0.1:8899/bubble_index.html [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:14-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:18:21 -->
+- Key Findings: **$447B** corporate debt due in 12 months ($907B in 24 months); **$145B+** hyperscaler debt issued in 2026 (4-8x historical avg); **FCF compression**: Amazon $26B→$1.2B, Alphabet -38%, MSFT -22%; **Oracle (ORCL)** downgraded to BBB- by S&P July 9, 2026 — THE CANARY [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:18-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:22:25 -->
+- Key Findings: **BE (Bloom Energy)**: 5/10 risk, entire $2.7B debt due near-term — Thad's highest-risk position ($39,599); **INTC (Intel)**: Negative interest coverage (-2.5x), $2.5B due 12mo, $6.3B due 24mo, but $12.9B cash; **CORZ**: $3.3B senior secured notes issued Apr 2026, maturity UNKNOWN; **APLD**: $1.59B senior secured notes issued Jun 2026, maturity UNKNOWN [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:22-25]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:26:26 -->
+- Key Findings: **MSFT/AMZN**: Low risk, will survive any washout — these are the "railroad survivors" [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:26-26]
