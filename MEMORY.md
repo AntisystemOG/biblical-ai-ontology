@@ -220,13 +220,19 @@ See: INVESTING.md (tracks learning & personal plan)
 - Much better for local processing
 - Will eventually migrate Spock there
 
-## 🧠 MEMORY DREAMING SYNTHESIS (Added 2026-08-21)
+## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-08-23)
 
 **August 20 Cycle:**
-- **Kalshi Success:** Clean sweep on claims positions (195K YES + 210K NO). Actual: 206K. 
+- **Kalshi Success:** Clean sweep on claims positions (195K YES + 210K NO). Actual: 206K.
 - **Model Validation:** Kalshi market consensus continues to be the gold standard for predictive accuracy (~4K variance). Analyst consensus remains a secondary, less reliable signal.
 - **Technical Friction:** Gateway instability persists (port 18789), but the watchdog pattern remains the most efficient recovery mechanism.
 - **Growth:** Bankroll grew to ~$61.55, validating the "truth-based trading" approach of following the most accurate signal (the market) rather than speculative forecasts.
+
+**August 22 Cycle (Sunday dream, generated 2026-08-23):**
+- **Quiet day, loud signal:** Saturday's memory log was sparse—system stable, Kalshi engine watching Aug 27 claims cycle, no forced trades.
+- **Gateway health remains the critical path:** Watchdog restarted Gateway successfully at 21:14, but at 23:02 restart/start both failed; port 18789 stayed unreachable. Manual intervention noted.
+- **Low-resource adaptation is necessary but insufficient:** Concurrency/model-size cuts applied Aug 22 bought breathing room but did not eliminate the failure. Need to investigate additional root causes (memory leak, port conflict, Ollama cloud timeout, Windows network/power event).
+- **Pattern:** The system is learning to heal itself but has not learned to stay well. The watchdog is the best recovery tool; a deeper fix is still needed.
 
 
 ### Voice Biometric Authentication (2026-02-24)

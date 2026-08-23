@@ -92,10 +92,10 @@
 
 ---
 
-## Q3 2026 Update (August 17, 2026)
+## Q3 2026 Update (August 22, 2026)
 **Analysis:**
-- Portfolio alignment remains strong in AI Infrastructure (CEG, GEV, SPOT) and AI/semiconductors (AMZN, GOOGL, TSM, MU, NFLX).
-- **Long-term conviction holds (3+ managers incl. SIT):** AMZN (5), GOOGL (4), SPOT (4), TSM (3), CEG (3), GEV (3), NFLX (3).
-- **Highest portfolio-weight conviction:** AMZN remains the top conviction hold (9.95% weight, 5-manager overlap).
-- **INTC Warning:** Tepper exit remains the primary reversal signal; downgraded to REVIEW/TRADE.
-- **BTC Miner Cluster:** Confirmed as tactical trades. High short interest but no multi-manager support. Treat as high-risk speculation.
+- Portfolio alignment remains stable in AI Infrastructure (CEG, GEV, SPOT) and AI/Semiconductors (AMZN, GOOGL, TSM, MU, NFLX).
+- **Long-term conviction holds (3+ managers incl. SIT):** AMZN, GOOGL, SPOT, TSM, CEG, GEV, NFLX continue to show strong institutional support.
+- **Portfolio-Weight Check:** AMZN remains the primary conviction anchor.
+- **Tactical Watch:** BTC miners (CORZ, RIOT, CLSK) remain high-risk tactical plays with significant short interest and no multi-manager long-term support.
+- **Regime Note:** S&P 500 (SPY) showing slight weakness (-0.36%), but high-conviction AI/Infra names are resisting.
