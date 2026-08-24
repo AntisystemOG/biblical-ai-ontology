@@ -23,7 +23,14 @@ Monday at 9:00 AM CDT
    - Discount to intrinsic value
 3. Focus on long-term value opportunities
 4. Generate report with top 3-5 picks
-5. Save to C:\Users\thadd\OneDrive\Desktop\Spocks Reports\financial_advisor\YYYY-MM-DD_advisor_report.md
+5. Create the output directory first (use PowerShell with proper quoting):
+   ```powershell
+   New-Item -ItemType Directory -Force -Path 'C:\Users\thadd\OneDrive\Desktop\Spocks Reports\financial_advisor'
+   ```
+6. Save report to `C:\Users\thadd\OneDrive\Desktop\Spocks Reports\financial_advisor\YYYY-MM-DD_advisor_report.md`
+
+## Critical Path Rule
+**ALWAYS use single-quoted PowerShell paths with backslashes.** Never use unquoted paths or forward slashes — they get mangled and create broken folder names like `C:Usersthadd...`
 
 ## Important Notes
 - Weekly analysis (Mondays)
