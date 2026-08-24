@@ -2,7 +2,7 @@
 
 **Purpose:** Track long-term holdings, performance vs inflation, and learned patterns for compounding wealth.
 
-**Last Updated:** 2026-08-15
+**Last Updated:** 2026-08-24
 
 ---
 
@@ -122,7 +122,7 @@
 |--------|-----|------------------|-------------|----------------|-------|
 | 2026 Q1 | ~3.4% | Baseline | TBD | TBD | Baseline established |
 | 2026-05-12 | ~3.4% | Starting point | — | — | First LTH report issued |
-| 2026-08-15 | ~3.8% | Tracking | TBD | TBD | Macro composite worsened; yields surged |
+| 2026-08-24 | ~3.0-3.5% | Tracking | TBD | TBD | CAPE ~42x; Treasury buyback regime; Iran energy risk premium |
 
 **Tracking Method:**
 - Compare portfolio total return vs S&P 500 vs CPI.
@@ -202,13 +202,15 @@
 - **Cash Allocation:** 15% opportunistic
 - **Market Context:** Record highs, narrow leadership, Fed transition
 
-### 2026-08-15: Q3 Update
+### 2026-08-24: Q3 Update
 - **Confirmed:** AMZN, GOOGL, SPOT, TSM as highest-conviction multi-manager holds.
 - **Added:** CEG, GEV, VRT as AI Power infrastructure compounders.
 - **Downgraded:** INTC to REVIEW/TRIM after Tepper exit.
 - **Reaffirmed:** NVDA tactical avoid; bitcoin miners speculation only.
+- **Adjusted:** MU conviction to MEDIUM/HOLD (no new money) after Tepper Q2 trim and cyclical memory pricing-in.
+- **New Pattern:** Treasury buyback regime + CAPE >40 + Iran energy risk premium = "rich but fragile" market; favor quality compounders, maintain 10-15% cash.
 - **Raised target:** Gold allocation toward 5%; foundation index exposure toward 70%.
-- **Market Context:** 1965-66/1979/1999 macro composite; CAPE ~40-42x; 30Y yields >5%.
+- **Market Context:** 1965-66/1979/1999 macro composite; CAPE ~42x; 10Y ~4.74%; geopolitical risk embedded.
 
 ### Lessons from Recent Reports
 1. **Quality over quantity** — 6 Tier 1 holdings better than 20 mediocre.
