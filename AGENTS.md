@@ -71,6 +71,15 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## Kalshi Universal Rule (MANDATORY)
+**ALL Kalshi programs MUST use real Kalshi API market prices.** Never simulate, estimate, or fabricate market prices. If the API is unavailable, skip bets — do not make up prices. This applies to:
+- Weather paper trader
+- Claims scanner
+- The Edge
+- Any future Kalshi program
+
+If a program can't fetch real prices, it should say so and hold cash.
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.
