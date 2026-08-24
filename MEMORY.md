@@ -220,7 +220,21 @@ See: INVESTING.md (tracks learning & personal plan)
 - Much better for local processing
 - Will eventually migrate Spock there
 
-## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-08-23)
+## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-08-24)
+
+**August 23 Cycle:**
+- **Real prices become law:** The weather paper trader was rewritten to fetch actual Kalshi API prices via `GET /markets?series_ticker=KXHIGH*`. The previous 6/6 "win streak" under simulated odds was explicitly invalidated. A universal rule was added to AGENTS.md: all Kalshi programs must use real API prices or hold cash.
+- **Five live edges found:** After an auto-run produced no edge (formula too conservative), manual analysis located five real weather-band NO bets — Denver, Miami (×2), Chicago (×2). Total wagered $48.71, cash remaining $51.29. Best edge: Miami NO 92–93F at $0.35, 95% win probability, 171% EV.
+- **System contradiction:** The memory-dreaming cron fired at 03:00 AM CDT despite MEMORY.md listing "memory dreaming disabled" in the Aug 22 low-resource plan. This signals a config/registry drift — scheduled services and disabled flags are not in sync.
+
+**Weekly Distilled Learnings (Aug 17–23):**
+1. **Real prices are non-negotiable.** Simulated odds produce false confidence. The only valid Kalshi signal is the live market ask.
+2. **Edges live in ordinary events, not drama.** The highest-EV bet was that Miami would stay cooler than 92–93°F — a mispricing of routine weather, not a headline.
+3. **Low-resource cuts are stabilizers, not cures.** The Dell Latitude 7380 still needs the Gateway watchdog. Deeper root-cause work on port 18789 instability remains open.
+4. **Config drift needs a registry review.** Services marked disabled can still fire if crons are not updated to match. The `REGISTRY.md`/cron state should be audited.
+5. **Prediction is the core growth loop.** Target remains 4/5 accuracy; every mistake must become a model rewrite, every win a confirmation of process.
+
+**Prior cycle context:**
 
 **August 20 Cycle:**
 - **Kalshi Success:** Clean sweep on claims positions (195K YES + 210K NO). Actual: 206K.
