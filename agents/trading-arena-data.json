@@ -1,20 +1,20 @@
 {
   "sessionStart": "2026-05-15T14:30:00-05:00",
-  "simulationDay": 8,
+  "simulationDay": 9,
   "sp500Start": 5994.73,
-  "sp500Current": 7652.86,
-  "sp500DailyChange": -0.28,
+  "sp500Current": 7654.13,
+  "sp500DailyChange": -0.26,
   "traders": [
     {
       "name": "Shark",
       "emoji": "\ud83e\udd88",
       "strategy": "Momentum",
       "startingCapital": 10000.0,
-      "currentValue": 23335.84,
-      "dailyChange": 1.12,
-      "totalReturn": 133.36,
-      "vsSPY": 105.7,
-      "position": "HOLD TSLA \u2014 awaiting earnings clarity",
+      "currentValue": 21043.81,
+      "dailyChange": -1.55,
+      "totalReturn": 110.44,
+      "vsSPY": 82.76,
+      "position": "ADD AMD +1 @ $417.04 \u2014 chasing relative strength",
       "rank": 1
     },
     {
@@ -22,11 +22,11 @@
       "emoji": "\ud83d\udc22",
       "strategy": "Trend Following",
       "startingCapital": 10000.0,
-      "currentValue": 17264.25,
-      "dailyChange": 0.23,
-      "totalReturn": 72.64,
-      "vsSPY": 44.98,
-      "position": "REDUCE AVGO -1 share @ $358.76 \u2014 trend showing weakness",
+      "currentValue": 17320.79,
+      "dailyChange": 0.1,
+      "totalReturn": 73.21,
+      "vsSPY": 45.53,
+      "position": "TRIM AAPL -3 @ $315.02 \u2014 tighten trailing stop",
       "rank": 2
     },
     {
@@ -34,11 +34,11 @@
       "emoji": "\ud83e\udd89",
       "strategy": "Value",
       "startingCapital": 10000.0,
-      "currentValue": 16478.14,
-      "dailyChange": -0.34,
-      "totalReturn": 64.78,
-      "vsSPY": 37.12,
-      "position": "ADD JPM +3 shares @ $356.39 \u2014 valuation still attractive",
+      "currentValue": 16861.58,
+      "dailyChange": 0.77,
+      "totalReturn": 68.62,
+      "vsSPY": 40.94,
+      "position": "HOLD \u2014 waiting for better entry",
       "rank": 3
     },
     {
@@ -46,11 +46,11 @@
       "emoji": "\ud83e\udd8a",
       "strategy": "Contrarian",
       "startingCapital": 10000.0,
-      "currentValue": 15297.73,
-      "dailyChange": -0.71,
-      "totalReturn": 52.98,
+      "currentValue": 15300.1,
+      "dailyChange": 0.01,
+      "totalReturn": 53.0,
       "vsSPY": 25.32,
-      "position": "HOLD TLT \u2014 rates finding ceiling",
+      "position": "HOLD \u2014 patience for reversal",
       "rank": 4
     },
     {
@@ -58,14 +58,15 @@
       "emoji": "\ud83d\udc3a",
       "strategy": "Sector Rotation",
       "startingCapital": 10000.0,
-      "currentValue": 14829.04,
-      "dailyChange": -0.02,
-      "totalReturn": 48.29,
-      "vsSPY": 20.63,
-      "position": "REDUCE XLK -5 shares @ $180.05 \u2014 tech rotation pressure",
+      "currentValue": 14726.47,
+      "dailyChange": -0.25,
+      "totalReturn": 47.26,
+      "vsSPY": 19.58,
+      "position": "ADD XLF +7 @ $61.16 \u2014 sector exposure",
       "rank": 5
     }
   ],
-  "lastUpdate": "2026-08-24T17:43:29-0500",
-  "marketStatus": "open"
+  "lastUpdate": "2026-08-25T16:11:26.002176-05:00",
+  "marketStatus": "closed",
+  "marketTheme": "tech weak, financials/energy/healthcare stronger"
 }
