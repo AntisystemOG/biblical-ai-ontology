@@ -1,77 +1,137 @@
 {
-  "lastUpdated": "2026-05-15T14:30:00-05:00",
-  "sessionDay": 7,
+  "lastUpdated": "2026-08-24T17:43:29-0500",
+  "sessionDay": 8,
   "marketStatus": "open",
   "benchmark": {
-    "spxPrice": 7495.20,
-    "spxChange": 0.64,
-    "totalReturn": 14.78
+    "spxPrice": 7652.86,
+    "spxChange": -0.28,
+    "totalReturn": 27.66
   },
   "traders": {
     "shark": {
-      "value": 21104.80,
-      "pnl": 11104.80,
-      "pnlPercent": 111.05,
+      "value": 23335.84,
+      "pnl": 13335.84,
+      "pnlPercent": 133.36,
       "rank": 1,
-      "lastAction": "ADD NVDA +8 shares @ $235.40 on breakout",
+      "lastAction": "HOLD TSLA \u2014 awaiting earnings clarity",
       "holdings": {
-        "NVDA": {"shares": 46, "price": 235.40, "change": 3.25},
-        "AMD": {"shares": 12, "price": 118.50, "change": 2.15},
-        "TSLA": {"shares": 8, "price": 441.80, "change": 1.52}
+        "NVDA": {
+          "shares": 46,
+          "price": 208.48,
+          "change": -2.91
+        },
+        "AMD": {
+          "shares": 12,
+          "price": 456.75,
+          "change": -3.49
+        },
+        "TSLA": {
+          "shares": 8,
+          "price": 348.95,
+          "change": -3.83
+        }
       },
-      "cash": 5426.40
+      "cash": 5473.16
     },
     "turtle": {
-      "value": 17856.30,
-      "pnl": 7856.30,
-      "pnlPercent": 78.56,
+      "value": 17264.25,
+      "pnl": 7264.25,
+      "pnlPercent": 72.64,
       "rank": 2,
-      "lastAction": "BUY MSFT +5 shares @ $412.15 - trend continuation",
+      "lastAction": "REDUCE AVGO -1 share @ $358.76 \u2014 trend showing weakness",
       "holdings": {
-        "AAPL": {"shares": 22, "price": 256.80, "change": 1.02},
-        "MSFT": {"shares": 17, "price": 412.15, "change": 1.92},
-        "AVGO": {"shares": 6, "price": 428.50, "change": 1.51}
+        "AAPL": {
+          "shares": 21,
+          "price": 310.34,
+          "change": 0.32
+        },
+        "MSFT": {
+          "shares": 16,
+          "price": 487.31,
+          "change": 0.84
+        },
+        "AVGO": {
+          "shares": 7,
+          "price": 358.76,
+          "change": -2.63
+        }
       },
-      "cash": 452.20
+      "cash": 438.83
     },
     "wolf": {
-      "value": 17345.60,
-      "pnl": 7345.60,
-      "pnlPercent": 73.46,
-      "rank": 3,
-      "lastAction": "HOLD - energy strength offsetting tech weakness",
+      "value": 14829.04,
+      "pnl": 4829.04,
+      "pnlPercent": 48.29,
+      "rank": 5,
+      "lastAction": "REDUCE XLK -5 shares @ $180.05 \u2014 tech rotation pressure",
       "holdings": {
-        "XLK": {"shares": 30, "price": 182.40, "change": 1.08},
-        "XLE": {"shares": 45, "price": 52.85, "change": 1.29},
-        "XLF": {"shares": 25, "price": 53.40, "change": 1.04}
+        "XLK": {
+          "shares": 30,
+          "price": 180.05,
+          "change": -1.78
+        },
+        "XLE": {
+          "shares": 45,
+          "price": 63.11,
+          "change": -0.83
+        },
+        "XLF": {
+          "shares": 25,
+          "price": 58.22,
+          "change": 1.29
+        }
       },
-      "cash": 5142.50
+      "cash": 5132.09
     },
     "owl": {
-      "value": 11368.45,
-      "pnl": 1368.45,
-      "pnlPercent": 13.68,
-      "rank": 4,
-      "lastAction": "HOLD - value thesis intact, no compelling trades",
+      "value": 16478.14,
+      "pnl": 6478.14,
+      "pnlPercent": 64.78,
+      "rank": 3,
+      "lastAction": "ADD JPM +3 shares @ $356.39 \u2014 valuation still attractive",
       "holdings": {
-        "JPM": {"shares": 20, "price": 305.80, "change": 0.78},
-        "BRK.B": {"shares": 10, "price": 475.30, "change": 0.67},
-        "UNH": {"shares": 5, "price": 368.90, "change": -0.42}
+        "JPM": {
+          "shares": 20,
+          "price": 356.39,
+          "change": 1.37
+        },
+        "BRK.B": {
+          "shares": 11,
+          "price": 504.32,
+          "change": 1.71
+        },
+        "UNH": {
+          "shares": 5,
+          "price": 398.76,
+          "change": 2.22
+        }
       },
-      "cash": 1795.75
+      "cash": 1809.02
     },
     "fox": {
-      "value": 9865.30,
-      "pnl": -134.70,
-      "pnlPercent": -1.35,
-      "rank": 5,
-      "lastAction": "BUY QQQ +15 shares @ $498.20 - tech oversold bounce",
+      "value": 15297.73,
+      "pnl": 5297.73,
+      "pnlPercent": 52.98,
+      "rank": 4,
+      "lastAction": "HOLD TLT \u2014 rates finding ceiling",
       "holdings": {
-        "XLU": {"shares": 30, "price": 47.45, "change": 0.64},
-        "QQQ": {"shares": 15, "price": 498.20, "change": 1.25},
-        "TLT": {"shares": 12, "price": 89.20, "change": 0.85}
+        "XLU": {
+          "shares": 30,
+          "price": 43.22,
+          "change": 1.05
+        },
+        "QQQ": {
+          "shares": 15,
+          "price": 706.32,
+          "change": -1.0
+        },
+        "TLT": {
+          "shares": 12,
+          "price": 82.56,
+          "change": 0.62
+        }
       },
-      "cash": 2368.20
+      "cash": 2415.61
     }
   }
 }
