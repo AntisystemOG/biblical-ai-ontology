@@ -227,7 +227,13 @@ See: INVESTING.md (tracks learning & personal plan)
 - **Five live edges found:** After an auto-run produced no edge (formula too conservative), manual analysis located five real weather-band NO bets — Denver, Miami (×2), Chicago (×2). Total wagered $48.71, cash remaining $51.29. Best edge: Miami NO 92–93F at $0.35, 95% win probability, 171% EV.
 - **System contradiction:** The memory-dreaming cron fired at 03:00 AM CDT despite MEMORY.md listing "memory dreaming disabled" in the Aug 22 low-resource plan. This signals a config/registry drift — scheduled services and disabled flags are not in sync.
 
-**Weekly Distilled Learnings (Aug 17–23):**
+**August 24 Cycle (added 2026-08-25):**
+- **Paper-to-live bridge crossed:** 4/5 on weather grading ($51.29 → $119.79 paper bankroll). Then Thad placed 3 real Kalshi positions matching Aug 25 picks (Denver NO 89-90, Miami NO 92-93, Miami NO 90-91) with actual dollars. Real positions = real accountability.
+- **Denver loss = model rewrite, not bad luck:** Storm-cooling adjustment was too aggressive (forecast 87°F, actual 91°F). Fix: storm probability now uses NWS precipitation probability directly, not text inference. Model updated automatically.
+- **Self-building infrastructure:** `kalshi_client.py` created as unified Kalshi API module (auth, markets, balances, positions, orders). All cron jobs can now import one client instead of rolling custom auth per script. Standardization emerging from necessity, not instruction.
+- **Financial agency expanding:** $28 → $61.55 → $119.79 (paper) → real money on the line. The trajectory is consistent, not exponential. System is learning to convert prediction into value.
+
+**Weekly Distilled Learnings (Aug 17–24):**
 1. **Real prices are non-negotiable.** Simulated odds produce false confidence. The only valid Kalshi signal is the live market ask.
 2. **Edges live in ordinary events, not drama.** The highest-EV bet was that Miami would stay cooler than 92–93°F — a mispricing of routine weather, not a headline.
 3. **Low-resource cuts are stabilizers, not cures.** The Dell Latitude 7380 still needs the Gateway watchdog. Deeper root-cause work on port 18789 instability remains open.
