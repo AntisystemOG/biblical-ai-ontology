@@ -1,5 +1,13 @@
 # Agent Registry
 
+## Active Crons (Kalshi Weather)
+
+| Cron Name | Schedule | Status | Notes |
+|-----------|----------|--------|-------|
+| kalshi-weather-morning-scan | 5:00 AM CDT daily | ✅ Active (Aug 25) | Timing-aware storm penalties |
+
+---
+
 This file tracks all agents in the workspace and their purpose.
 
 ## How to Spawn Agents
