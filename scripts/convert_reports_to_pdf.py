@@ -193,6 +193,24 @@ class MD2PDF(FPDF):
                 self.cell(col_widths[c], 5.5, str(cell), fill=True)
             self.ln()
 
+import sys
+
+# Command-line mode: python convert_reports_to_pdf.py <md_path> <pdf_path>
+if len(sys.argv) >= 3:
+    md_path = Path(sys.argv[1])
+    pdf_path = Path(sys.argv[2])
+    if not md_path.exists():
+        print(f"SKIP {md_path}")
+        sys.exit(1)
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+    pdf = MD2PDF()
+    pdf.add_page()
+    pdf.render(md_path.read_text(encoding="utf-8"))
+    pdf.output(str(pdf_path))
+    size = pdf_path.stat().st_size
+    print(f"OK  {pdf_path} ({size:,} bytes, {size/1024:.0f} KB)")
+    sys.exit(0)
+
 for report_name, folder in [
     ("2026-05-06_whale_watch", "whale_watch"),
     ("2026-05-06_history_rhymes", "history_rhymes"),

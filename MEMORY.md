@@ -470,3 +470,4 @@ See: INVESTING.md (tracks learning & personal plan)
 - Key Findings: **BE (Bloom Energy)**: 5/10 risk, entire $2.7B debt due near-term — Thad's highest-risk position ($39,599); **INTC (Intel)**: Negative interest coverage (-2.5x), $2.5B due 12mo, $6.3B due 24mo, but $12.9B cash; **CORZ**: $3.3B senior secured notes issued Apr 2026, maturity UNKNOWN; **APLD**: $1.59B senior secured notes issued Jun 2026, maturity UNKNOWN [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:22-25]
 <!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:26:26 -->
 - Key Findings: **MSFT/AMZN**: Low risk, will survive any washout — these are the "railroad survivors" [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:26-26]
+
