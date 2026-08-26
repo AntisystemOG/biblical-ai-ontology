@@ -1,0 +1,149 @@
+{
+  "sessionStart": "2026-08-14",
+  "lastUpdate": "2026-08-26T09:34:31.117749",
+  "tradingDaysElapsed": 10.0,
+  "marketOpen": true,
+  "marketTheme": "XLI strongest (+1.16%), XLV weakest (-0.42%)",
+  "benchmark": {
+    "symbol": "SPY",
+    "price": 765.16,
+    "priceAtStart": 776.37,
+    "previousClose": 765.91,
+    "change": -0.75,
+    "changePercent": -0.1,
+    "returnPercent": -1.44
+  },
+  "traders": [
+    {
+      "id": "shark",
+      "name": "Shark",
+      "emoji": "🦈",
+      "strategy": "Momentum",
+      "cash": 6066.31,
+      "holdings": {
+        "NVDA": 46,
+        "AMD": 8,
+        "TSLA": 8
+      },
+      "portfolioValue": 22381.77,
+      "totalReturn": 123.82,
+      "vsSP500": 125.26,
+      "rank": 1,
+      "lastAction": "HOLD — riding momentum leaders",
+      "intradayMove": 0.06
+    },
+    {
+      "id": "turtle",
+      "name": "Turtle",
+      "emoji": "🐢",
+      "strategy": "Trend Following",
+      "cash": 3341.79,
+      "holdings": {
+        "AAPL": 18,
+        "MSFT": 12,
+        "AVGO": 7
+      },
+      "portfolioValue": 17344.55,
+      "totalReturn": 73.45,
+      "vsSP500": 74.89,
+      "rank": 2,
+      "lastAction": "HOLD — trend intact",
+      "intradayMove": 0.0
+    },
+    {
+      "id": "owl",
+      "name": "Owl",
+      "emoji": "🦉",
+      "strategy": "Value",
+      "cash": 1809.02,
+      "holdings": {
+        "JPM": 20,
+        "BRK.B": 11,
+        "UNH": 5
+      },
+      "portfolioValue": 16505.38,
+      "totalReturn": 65.05,
+      "vsSP500": 66.5,
+      "rank": 3,
+      "lastAction": "HOLD — waiting for better entry",
+      "intradayMove": -0.02
+    },
+    {
+      "id": "fox",
+      "name": "Fox",
+      "emoji": "🦊",
+      "strategy": "Contrarian",
+      "cash": 2415.61,
+      "holdings": {
+        "XLU": 30,
+        "QQQ": 15,
+        "TLT": 12
+      },
+      "portfolioValue": 15358.01,
+      "totalReturn": 53.58,
+      "vsSP500": 55.02,
+      "rank": 4,
+      "lastAction": "HOLD — patience for reversal",
+      "intradayMove": 0.0
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf",
+      "emoji": "🐺",
+      "strategy": "Sector Rotation",
+      "cash": 3996.99,
+      "holdings": {
+        "XLK": 34,
+        "XLE": 45,
+        "XLF": 32
+      },
+      "portfolioValue": 14858.86,
+      "totalReturn": 48.59,
+      "vsSP500": 50.03,
+      "rank": 5,
+      "lastAction": "HOLD — sector positioning steady",
+      "intradayMove": 0.01
+    }
+  ],
+  "recentActivity": [
+    "No major trades this interval."
+  ],
+  "marketConditions": "S&P 500 (SPY) is at $765.16, -0.10%",
+  "marketNote": "Market Open",
+  "_prices": {
+    "AAPL": 311.83,
+    "AMD": 483.99,
+    "AMZN": 258.99,
+    "AVGO": 351.92,
+    "BRK-B": 505.46,
+    "COIN": 183.29,
+    "CRM": 203.35,
+    "GLD": 423.58,
+    "GOOGL": 341.73,
+    "JNJ": 271.77,
+    "JPM": 356.2,
+    "KO": 90.82,
+    "MA": 596.3,
+    "MO": 68.79,
+    "MSFT": 493.86,
+    "MSTR": 123.61,
+    "NVDA": 210.27,
+    "PG": 144.99,
+    "PLTR": 175.61,
+    "QQQ": 708.95,
+    "SPY": 765.16,
+    "TLT": 83.17,
+    "TSLA": 346.39,
+    "UNH": 402.46,
+    "V": 382.41,
+    "VZ": 50.58,
+    "XLE": 62.73,
+    "XLF": 58.19,
+    "XLI": 180.47,
+    "XLK": 181.67,
+    "XLRE": 45.31,
+    "XLU": 43.67,
+    "XLV": 174.55,
+    "BRK.B": 505.46
+  }
+}

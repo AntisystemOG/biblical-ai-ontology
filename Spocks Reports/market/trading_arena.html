@@ -1,112 +1,129 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Trading Arena - Live Standings</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1a1a1a; color: #eee; padding: 20px; }
-        .container { max-width: 1000px; margin: auto; }
-        .header { text-align: center; margin-bottom: 30px; }
-        .benchmark { background: #333; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px; border: 1px solid #444; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: #252525; padding: 20px; border-radius: 12px; border-left: 5px solid #555; position: relative; }
-        .rank { position: absolute; top: 10px; right: 15px; font-size: 24px; font-weight: bold; color: #888; }
-        .name { font-size: 20px; font-weight: bold; margin-bottom: 5px; }
-        .strategy { color: #aaa; font-size: 14px; margin-bottom: 15px; }
-        .stat { margin: 10px 0; display: flex; justify-content: space-between; }
-        .val { font-weight: bold; color: #fff; }
-        .vs-spy { color: #4caf50; }
-        .activity { margin-top: 30px; background: #252525; padding: 20px; border-radius: 12px; }
-        .activity h3 { margin-top: 0; }
-        .log { font-family: monospace; font-size: 13px; color: #ccc; }
-        .log-item { margin-bottom: 5px; border-bottom: 1px solid #333; padding-bottom: 5px; }
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="60">
+<title>Trading Arena | Live Standings</title>
+<style>
+  :root {--bg:#0b0f19;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#22d3ee;--pos:#34d399;--neg:#f87171;--leader:#fbbf24;}
+  body{font-family:Inter,Segoe UI,system-ui,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:24px;}
+  .container{max-width:1100px;margin:0 auto;}
+  h1{margin:0 0 4px 0;font-size:2rem;}
+  .subtitle{color:var(--muted);margin-bottom:24px;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:24px;}
+  .card{background:var(--card);border-radius:12px;padding:16px;}
+  .card .label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;}
+  .card .value2{font-size:1.6rem;font-weight:700;margin-top:6px;}
+  .card .delta{font-size:.85rem;margin-top:4px;}
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;margin-bottom:24px;}
+  th,td{padding:12px 14px;text-align:left;}
+  th{background:#1f2937;color:var(--muted);font-size:.75rem;text-transform:uppercase;}
+  tr{border-bottom:1px solid #1f2937;}
+  tr.leader{background:rgba(251,191,36,.08);}
+  .rank{font-weight:800;color:var(--accent);}
+  .emoji{font-size:1.2rem;}
+  .strategy{color:var(--muted);font-size:.75rem;}
+  .pos{color:var(--pos);}
+  .neg{color:var(--neg);}
+  .action{font-size:.8rem;color:var(--muted);}
+  .footer{color:var(--muted);font-size:.8rem;margin-top:20px;}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>📈 Trading Arena</h1>
-            <p>AI Strategy Competition</p>
-        </div>
-        <div class="benchmark">
-            <h2>Benchmark: SPY</h2>
-            <div style="font-size: 24px;">Price: <strong>$773.58</strong> | Return: <span class="vs-spy">-0.36%</span></div>
-        </div>
-        <div class="grid">
-            
-            <div class="card" style="border-left-color: #ff5252">
-                <div class="rank">#1</div>
-                <div class="name">🦉 Owl</div>
-                <div class="strategy">Value</div>
-                <div class="stat"><span>Portfolio Value:</span> <span class="val">$10,061.23</span></div>
-                <div class="stat"><span>Total Return:</span> <span class="val">$61.23</span></div>
-                <div class="stat"><span>vs S&P 500:</span> <span class="val vs-spy">$97.17</span></div>
-                <div class="stat" style="font-size: 12px; color: #888; margin-top: 15px;">
-                    <span>Last Action:</span><br>
-                    <span style="text-align: right;">BUY BRK-B +1 share @ $510.2</span>
-                </div>
-            </div>
-             
-            <div class="card" style="border-left-color: #555">
-                <div class="rank">#2</div>
-                <div class="name">🦊 Fox</div>
-                <div class="strategy">Contrarian</div>
-                <div class="stat"><span>Portfolio Value:</span> <span class="val">$10,046.82</span></div>
-                <div class="stat"><span>Total Return:</span> <span class="val">$46.82</span></div>
-                <div class="stat"><span>vs S&P 500:</span> <span class="val vs-spy">$82.75</span></div>
-                <div class="stat" style="font-size: 12px; color: #888; margin-top: 15px;">
-                    <span>Last Action:</span><br>
-                    <span style="text-align: right;">BUY HD +1 share @ $335.4</span>
-                </div>
-            </div>
-             
-            <div class="card" style="border-left-color: #555">
-                <div class="rank">#3</div>
-                <div class="name">🦈 Shark</div>
-                <div class="strategy">Momentum</div>
-                <div class="stat"><span>Portfolio Value:</span> <span class="val">$10,035.86</span></div>
-                <div class="stat"><span>Total Return:</span> <span class="val">$35.86</span></div>
-                <div class="stat"><span>vs S&P 500:</span> <span class="val vs-spy">$71.80</span></div>
-                <div class="stat" style="font-size: 12px; color: #888; margin-top: 15px;">
-                    <span>Last Action:</span><br>
-                    <span style="text-align: right;">BUY NFLX +2 shares @ $79.1</span>
-                </div>
-            </div>
-             
-            <div class="card" style="border-left-color: #555">
-                <div class="rank">#4</div>
-                <div class="name">🐺 Wolf</div>
-                <div class="strategy">Sector Rotation</div>
-                <div class="stat"><span>Portfolio Value:</span> <span class="val">$10,021.48</span></div>
-                <div class="stat"><span>Total Return:</span> <span class="val">$21.48</span></div>
-                <div class="stat"><span>vs S&P 500:</span> <span class="val vs-spy">$57.42</span></div>
-                <div class="stat" style="font-size: 12px; color: #888; margin-top: 15px;">
-                    <span>Last Action:</span><br>
-                    <span style="text-align: right;">ROTATED: XLE -5 -> XLU +7</span>
-                </div>
-            </div>
-             
-            <div class="card" style="border-left-color: #555">
-                <div class="rank">#5</div>
-                <div class="name">🐢 Turtle</div>
-                <div class="strategy">Trend Following</div>
-                <div class="stat"><span>Portfolio Value:</span> <span class="val">$10,000.95</span></div>
-                <div class="stat"><span>Total Return:</span> <span class="val">$0.95</span></div>
-                <div class="stat"><span>vs S&P 500:</span> <span class="val vs-spy">$36.88</span></div>
-                <div class="stat" style="font-size: 12px; color: #888; margin-top: 15px;">
-                    <span>Last Action:</span><br>
-                    <span style="text-align: right;">HOLDING: Trend remains intact</span>
-                </div>
-            </div>
-            
-        </div>
-        <div class="activity">
-            <h3>Recent Activity</h3>
-            <div class="log">
-                <div class="log-item">[12:33 PM] <strong>Owl</strong>: BUY BRK-B +1 share @ $510.2</div> <div class="log-item">[12:33 PM] <strong>Wolf</strong>: ROTATED: XLE -5 -> XLU +7</div> <div class="log-item">[12:33 PM] <strong>Fox</strong>: BUY HD +1 share @ $335.4</div> <div class="log-item">[12:33 PM] <strong>Turtle</strong>: HOLDING: Trend remains intact</div> <div class="log-item">[12:33 PM] <strong>Shark</strong>: BUY NFLX +2 shares @ $79.1</div> <div class="log-item">[11:36 AM] <strong>Owl</strong>: REBALANCED: Adjusted positions based on Value strategy</div> <div class="log-item">[11:36 AM] <strong>Wolf</strong>: REBALANCED: Adjusted positions based on Sector Rotation strategy</div> <div class="log-item">[11:34 AM] <strong>Turtle</strong>: BUY NFLX +38 shares @ $78.26; BUY TSLA +8 shares @ $339.92; BUY COST +3 shares @ $962.78</div> <div class="log-item">[11:34 AM] <strong>Shark</strong>: BUY AMD +6 shares @ $499.75; BUY MU +3 shares @ $962.28; BUY NFLX +40 shares @ $78.26</div> <div class="log-item">[11:34 AM] <strong>Owl</strong>: BUY JPM +7 shares @ $362.89; BUY BRK-B +5 shares @ $506.97; BUY XLU +63 shares @ $44.33</div> <div class="log-item">[11:34 AM] <strong>Wolf</strong>: BUY XLE +48 shares @ $61.97; BUY XLU +67 shares @ $44.33; BUY XLP +34 shares @ $86.18</div> <div class="log-item">[11:34 AM] <strong>Fox</strong>: BUY AVGO +7 shares @ $393.82; BUY HD +8 shares @ $338.76; BUY AMZN +10 shares @ $264.11</div>
-            </div>
-        </div>
-        <p style="text-align: center; color: #666; margin-top: 20px;">Last Updated: 12:33 PM</p>
-    </div>
+<div class="container">
+  <h1>🥊 Trading Arena</h1>
+  <p class="subtitle">5 AI traders • $10K each • Session started 2026-08-14 • Updated 2026-08-26T09:34:31.117749</p>
+  <div class="cards">
+    <div class="card"><div class="label">Benchmark (SPY)</div><div class="value2">$765.16</div><div class="delta neg">-1.44% since start</div></div>
+    <div class="card"><div class="label">Trading Days Elapsed</div><div class="value2">10.0</div><div class="delta">Session active</div></div>
+    <div class="card"><div class="label">Market Theme</div><div class="value2" style="font-size:1rem;">XLI strongest (+1.16%), XLV weakest (-0.42%)</div><div class="delta">S&P 500 (SPY) is at $765.16, -0.10%</div></div>
+    <div class="card"><div class="label">Current Leader</div><div class="value2">🦈 Shark</div><div class="delta pos">+123.82% return</div></div>
+  </div>
+  <table>
+    <thead><tr><th>Rank</th><th>Trader</th><th>Portfolio</th><th>Total Return</th><th>vs S&P 500</th><th>Latest Action</th></tr></thead>
+    <tbody>
+        <tr class="leader">
+            <td class="rank">#1</td>
+            <td><span class="emoji">🦈</span> Shark <span class="strategy">Momentum</span></td>
+            <td class="value">$22,381.77</td>
+            <td class="return pos">+123.82%</td>
+            <td class="vs pos">+125.26%</td>
+            <td class="action">HOLD — riding momentum leaders</td>
+        </tr>
+        
+        <tr class="">
+            <td class="rank">#2</td>
+            <td><span class="emoji">🐢</span> Turtle <span class="strategy">Trend Following</span></td>
+            <td class="value">$17,344.55</td>
+            <td class="return pos">+73.45%</td>
+            <td class="vs pos">+74.89%</td>
+            <td class="action">HOLD — trend intact</td>
+        </tr>
+        
+        <tr class="">
+            <td class="rank">#3</td>
+            <td><span class="emoji">🦉</span> Owl <span class="strategy">Value</span></td>
+            <td class="value">$16,505.38</td>
+            <td class="return pos">+65.05%</td>
+            <td class="vs pos">+66.50%</td>
+            <td class="action">HOLD — waiting for better entry</td>
+        </tr>
+        
+        <tr class="">
+            <td class="rank">#4</td>
+            <td><span class="emoji">🦊</span> Fox <span class="strategy">Contrarian</span></td>
+            <td class="value">$15,358.01</td>
+            <td class="return pos">+53.58%</td>
+            <td class="vs pos">+55.02%</td>
+            <td class="action">HOLD — patience for reversal</td>
+        </tr>
+        
+        <tr class="">
+            <td class="rank">#5</td>
+            <td><span class="emoji">🐺</span> Wolf <span class="strategy">Sector Rotation</span></td>
+            <td class="value">$14,858.86</td>
+            <td class="return pos">+48.59%</td>
+            <td class="vs pos">+50.03%</td>
+            <td class="action">HOLD — sector positioning steady</td>
+        </tr>
+        </tbody>
+  </table>
+  <h2>Current Holdings</h2>
+  <table>
+    <thead><tr><th>Trader</th><th>Symbol</th><th>Qty</th><th>Price</th><th>Value</th></tr></thead>
+    <tbody>
+        <tr><td>🦈 Shark</td><td>NVDA</td><td>46</td><td>$210.27</td><td>$9,672.42</td></tr>
+        
+        <tr><td>🦈 Shark</td><td>AMD</td><td>8</td><td>$483.99</td><td>$3,871.92</td></tr>
+        
+        <tr><td>🦈 Shark</td><td>TSLA</td><td>8</td><td>$346.39</td><td>$2,771.12</td></tr>
+        
+        <tr><td>🐢 Turtle</td><td>AAPL</td><td>18</td><td>$311.83</td><td>$5,612.94</td></tr>
+        
+        <tr><td>🐢 Turtle</td><td>MSFT</td><td>12</td><td>$493.86</td><td>$5,926.32</td></tr>
+        
+        <tr><td>🐢 Turtle</td><td>AVGO</td><td>7</td><td>$351.92</td><td>$2,463.44</td></tr>
+        
+        <tr><td>🦉 Owl</td><td>JPM</td><td>20</td><td>$356.20</td><td>$7,124.00</td></tr>
+        
+        <tr><td>🦉 Owl</td><td>BRK.B</td><td>11</td><td>$505.46</td><td>$5,560.06</td></tr>
+        
+        <tr><td>🦉 Owl</td><td>UNH</td><td>5</td><td>$402.46</td><td>$2,012.30</td></tr>
+        
+        <tr><td>🦊 Fox</td><td>XLU</td><td>30</td><td>$43.67</td><td>$1,310.10</td></tr>
+        
+        <tr><td>🦊 Fox</td><td>QQQ</td><td>15</td><td>$708.95</td><td>$10,634.25</td></tr>
+        
+        <tr><td>🦊 Fox</td><td>TLT</td><td>12</td><td>$83.17</td><td>$998.04</td></tr>
+        
+        <tr><td>🐺 Wolf</td><td>XLK</td><td>34</td><td>$181.67</td><td>$6,176.78</td></tr>
+        
+        <tr><td>🐺 Wolf</td><td>XLE</td><td>45</td><td>$62.73</td><td>$2,822.85</td></tr>
+        
+        <tr><td>🐺 Wolf</td><td>XLF</td><td>32</td><td>$58.19</td><td>$1,862.08</td></tr>
+        </tbody>
+  </table>
+  <p class="footer">Runs every 30 min during market hours (8:30 AM – 3:00 PM CDT). Data embedded; works offline via file:// protocol.</p>
+</div>
 </body>
 </html>
