@@ -471,3 +471,19 @@ See: INVESTING.md (tracks learning & personal plan)
 <!-- openclaw-memory-promotion:memory:memory/2026-08-16.md:26:26 -->
 - Key Findings: **MSFT/AMZN**: Low risk, will survive any washout — these are the "railroad survivors" [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:26-26]
 
+
+## Prediction Model State (Updated 2026-08-26)
+
+**Weather model (v3 - Aug 26):**
+- MAX_DOWNWARD_ADJUSTMENT = -2F cap, NOW IN CODE (weather_daily.py + weather_predictor.py). Raw NWS is unbiased (MAE 1.62F over 8 samples); adjustments previously injected -5.25F cold bias every time.
+- Kalshi weather resolves on The Weather Company (TWC), which runs ~1.5-2F hotter than NWS airport obs. Require 5F cushion vs NWS OR market prob >= 70%.
+- Never bet against >85% market consensus on a 1-degree band without a real data advantage.
+
+**Claims model (v2.3 - Aug 26):**
+- Weights: Kalshi 0.70 / analyst 0.10 / recent-avg 0.20. Kalshi consensus: 8/8 accuracy, 2.2K avg err.
+- CI: 1.28 * 3.5K sigma = +-4.5K (was +-25K, useless).
+- 205K threshold is a coin flip when consensus is 205-206K - prefer 210K/215K NO.
+
+**Live trade record:** 2 losses Aug 26 (-.64): Denver T80 wrong-side rule read, Miami B91.5 NO vs 99% consensus. Both documented as learnings.
+
+**Position board tool:** scripts/kalshi_position_table.py (+ skill kalshi-positions) - always run for current projections.
