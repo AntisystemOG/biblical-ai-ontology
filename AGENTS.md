@@ -71,6 +71,12 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+### Trading Authority (Added Aug 27, 2026)
+**Selling a LOSING weather-market position: no permission needed.** Act, then report. Thad's standing grant.
+- **Other mitigations** (selling winners, adjusting entries, hedging, adding to positions): **consult Thad first**.
+- **Exception:** if >80% certain of total loss of all funds in the position, take the mitigation without consulting - report after.
+- Applies to weather markets (KXHIGH*). Other markets (Fed, claims) still default to consult.
+
 ## Kalshi Universal Rule (MANDATORY)
 **ALL Kalshi programs MUST use real Kalshi API market prices.** Never simulate, estimate, or fabricate market prices. If the API is unavailable, skip bets — do not make up prices. This applies to:
 - Weather paper trader
