@@ -1,17 +1,19 @@
 {
   "start_date": "2026-05-11T12:34:17.804392",
-  "last_update": "2026-08-26T08:01:17.802377",
+  "last_update": "2026-08-26T11:31:14.116682",
   "traders": {
     "Turtle": {
-      "cash": 836.4548462235648,
+      "cash": 894.5207261207531,
       "positions": {
         "MSFT": 16.4,
         "GOOGL": 10.0,
         "AMZN": 15.120000000000001,
         "TSLA": 14.096,
-        "META": 13.7676,
         "PG": 12.097152,
-        "MA": 8.0
+        "MA": 10.236301815301882,
+        "JPM": 4.36777698301149,
+        "JNJ": 3.4942215864091923,
+        "HD": 2.7953772691273544
       },
       "history": [
         {
@@ -45,22 +47,27 @@
         {
           "date": "2026-08-26T08:01:17.802377",
           "value": 9799.56
+        },
+        {
+          "date": "2026-08-26T11:31:14.116682",
+          "value": 10086.16
         }
       ],
-      "current_value": 9799.56
+      "current_value": 10086.16
     },
     "Shark": {
-      "cash": 2805.0,
+      "cash": 1722.620625,
       "positions": {
-        "TSLA": 7.2971,
+        "TSLA": 11.5046,
         "PG": 19.95,
         "MSFT": 5.0,
         "BAC": 5.0,
         "META": 5.7974,
         "COIN": 4.0,
         "V": 10.0,
-        "JPM": 5.0,
-        "JNJ": 5.0
+        "JPM": 8.03991875,
+        "JNJ": 5.0,
+        "HD": 3.576375
       },
       "history": [
         {
@@ -94,22 +101,23 @@
         {
           "date": "2026-08-26T08:01:17.802377",
           "value": 9575.53
+        },
+        {
+          "date": "2026-08-26T11:31:14.116682",
+          "value": 9705.43
         }
       ],
-      "current_value": 9575.53
+      "current_value": 9705.43
     },
     "Owl": {
-      "cash": 3733.9260999999997,
+      "cash": 5734.343305650301,
       "positions": {
         "AAPL": 10.0,
-        "JNJ": 13.7372,
         "KO": 9.3414,
         "PG": 3.4748,
-        "GOOGL": 5.0,
-        "META": 5.0,
-        "NVDA": 5.0,
-        "JPM": 5.0,
-        "BAC": 5.0
+        "META": 9.85088915,
+        "BAC": 5.0,
+        "UNH": 5.0
       },
       "history": [
         {
@@ -143,20 +151,24 @@
         {
           "date": "2026-08-26T08:01:17.802377",
           "value": 9868.1
+        },
+        {
+          "date": "2026-08-26T11:31:14.116682",
+          "value": 9989.42
         }
       ],
-      "current_value": 9868.1
+      "current_value": 9989.42
     },
     "Wolf": {
-      "cash": 5800.0,
+      "cash": 4600.0,
       "positions": {
         "JNJ": 7.8866,
         "UNH": 3.0,
         "PG": 6.0,
-        "JPM": 6.0,
-        "BAC": 6.0,
-        "MA": 6.6021,
-        "V": 3.0
+        "JPM": 9.0,
+        "BAC": 9.0,
+        "MA": 9.6021,
+        "V": 6.0
       },
       "history": [
         {
@@ -190,19 +202,21 @@
         {
           "date": "2026-08-26T08:01:17.802377",
           "value": 9649.39
+        },
+        {
+          "date": "2026-08-26T11:31:14.116682",
+          "value": 9779.21
         }
       ],
-      "current_value": 9649.39
+      "current_value": 9779.21
     },
     "Fox": {
-      "cash": 6700.0,
+      "cash": 8399.446978127991,
       "positions": {
         "AAPL": 4.0,
-        "JPM": 8.0,
-        "JNJ": 8.0,
         "PFE": 17.5932,
-        "GOOGL": 4.0,
-        "NVDA": 4.0
+        "UNH": 4.0,
+        "META": 4.0
       },
       "history": [
         {
@@ -236,13 +250,17 @@
         {
           "date": "2026-08-26T08:01:17.802377",
           "value": 11219.56
+        },
+        {
+          "date": "2026-08-26T11:31:14.116682",
+          "value": 11340.82
         }
       ],
-      "current_value": 11219.56
+      "current_value": 11340.82
     }
   },
   "sp500_benchmark": {
-    "value": 10186.45,
+    "value": 10395.41,
     "history": [
       {
         "date": "2026-05-11T12:34:17.804392",
@@ -275,6 +293,10 @@
       {
         "date": "2026-08-26T08:01:17.802377",
         "value": 10186.45
+      },
+      {
+        "date": "2026-08-26T11:31:14.116682",
+        "value": 10395.41
       }
     ]
   },
@@ -742,6 +764,198 @@
       "reason": "Contrarian play",
       "trader": "Fox",
       "time": "2026-08-26T08:01:17.802377"
+    },
+    {
+      "type": "SELL",
+      "ticker": "META",
+      "amount": 1347.4336452821806,
+      "reason": "Stop loss triggered",
+      "trader": "Turtle",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 436.77769830114903,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JNJ",
+      "amount": 349.42215864091924,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "HD",
+      "amount": 279.5377269127354,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "MA",
+      "amount": 223.6301815301883,
+      "reason": "Uptrend detected",
+      "trader": "Turtle",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "TSLA",
+      "amount": 420.75,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "HD",
+      "amount": 357.6375,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 303.991875,
+      "reason": "High momentum",
+      "trader": "Shark",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "UNH",
+      "amount": 500,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "META",
+      "amount": 485.08891499999993,
+      "reason": "Value opportunity",
+      "trader": "Owl",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "JNJ",
+      "amount": 1418.7590514608278,
+      "reason": "Take profits",
+      "trader": "Owl",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "GOOGL",
+      "amount": 520.5470667476233,
+      "reason": "Take profits",
+      "trader": "Owl",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "NVDA",
+      "amount": 521.4245437277852,
+      "reason": "Take profits",
+      "trader": "Owl",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "JPM",
+      "amount": 524.7754587140656,
+      "reason": "Take profits",
+      "trader": "Owl",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "JPM",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "BAC",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "MA",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "V",
+      "amount": 300,
+      "reason": "FINANCE sector strength",
+      "trader": "Wolf",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "UNH",
+      "amount": 400,
+      "reason": "Contrarian play",
+      "trader": "Fox",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "BUY",
+      "ticker": "META",
+      "amount": 400,
+      "reason": "Contrarian play",
+      "trader": "Fox",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "JPM",
+      "amount": 839.640733942505,
+      "reason": "Contrarian exit",
+      "trader": "Fox",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "JNJ",
+      "amount": 826.2289558051584,
+      "reason": "Contrarian exit",
+      "trader": "Fox",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "GOOGL",
+      "amount": 416.43765339809863,
+      "reason": "Contrarian exit",
+      "trader": "Fox",
+      "time": "2026-08-26T11:31:14.116682"
+    },
+    {
+      "type": "SELL",
+      "ticker": "NVDA",
+      "amount": 417.1396349822282,
+      "reason": "Contrarian exit",
+      "trader": "Fox",
+      "time": "2026-08-26T11:31:14.116682"
     }
   ]
 }
