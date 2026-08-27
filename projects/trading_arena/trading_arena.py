@@ -93,10 +93,16 @@ def load_or_fetch_prices():
     if PRICE_FILE.exists():
         with open(PRICE_FILE) as f:
             prices = json.load(f)
-        # Refresh if last bar older than today in Chicago
+        # Refresh if last bar is stale: wrong day or older than 20 minutes
+        # (during market hours the daily bar's ts stays at session open while
+        # the close keeps updating live, so a 20-minute freshness window
+        # ensures each 30-min cron run gets current prices)
         today = _get_chicago_now().date().isoformat()
-        last_date = datetime.utcfromtimestamp(prices[BENCHMARK][-1]['ts']).strftime('%Y-%m-%d')
-        if last_date == today and len(prices.get(BENCHMARK, [])) > 30:
+        last_ts = prices[BENCHMARK][-1]['ts']
+        now_ts = datetime.now(timezone.utc).timestamp()
+        fresh = (now_ts - last_ts) < 20 * 60
+        last_date = datetime.utcfromtimestamp(last_ts).strftime('%Y-%m-%d')
+        if last_date == today and fresh and len(prices.get(BENCHMARK, [])) > 30:
             return prices
     prices = fetch_prices()
     with open(PRICE_FILE, 'w') as f:
