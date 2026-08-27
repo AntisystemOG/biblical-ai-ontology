@@ -231,6 +231,8 @@ See: INVESTING.md (tracks learning & personal plan)
 - **Claims model reweighted:** Kalshi 0.70 / analyst 0.10 / recent-avg 0.20; CI fixed from ±25K to ±4.5K (1.28×sigma, sigma=3.5K empirical). Aug 27 forecast: 205,303. New picks: 210K NO (held), 195K YES, 215K NO.
 - **Markets carry memory:** Chicago traded +4F over NWS after Aug 24's underforecast (74 actual 78). Use market-implied distribution as primary check before recommending any pick.
 - **Aug 27 live deployment:** CHI B82.5 NO 19sh @0.62, MIA B93.5 NO 10sh @0.79, DEN B87.5 NO 11sh @0.85 — $0.54 cash left, fully deployed with Thad's approval. All 5 live positions verified correct side against rules_primary. Claims settling Aug 27 7:25 AM: 205K NO (47%, known coin flip) + 210K NO (91%).
+- **Aug 27 claims settled: BOTH WON (+$7.58).** Actual 203K (below the 205K/210K strikes). Overnight market shifted to 205K YES 0.80 and was WRONG — first Kalshi-consensus miss (8/9). Hold-to-settlement discipline beat pre-release panic. Cash $0.54 → $27.02, account $69.89.
+- **Paper trader TWC grading bug fixed:** paper showed Miami 91-92 NO as a win (NWS 90) while the LIVE same bet lost (TWC read 91/92). weather_paper_trader.py now applies TWC_ADJUSTMENT_F=+1.5 to NWS actuals at grading. Paper "win streaks" were partly false — grade on the settlement source, always.
 - **Ollama weekly rate limit hit (429s):** crons fell back through all 16 models, several failed. Open decision: upgrade plan or build local fallback for cron work.
 
 **August 23 Cycle:**
