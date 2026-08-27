@@ -81,17 +81,22 @@ def classify_action(row):
     pnl = row["pnl"]
     prob = row["win_odds"]
     close = row.get("close_time", "")
+    try:
+        ct = close.replace("Z", "+00:00")
+        hrs = (datetime.fromisoformat(ct) - datetime.now(timezone.utc)).total_seconds() / 3600
+    except Exception:
+        hrs = 999
     # Dead book with a nearly-settled market (close within 24h) = decided. Write off.
     # Dead book with lots of time left (e.g. Sep Fed) = no exit liquidity, just hold.
     if bid <= 0.011 and prob <= 0.05:
-        try:
-            ct = close.replace("Z", "+00:00")
-            hrs = (datetime.fromisoformat(ct) - datetime.now(timezone.utc)).total_seconds() / 3600
-            if hrs < 36:
-                return "WRITE-OFF", "market decided against us - resolves soon, hold for $0"
-            return "HOLD (dead)", "no bid; far from close - nothing to sell into"
-        except Exception:
-            return "WRITE-OFF", "market decided against us"
+        if hrs < 36:
+            return "WRITE-OFF", "market decided against us - resolves soon, hold for $0"
+        return "HOLD (dead)", "no bid; far from close - nothing to sell into"
+    # Defensive cut (coded Aug 27): losing position, odds deteriorated, settling within 24h.
+    # Exit into remaining bid instead of riding a ~coin flip to $0. Judgment may cut
+    # earlier when the entry thesis is falsified by live data (e.g. station obs vs forecast).
+    if pnl <= -0.05 and prob < 0.45 and hrs <= 24:
+        return "CUT LOSS", f"down ${-pnl:.2f} at {prob:.0%} odds, settles in {hrs:.0f}h - exit while bid remains"
     if pnl >= 0.05 and prob < 0.70:
         return "SELL NOW", "profit available, confidence < 70%"
     if prob >= 0.80:
