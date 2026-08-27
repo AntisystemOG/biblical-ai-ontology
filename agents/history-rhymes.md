@@ -28,3 +28,5 @@ Daily at 7:00 AM CDT
 - Use web_search tool for historical analysis
 - Compare current market conditions to past cycles
 - Output as PDF only (use PDF Generator skill) — NO markdown
+- **yfinance yield gotcha (Aug 27, 2026):** `^TNX` and `^FVX` now return the yield as RAW percent (e.g., 4.664 = 4.66%). Do NOT divide by 10. `^IRX` (13-week) is also raw percent. Prior runs assumed the old `yield x 10` scale and produced wrong values.
+- Template scripts: `history_rhymes_report.py` (fpdf2 styling) and `history_rhymes_report_2026_08_23.py` (yfinance data fetch) in workspace root. Reuse their PDF class patterns.
