@@ -33,7 +33,8 @@ PAPER_PORTFOLIO = os.path.join(
 SAVE_DIR = os.path.expanduser(r"~\.openclaw\workspace\Spocks Reports\kalshi")
 
 # Kalshi weather markets resolve on The Weather Company (TWC), not NWS stations.
-# We never guess TWC values - we let sibling-market pricing tell us the market's verdict.
+# We never guess TWC values - grading uses our own market's official result once
+# finalized, otherwise its live YES/NO pricing (which embeds the TWC expectation).
 
 
 def mkt_float(v):
@@ -153,29 +154,14 @@ def fetch_live_rows(k):
     return cash, rows
 
 
-def market_verdict_for_event(k, event_ticker, exclude_ticker):
-    """Ask the sibling markets which band/threshold the market thinks will hit."""
-    try:
-        data = k.get(
-            "/markets",
-            params={"event_ticker": event_ticker, "limit": 50},
-            auth=False,
-        )
-        markets = data.get("markets", []) if isinstance(data, dict) else []
-        best, best_p = None, 0.0
-        for m in markets:
-            if m.get("ticker") == exclude_ticker:
-                continue
-            yb = mkt_float(m.get("yes_bid_dollars"))
-            if yb > best_p:
-                best, best_p = m.get("title"), yb
-        return best, best_p
-    except Exception:
-        return None, 0.0
-
-
 def paper_rows(k):
-    """Paper trader open positions + market-implied outcome for each."""
+    """Paper trader open positions + market-implied outcome for each.
+
+    Grading logic (fixed Aug 27): check OUR OWN market's final result first (settled
+    markets), then our own band's YES pricing (which includes our position - that is
+    exactly what determines whether our NO loses). Do NOT exclude our own ticker -
+    that bug made a 0.99-YES hit band look like a WIN for the NO side.
+    """
     try:
         pf = json.load(open(PAPER_PORTFOLIO, encoding="utf-8"))
     except Exception as e:
@@ -191,14 +177,20 @@ def paper_rows(k):
             continue
         # Paper bets are always NO on band markets
         no_bid = mkt_float(market.get("no_bid_dollars"))
-        verdict_title, verdict_p = market_verdict_for_event(k, market.get("event_ticker", ""), ticker)
-        # If market prices the sibling band >50%, that band wins => our NO loses
-        if verdict_p > 0.5:
+        status = market.get("status", "")
+        result = (market.get("result") or "").lower()
+        yes_bid = mkt_float(market.get("yes_bid_dollars"))
+        # 1) Finalized markets: use the official result. result=yes => band hit => NO loses.
+        if status == "finalized" and result in ("yes", "no"):
+            outcome = "WIN" if result == "no" else "LOSS"
+        # 2) Active markets: our own band's YES bid IS the market's verdict on our band.
+        elif yes_bid >= 0.50:
             outcome = "LOSS"
-            payout = 0.0
-        else:
+        elif no_bid >= 0.50:
             outcome = "WIN"
-            payout = mkt_float(x.get("shares")) * 1.0
+        else:
+            outcome = "PENDING"
+        payout = mkt_float(x.get("shares")) * 1.0 if outcome == "WIN" else 0.0
         rows.append(
             {
                 "bet": f"{x.get('city')} {x.get('band_low')}-{x.get('band_high')}F NO",
@@ -209,9 +201,9 @@ def paper_rows(k):
                 "no_bid": round(no_bid, 2),
                 "projected": outcome,
                 "payout": round(payout, 2),
-                "pnl": round(payout - mkt_float(x.get("bet_amount")), 2),
-                "market_verdict": verdict_title,
-                "verdict_price": round(verdict_p, 2),
+                "pnl": round(payout - mkt_float(x.get("bet_amount")), 2) if outcome != "PENDING" else None,
+                "market_status": status,
+                "result": result or None,
             }
         )
     return cash, rows
@@ -257,11 +249,18 @@ def fmt_table(live_cash, live_rows, paper_cash, paper_rows_):
             if "error" in r:
                 lines.append(f"{i:<2} {str(r.get('bet')):<28} ERROR: {r['error'][:70]}")
                 continue
+            if r.get("pnl") is None:
+                # PENDING: book undecided, no reliable mark yet - don't print fake numbers
+                lines.append(
+                    f"{i:<2} {r['bet']:<28} {r['shares']:>6.1f} ${r['entry']:>5.2f} "
+                    f"${r['no_bid']:>6.2f} ${r['cost']:>6.2f} {r['projected']:>9} {'--':>8} {'--':>8}"
+                )
+                continue
             lines.append(
                 f"{i:<2} {r['bet']:<28} {r['shares']:>6.1f} ${r['entry']:>5.2f} "
                 f"${r['no_bid']:>6.2f} ${r['cost']:>6.2f} {r['projected']:>9} ${r['payout']:>7.2f} ${r['pnl']:>+7.2f}"
             )
-        net = sum(r.get("pnl", 0) for r in paper_rows_ if "pnl" in r)
+        net = sum(r["pnl"] for r in paper_rows_ if r.get("pnl") is not None)
         lines.append(f"   Projected net tonight: ${net:+.2f} -> cash ~${paper_cash + max(net,0) + min(net,0):.2f}")
     return "\n".join(lines)
 
