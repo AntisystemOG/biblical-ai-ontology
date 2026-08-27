@@ -220,7 +220,18 @@ See: INVESTING.md (tracks learning & personal plan)
 - Much better for local processing
 - Will eventually migrate Spock there
 
-## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-08-24)
+## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-08-27)
+
+**August 26 Cycle (added 2026-08-27):**
+- **A documented rule that isn't coded doesn't exist.** The "-4F max downward adjustment" sat in learnings.json while adjustments still stacked to -4F or worse — raw NWS error was 0.00F/MAE 1.62F, but our adjusted forecasts ran mean -5.25F. EVERY adjustment made forecasts worse. Fix: -2F cap actually implemented in weather_daily.py + weather_predictor.py (Aug 25's "-4F cap" was documented but never coded).
+- **Kalshi V2 stores ALL prices in YES terms, regardless of side.** Buying NO at 0.62 = selling YES at 0.38. First 3 live orders went in inverted (wrong-side); caught by checking order book_side/action fields, cancelled via DELETE /portfolio/orders/{id} (the /cancel suffix 404s), re-placed correctly. place_order() now auto-converts NO price → YES-equivalent. action=buy+side=ask = sell YES = buy NO.
+- **Discipline rules from real losses (Denver T80 YES -.11, Miami 91.5 NO -.53):** read rules_primary BEFORE ordering, always; bands priced <15% against you need a DATA advantage, not a forecast tweak. Both losses were side/discipline errors, not prediction errors.
+- **TWC resolution bias is now a coded rule:** Kalshi weather resolves on The Weather Company, which runs 1.5-2F hotter than NWS airport obs (confirmed with market prices Aug 26). Cushion rule raised to 5F vs NWS OR our-side market prob >= 70%.
+- **Guards beat memories:** built kalshi_position_table.py (mark-to-market on our-side bid only — last-trade price is side-agnostic and inflated NO P&L) and kalshi_pre_order_check.py (mandatory pre-order gate: rules, strike_type, plain-English win condition, odds, cash, V2 semantics). Skill kalshi-positions updated.
+- **Claims model reweighted:** Kalshi 0.70 / analyst 0.10 / recent-avg 0.20; CI fixed from ±25K to ±4.5K (1.28×sigma, sigma=3.5K empirical). Aug 27 forecast: 205,303. New picks: 210K NO (held), 195K YES, 215K NO.
+- **Markets carry memory:** Chicago traded +4F over NWS after Aug 24's underforecast (74 actual 78). Use market-implied distribution as primary check before recommending any pick.
+- **Aug 27 live deployment:** CHI B82.5 NO 19sh @0.62, MIA B93.5 NO 10sh @0.79, DEN B87.5 NO 11sh @0.85 — $0.54 cash left, fully deployed with Thad's approval. All 5 live positions verified correct side against rules_primary. Claims settling Aug 27 7:25 AM: 205K NO (47%, known coin flip) + 210K NO (91%).
+- **Ollama weekly rate limit hit (429s):** crons fell back through all 16 models, several failed. Open decision: upgrade plan or build local fallback for cron work.
 
 **August 23 Cycle:**
 - **Real prices become law:** The weather paper trader was rewritten to fetch actual Kalshi API prices via `GET /markets?series_ticker=KXHIGH*`. The previous 6/6 "win streak" under simulated odds was explicitly invalidated. A universal rule was added to AGENTS.md: all Kalshi programs must use real API prices or hold cash.
