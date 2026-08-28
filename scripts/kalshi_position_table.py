@@ -76,7 +76,9 @@ def win_probability(market, side):
 
 
 def classify_action(row):
-    """Thad's rules: sell profitable losers of confidence; write off dead positions; hold the rest."""
+    """Thad's rules (rev Aug 28): HOLD is the default. Kalshi consensus is fallible
+    (8/9 record - wrong-but-close); being underwater is NOT an exit signal. Write off
+    dead positions; real exits need settlement-grade falsification + Thad's call."""
     bid = row["bid"]
     pnl = row["pnl"]
     prob = row["win_odds"]
@@ -86,19 +88,36 @@ def classify_action(row):
         hrs = (datetime.fromisoformat(ct) - datetime.now(timezone.utc)).total_seconds() / 3600
     except Exception:
         hrs = 999
+    # Closed book with EMPTY official result = awaiting settlement, NOT decided.
+    # Kalshi zeroes the order book at expiry before assigning the TWC result;
+    # treating zeroed bids as "decided against us" produced false WRITE-OFFs.
+    m_status = (row.get("status") or "").lower()
+    m_result = (row.get("result") or "").lower()
+    if m_status in ("closed", "finalized") and not m_result:
+        return "PENDING SETTLEMENT", "book closed at expiry, bids zeroed - awaiting official TWC settlement"
     # Dead book with a nearly-settled market (close within 24h) = decided. Write off.
     # Dead book with lots of time left (e.g. Sep Fed) = no exit liquidity, just hold.
     if bid <= 0.011 and prob <= 0.05:
         if hrs < 36:
             return "WRITE-OFF", "market decided against us - resolves soon, hold for $0"
         return "HOLD (dead)", "no bid; far from close - nothing to sell into"
-    # Defensive cut (coded Aug 27): losing position, odds deteriorated, settling within 24h.
-    # Exit into remaining bid instead of riding a ~coin flip to $0. Judgment may cut
-    # earlier when the entry thesis is falsified by live data (e.g. station obs vs forecast).
-    if pnl <= -0.05 and prob < 0.45 and hrs <= 24:
-        return "CUT LOSS", f"down ${-pnl:.2f} at {prob:.0%} odds, settles in {hrs:.0f}h - exit while bid remains"
-    if pnl >= 0.05 and prob < 0.70:
-        return "SELL NOW", "profit available, confidence < 70%"
+    # EXIT DISCIPLINE (Thad, Aug 28): Kalshi consensus can be wrong-but-close.
+    # Aug 27: our 205K NO traded to ~0.20 overnight (consensus flipped to 205K YES
+    # 0.80), the actual printed 203K, and BOTH positions WON. Market-price
+    # deterioration alone is NEVER an exit signal. Underwater + low odds = HOLD;
+    # the settlement source (TWC/BLS actual) decides, not the interim book.
+    # Exits require settlement-grade falsification of the win condition AND
+    # Thad's explicit judgment - never fire automatically.
+    if pnl <= -0.05 and hrs <= 24:
+        return "HOLD (underwater)", (
+            f"down ${-pnl:.2f} at {prob:.0%} market odds, settles in {hrs:.0f}h - "
+            "consensus is 8/9 (wrong-but-close): Aug 27 205K NO held through a 20% "
+            "overnight panic and WON. Exit only on settlement-grade falsification."
+        )
+    # Winners ride to settlement too: the old "SELL NOW on profit with < 70% odds"
+    # rule would have sold 210K NO @91% pre-release on Aug 27. Holding is free via
+    # maker orders; exits pay the spread and cap the payout. Manual profit-taking
+    # stays available to Thad but is never auto-recommended.
     if prob >= 0.80:
         return "HOLD", "high confidence"
     if prob >= 0.60:
@@ -151,6 +170,8 @@ def fetch_live_rows(k):
                 "pnl": round(value - cost, 2),
                 "win_odds": round(win_probability(market, side), 2),
                 "close_time": market.get("close_time", ""),
+                "status": market.get("status", ""),
+                "result": (market.get("result") or ""),
                 "event": market.get("event_ticker", ""),
             }
         )

@@ -487,7 +487,9 @@ See: INVESTING.md (tracks learning & personal plan)
 - Key Findings: **MSFT/AMZN**: Low risk, will survive any washout — these are the "railroad survivors" [score=0.812 recalls=0 avg=0.620 source=memory/2026-08-16.md:26-26]
 
 
-## Prediction Model State (Updated 2026-08-26)
+## Prediction Model State (Updated 2026-08-28)
+
+**EXIT DISCIPLINE RULE (coded Aug 28, Thad):** Kalshi consensus can be wrong-but-close (8/9 record). Being underwater mid-week is NOT an exit signal — never back out of a position that could still be correct. Aug 27 proof: 205K NO traded to ~0.20 overnight (consensus flipped to 205K YES 0.80), actual printed 203K, both positions WON. Hold-to-settlement beat pre-release panic. Coded in kalshi_position_table.py (classify_action: no more auto CUT LOSS on market odds; HOLD underwater with lesson text) + digest.py (no more SELL NOW on profit; HOLD to settlement). Exits require settlement-grade falsification of the win condition AND Thad's explicit judgment — never automatic. Even the MIA 93-94 thesis-break cut (62% odds, settled 99% our way, -$1.99 + ~$3.80 tuition) shows the bar for manual exits must be high: near-impossible win condition, not just deteriorating odds.
 
 **Weather model (v3 - Aug 26):**
 - MAX_DOWNWARD_ADJUSTMENT = -2F cap, NOW IN CODE (weather_daily.py + weather_predictor.py). Raw NWS is unbiased (MAE 1.62F over 8 samples); adjustments previously injected -5.25F cold bias every time.
