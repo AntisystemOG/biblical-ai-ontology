@@ -62,3 +62,10 @@ sessions_spawn(
 - No abbreviations or truncation
 
 
+
+## 2026-08-28 05:15 - Cron silence pass (Thad directive)
+- Thad: no unsolicited updates; silent unless he asks or something changed (settlement, fill, action needed).
+- kalshi-position-monitor: silent-by-default (NO_REPLY unless settlement/fill/action-needed); exit discipline updated (never SELL on odds noise).
+- gateway-watchdog: healthy = NO_REPLY (no more Gateway Healthy pings).
+- kalshi-job-morning/midday/evening + kalshi-daily-predictions + the-edge-morning/nightly: silent unless actionable; plain-English tables when reporting.
+- kalshi-weather-morning-scan: DISABLED (broken Telegram delivery target - requires chatId - 5 consecutive errors; covered by position monitor + paper trader).

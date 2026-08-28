@@ -33,6 +33,10 @@ This is the most important thing in this file. Everything else serves this.
 
 **RULE: Always push to GitHub.** After completing any significant work, commit and push the entire workspace to GitHub. No exceptions. (Source: Thad, 2026-04-26)
 
+**RULE: No unsolicited updates (2026-08-28).** Thad: don't send status updates unless he asks or something materially changed. Silent monitoring is the default. Cron/heartbeat output only surfaces when action is needed or numbers actually move.
+
+**RULE: Thad-friendly tables (2026-08-28).** All tables must read plainly from HIS point of view: plain-English bets ("Denver high stays under 93°F"), dollar P&L, clear ✅/❌ status — no tickers, no jargon, no field names. On Telegram use fixed-width code blocks for alignment (rich tables are disabled on this account).
+
 ## BUDGET RULE
 
 **CRITICAL (2026-03-29):** Thad explicitly said "make sure we use all the ollama tokens we can, they expire and start over"
