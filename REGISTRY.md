@@ -41,21 +41,21 @@ sessions_spawn(
 |------------|---------|---------------|
 | `plctool-coder.md` | Dedicated coding assistant for PLCTool project | `sessions_spawn(label="plctool-coder", mode="run", runtime="subagent")` |
 
-## Scheduled Agents (Crons)\r\n\r\nAll cron names match their agent file names exactly. Only `truth-based-trading` and `whale-watch` are active. All others are paused/disabled.
+## Scheduled Agents (Crons)\r\n\r\nAll cron names match their agent file names exactly. Only `truth-based-trading` and `whale-watch` are active. All others are paused/disabled unless noted.
 
 | Cron Name | Agent File | Schedule (America/Chicago) | Purpose | Status |
 |-----------|------------|----------------------------|---------|
-| `whale-watch` | `agents/whale-watch.md` | Daily 6:00 AM | Hedge fund 13F overlap tracker |
-| `history-rhymes` | `agents/history-rhymes.md` | Daily 7:00 AM | Historical market parallel analyzer |
-| `daily-brief` | `agents/daily-brief.md` | Daily 8:00 AM | Ground News style morning brief |
-| `financial-advisor` | `agents/financial-advisor.md` | Monday 9:00 AM | Value investing screener |
-| `memory-dreaming` | `agents/memory-dreaming.md` | Daily 3:00 AM | Memory synthesis / dream report |
-| `trading-arena` | `agents/trading-arena.md` | M–F 8:00–15:30 every 30 min | Live trading simulation dashboard |
-| `top-100-strategists` | `agents/top-100-strategists.md` | Daily 9:00 AM | Hedge fund holdings analyst |
-| `long-term-holds` | `agents/long-term-holds.md` | Monday 10:00 AM | Inflation-beating asset synthesizer |
-| `truth-based-trading` | `agents/truth-based-trading.md` | First Monday monthly | Retirement strategy synthesizer |
-| `kalshi-aug28-deploy` | - (one-shot system event) | Aug 27, 8:00 PM CDT, self-deletes | Thad-authorized deployment of 1-2 more Aug 28 weather positions |
-| `kalshi-longshot-tracker` | `agents/kalshi-longshot-tracker.md` | Daily 8:45 PM CDT | Long-shot scanner: bands <= $0.30 with model edge, paper $1 stakes, settlement grading. Silent unless settlement or edge >= 0.30 |
+| `whale-watch` | `agents/whale-watch.md` | Daily 6:00 AM | Hedge fund 13F overlap tracker | ✅ Active |
+| `history-rhymes` | `agents/history-rhymes.md` | Daily 7:00 AM | Historical market parallel analyzer | ✅ Active |
+| `daily-brief` | `agents/daily-brief.md` | Daily 8:00 AM | Ground News style morning brief | ✅ Active |
+| `financial-advisor` | `agents/financial-advisor.md` | Monday 9:00 AM | Value investing screener | ✅ Active |
+| `memory-dreaming` | `agents/memory-dreaming.md` | Daily 3:00 AM | Memory synthesis / dream report | ✅ Active |
+| `trading-arena` | `agents/trading-arena.md` | M–F 8:30–15:00 every 30 min | Live trading simulation dashboard | ✅ Active |
+| `top-100-strategists` | `agents/top-100-strategists.md` | Daily 9:00 AM | Hedge fund holdings analyst | ✅ Active |
+| `long-term-holds` | `agents/long-term-holds.md` | Monday 10:00 AM | Inflation-beating asset synthesizer | ✅ Active |
+| `truth-based-trading` | `agents/truth-based-trading.md` | First Monday monthly | Retirement strategy synthesizer | ✅ Active |
+| `kalshi-aug28-deploy` | - (one-shot system event) | Aug 27, 8:00 PM CDT, self-deletes | Thad-authorized deployment of 1-2 more Aug 28 weather positions | ✅ Active |
+| `kalshi-longshot-tracker` | `agents/kalshi-longshot-tracker.md` | Daily 8:45 PM CDT | Long-shot scanner: bands <= $0.30 with model edge, paper $1 stakes, settlement grading. Silent unless settlement or edge >= 0.30 | ✅ Active |
 
 ## Naming Convention
 - All agent files use `kebab-case.md`
