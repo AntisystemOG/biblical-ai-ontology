@@ -123,4 +123,25 @@
 - SNDK 21.56% (+107.6%), TAP 9.17%, GLDM 9.44%, CLSK 9.39%, BUD 7.48%, STX 13.39% (+127.7%)
 - Action bias: trim-into-strength on SNDK/STX; they are momentum plays with thin institutional sponsorship (unlike MU which has 3-manager support).
 
-**Next 13F checkpoint: Q3 filings due Nov 16, 2026.** Watch: (1) Point72 keeps or dumps INTC post-Tepper, (2) new joins on CEG/GEV, (3) D1/Coatue reduction in SPOT.
+## Update (August 28, 2026) — Momentum Top, Squeeze Natural Experiment, Miner Sleeve Crash
+
+**Signal tracking:**
+- **Tepper Exit Reversal 2nd confirmation:** INTC 103.49 (Aug 17 signal) -> 89.93 (Aug 28) = **-13.1% in 11 days**, SPY flat. Bounce to 92.09 on Aug 27 failed (pattern predicts lower highs). Holding confidence at 75% on n=2 — do not raise further without a 3rd case.
+- **Aug 17 = momentum complex local top.** SNDK peaked 1,786.85 Aug 17 -> -17.1%; STX 994.79 -> -16.0%; GEV 1,079 -> -14.8%; INTC -14.0% off high. Same week the Aug 17 report fired de-risk signals (INTC downgrade, SNDK/STX trim). The filter is early when it matters.
+
+**The month's big lesson — Catalyst-Gated Squeeze (promoted to RULED, n=2 each direction):**
+- WINS (high SI + fresh positive catalyst): TEM 27.8% SI -> +47% in 3 days (Aug 18-21, 49.36->72.69), position now +27.8% vs cost. HTFL 10.5% SI -> +86% since Jul 31 into 52w high.
+- LOSSES (high SI + NO catalyst in consolidation): CORZ 20.7% SI -> ground to 1mo low, -19.3% from mid-Aug, -25% from Jul 31. Miners: CIFR -33.1%, HUT -26.5% (52w high 140.80 round trip), CLSK -19.2%, WULF -14.6%, RIOT -13.6%, APLD -9.7% — all since Jul 31.
+- **Rule: SI is fuel; the catalyst is the spark. No spark = the short thesis wins by attrition. Never enter high-SI names without a fresh specific positive catalyst.**
+
+**Miner sleeve post-mortem:** BTC-miner/tactical sleeve lost ~$4,300 (-20%) since Jul 31 while SPY +3.2%. Classification (tactical, no multi-manager support) was the correct filter. NEW RULE: cap tactical sleeve footprint; recycle into conviction names on dips.
+
+**GEV/CEG divergence watch (NEW):** Same AI-power theme, opposite action — CEG at 1mo high (280.30, -9.0% vs cost, recovering), GEV at 1mo low close (919.78, -15.5% vs cost, still falling). Name-specific problem suspected. First-crack candidate: check Q3 13Fs (due Nov 16) for Point72/Coatue GEV reduction.
+
+**APP note:** -20.3% since Jul 31 (403.87->321.85), -40.8% vs cost, 52w high 745.61 — de-rating with LOW SI (4.3%). Fundamentals-only breakdown; SI not required for a short thesis when momentum/fundamentals break.
+
+**Live P&L snapshot (Aug 28):** MU +152.4% (best conviction winner, $920.77), SNDK +140.2%, STX +99-124%, INTC +96.9%, HUT +54.0%, HTFL +54.9%, RIOT +33.9%, BE +33.7%, LITE +31.5%, TSM +28.0%, TEM +27.8%, AMZN +14.3%, NFLX +20.6%, COIN -13.2%, CEG -9.0%, GEV -15.5%, TSLA -21.6%, APP -40.8%.
+
+**Data-source notes:** Finviz changed HTML layout — short-float values may be wrapped `<b><span class="color-text is-negative">30.69%</span></b>`; regexes must handle span wrappers or they silently grab the next row (Short Ratio). Next SI settlement ~Aug 29 — expect fresh SI values in the next 1-2 runs. Yahoo v8 chart API continues to work without crumb.
+
+**Next 13F checkpoint: Q3 filings due Nov 16, 2026.** Watch: (1) Point72 keeps/dumps INTC post-Tepper, (2) any GEV exit (divergence confirmation), (3) new joins on CEG, (4) D1/Coatue SPOT reduction.
