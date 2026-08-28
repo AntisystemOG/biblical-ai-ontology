@@ -54,7 +54,8 @@ sessions_spawn(
 | `top-100-strategists` | `agents/top-100-strategists.md` | Daily 9:00 AM | Hedge fund holdings analyst |
 | `long-term-holds` | `agents/long-term-holds.md` | Monday 10:00 AM | Inflation-beating asset synthesizer |
 | `truth-based-trading` | `agents/truth-based-trading.md` | First Monday monthly | Retirement strategy synthesizer |
-| `kalshi-aug28-deploy` | — (one-shot system event) | Aug 27, 8:00 PM CDT, self-deletes | Thad-authorized deployment of 1-2 more Aug 28 weather positions |
+| `kalshi-aug28-deploy` | - (one-shot system event) | Aug 27, 8:00 PM CDT, self-deletes | Thad-authorized deployment of 1-2 more Aug 28 weather positions |
+| `kalshi-longshot-tracker` | `agents/kalshi-longshot-tracker.md` | Daily 8:45 PM CDT | Long-shot scanner: bands <= $0.30 with model edge, paper $1 stakes, settlement grading. Silent unless settlement or edge >= 0.30 |
 
 ## Naming Convention
 - All agent files use `kebab-case.md`
