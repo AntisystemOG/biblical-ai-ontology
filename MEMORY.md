@@ -502,3 +502,17 @@ See: INVESTING.md (tracks learning & personal plan)
 **Live trade record:** 2 losses Aug 26 (-.64): Denver T80 wrong-side rule read, Miami B91.5 NO vs 99% consensus. Both documented as learnings.
 
 **Position board tool:** scripts/kalshi_position_table.py (+ skill kalshi-positions) - always run for current projections.
+
+## Week Distilled (Aug 22-28, 2026)
+
+- **Standing authority (Thad):** selling a LOSING weather position needs no permission - act, then report. Other mitigations = consult first (exception: >80% certain of total loss).
+- **Discipline paid:** pre-order gate red-flagged DEN 96-97 YES (model odds 1%) - same shape as both Aug 26 losses; skipped. Gates should err toward not firing.
+- **Thesis-break override:** cut MIA 93-94 NO at 62% odds when KMIA station (91.4F by 11 AM) falsified the entry thesis. Realized -$1.99; settled 99% in our favor - correct call regardless (EV-neutral at sale, ~$3.80 tuition). Never add to a losing band; event cap ~$20/day.
+- **Chicago settles inland:** TWC/Kalshi grades CLIMDW/Midway, not the Loop - lake-breeze divergence means the market prices inland heat. CHI B80-81 NO bought because it wins in both scenarios (Loop-cool OR inland-hot).
+- **Grading bugs fixed:** self-exclusion (grader ignored our own position - inverted verdicts), finalized markets graded on stale bids, pnl=None formatting crash. Settled = official result field, always.
+- **Client bugs fixed:** cancel = DELETE /portfolio/events/orders/{id} (POST 404s, DELETE orders/{id} 410s); sell NO = buy YES at (1-p), bid side, IoC, reduce_only; live quotes only from get_weather_markets() (get_market() returns null *_dollars fields).
+- **Cron resilience:** paper trader failed 3 nights - 300s timeout + cp1252 crash on degree symbols. Fixed: timeoutSeconds 600 + PYTHONIOENCODING=utf-8/-X utf8 + predictions.json dedup.
+- **Garbled-output protocol:** when a model run derails into token soup, check git diff first - edits may have landed coherently before the derail.
+- **Tepper Exit validated:** INTC -12.4% in 10 days after Aug 17 SI-spike exit signal (SPY -0.5% same window). Confidence 70 -> 75%.
+- **Book status Aug 28 AM:** cash ~$27.62 -> ~$54 after CHI 82-83 NO + DEN 87-88 NO settle (~+$30, both 99%). Live: DEN B92.5 NO 15sh @ .75 (10 maker resting), CHI Aug28 B80-81 NO 6.9 filled + 18.13 maker, Fed C25 + Fed Hike. Paper book: 9 resolved (5W/4L), ROI -8.7%, $91.29 paper cash.
+- **Trading Arena:** restarted 8/26, $10k x5 (Shark/Owl/Wolf/Fox/Turtle). Shark led day 2 (+3.5%); old trading_arena.json (+123%) is pre-8/26 stale residue.
