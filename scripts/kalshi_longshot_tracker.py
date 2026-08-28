@@ -354,7 +354,9 @@ def cmd_grade():
         if b.get("status") != "open":
             continue
         try:
-            m = k.get_market(b["ticker"]).get("market", {})
+            m = k.get_market(b["ticker"]) or {}
+            if isinstance(m, dict) and isinstance(m.get("market"), dict):
+                m = m["market"]  # legacy wrapped shape
         except Exception as e:
             print(f"  fetch failed {b['ticker']}: {e}")
             continue

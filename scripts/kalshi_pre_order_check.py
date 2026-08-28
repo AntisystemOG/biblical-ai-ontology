@@ -41,7 +41,9 @@ def main():
     ticker, side, price, size = sys.argv[1], sys.argv[2].upper(), float(sys.argv[3]), int(sys.argv[4])
 
     k = Kalshi()
-    m = k.get_market(ticker)["market"]
+    m = k.get_market(ticker) or {}
+    if isinstance(m, dict) and isinstance(m.get("market"), dict):
+        m = m["market"]  # legacy wrapped shape
     title = m.get("title", "")
     st = m.get("strike_type")
     rules = m.get("rules_primary", "")

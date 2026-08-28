@@ -141,7 +141,9 @@ def fetch_live_rows(k):
         side = side_of(fp)
         shares = shares_of(fp)
         try:
-            market = k.get_market(ticker).get("market", {})
+            market = k.get_market(ticker) or {}
+            if isinstance(market, dict) and isinstance(market.get("market"), dict):
+                market = market["market"]  # legacy wrapped shape
         except Exception as e:
             market = {"ticker": ticker, "title": f"FETCH ERROR: {e}"}
 
@@ -197,7 +199,9 @@ def paper_rows(k):
     for x in pf.get("open_positions", []):
         ticker = x.get("ticker", "")
         try:
-            market = k.get_market(ticker).get("market", {})
+            market = k.get_market(ticker) or {}
+            if isinstance(market, dict) and isinstance(market.get("market"), dict):
+                market = market["market"]  # legacy wrapped shape
         except Exception as e:
             rows.append({"bet": f"{x.get('city')} {ticker}", "error": str(e)})
             continue
