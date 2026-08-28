@@ -69,3 +69,11 @@ sessions_spawn(
 - gateway-watchdog: healthy = NO_REPLY (no more Gateway Healthy pings).
 - kalshi-job-morning/midday/evening + kalshi-daily-predictions + the-edge-morning/nightly: silent unless actionable; plain-English tables when reporting.
 - kalshi-weather-morning-scan: DISABLED (broken Telegram delivery target - requires chatId - 5 consecutive errors; covered by position monitor + paper trader).
+
+## 2026-08-28 06:09 - New one-time job: prompt-hardening
+- Agent file: agents/prompt-hardening.md (matches cron name, kebab-case per convention).
+- Schedule: ONE-TIME at 2026-08-31 04:30 CDT (09:30 UTC) - isolated run, announces to Telegram, self-deletes after run.
+- Trigger: Thad switches LLM models; unpinned crons inherit session defaults and different models misread prompts (Aug 28 5:30 AM false SELL was this exact failure mode).
+- Does: appends [PROMPT-LAW] blocks to every cron prompt (idempotent via marker), pins explicit model ollama-cloud/glm-5.2 on jobs missing one, verifies each patch.
+- Fallback: if cron mutations are restricted in the isolated run, writes hardened prompts to agents/prompt-hardening-output.md for manual application.
+- Cleanup: remove nothing manually unless fallback path was used; job self-deletes after successful run.
