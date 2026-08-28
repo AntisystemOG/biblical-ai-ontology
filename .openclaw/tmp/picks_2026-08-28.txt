@@ -1,0 +1,76 @@
+THE EDGE - NIGHTLY PREP for Friday Aug 28, 2026
+Generated: Thu Aug 27, 9:00 PM CDT
+
+=== TOMORROW'S SCHEDULE ===
+Friday Aug 28: NO CLAIMS RELEASE
+- 9:45 AM ET: Chicago PMI (Aug) - prior 57.6
+- 10:00 AM ET: UMich Consumer Sentiment Final (Aug) - prior 51.0
+- No Kalshi-traded claims events tomorrow
+
+=== WEATHER MARKETS (Friday highs) ===
+NWS FORECASTS:
+  Denver:  96F | 20% storms after noon | S/SW winds -> E
+  Chicago: 79F | Sunny | light E/SE
+  NYC:     83F | 30% storms after 2pm | partly sunny
+  Miami:   90F | 20% storms | heat index 106
+
+=== EXISTING POSITIONS ===
+1. KXHIGHDEN-26AUG28-B92.5: NO @ $3.75 | FORECAST: 96F | LOSER
+   -> Action: SELL (losing position, standing grant)
+   -> NWS forecasts 96, above 92.5 threshold. NO side loses.
+   
+2. KXHIGHCHI-26AUG28-B80.5: NO @ $5.36 | FORECAST: 79F | WINNER
+   -> Action: HOLD
+   -> NWS forecasts 79, below 80.5 threshold. NO side wins.
+   -> Risk: Minimal. Sunny, stable air mass. 79 is 1.5 degrees below threshold.
+
+3. KXHIGHMIA-26AUG27-B93.5: NO @ $11.70 | EXPIRED (yesterday)
+   -> Already resolved. Position shows 0 shares remaining.
+
+=== NEW PICKS FOR FRIDAY ===
+
+PICK 1: KXHIGHDEN-26AUG28-T90 - YES @ $0.02
+  Conviction: HIGH (if price is live)
+  NWS says 96F for Denver. T90 YES means temp > 90.
+  At $0.02 YES, market is pricing 2% chance of >90 but NWS says 96.
+  Massive edge. 6 degree cushion. NWS already factors in storm probability.
+  Allocation: $5-10 (verify price is live first)
+  Risk: Storms could suppress. 20% chance after noon. Upslope flow could cool.
+
+PICK 2: KXHIGHMIA-26AUG28-T88 - YES @ $0.01
+  Conviction: HIGH (if price is live)
+  NWS says 90F for Miami. T88 YES means temp > 88.
+  At $0.01 YES, market is pricing 1% chance of >88 but NWS says 90.
+  Huge edge if prices are live.
+  Allocation: $5-10 (verify price is live)
+  Risk: Miami could underperform if storms roll in early. Heat index 106 = humid.
+
+PICK 3: KXHIGHNY-26AUG28-B86.5 - NO @ $0.98
+  Conviction: HIGH
+  NWS says 83F for NYC. B86.5 NO means temp stays below 86.5.
+  3.5 degree cushion. 30% storm chance could suppress temps further.
+  Allocation: $5-8
+  Risk: Low. Would need sustained warm air mass to push past 86.
+
+PICK 4: KXHIGHCHI-26AUG28-T80 - YES @ $0.03
+  Conviction: LOW-MEDIUM
+  NWS says 79F for Chicago. But inland areas could hit 80+.
+  T80 = temp > 80. At $0.03, small bet for upside surprise.
+  Risk: NWS says 'lower 80s inland, mid 70s near lake'
+  Allocation: $2-3 max (lottery ticket)
+
+=== RISK FLAGS ===
+- Denver position (B92.5 NO) is a confirmed loser. SELL immediately.
+- Miami T88 and Denver T90 YES prices seem anomalously low. VERIFY LIVE PRICES before betting.
+- If Kalshi API prices don't match digest, skip those picks.
+- Chicago B80.5 NO is the safest hold - 1.5 degree cushion, sunny, stable.
+- No claims trading tomorrow - Friday is non-claims day.
+
+=== ALLOCATION SUMMARY ===
+Total available cash: $23.80
+  Sell Denver (recover ~$0): position is -100%, likely no residual value
+  Pick 1 (DEN T90 YES): $5-10 (if live)
+  Pick 2 (MIA T88 YES): $5-10 (if live)
+  Pick 3 (NY B86.5 NO): $5-8
+  Pick 4 (CHI T80 YES): $2-3
+  Reserve: $5-8
