@@ -85,3 +85,11 @@ sessions_spawn(
 - Does: samples https://weather.com/kalshi (official TWC settlement page), appends ts/hash/cache-headers/deg-readings to scripts/twc_probe_log.csv.
 - Purpose: measure page update cadence + build intraday running-high dataset for pattern detection and cut-loss timing (Thad directive 2026-08-29 07:23).
 - Lifetime: TEMPORARY - remove after cadence documented (~24-48h) or fold into position monitor.
+
+---
+
+## Temporary Watch (added Aug 29, ~09:50)
+
+| Cron Name | Agent File | Schedule (America/Chicago) | Purpose | Status |
+|-----------|------------|----------------------------|---------|--------|
+| `miami-longshot-watch` | `agents/miami-longshot-watch.md` | Every 90 min (system event, silent unless alert) | Intraday guard on MIA 88-89 YES 43sh + NY 81-82 tail through Aug 29 settlement. Script: scripts/watch_miami_hold.py. REMOVE after settlement grades. | ? Active |
