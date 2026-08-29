@@ -93,3 +93,8 @@ sessions_spawn(
 | Cron Name | Agent File | Schedule (America/Chicago) | Purpose | Status |
 |-----------|------------|----------------------------|---------|--------|
 | `miami-longshot-watch` | `agents/miami-longshot-watch.md` | Every 90 min (system event, silent unless alert) | Intraday guard on MIA 88-89 YES 43sh + NY 81-82 tail through Aug 29 settlement. Script: scripts/watch_miami_hold.py. REMOVE after settlement grades. | ? Active |
+
+## 2026-08-29 11:40 - miami-longshot-watch tightened + judgment authority granted
+- Schedule: every 20 min -> every 10 min through tonight's Aug 29 settlement (Thad: close eye 3-6 PM, things may change rapidly).
+- Standing order amended: judgment sells authorized (protect profit when a winner bleeds >30% from high with live falsification path). Band 88-89 stays the huge-success leg (90F falsification only; alert at bid >= 0.50).
+- kalshi-longshot-tracker delivery fixed (to: telegram:6358625036); nightly scan will report again at 20:45.

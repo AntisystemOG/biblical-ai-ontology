@@ -47,3 +47,9 @@ Sell immediately (act, then report):
 - Cash $64.93 after Denver Aug28 NO settle (+$15.00). Account ~$80.57.
 
 Remove via `cron remove` after settlement grades (Sun midday).
+## AMENDMENT 2026-08-29 11:40 - Thad judgment grant (authoritative)
+- Thad (11:37 CDT): "counting on your judgment. You sell when you feel like things are turning into a loss position if we don't act. 3-6 PM = close-eye window. Small profit > nothing; huge success great too."
+- Cadence: every 10 minutes through tonight's settlement.
+- Judgment-sell rule: profitable leg bleeding >30% from today's high bid while its falsification path is live (ceiling approached + heating hours remaining) = SELL to protect profit, then report bid/shares/why.
+- Band 88-89 = huge-success leg: never pre-sold; sells only on 90F falsification; Thad alerted at bid >= 0.50 (his call).
+- TWC page https://weather.com/kalshi verified before/after every sale.
