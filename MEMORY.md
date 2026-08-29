@@ -498,6 +498,7 @@ See: INVESTING.md (tracks learning & personal plan)
 **Weather model (v3 - Aug 26):**
 - MAX_DOWNWARD_ADJUSTMENT = -2F cap, NOW IN CODE (weather_daily.py + weather_predictor.py). Raw NWS is unbiased (MAE 1.62F over 8 samples); adjustments previously injected -5.25F cold bias every time.
 - Kalshi weather resolves on The Weather Company (TWC), which runs ~1.5-2F hotter than NWS airport obs. Require 5F cushion vs NWS OR market prob >= 70%.
+- Official TWC settlement page (Thad, Aug 29): https://weather.com/kalshi - check here pre-settlement for TWC's verified number before the result field posts.
 - Never bet against >85% market consensus on a 1-degree band without a real data advantage.
 
 **Claims model (v2.3 - Aug 26):**

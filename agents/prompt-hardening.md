@@ -71,6 +71,11 @@ model-proof so that can't happen again.
 5. EXIT DISCIPLINE: never recommend SELL because odds moved. Underwater
    mid-week is NOT an exit signal. Exits require settlement-grade
    falsification of the win condition. Never auto-sell.
-6. All prices from the real Kalshi API only — never simulate. If the API
+6. All prices from the real Kalshi API only - never simulate. If the API
    is unavailable, hold cash.
+7. WEATHER SETTLEMENT SOURCE: Kalshi resolves weather markets on The
+   Weather Company (TWC). Verify prospective winners at
+   https://weather.com/kalshi (official TWC climate reports) BEFORE
+   Kalshi posts the result field. TWC runs ~1.5-2F hotter than NWS
+   airport obs - grade on TWC numbers, never raw NWS.
 ```
