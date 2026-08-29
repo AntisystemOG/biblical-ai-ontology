@@ -37,6 +37,8 @@ This is the most important thing in this file. Everything else serves this.
 
 **RULE: Thad-friendly tables (2026-08-28).** All tables must read plainly from HIS point of view: plain-English bets ("Denver high stays under 93°F"), dollar P&L, clear ✅/❌ status — no tickers, no jargon, no field names. On Telegram use fixed-width code blocks for alignment (rich tables are disabled on this account).
 
+**RULE: Scale positions with bankroll (2026-08-29).** Thad: as the portfolio grows, position sizes grow (fixed-fractional compounding). Sizing ladder coded in Edge Scanner config.json `sizing`: sure-thing/edge positions 5-8% of SETTLED bankroll, long shots 2% ($1.60 @ $80, $2.00 @ $100), daily deployment cap 40% of bankroll with 50% cash floor, per-city-day event cap $20. Sizes step up ONLY when settlements bank (never on unrealized marks). Long shots stay ~2% — scaling applies to edge positions first.
+
 ## BUDGET RULE
 
 **CRITICAL (2026-03-29):** Thad explicitly said "make sure we use all the ollama tokens we can, they expire and start over"
