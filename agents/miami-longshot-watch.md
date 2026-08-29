@@ -23,7 +23,14 @@ Every 90 min, isolated agentTurn:
 Default discipline: HOLD to settlement. Selling winners = consult Thad first;
 selling losers = pre-authorized, act then report.
 
-## First-run notes (Aug 29 ~9:45 AM)
+## Position set (Aug 29 09:57)
+- MIA 88-89 band YES 43sh (cost $2.70) — core long shot
+- MIA <88 threshold YES 10.1sh @ 0.15 (KXHIGHMIA-26AUG29-T88, Thad added ~09:57, $1.49) — storm-washout ticket; combined MIA structure pays if the daily high lands anywhere ≤ 89 (rain-cap → <88 pays; partial cap → 88-89 band pays $43); only a clean 90+ day kills both (-$4.19 total MIA downside)
+- Alert rules now: band bid <= 0.09 / >= 0.35, or T88 yes_bid <= 0.06 / >= 0.30, or KMIA obs >= 90 (all MIA positions dead → pre-authorized penny-dump), NY obs >= 80, position vanished (settled vs https://weather.com/kalshi)
+- Note: TWC +1.5-2F bias is the enemy of the <88 bet specifically (NWS 87-88 peaks -> TWC ~89); its win needs a real washout. Band {88,89} remains the primary win path.
+
+## First-run
+
 - MIA 88-89 YES: 43sh, cost $2.70, bid 0.20 (+$5.90 unrealized), market 21-24%, our model ~30-34%
   (TWC +1.5-2F bias on NWS 87-88 hourly peaks, storms p44-58% through peak heat).
 - NY 81-82: 5%, sunk, hold.
