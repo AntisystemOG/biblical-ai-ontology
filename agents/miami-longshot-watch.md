@@ -23,6 +23,16 @@ Every 90 min, isolated agentTurn:
 Default discipline: HOLD to settlement. Selling winners = consult Thad first;
 selling losers = pre-authorized, act then report.
 
+## STANDING ORDER (Thad, 10:00 AM Aug 29 — supersedes consult-first for these positions)
+"If any signals come in that tell you we are NOT going to make the long shot, sell immediately."
+
+Sell immediately (act, then report):
+1. KMIA obs >= 90F -> sell ALL Miami (band {88,89} + <88 both mathematically dead; max is monotone)
+2. KMIA/TWC integer read >= 88 -> <88 ticket dead: sell T88 into remaining bid; HOLD band (a TWC 88 or 89 read still WINS the band)
+3. NYC obs >= 83F -> NY 81-82 dead -> dump pennies
+- Price-drop alone is NOT falsification (Aug 27 lesson). Temp-based only, verified vs https://weather.com/kalshi.
+- Selling winners: band bid >= 0.35 or T88 >= 0.30 -> alert + recommend take-profit, Thad decides.
+
 ## Position set (Aug 29 09:57)
 - MIA 88-89 band YES 43sh (cost $2.70) — core long shot
 - MIA <88 threshold YES 10.1sh @ 0.15 (KXHIGHMIA-26AUG29-T88, Thad added ~09:57, $1.49) — storm-washout ticket; combined MIA structure pays if the daily high lands anywhere ≤ 89 (rain-cap → <88 pays; partial cap → 88-89 band pays $43); only a clean 90+ day kills both (-$4.19 total MIA downside)
