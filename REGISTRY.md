@@ -78,3 +78,10 @@ sessions_spawn(
 - Does: appends [PROMPT-LAW] blocks to every cron prompt (idempotent via marker), pins explicit model ollama-cloud/glm-5.2 on jobs missing one, verifies each patch.
 - Fallback: if cron mutations are restricted in the isolated run, writes hardened prompts to agents/prompt-hardening-output.md for manual application.
 - Cleanup: remove nothing manually unless fallback path was used; job self-deletes after successful run.
+
+## 2026-08-29 07:30 - New recurring job: twc-update-probe
+- Agent file: agents/twc-update-probe.md (matches cron name, kebab-case).
+- Schedule: every 20 min, isolated agentTurn, delivery none (silent), model pinned ollama-cloud/glm-5.2, timeout 180s, failureAlert after 3.
+- Does: samples https://weather.com/kalshi (official TWC settlement page), appends ts/hash/cache-headers/deg-readings to scripts/twc_probe_log.csv.
+- Purpose: measure page update cadence + build intraday running-high dataset for pattern detection and cut-loss timing (Thad directive 2026-08-29 07:23).
+- Lifetime: TEMPORARY - remove after cadence documented (~24-48h) or fold into position monitor.
