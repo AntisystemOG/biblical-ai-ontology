@@ -159,6 +159,12 @@ This is non-negotiable. Security > convenience.
 
 See: INVESTING.md (tracks learning & personal plan)
 
+### Behavioral Finance & Crash Psychology (Added 2026-08-29)
+- Thad shared a Perplexity synthesis on the mental games / collective psychological dynamics that cause market crashes.
+- New file **INVESTING.md** captures the model: herd instinct, loss aversion / prospect theory, overconfidence / extrapolation / "this time is different", fear-greed feedback loops, intentional manipulation, game-theoretic panic, and modern amplifiers (algo/social/leverage/gamified retail).
+- **401k / long-horizon playbook:** automated contributions, mechanical rebalancing, age-appropriate allocation, emergency fund outside the 401k, no market-timing on fear/greed alone, and distinguishing *thesis-changed* (fundamentals) from *price-changed* (psychology) during drawdowns.
+- Use these behavioral signals to adjust history-rhymes / macro base rates when bubble or crash stages are identified.
+
 ## Home PC Migration (Completed 2026-03-19)
 
 - Migration from work PC to home PC accomplished.
