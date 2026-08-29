@@ -39,6 +39,8 @@ This is the most important thing in this file. Everything else serves this.
 
 **RULE: Scale positions with bankroll (2026-08-29).** Thad: as the portfolio grows, position sizes grow (fixed-fractional compounding). Sizing ladder coded in Edge Scanner config.json `sizing`: sure-thing/edge positions 5-8% of SETTLED bankroll, long shots 2% ($1.60 @ $80, $2.00 @ $100), daily deployment cap 40% of bankroll with 50% cash floor, per-city-day event cap $20. Sizes step up ONLY when settlements bank (never on unrealized marks). Long shots stay ~2% — scaling applies to edge positions first.
 
+**RULE: NO-heavy core strategy (2026-08-29).** Thad asked if NO predictions are easier to call — yes, adopted. NO on bands ≥4F from consensus center is the CORE book: wins in 5-6 of 7 outcomes, fees near zero on favorites (P(1-P) fee math), TWC +bias and all documented weather failure modes (storms/marine/lake breeze) push days cooler → away from high bands. Empirical: 6/6 NO favorites won Aug 27-29. Guardrails: never pay ≥94¢ for NO without ≥5F cushion + storm help; never bet NO against >85% consensus without data advantage; ≤2% stays on YES lotteries (cheap convexity, e.g. MIA 88-89 + NY 81-82 Aug 29). Full rules in Edge Scanner config.json `strategy`.
+
 ## BUDGET RULE
 
 **CRITICAL (2026-03-29):** Thad explicitly said "make sure we use all the ollama tokens we can, they expire and start over"
