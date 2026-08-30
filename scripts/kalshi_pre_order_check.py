@@ -97,6 +97,38 @@ def main():
         if odds < 0.5:
             print("!! RED FLAG: your side is the UNLIKELY side per our forecast model !!")
     print(f"Cash available: ${bal:.2f} -> order {'OK' if cost <= bal else 'EXCEEDS CASH'}")
+
+    # SIZING GATE (added Aug 30 after Aug 29 MIA oversize: 43sh @ $0.06 = $2.70 ~5% of cash,
+    # plus a second same-city leg = ~8% total. Lottery cap is 2%.)
+    LOTTERY_CAP_PCT = 0.02   # cheap-band YES lotteries: 2% of cash max
+    GENERAL_CAP_PCT = 0.08   # sure-thing/edge ladder top
+    EVENT_CAP = 20.00        # per city-day event cap
+    pct = (cost / bal) if bal else 1.0
+    flags = []
+    if price <= 0.30 and pct > LOTTERY_CAP_PCT * 1.10:  # 10% tolerance for fee/float noise
+        flags.append(f"LOTTERY OVERSIZE: ${cost:.2f} = {pct:.0%} of cash (cap 2%)")
+    if pct > GENERAL_CAP_PCT * 1.05:
+        flags.append(f"GENERAL OVERSIZE: {pct:.0%} of cash (cap 8%)")
+    try:
+        ev = ticker.rsplit("-", 1)[0]
+        pos = k.get_positions(event_ticker=ev) or []
+        rows = pos.get("market_positions", pos) if isinstance(pos, dict) else pos
+        expo, n_open = 0.0, 0
+        for rp in rows:
+            if abs(float(rp.get("position_fp") or 0)) == 0:
+                continue
+            mp = rp.get("market_exposure_dollars")
+            if mp is not None:
+                expo += abs(float(mp))
+                n_open += 1
+        if expo > 0:
+            print(f"Open exposure in {ev}: ${expo:.2f} across {n_open} position(s); with this order: ${expo + cost:.2f}")
+            if expo + cost > EVENT_CAP:
+                flags.append(f"EVENT CAP BREACH: ${expo + cost:.2f} > ${EVENT_CAP:.0f}/city-day")
+    except Exception as _e:
+        print(f"(event exposure check skipped: {_e})")
+    for fl in flags:
+        print(f"!! RED FLAG: {fl}")
     print()
     # Reminder of the V2 order semantics bug this tool guards against
     if side == "NO":
