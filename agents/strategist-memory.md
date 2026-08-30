@@ -145,3 +145,29 @@
 **Data-source notes:** Finviz changed HTML layout — short-float values may be wrapped `<b><span class="color-text is-negative">30.69%</span></b>`; regexes must handle span wrappers or they silently grab the next row (Short Ratio). Next SI settlement ~Aug 29 — expect fresh SI values in the next 1-2 runs. Yahoo v8 chart API continues to work without crumb.
 
 **Next 13F checkpoint: Q3 filings due Nov 16, 2026.** Watch: (1) Point72 keeps/dumps INTC post-Tepper, (2) any GEV exit (divergence confirmation), (3) new joins on CEG, (4) D1/Coatue SPOT reduction.
+
+## Update (August 30, 2026) — Sunday Checkpoint: Aug-17 Top Confirmed Broad, RXRX New Crowded-Short King, GEV Divergence Deepens
+
+**Market closed (Sunday); all prices = Aug 28 close.** SI static since Aug 15 settlement; Aug 29 settlement data not yet on Finviz — re-pull next run.
+
+**Signal scoreboard:**
+- **Tepper Exit Reversal (INTC):** $103.49 (Aug 17 signal) -> $89.47 = **-13.5% in 11 days.** Failed Aug 27 bounce (92.09) exactly per pattern. Confidence holds 75% (n=2). Plan: trim 1/3 into $95-100, trail below Aug 24 low $87.26.
+- **GEV/CEG divergence DEEPENED:** CEG 276.75 (-2.0% off high, -10.2% vs cost); GEV **new 1mo closing low 911.93** (-16.1% vs cost, -15.5% off Aug 17 peak). VRT and SEI (same theme) also weak => name-specific rot confirmed. HOLD, no adds; exit signal completes if Q3 13Fs show Point72/Coatue GEV cut.
+- **Aug 17 top is now the month's anchor locality.** MU (1,011.75), INTC (104.56), GEV (1,079), SNDK (1,786.85), SEI (65.97) ALL peaked Aug 13-17.
+- **MU vs SNDK/STX = sponsorship A/B test WON by MU:** same peak date, MU -7.8% off peak and above Aug 24 low (910.43); SNDK -16.9% and STX -16.6% off peak still bleeding. Manager sponsorship (Point72/Appaloosa/SIT) visibly dampened the drawdown. Strongest sponsor-value evidence yet.
+
+**New SI profiles discovered (added to watchlist):**
+- **RXRX 37.05% SI / 8.68 DTC — most crowded short in the book, highest DTC anywhere in the book.** Stock dead-flat 3.09-3.56 for a month, position -5.8% vs cost, 0.81% weight. No catalyst => watch only, catalyst-gated rule applies.
+- **SEI (Solaris Energy) 27.85% SI / 5.19 DTC — live confirmation #2 of Catalyst-Gated Squeeze (loss side):** -24.6% vs cost, 11 of 13 sessions down, peaked with complex Aug 17, no spark. Textbook attrition.
+- CBLL 8.28%/5.52 (recovering, +13.1% vs cost), LBRT 9.98% (-40.3% vs cost, no support), VG 8.24% (-2.7%), VRT 3.40%, AMD 2.47%, GOOG/NEM/DHR all <2%.
+- Next run: also pull Finviz for **U (Unity, +55.8% vs cost)** — big tactical mover currently off-watchlist.
+
+**CORZ full round trip:** +31.9% vs cost Jul 31 -> **-0.1%** (16.51 vs 16.53). Three reports of "squeeze candidate needs catalyst" -> catalyst never came -> all gains returned. CIFR similar (+50% -> +0.7%). WOLF/KSS + catalyst rules fully validated on both timing sides.
+
+**Miner sleeve since Jul 31:** aggregate ~-19.6% from Jul 31 value (~$4,215) vs SPY +3.0%. WULF -2.4%, CLSK +22.6%, CIFR +0.7%, HUT +53.7%, RIOT +33.0%, CORZ -0.1%, APLD -2.7%. Tactical-sleeve cap rule stands.
+
+**P&L snapshot (Aug 28 close vs Jul 31 basis):** MU +155.7%, SNDK +140.8%, STX +97.7/121.9%, INTC +96.0%, BFLY +57.9%, U +55.8%, HUT +53.7%, HTFL +54.0%, RIOT +33.0%, BE +33.6%, XYZ +41.8%, LITE +30.8%, TSM +27.3%, TEM +24.8%, AMZN +14.7%, GEHC +15.9%, DHR +23.2%, NFLX +20.2%, GOOGL +12.8%, SPOT +7.3%, CBLL +13.1%, COIN -12.3%, CEG -10.2%, GOOG(C) -13.4%, TSLA -21.4%, GEV -16.1%, LBRT -40.3%, APP -41.5%.
+
+**TEM/HTFL fade note:** squeeze catalysts spent (9+ days old); trim discipline: TEM light-trim on low-60s retest, HTFL trail below Aug 24 low (50.20). HTFL -4.8% off peak, still +85% since Jul 31.
+
+**Friday's close checks for Monday:** does INTC make a new low (<89.47) or reclaim 95; does GEV close below 900 (psych break); does TEM hold 60; MU vs 910 (Aug 24 low) — cleanest sponsor test.
