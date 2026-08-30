@@ -12,7 +12,7 @@ When this is the first heartbeat of the day (check `memory/heartbeat-state.json`
 1. Wait 2 minutes after first login (use idle detection — if no user messages for 2 min)
 2. Run the Kalshi Job Market Scanner: `cd "C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner" && C:\Users\thadd\AppData\Local\Programs\Python\Python314\python.exe cli.py scan`
 3. Search web for today's job market data: claims forecasts, NFP, unemployment rate, labor news
-4. Save results to `data/scan_YYYY-MM-DD_morning.txt`
+4. Save results to `C:\Users\thadd\.openclaw\workspace\data\kalshi\scan_YYYY-MM-DD_morning.txt` (workspace path - the write tool is workspace-restricted; never save under C:\AI Projects via the write tool)
 5. Report top picks to Thad
 6. Update `memory/heartbeat-state.json` with `lastKalshiScan: "YYYY-MM-DD"`
 

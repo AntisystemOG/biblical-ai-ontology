@@ -25,9 +25,12 @@ Monday at 9:00 AM CDT
 4. Generate report with top 3-5 picks
 5. Create the output directory first (use PowerShell with proper quoting):
    ```powershell
-   New-Item -ItemType Directory -Force -Path 'C:\Users\thadd\OneDrive\Desktop\Spocks Reports\financial_advisor'
+   New-Item -ItemType Directory -Force -Path 'C:\Users\thadd\.openclaw\workspace\Spocks Reports\financial_advisor'
    ```
-6. Save report to `C:\Users\thadd\OneDrive\Desktop\Spocks Reports\financial_advisor\YYYY-MM-DD_advisor_report.md`
+6. Save report to `C:\Users\thadd\.openclaw\workspace\Spocks Reports\financial_advisor\YYYY-MM-DD_advisor_report.md`
+
+## Workspace Write Rule
+**The write tool is workspace-restricted.** Save all reports under `C:\Users\thadd\.openclaw\workspace\Spocks Reports\` (same as whale-watch). Never write to OneDrive Desktop or other paths outside the workspace - the write will fail.
 
 ## Critical Path Rule
 **ALWAYS use single-quoted PowerShell paths with backslashes.** Never use unquoted paths or forward slashes — they get mangled and create broken folder names like `C:Usersthadd...`
