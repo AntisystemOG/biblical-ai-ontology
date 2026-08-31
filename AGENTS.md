@@ -71,10 +71,14 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
-### Trading Authority (Added Aug 27, 2026)
-**Selling a LOSING weather-market position: no permission needed.** Act, then report. Thad's standing grant.
-- **Other mitigations** (selling winners, adjusting entries, hedging, adding to positions): **consult Thad first**.
-- **Exception:** if >80% certain of total loss of all funds in the position, take the mitigation without consulting - report after.
+### Trading Authority (Added Aug 27, 2026; EXPANDED Aug 31, 2026)
+**Selling ANY weather position that is turning for the worst: no permission needed. Act, then report.** Thad's grant (Aug 31) covers all of it:
+- Losing / station-falsified legs (station math kills the win condition → SELL)
+- Window-closed bands (3:30 PM window rules → salvage sell)
+- Bleeding winners (giveback >30% from intraday high while the falsification path is live → sell to lock)
+- **Buying, hedging, adding to positions: still consult Thad first.**
+- **Odds noise alone is NEVER an exit** (station math or window math only — Aug 27 205K + Aug 28 MIA tuition).
+- >80% certain of total loss: act without consulting, report after.
 - Applies to weather markets (KXHIGH*). Other markets (Fed, claims) still default to consult.
 
 ## Kalshi Universal Rule (MANDATORY)
