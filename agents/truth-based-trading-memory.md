@@ -14,6 +14,7 @@
 ## Historical Observations
 - **2026-08-17:** Identified significant overweight in Bitcoin mining stocks (CORZ, RIOT, HUT, WULF, CLSK, CIFR). Recommended trimming to align with the 5% Speculation limit. Noted Intel (INTC) as a narrative-driven hold that lacks supporting evidence for a turnaround.
 - **2026-08-24:** Portfolio audit confirms the Speculation bucket remains critically overweight at **41.20%** vs. 5% target. Foundation is **22.25%** vs. 70% target. INTC alone is 5.02% of the portfolio — larger than the entire Speculation limit should allow. Bitcoin miners total **7.81%**. "AI infrastructure" and "AI memory/storage" clusters are crowding the same speculative capital ($32.8k in semis/storage, $12.5k in AI power). Shiller CAPE ~42 and record top-10 concentration reinforce caution.
+- **2026-08-31:** Speculation bucket widened to **41.85%** of invested capital; Foundation slipped to **21.00%**. INTC alone now 5.10% on unconfirmed SK Hynix HBM4E talks. Macro backdrop turned more hostile: 10-year Treasury at 52-week high (~4.75%), September hike odds ~52–57%, Brent back above $90 after US-Iran exchange. $241k BrokerageLink cash sweep identified as the single largest lever to close Foundation gap. Portfolio accidentally positioned for stagflation (energy + defensives), but speculative rate-sensitive sleeves (crypto/miners, AI power, biotech) face renewed pressure if Warsh hikes.
 
 ## Lessons Learned
 - **Pattern:** High correlation between "story stocks" and high volatility without corresponding fundamental growth.
