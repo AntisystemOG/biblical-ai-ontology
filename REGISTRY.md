@@ -98,3 +98,9 @@ sessions_spawn(
 - Schedule: every 20 min -> every 10 min through tonight's Aug 29 settlement (Thad: close eye 3-6 PM, things may change rapidly).
 - Standing order amended: judgment sells authorized (protect profit when a winner bleeds >30% from high with live falsification path). Band 88-89 stays the huge-success leg (90F falsification only; alert at bid >= 0.50).
 - kalshi-longshot-tracker delivery fixed (to: telegram:6358625036); nightly scan will report again at 20:45.
+
+## lotto-exit-watch (Aug 31, 00:59 CDT)
+- Agent file: agents/lotto-exit-watch.md | Cron: lotto-exit-watch (*/20 6-19 * * * CDT, isolated, Telegram announce, silent=NO_REPLY)
+- Script: scripts/lotto_exit_watch.py — sells dead lottery legs pre-authorized (Thad's losing-position grant), alerts on big bids
+- Guarding: CHI <89 (4sh @0.35), NY 80-81 (14sh @0.10), NY 82-83 (12sh @0.04), settle Sep 1
+- miami-longshot-watch: RETIRED Aug 31 (Aug 29 mandate spent)
