@@ -170,4 +170,22 @@
 
 **TEM/HTFL fade note:** squeeze catalysts spent (9+ days old); trim discipline: TEM light-trim on low-60s retest, HTFL trail below Aug 24 low (50.20). HTFL -4.8% off peak, still +85% since Jul 31.
 
-**Friday's close checks for Monday:** does INTC make a new low (<89.47) or reclaim 95; does GEV close below 900 (psych break); does TEM hold 60; MU vs 910 (Aug 24 low) — cleanest sponsor test.
+## Update (August 31, 2026) — Monday Morning: GEV Breaks 900 Live, TEM Retests 60, MU Sponsor Test Passes ×2, SI Fully Static (Aug-15 Settlement)
+
+**Friday-close checks (set up Aug 30) — all resolved Monday morning:**
+- **GEV: 900 BREAK LIVE.** Friday held 911.93; Monday intraday 892.53 (-2.1% on a green-semis tape = name-specific). -17.3% off Aug 17 peak, -17.9% vs cost while CEG sits -1.9% off its high. Divergence fully resolved against GEV. Action locked: hold, no adds, trail 892; exit completes on Q3 13F (Nov 16) Point72/Coatue cut.
+- **TEM: low-60s retest LIVE** (Mon 60.81, -5.0% Friday-to-Monday after 64.04 Fri). Aug 30's light-trim-on-retest call is actionable; catalyst 10+ days spent. Trail below 60 after trimming.
+- **MU sponsor test PASSED ×2:** Friday held 932 >> 910; Monday +1.5% to 946.70. Full-month A/B conclusion: off the shared Aug 17 peak, MU -6.4% vs SNDK -14.6% / STX -17.3%. Sponsorship (3 managers) dampened the drawdown; trim the unsponsored momentum names into strength stands.
+- **INTC pinned:** Friday closed exactly AT 89.47 (= Thursday), no new low, no 95 reclaim; Monday ~90. Tepper signal -13.5% and plan on rails: trim 1/3 into 95-100 bounce, trail below 87.26.
+
+**SI settlement cadence learned:** Finviz still shows the Aug 15 settlement on Aug 31 — Aug 29 settlement not yet published (T+2/T+3 lag from the Aug 28 last-bi-weekly-settlement session). Do not interpret static SI as "no change"; it's no DATA. Re-pull next run (Sep 1-2) for the first fresh reads since mid-August; that is the most likely input to change any recommendation.
+
+**Finviz HTML changed again (3rd structure this month) — WORKING pattern:** label anchor `Short Float</a>` inside `div.snapshot-td-label`; value sits in the NEXT td inside `div.snapshot-td-content` wrapping `<b>2.67%</b>`. Robust approach: find label text, then take first `<b>(.*?)</b>` in the following ~700 chars. (Old `field</td><td>` regex silently returned None for ALL fields.)
+
+**U (Unity) first SI profile: 8.66% / 3.29 DTC** at +52.5% vs cost, 0.72% weight. Moderate crowding, no risk flag — added to standard watchlist.
+
+**Monday rotation texture (single session, watch not signal):** mega-cap AI red (AMZN -2.0% to 261, GOOGL -2.0% to 339.66) on a morning when semis were green (MU +1.5%, SNDK +2.7%, TSM +1.1%, AMD +1.0%) and energy strong (VDE +1.9%, XOP, BG, VG, SHEL). If a second Monday repeats the signature, it's an internal rotation flag for the conviction cluster's two largest beta names.
+
+**Pipeline notes for future runs:** cost basis = CSV row[13] (NOT row[12], which is Percent-of-account — Aug 31 first attempt mis-indexed and printed nonsense P&L until fixed); dollar signs in all CSV numeric fields need stripping. Reusable pull script: `.openclaw/tmp/strat_pull_20260831.py` (Yahoo 1mo + span-aware Finviz), positions builder `strat_positions_20260831.py`, table-aware md->PDF renderer `make_strategist_pdf_20260831.py` (fpdf2, handles | tables | and bold). Yahoo v8 range=1mo works; TODAY's bar appears intraday — prior bar = Friday close.
+
+**September open questions:** (1) GEV floor or further rot (small position; discipline > dollars); (2) mega-cap softness extension; (3) fresh Aug-29 SI settlement; (4) INTC: trim bounce to 95-100 first or 87.26 break first.
