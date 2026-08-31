@@ -535,3 +535,14 @@ See: INVESTING.md (tracks learning & personal plan)
 - **Tepper Exit validated:** INTC -12.4% in 10 days after Aug 17 SI-spike exit signal (SPY -0.5% same window). Confidence 70 -> 75%.
 - **Book status Aug 28 AM:** cash ~$27.62 -> ~$54 after CHI 82-83 NO + DEN 87-88 NO settle (~+$30, both 99%). Live: DEN B92.5 NO 15sh @ .75 (10 maker resting), CHI Aug28 B80-81 NO 6.9 filled + 18.13 maker, Fed C25 + Fed Hike. Paper book: 9 resolved (5W/4L), ROI -8.7%, $91.29 paper cash.
 - **Trading Arena:** restarted 8/26, $10k x5 (Shark/Owl/Wolf/Fox/Turtle). Shark led day 2 (+3.5%); old trading_arena.json (+123%) is pre-8/26 stale residue.
+
+## Week Addendum (Aug 29-30, 2026) - added by memory-dreaming 3 AM Aug 31
+
+- **MIAMI RULE (3 lotto losses in a row):** stop buying MIA 87-89 bands while the model centers 91-92. Any future MIA low-side lottery requires TWC station reading <= forecast base by early afternoon, else it is dead. Aug 29 B88.5+T88 lost ~$4.20 (~8% of book, oversize); Aug 30 B87.5 lost $1.05 (exactly 2% - gate worked).
+- **SIZING GATE live:** kalshi_pre_order_check.py flags lottery (<=30c) orders >2.2% RED, >8.8% oversize; prints per-city-day event exposure vs $20 cap every run.
+- **Correlated-leg lesson:** two legs on one city-day died on one 90-91 print. Exposure math must sum per event, not per order.
+- **Denver Aug 30 lesson (the good one):** both surviving NO legs bet AGAINST the modal 87-88 band and paid on the cold bust (KDEN 85F vs NWS 88). T85 trim by Thad (2.11sh @ 96.4c) locked profit early; tail won +$2.89; B87.5 NO won +$10. Net Sunday +$12.89 Denver / -$1.05 MIA.
+- **Cron write-path + encoding rules:** tools.fs.workspaceOnly blocks OneDrive/Desktop saves (kalshi-job-morning + financial-advisor crons were failing 3x on this; both re-pointed to workspace Aug 30). Cron messages must be ASCII-only (non-ASCII dies in pwsh CP437 round-trips); write via file + [IO.File]::ReadAllText UTF8. Multiple sessions write the same daily memory file - always append, never overwrite.
+- **Settlement verification pending:** +$10.07 evening credit (Aug 30) = DEN band par $10 + $0.07 residual, posted early. Expect 07:00Z batch: cash ~$66.67, ledger rows rev=10.00 + rev=2.89. If balance drops instead, flag Kalshi support.
+- **OPEN: Kalshi auth 401** on portfolio endpoints (flagged Aug 30 23:40) - fix key/cert before next scan. Fed Sep positions (26SEP H0) untouched.
+- Next week openers: ECI Q2 Mon Aug 31 8:30 AM ET; next claims Thu Sep 3; miami-longshot-watch cron needs payload rewrite (references dead Aug-29 positions).
