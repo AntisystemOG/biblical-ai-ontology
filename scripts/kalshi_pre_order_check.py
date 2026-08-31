@@ -15,6 +15,9 @@ Checks:
   4. Blended odds (NWS forecast + market-implied) that your side wins
   5. RED FLAG if your side's odds < 50% or if order cost > available cash
 """
+from pathlib import Path
+import time
+import os
 import json
 import math
 import sys
@@ -34,11 +37,78 @@ def p_below(f, thr, sigma):
     return 0.5 * (1 + math.erf(z / math.sqrt(2)))
 
 
+
+
+def city_realized_pnl(k):
+    """Net lifetime P&L per city/series: settlement revenue + sell proceeds - fill costs.
+    Fill conventions VERIFIED from live records (Aug 30 forensics):
+      YES buy:  action=buy,  side=yes, book_side=bid -> cash OUT at yes_price
+      NO buy:   action=sell, side=no,  book_side=ask -> cash OUT at no_price
+      NO trim:  action=sell, side=yes, book_side=bid -> cash IN  at no_price
+    Cached for 6h in workspace data dir."""
+    from collections import defaultdict
+    cache_path = Path(os.path.expanduser(r"~\.openclaw\workspace\data\kalshi\city_pnl.json"))
+    try:
+        if cache_path.exists():
+            age_h = (time.time() - cache_path.stat().st_mtime) / 3600
+            if age_h < 6:
+                return {c: v for c, v in json.loads(cache_path.read_text()).items()}
+    except Exception:
+        pass
+    fills = k.get("/portfolio/fills", params={"limit": 200}, auth=True)
+    frows = (fills.get("fills") if isinstance(fills, dict) else None) or []
+    cash_out = defaultdict(float)
+    cash_in = defaultdict(float)
+    for f in frows:
+        t = f.get("ticker")
+        if not t:
+            continue
+        sh = float(f.get("count_fp") or 0)
+        fee = float(f.get("fee_cost") or 0)
+        act, side = f.get("action"), f.get("side")
+        book = f.get("book_side")
+        yp = float(f.get("yes_price_dollars") or 0)
+        np_ = float(f.get("no_price_dollars") or 0)
+        # Verified across both API eras (Aug 17 old-API vs Aug 27+ V2):
+        #   old NO buys:  act=buy,  side=no,  book=ask  -> OUT at no_price (MIA Aug25)
+        #   V2  NO buys:  act=sell, side=no,  book=ask  -> OUT at no_price (DEN Aug30)
+        #   YES buys:     act=buy,  side=yes, book=bid  -> OUT at yes_price
+        #   NO trims:     act=sell, side=yes, book=bid  -> IN  at no_price (cash in 2.04 = 2.11 x 0.97)
+        #   plain YES sells: act=sell, side=yes, book=ask -> IN at yes_price
+        if act == "buy" and side == "yes":
+            cash_out[t] += sh * yp + fee          # YES buy
+        elif act == "buy" and side == "no":
+            cash_out[t] += sh * np_ + fee         # old-era NO buy
+        elif act == "sell" and side == "no":
+            cash_out[t] += sh * np_ + fee         # V2-era NO buy (sell/no + ask book)
+        elif act == "sell" and side == "yes":
+            if book == "bid":
+                cash_in[t] += sh * np_ - fee      # V2 NO trim (sold into no side at 0.97)
+            else:
+                cash_in[t] += sh * yp - fee       # plain YES sale
+    st = k.get("/portfolio/settlements", params={"limit": 100}, auth=True)
+    srows = (st.get("settlements") if isinstance(st, dict) else None) or []
+    gpnl = defaultdict(float)
+    for r in srows:
+        t = r.get("ticker", "")
+        rev = float(r.get("revenue") or 0) / 100.0
+        key = t.split("-")[0].replace("KXHIGH", "") if t.startswith("KXHIGH") else t.split("-")[0].replace("KX", "")
+        gpnl[key] += rev - cash_out.get(t, 0.0) + cash_in.get(t, 0.0)
+    try:
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_text(json.dumps(gpnl))
+    except Exception:
+        pass
+    return dict(gpnl)
+
+
 def main():
-    if len(sys.argv) != 5:
-        print("Usage: kalshi_pre_order_check.py TICKER SIDE PRICE SIZE")
+
+    if len(sys.argv) not in (5, 6):
+        print("Usage: kalshi_pre_order_check.py TICKER SIDE PRICE SIZE [OVERRIDE]")
         sys.exit(2)
     ticker, side, price, size = sys.argv[1], sys.argv[2].upper(), float(sys.argv[3]), int(sys.argv[4])
+    override = sys.argv[5].upper() if len(sys.argv) == 6 else ""
 
     k = Kalshi()
     m = k.get_market(ticker) or {}
@@ -127,6 +197,28 @@ def main():
                 flags.append(f"EVENT CAP BREACH: ${expo + cost:.2f} > ${EVENT_CAP:.0f}/city-day")
     except Exception as _e:
         print(f"(event exposure check skipped: {_e})")
+    # CITY REALITY CHECK (Aug 30 night): lifetime realized P&L printed every gate run.
+    # Miami alone bled -$60.95 on these exact shapes; enforce a hard blacklist.
+    CITY_LOSS_CAP = -20.00
+    city = ticker.split("-")[0].replace("KXHIGH", "") if ticker.startswith("KXHIGH") else None
+    if city:
+        try:
+            gpnl = city_realized_pnl(k)
+            if gpnl:
+                srt = sorted(gpnl.items(), key=lambda kv: kv[1])
+                print("City net P&L (realized + open cost, lifetime): " + ", ".join(f"{c} {v:+.2f}" for c, v in srt))
+                c_pnl = gpnl.get(city)
+                if c_pnl is not None and c_pnl < CITY_LOSS_CAP:
+                    if override == f"OK-{city}":
+                        print(f"!! OVERRIDE ACCEPTED: proceeding on {city} ({c_pnl:+.2f} lifetime) per explicit token")
+                    else:
+                        flags.append(
+                            f"CITY BLACKLIST: {city} realized {c_pnl:+.2f} lifetime (cap {CITY_LOSS_CAP:+.2f})"
+                            f" - requires explicit Thad override: run again with 5th arg OK-{city}"
+                        )
+        except Exception as _e:
+            print(f"(city P&L check skipped: {_e})")
+
     for fl in flags:
         print(f"!! RED FLAG: {fl}")
     print()
