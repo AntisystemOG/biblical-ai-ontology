@@ -25,11 +25,66 @@ import sys
 sys.path.insert(0, r"C:\AI Projects\Prediction Market\Kalshi")
 from kalshi_client import Kalshi
 
-# Forecast anchors (update via weather scan; used only for sanity check, not orders)
-NWS = {"KXHIGHDEN": 91, "KXHIGHMIA": 89, "KXHIGHCHI": 77, "KXHIGHNY": 81}
-SIGMA_WEATHER = 1.6
-CLAIMS_FORECAST = 205303
+from datetime import datetime
+from kalshi_client import Kalshi
+
+# Fresh forecasts (Aug 31 audit fix): the old hardcoded anchors (DEN 91 / claims 205303)
+# were 4-6 days stale and made the printed odds wrong. Live NWS fetch per ticker date +
+# newest-digest claims read; the constants below are ONLY offline fallbacks.
+FALLBACK_NWS = {"KXHIGHDEN": 88, "KXHIGHMIA": 89, "KXHIGHCHI": 88, "KXHIGHNY": 81}
+SIGMA_WEATHER = 2.0
+FALLBACK_CLAIMS = 205303
 SIGMA_CLAIMS = 3500
+
+sys.path.insert(0, r"C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner")
+try:
+    from weather_predictor import CITIES, fetch_nws_forecast, adjust_forecast
+    _HAVE_WX = True
+except Exception:
+    _HAVE_WX = False
+
+
+def _live_nws(series, ticker):
+    """Fresh NWS forecast for the ticker's own date, city rules + TWC(+1.5, capped).
+    Returns the fallback constant only when the live fetch fails."""
+    if not _HAVE_WX or not series.startswith("KXHIGH"):
+        return FALLBACK_NWS.get(series)
+    try:
+        code = series.replace("KXHIGH", "")
+        latlon = next((v[:2] for v in CITIES.values() if v[2] == code), None)
+        if not latlon:
+            return FALLBACK_NWS.get(series)
+        tok = ticker.split("-")[1]
+        dt = datetime.strptime(f"20{tok[0:2]}-{tok[2:5]}-{tok[5:7]}", "%Y-%b-%d").date().isoformat()
+        period = fetch_nws_forecast(latlon[0], latlon[1], dt)
+        if not period:
+            return FALLBACK_NWS.get(series)
+        base = float(period.get("temperature") or 0)
+        if not base:
+            return FALLBACK_NWS.get(series)
+        short_fc = (period.get("shortForecast") or "").lower()
+        wind = (period.get("windDirection") or "").upper()
+        pprob = (period.get("probabilityOfPrecipitation") or {}).get("value") or 0
+        adj, _n = adjust_forecast(base, code, wind, 0, pprob,
+                                  "thunder" in short_fc or "storm" in short_fc)
+        return round(min(adj + 1.5, base + 2.0), 1)  # TWC settlement bias, capped vs raw NWS
+    except Exception:
+        return FALLBACK_NWS.get(series)
+
+
+def _live_claims_forecast():
+    """Newest digest's blended forecast (fallback if absent)."""
+    try:
+        import glob
+        files = sorted(glob.glob(r"C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner\data\digest_*.json"))
+        if files:
+            with open(files[-1]) as fh:
+                of = json.load(fh).get("our_forecast")
+            if of:
+                return float(of)
+    except Exception:
+        pass
+    return FALLBACK_CLAIMS
 
 
 def p_below(f, thr, sigma):
@@ -135,7 +190,7 @@ def main():
         lo, hi = m.get("floor_strike"), m.get("cap_strike")
         win = f"max temp IN {lo}-{hi}" if side == "YES" else f"max temp NOT in {lo}-{hi}"
         series = ticker.split("-")[0]
-        f = NWS.get(series)
+        f = _live_nws(series, ticker)
         if f is not None:
             p_in_nws = p_below(f, hi, SIGMA_WEATHER) - p_below(f, lo - 1, SIGMA_WEATHER)
             odds = (1 - p_in_nws) if side == "NO" else p_in_nws
@@ -146,7 +201,7 @@ def main():
         else:
             win = f"max > {thr}" if side == "YES" else f"max <= {thr}"
         series = ticker.split("-")[0]
-        f = NWS.get(series)
+        f = _live_nws(series, ticker)
         if f is not None and thr:
             p_yes_nws = p_below(f, thr, SIGMA_WEATHER) if st == "less" else 1 - p_below(f, thr, SIGMA_WEATHER)
             odds = p_yes_nws if side == "YES" else 1 - p_yes_nws
@@ -154,7 +209,7 @@ def main():
         thr = m.get("floor_strike") or m.get("cap_strike")
         win = f"claims >= {thr:,}" if side == "YES" else f"claims < {thr:,}"
         if thr:
-            p_yes = 1 - p_below(CLAIMS_FORECAST, thr - 1, SIGMA_CLAIMS)
+            p_yes = 1 - p_below(_live_claims_forecast(), thr - 1, SIGMA_CLAIMS)
             odds = p_yes if side == "YES" else 1 - p_yes
     else:
         win = "(unknown strike type - MANUALLY VERIFY)"
