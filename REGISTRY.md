@@ -4,7 +4,8 @@
 
 | Cron Name | Schedule | Status | Notes |
 |-----------|----------|--------|-------|
-| kalshi-weather-morning-scan | 5:00 AM CDT daily | ✅ Active (Aug 25) | Timing-aware storm penalties |
+| kalshi-weather-morning-scan | 5:00 AM CDT daily | Active (Aug 25) | Timing-aware storm penalties |
+| ny-watch | Hourly 11:00-19:00 CT, Aug 31 2026 only | Active | NY band exit watcher; agent `agents/ny-watch.md`; script `scripts/ny_watch_0831.py`; rule-table exits, act-then-report |
 
 ---
 
