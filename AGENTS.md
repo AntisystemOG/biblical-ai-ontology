@@ -11,13 +11,14 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 Before doing anything else:
 
 0. **Pull from GitHub** — Run: `git pull origin main` (or `.\scripts\auto-git.ps1 -Action pull`)
+0.5. **Session Prompt** — Run: `python scripts/session_prompt.py` then read `SESSION_PROMPT.md` (auto-evolving session brief: carry-in goal, open loops, active lessons, style contract)
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 5. **Check for PLCTools Coder subagent** — If spawned, there's an active coding subagent at `agents/plctool-coder.md` (uses kimi-k2.5:cloud)
 
-**END OF SESSION:** Push changes — Run: `git push origin main` (or `.\scripts\auto-git.ps1 -Action push`)
+**END OF SESSION:** Run `python scripts/session_prompt.py --end "wrap-up | next-session goal"` first, then push changes — Run: `git push origin main` (or `.\scripts\auto-git.ps1 -Action push`)
 
 ## Agent & Cron Naming Convention (MANDATORY)
 
@@ -435,3 +436,9 @@ All AI projects are now under `C:\AI Projects`. Active ones to remember:
 - Managers tracked: Steven Cohen (Point72), Daniel Sundheim (D1 Capital), David Tepper (Appaloosa), Philippe Laffont (Coatue), Alexander Aschenbrenner (SIT)
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### Session Prompt (evolving session brief, added 2026-09-02)
+- Generator: `scripts/session_prompt.py` | State: `session_evolution.json` | Feedback log: `memory/session_feedback.jsonl` | Output: `SESSION_PROMPT.md` (workspace root, rebuilt on every run)
+- Run as startup step 0.5; re-run mid-session after a `--learn`/`--end` pivot; close sessions with `--end "wrap | goal"`.
+- Feedback verbs: Thad says "lesson: X" → `--learn "X"` (miss). Applied cleanly → `--hit L#` (streak++). `--list` shows lessons; `--drop L#` archives.
+- Evolution: misses escalate watch→critical; clean streaks (4/7) demote and archive. Prompt shrinks and sharpens as lessons stick — line count trend in `session_evolution.json` history.

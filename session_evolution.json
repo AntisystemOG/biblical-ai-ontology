@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "next_id": 3,
+  "lessons": [
+    {
+      "id": "L1",
+      "text": "Restate any Kalshi trade in plain English (side, band, dollars) and verify against rules_primary BEFORE executing.",
+      "tier": "critical",
+      "misses": 1,
+      "streak": 0,
+      "added": "2026-09-02 00:46",
+      "last_hit": null
+    },
+    {
+      "id": "L2",
+      "text": "Odds movement alone is never an exit trigger. Station math or window math only.",
+      "tier": "critical",
+      "misses": 1,
+      "streak": 0,
+      "added": "2026-09-02 00:46",
+      "last_hit": null
+    }
+  ],
+  "last_end": {
+    "ts": "2026-09-02 00:46",
+    "wrap": "Built session_prompt tool v1 (evolving session brief)",
+    "goal": "Next: run AGENTS.md step 0.5 every session and verify the brief sharpens; add --hit/--learn from real friction"
+  },
+  "stats": {
+    "generates": 1,
+    "learns": 0,
+    "hits": 0,
+    "notes": 0,
+    "ends": 1
+  },
+  "history": [
+    {
+      "ts": "2026-09-02 00:46",
+      "lines": 24,
+      "active": 2
+    }
+  ]
+}
