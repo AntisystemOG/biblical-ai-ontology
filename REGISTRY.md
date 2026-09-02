@@ -105,3 +105,10 @@ sessions_spawn(
 - Script: scripts/lotto_exit_watch.py — sells dead lottery legs pre-authorized (Thad's losing-position grant), alerts on big bids
 - Guarding: CHI <89 (4sh @0.35), NY 80-81 (14sh @0.10), NY 82-83 (12sh @0.04), settle Sep 1
 - miami-longshot-watch: RETIRED Aug 31 (Aug 29 mandate spent)
+
+## 2026-09-02 03:20 CDT - gateway error triage + model-provider cleanup (Spock)
+- Root cause of log error storm: dead ollama-cloud/* model ids in openclaw.json fallbacks/allowlists + twc-update-probe payload pin (ollama-cloud/glm-5.2); valid ids are ollama/<model>:cloud. Remapped all refs (backup: openclaw.json.bak-20260902); removed stale auth profile ollama-cloud:default; added models.providers.ollama.timeoutSeconds=180.
+- twc-update-probe payload.model -> ollama/glm-5.2:cloud (automations partial patch).
+- Skills fixed: crypto-prices + telegram-notify SKILL.md given required frontmatter description (were erroring 10-23x/day on skills scan).
+- Gateway restart scheduled 03:20:30 CT one-shot (gateway-restart-apply-20260902) to apply config; port probe + fallback start included.
+- 20 startup_failed stability snapshots Aug 31-Sep 1 were the legacy sessions.json migration blocker; migration already completed, gateway running clean since Sep 1 evening.
