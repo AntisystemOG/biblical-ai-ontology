@@ -1,5 +1,5 @@
-# SESSION PROMPT v3
-_auto-injected each new session via workspace bootstrap | rebuilt 2026-09-02 02:14 | 2 active lessons (2 critical, 0 fading)_
+# SESSION PROMPT v4
+_auto-injected each new session via workspace bootstrap | rebuilt 2026-09-02 02:16 | 2 active lessons (2 critical, 0 fading)_
 
 ## CARRY-IN GOAL
 Next: run AGENTS.md step 0.5 every session and verify the brief sharpens; add --hit/--learn from real friction

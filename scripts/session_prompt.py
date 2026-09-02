@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-The Brief - evolving session prompt for Spock main sessions.
+Session Prompt - evolving session prompt for Spock main sessions.
 
-Named: THE BRIEF (2026-09-02). File: scripts/session_prompt.py.
+Named: SESSION PROMPT (2026-09-02, Thad's pick). File: scripts/session_prompt.py.
 
 Rebuilds BOOTSTRAP.md (workspace root; auto-injected into every new session
 by the OpenClaw workspace bootstrap) from three live inputs:

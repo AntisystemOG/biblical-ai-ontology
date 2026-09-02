@@ -11,7 +11,7 @@ This folder is home. Treat it that way.
 Before doing anything else:
 
 0. **Pull from GitHub** — Run: `git pull origin main` (or `.\scripts\auto-git.ps1 -Action pull`)
-0.5. **The Brief** — Run: `python scripts/session_prompt.py` (rebuilds `BOOTSTRAP.md`, which OpenClaw auto-injects into every new session: carry-in goal, open loops, active lessons, style contract)
+0.5. **Session Prompt** — Run: `python scripts/session_prompt.py` (rebuilds `BOOTSTRAP.md`, which OpenClaw auto-injects into every new session: carry-in goal, open loops, active lessons, style contract)
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
@@ -437,7 +437,7 @@ All AI projects are now under `C:\AI Projects`. Active ones to remember:
 
 Add whatever helps you do your job. This is your cheat sheet.
 
-### The Brief (evolving session prompt, added 2026-09-02)
+### Session Prompt (evolving session prompt, added 2026-09-02; Thad-named)
 - Generator: `scripts/session_prompt.py` | State: `session_evolution.json` | Feedback log: `memory/session_feedback.jsonl` | Output: `BOOTSTRAP.md` (workspace root — auto-injected into every new session by the workspace bootstrap; rebuilt on every run)
 - Run as startup step 0.5; re-run mid-session after a `--learn`/`--end` pivot; close sessions with `--end "wrap | goal"`.
 - Feedback verbs: Thad says "lesson: X" → `--learn "X"` (miss). Applied cleanly → `--hit L#` (streak++). `--list` shows lessons; `--drop L#` archives.
