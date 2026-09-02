@@ -157,6 +157,36 @@ def city_realized_pnl(k):
     return dict(gpnl)
 
 
+def _market_center(k, ticker, series):
+    """Market-implied modal center for the same city-day band ladder (YES-mid weighted).
+    The market settles on TWC, so its center ALREADY embeds the TWC premium -
+    never pay the premium twice (NY Aug 31 lesson)."""
+    try:
+        date_part = ticker.split("-")[1]
+        mkts = k.get_markets(series_ticker=series, limit=100)
+        rows = []
+        for x in mkts:
+            t = x.get("ticker", "")
+            if "-" not in t or t.split("-")[1] != date_part:
+                continue
+            lo, hi = x.get("floor_strike"), x.get("cap_strike")
+            if lo is None or hi is None:
+                continue  # bands only
+            ya = float(x.get("yes_ask_dollars") or 0)
+            yb = float(x.get("yes_bid_dollars") or 0)
+            mid = (ya + yb) / 2.0
+            mid = (ya + yb) / 2.0
+            if 0 < mid <= 1:
+                rows.append((mid, (float(lo) + float(hi)) / 2.0))
+        if not rows:
+            return None
+        tw = sum(r[0] for r in rows)
+        if tw <= 0:
+            return None
+        return sum(r[0] * r[1] for r in rows) / tw
+    except Exception:
+        return None
+
 def main():
 
     if len(sys.argv) not in (5, 6):
@@ -194,6 +224,14 @@ def main():
         if f is not None:
             p_in_nws = p_below(f, hi, SIGMA_WEATHER) - p_below(f, lo - 1, SIGMA_WEATHER)
             odds = (1 - p_in_nws) if side == "NO" else p_in_nws
+        # MARKET-CENTER SANITY (NY Aug 31 lesson: TWC premium is already inside
+        # market prices - buying bands above market center on NWS+TWC double-counts)
+        mc = _market_center(k, ticker, series)
+        if f is not None and mc is not None:
+            gap = f - mc
+            print(f"Model center {f:.1f}F vs market-implied center {mc:.1f}F (gap {gap:+.1f}F)")
+            if gap >= 2.0:
+                print("!! RED FLAG: model sits 2F+ ABOVE market center - market already prices TWC; buying the premium double-counts. Need Thad override.")
     elif st in ("less", "greater"):
         thr = m.get("cap_strike") or m.get("floor_strike")
         if st == "less":
