@@ -238,7 +238,16 @@ See: INVESTING.md (tracks learning & personal plan)
 - Much better for local processing
 - Will eventually migrate Spock there
 
-## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-08-27)
+## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-09-02)
+
+**August 30 – September 1 Cycle (added 2026-09-02):**
+- **TWC +1.5F premium DOUBLE-COUNT was the Aug 31 killer (all NY/CHI settled LOST, ~$4.81 bleed).** Kalshi settles on TWC, so market center already embeds the +1.5F warmth — buying bands ABOVE market center because NWS+TWC exceeded it paid the bias twice (NY "+3F gap" was bogus edge). Fix coded in `kalshi_pre_order_check.py`: `_market_center()` computes YES-mid-weighted center from the live band ladder; RED FLAG when model center ≥2F above market center (needs Thad override). Tested: MIA Sep 2 gap -2.7F, no flag; MIA blacklist still fires.
+- **Scheduler loses jobs across openclaw updates:** ny-watch cron vanished post-update and never ran Mon — but the loss was thesis, not execution (proxy max never hit 81; verdict would be HOLD all day). Verify automations list after every update.
+- **digest.py claims-history lies:** recites 198K for Aug 27; FRED-verified actual = 203K (also fed Edge nightly's stale "last week printed 209K"). Rule: verify every settlement print from FRED/DOL before grading; TODO fix digest to pull FRED ICSA directly.
+- **Backup strategy settled:** 2x full backups died silently (sessions+workspace too heavy for 2-core box); `--only-config` backup succeeded in seconds → backups/2026-09-01T22-31-34-openclaw-backup.tar.gz (config+credentials). Workspace stays git-backed. TODO: retry full with --no-include-workspace.
+- **Claims cycle Sep 1:** FRED-verified Aug 22 print = 203K (prior NOs won). Blended forecast v2.3 ~206.3K; model P(<210K) ~85% vs market 67%. EXECUTED with Thad's approval: 4 sh Sep 3 <210K NO @ 0.70 ($2.86 w/ fees; +$1.14 net if right, ~41% ROI). Settles Thu Sep 3 7:25 AM CT. Account ~$73.74.
+- **Gateway still unstable:** 3-day downtime Sat–Tue 21:33 (npm update, v2026.8.2 = latest, damage was downtime not install); night flapping 23:03→23:25 self-recovered. Watchdog on duty; root cause OPEN.
+- **Sep 10 claims cycle = Labor Day week** (week ending Sep 5) — holiday filing distortion; smaller size or wait for T-1.
 
 **August 26 Cycle (added 2026-08-27):**
 - **A documented rule that isn't coded doesn't exist.** The "-4F max downward adjustment" sat in learnings.json while adjustments still stacked to -4F or worse — raw NWS error was 0.00F/MAE 1.62F, but our adjusted forecasts ran mean -5.25F. EVERY adjustment made forecasts worse. Fix: -2F cap actually implemented in weather_daily.py + weather_predictor.py (Aug 25's "-4F cap" was documented but never coded).
