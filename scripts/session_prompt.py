@@ -3,7 +3,8 @@
 """
 session_prompt.py - evolving session prompt for Spock main sessions.
 
-Rebuilds SESSION_PROMPT.md (workspace root) from three live inputs:
+Rebuilds BOOTSTRAP.md (workspace root; auto-injected into every new session
+by the OpenClaw workspace bootstrap) from three live inputs:
   1. carry-in goal    (last --end call)
   2. open loops       (auto-scanned from recent memory/2026-*.md)
   3. active lessons   (learned from feedback; decay as they stick)
@@ -31,7 +32,10 @@ from pathlib import Path
 
 WS = Path(__file__).resolve().parent.parent
 STATE_PATH = WS / "session_evolution.json"
-PROMPT_PATH = WS / "SESSION_PROMPT.md"
+# BOOTSTRAP.md is one of the basenames OpenClaw auto-injects into EVERY new
+# session (workspace bootstrap), so the generated prompt loads mechanically -
+# no dependence on the model remembering to run anything.
+PROMPT_PATH = WS / "BOOTSTRAP.md"
 FEEDBACK_PATH = WS / "memory" / "session_feedback.jsonl"
 MEMORY_DIR = WS / "memory"
 
@@ -157,7 +161,8 @@ def regenerate(st):
     L = []
     L.append("# SESSION PROMPT v%d" % (st["stats"]["generates"] + 1))
     L.append(
-        "_rebuilt %s | %d active lessons (%d critical, %d fading)_"
+        "_auto-injected each new session via workspace bootstrap | rebuilt %s | "
+        "%d active lessons (%d critical, %d fading)_"
         % (now_iso(), len(act), len(crit), len(watch))
     )
     L.append("")
@@ -286,7 +291,7 @@ def main():
 
     body, n_act = regenerate(st)
     print(
-        "SESSION_PROMPT.md rebuilt (v%d, %d lines, %d active lessons)"
+        "BOOTSTRAP.md rebuilt (v%d, %d lines, %d active lessons)"
         % (st["stats"]["generates"], body.count("\n"), n_act)
     )
     if not did:

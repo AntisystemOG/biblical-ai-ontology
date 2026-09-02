@@ -1,0 +1,84 @@
+KALSHI CLAIMS DIGEST | Sep 01 21:39 CDT | Timing: T-2 (sweet spot entry window)
+Portfolio: $71.7759 cash | $5.34 in live positions | book $77.11 | 2 open
+  KXFEDDECISION-26SEP-C25: YES | 23.39 sh @ $0.4678 | P&L: $+0.00 (+0%) | HOLD
+  KXFEDDECISION-26SEP-H0: YES | 12.81 sh @ $8.7936 | P&L: $-3.93 (-45%) | HOLD (underwater - consensus can be wrong)
+Recent claims: 206K -> 209K -> 200K -> 198K | 4wk avg: 200K
+Kalshi consensus: 206.4K | Our forecast: 204.6K (+/-4K)
+TOP EDGES:
+  KXJOBLESSCLAIMS-26SEP03-210000: NO @ 0.68 | edge +26% | return 47% | vol 1,510
+  KXJOBLESSCLAIMS-26SEP03-195000: YES @ 0.93 | edge +7% | return 8% | vol 230
+  KXJOBLESSCLAIMS-26SEP03-215000: NO @ 0.95 | edge +5% | return 5% | vol 1,265
+LEARNED LESSONS (auto-evolved from track record):
+  - CONFIRMED RELIABLE: kalshi_market_consensus is hitting 100% accuracy, avg error 2505. Trust this source.
+  - CONFIRMED RELIABLE: pick_accuracy is hitting 100% accuracy, avg error 0. Trust this source.
+  - FACT (trust): kalshi_market_consensus, pick_accuracy
+  - HOT STREAK: 15/15 picks correct (100%). Keep the approach.
+  - FORECAST SOLID: Last prediction within 1,000 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 821 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 1,298 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 250 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 450 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 128 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 1,419.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 1,794.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 2,288.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 1,605.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 1,616.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 2,303.0 of actual. Approach is working.
+  - GOAL MET: 15/15 (100%). Keep it up.
+ACTION: Sweet spot entry. Buy if edge >5% and prices favorable.
+
+WEATHER MARKET DIGEST | Sep 01 21:39 CDT
+
+DATA THAT MATTERS (FACT):
+  - NWS observations (actual temps, not forecasts)
+  - Storm probability (>40% = subtract 5 degrees)
+  - Wind direction (upslope/onshore = cooler)
+  - Cloud cover (>75% = subtract 2 degrees)
+
+DATA THAT IS SPECULATION:
+  - weathershogun (didn't predict Denver miss)
+  - globalmeteo (no storm/wind detail)
+  - weatheronthisday (historical norms mislead in storms)
+
+Denver:
+  KXHIGHDEN-26SEP02-T94 | YES 0.02 / NO 1.00 | vol 777
+  KXHIGHDEN-26SEP02-T87 | YES 0.05 / NO 0.97 | vol 521
+  KXHIGHDEN-26SEP02-B93.5 | YES 0.03 / NO 0.98 | vol 42
+
+New York:
+  KXHIGHNY-26SEP02-T82 | YES 0.01 / NO 1.00 | vol 1169
+  KXHIGHNY-26SEP02-T75 | YES 0.70 / NO 0.31 | vol 3639
+  KXHIGHNY-26SEP02-B81.5 | YES 0.02 / NO 0.99 | vol 891
+
+Miami:
+  KXHIGHMIA-26SEP02-T93 | YES 0.13 / NO 0.90 | vol 1605
+  KXHIGHMIA-26SEP02-T86 | YES 0.01 / NO 1.00 | vol 634
+  KXHIGHMIA-26SEP02-B92.5 | YES 0.46 / NO 0.55 | vol 1007
+
+Chicago:
+  KXHIGHCHI-26SEP02-T99 | YES 0.03 / NO 0.99 | vol 1042
+  KXHIGHCHI-26SEP02-T92 | YES 0.04 / NO 0.97 | vol 455
+  KXHIGHCHI-26SEP02-B98.5 | YES 0.05 / NO 0.96 | vol 653
+
+NOTE: Apply city-specific storm/wind adjustments before predicting.
+Run weather_analysis.py with live NWS data for full predictions.
+
+LONG SHOTS (high risk / high reward ΓÇö small bets only):
+  KXFEDDECISION-27JUL-H26: YES @ 0.02 | return 4900% | vol 1,172 | Will the Federal Reserve Hike rates by >
+  KXFEDDECISION-26DEC-H26: YES @ 0.02 | return 4900% | vol 14,087 | Will the Federal Reserve Hike rates by >
+  KXHIGHNY-26SEP02-B81.5: YES @ 0.02 | return 4900% | vol 891 | Will the maximum temperature be 81-82┬░ o
+
+--- WEB FINDINGS (Sep 01 21:39 CDT) ---
+Search: US jobless claims forecast September 2 2026 labor market news
+- Most recent week (week ending Aug 22): claims little changed at low level per PNC (Aug 27 note). Four-week moving average slightly above 200K.
+- Recent prints: 206K -> 212K -> 200K -> 198K (digest). 4wk avg 200K.
+- Kalshi consensus: 206.4K. Digest forecast: 204.6K (+/-4K).
+- Labor market narrative: Jobs Report Looms as Labor Market Weakens (TickerSpark, Aug 30) after July's 23K payroll decline; August jobs report is focus this week.
+- No fresh claims-specific forecast update found for Sep 02 release. Existing digest forecast and consensus unchanged.

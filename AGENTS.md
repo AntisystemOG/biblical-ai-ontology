@@ -4,14 +4,14 @@ This folder is home. Treat it that way.
 
 ## First Run
 
-If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
+`BOOTSTRAP.md` is the auto-injected evolving session prompt (output of `scripts/session_prompt.py`, rebuilt every run). **Do NOT delete it.** The original first-run birth-certificate flow was completed long ago.
 
 ## Session Startup
 
 Before doing anything else:
 
 0. **Pull from GitHub** — Run: `git pull origin main` (or `.\scripts\auto-git.ps1 -Action pull`)
-0.5. **Session Prompt** — Run: `python scripts/session_prompt.py` then read `SESSION_PROMPT.md` (auto-evolving session brief: carry-in goal, open loops, active lessons, style contract)
+0.5. **Session Prompt** — Run: `python scripts/session_prompt.py` (rebuilds `BOOTSTRAP.md`, which OpenClaw auto-injects into every new session: carry-in goal, open loops, active lessons, style contract)
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
@@ -438,7 +438,7 @@ All AI projects are now under `C:\AI Projects`. Active ones to remember:
 Add whatever helps you do your job. This is your cheat sheet.
 
 ### Session Prompt (evolving session brief, added 2026-09-02)
-- Generator: `scripts/session_prompt.py` | State: `session_evolution.json` | Feedback log: `memory/session_feedback.jsonl` | Output: `SESSION_PROMPT.md` (workspace root, rebuilt on every run)
+- Generator: `scripts/session_prompt.py` | State: `session_evolution.json` | Feedback log: `memory/session_feedback.jsonl` | Output: `BOOTSTRAP.md` (workspace root — auto-injected into every new session by the workspace bootstrap; rebuilt on every run)
 - Run as startup step 0.5; re-run mid-session after a `--learn`/`--end` pivot; close sessions with `--end "wrap | goal"`.
 - Feedback verbs: Thad says "lesson: X" → `--learn "X"` (miss). Applied cleanly → `--hit L#` (streak++). `--list` shows lessons; `--drop L#` archives.
 - Evolution: misses escalate watch→critical; clean streaks (4/7) demote and archive. Prompt shrinks and sharpens as lessons stick — line count trend in `session_evolution.json` history.
