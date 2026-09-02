@@ -2,7 +2,7 @@
 
 **Purpose:** Track long-term holdings, performance vs inflation, and learned patterns for compounding wealth.
 
-**Last Updated:** 2026-08-24
+**Last Updated:** 2026-09-01
 
 ---
 
@@ -16,13 +16,14 @@
 | GOOGL | Q4 2025 | — | — | Tier 1 | HOLD | 4-manager overlap (Coatue, Point72, Appaloosa, SIT) |
 | SPOT | Q4 2025 | — | — | Tier 1 | HOLD | 4-manager overlap (Point72, Coatue, D1, SIT) |
 | V | Portfolio | — | — | Tier 1 | HOLD | Point72; implied multi-manager quality |
-| TSM | Q4 2025 | — | — | Tier 2 | HOLD / ACCUMULATE | Appaloosa, Coatue, SIT |
+| TSM | Q4 2025 | — | — | Tier 2 | HOLD — SIZE-UP CANDIDATE (4/5 whales, only $387 held; Tepper ADDED) | Appaloosa, Coatue #1, SIT, Point72 |
+| MU | 2026 | — | — | Tier 2 (cyclical) | HOLD EXISTING / NO NEW MONEY — sponsor test passed ×2; peak-cycle discipline | SA 27.5%, Tepper 14.6% (trimmed), Coatue 7.5%, Point72 |
 | CEG | Q4 2025 | — | — | Tier 2 / Hedge | ACCUMULATING | Coatue, SIT, Point72 (AI Power theme) |
-| GEV | Q4 2025 | — | — | Tier 2 / Hedge | ACCUMULATING | Coatue, SIT, Point72 |
+| GEV | Q4 2025 | — | — | Tier 2 / Hedge | HOLD / DO NOT ADD — 900 psych level broke 2026-08-31 (892 trailing, not a add level); exit adjudicated at Nov 16 13Fs | Coatue (trimmed to 6.2%), SIT, Point72 |
 | VRT | Q4 2025 | — | — | Tier 2 / Hedge | ACCUMULATING | Coatue, Point72 |
 | NFLX | Q4 2025 | — | — | Tier 2 | HOLD | Coatue, Point72, SIT |
-| AMD | Q4 2025 | — | — | Tier 2 | HOLD | Coatue, Point72 |
-| INTC | Portfolio | — | — | REVIEW / TRIM | WATCH | Tepper EXIT; Point72-only overlap now |
+| AMD | Q4 2025 | — | — | Tier 2 | REVIEW / TRIM — consensus flipped NEGATIVE (SA exit + Tepper/P72 trims, 2026-08-31) | Coatue, Point72 (trimming), SA exited |
+| INTC | Portfolio | — | — | REVIEW / TRIM | WATCH — trim into 95-100 reclaim, trail below 87.26; counter-signal: Coatue NEW $1.2B (3.5% fund) | Tepper EXIT (validated ×2); Coatue NEW |
 | BRK.B | Portfolio | — | — | Tier 1 | HOLD | Buffett permanent capital |
 | NVDA | Portfolio | — | — | TACTICAL AVOID | WATCH | Valuation stretched; no new money until -20% correction |
 | CORZ / RIOT / CLSK / WULF / HUT / CIFR | Portfolio | — | — | Tier 3 ONLY | SPECULATION | No top-tier manager overlap; treat as trades |
@@ -36,6 +37,8 @@
 | ZTS | Terry Smith fresh rotation signal | ~$165-175 | HIGH | Smith quality rotation candidate |
 | UNH | Regulatory clarity + manager accumulation | ~$450 | MEDIUM | No manager accumulation |
 | DVN / CVE | Energy dip / Iran escalation | Current level | MEDIUM | Raymond James / energy hedge |
+| VICI | Rate-regime clarity (Sept Fed decision) | Tactical income only | MEDIUM | 7.0% yield, 1% off 52-wk low, 4 upgrade headlines |
+| VST / NRG | Power-complex dip | Watchlist | MEDIUM | Tepper holds 4.5% / 3.3% |
 
 ### AVOID LIST (Permanent/Tactical)
 
@@ -59,14 +62,15 @@
 - **Why it Works:** Independent validation of quality; SIT participation adds conviction.
 - **Win Rate:** HIGH — tracking.
 - **Hold Time:** 12+ months.
-- **Current Active:** AMZN (5 managers), GOOGL (3), SPOT (4), TSM (3), CEG/GEV (3).
+- **Current Active:** AMZN (5), GOOGL (4, ALL adding), SPOT (4, mixed — weakest profile), TSM (4), CEG (3), MU (4, strongest consensus).
+- **VALIDATED 2026-08-31:** Sponsor A/B test resolved a full month — MU (sponsored) -6.4% vs SNDK -14.6% / STX -17.3% (unsponsored) since the Aug 17 peak. Sponsorship sorted outcomes. Hold the sponsored name; trim the momentum-only name.
 
 **Pattern: AI Power Infrastructure**
 - **Signal:** Coatue + SIT + Point72 building CEG / GEV / VRT.
 - **Why it Works:** AI data center buildout requires real assets (power, grid, cooling) that are supply-constrained.
 - **Win Rate:** Tracking — first test.
 - **Hold Time:** 3-5 years.
-- **Current Active:** CEG, GEV, VRT (2026-08-15).
+- **Current Active:** CEG (HIGH, -1.9% off high), VRT (HOLD); GEV downgraded to HOLD/DO-NOT-ADD after 900 break (2026-08-31).
 
 **Pattern: Terry Smith Quality Rotation**
 - **Signal:** Exits mature compounder to fund massive new entry.
@@ -85,9 +89,10 @@
 **Pattern: Tepper Exit Reversal Warning**
 - **Signal:** Appaloosa exits a position that previously had multi-manager support.
 - **Why it Works:** Tepper is a tactical momentum manager; his exits mark thesis exhaustion.
-- **Win Rate:** HIGH (INTC downgrade confirmed).
+- **Win Rate:** HIGH — REVALIDATED 2026-08-31: INTC -12.4% in 10 days post-signal vs SPY -0.5%. Confidence ~75%+.
 - **Hold Time:** N/A — downgrade to REVIEW/TRIM.
-- **Current Flag:** INTC (2026-08-15).
+- **Current Flags:** INTC (2026-08-15, revalidated 08-31); AMD consensus-flip (2026-08-31: SA exit + Tepper/P72 trims).
+- **Counter-test pending:** Coatue opened NEW $1.2B INTC position vs Tepper exit — two-sided test adjudicates at Nov 16 13Fs.
 
 ### ⚠️ MEDIUM CONFIDENCE (Tracking)
 
@@ -98,6 +103,23 @@
 **Pattern: Value Screen with Insider Buying**
 - **Signal:** Passes value screens + significant insider purchases.
 - **Current Active:** None.
+
+### NEW PATTERNS (2026-09-01)
+
+**Pattern: Theme Is Not The Stock**
+- **Signal:** Same theme, diverging sponsorship → diverging outcomes (CEG -1.9% off high vs GEV -17.9% breaking 900, both AI-power).
+- **Rule:** Judge each name's sponsorship individually; never hold a theme through a breaking name.
+- **Status:** Tracking.
+
+**Pattern: Whale Private Access**
+- **Signal:** Whales take NEW private positions at max concentration (SpaceX Q2 2026: D1 61.9%, Coatue 6.5%, Tepper 0.5% — ALL NEW).
+- **Rule:** Max-concentration private access = strongest conviction signal; track listed proxies/secondaries.
+- **Status:** No retail action available.
+
+**Pattern: Consensus-Flip Downgrade (AMD rule)**
+- **Signal:** One whale exits + two trim the same name in one quarter.
+- **Rule:** Automatic REVIEW/TRIM; re-adjudicate at next 13F cycle.
+- **Status:** FIRED 2026-08-31 — AMD downgraded.
 
 ### ❌ FAILED/WARNING
 
@@ -123,6 +145,7 @@
 | 2026 Q1 | ~3.4% | Baseline | TBD | TBD | Baseline established |
 | 2026-05-12 | ~3.4% | Starting point | — | — | First LTH report issued |
 | 2026-08-24 | ~3.0-3.5% | Tracking | TBD | TBD | CAPE ~42x; Treasury buyback regime; Iran energy risk premium |
+| 2026-09-01 | ~3.0-3.7% | Tracking | TBD | TBD | Warsh hawkish Jackson Hole; Sept HIKE odds 52-57%; Brent >$90 (Iran, 6-mo war); CAPE 42; 10Y 4.74% |
 
 **Tracking Method:**
 - Compare portfolio total return vs S&P 500 vs CPI.
