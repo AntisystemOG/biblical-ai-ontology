@@ -50,9 +50,11 @@ def is_market_open(now: datetime) -> bool:
     # Monday=0 .. Friday=4
     if now.weekday() >= 5:
         return False
-    # Agent schedule: 8:30 AM - 3:00 PM CDT
+    # Agent schedule: 8:30 AM - 3:00 PM CDT. The 3:00 PM slot gets a small
+    # closing grace (until 3:05 PM) so scheduler/startup jitter doesn't skip
+    # it; the run still fills at the day's closing prices.
     t = now.time()
-    return time(8, 30) <= t <= time(15, 0)
+    return time(8, 30) <= t <= time(15, 5)
 
 # -----------------------------------------------------------------------------
 # Data fetching
