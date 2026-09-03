@@ -1,5 +1,5 @@
 # Kalshi weather boards: live prices for today + tomorrow vs NWS forecast (ASCII-safe for cron use).
-import sys, datetime, urllib.request, json
+import sys, datetime
 sys.path.insert(0, r"C:\AI Projects\Prediction Market\Kalshi")
 sys.path.insert(0, r"C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner")
 from kalshi_client import Kalshi
@@ -14,17 +14,13 @@ SERIES_TO_CITY = {
 MON = {"JAN":"01","FEB":"02","MAR":"03","APR":"04","MAY":"05","JUN":"06",
        "JUL":"07","AUG":"08","SEP":"09","OCT":"10","NOV":"11","DEC":"12"}
 
-def nws_period_high(station, date_str):
-    try:
-        u = f"https://api.weather.gov/stations/{station}/forecast"
-        req = urllib.request.Request(u, headers={"User-Agent": "spock-weather-scan local"})
-        data = json.load(urllib.request.urlopen(req, timeout=15))
-        for p in data["properties"]["periods"]:
-            if p.get("startTime", "")[:10] == date_str and p.get("isDaytime", True):
-                return p.get("temperature")
-    except Exception as e:
-        return f"ERR:{type(e).__name__}"
-    return None
+def nws_high_for(city_name, date_str):
+    """Points-flow NWS fetch (the endpoint that actually works)."""
+    if city_name not in CITIES:
+        return None
+    lat, lon, _ = CITIES[city_name]
+    p = fetch_nws_forecast(lat, lon, date_str)
+    return p.get("temperature") if p else None
 
 def fmt(x):
     if x is None: return "--"
@@ -50,9 +46,7 @@ print(f"Kalshi weather boards {today} / {tomorrow} (live asks, NWS forecast)")
 for (series, date) in sorted(events.keys()):
     st, nm = SERIES_TO_CITY.get(series, (None, series))
     ds = f"20{date[:2]}-{MON[date[2:5]]}-{date[5:]}"
-    hi = None
-    if st:
-        hi = nws_period_high(st, ds)
+    hi = nws_high_for(nm, ds) if nm in CITIES else None
     print(f"== {nm} ({series}) {ds} | NWS high: {hi}")
     for e in sorted(events[(series, date)], key=lambda x: x["ticker"]):
         tail = e["ticker"].rsplit("-", 1)[-1]

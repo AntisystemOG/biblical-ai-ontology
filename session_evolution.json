@@ -27,7 +27,7 @@
     "goal": "Next: run AGENTS.md step 0.5 every session and verify the brief sharpens; add --hit/--learn from real friction"
   },
   "stats": {
-    "generates": 4,
+    "generates": 5,
     "learns": 0,
     "hits": 0,
     "notes": 2,
@@ -51,6 +51,11 @@
     },
     {
       "ts": "2026-09-02 02:16",
+      "lines": 24,
+      "active": 2
+    },
+    {
+      "ts": "2026-09-02 02:18",
       "lines": 24,
       "active": 2
     }
