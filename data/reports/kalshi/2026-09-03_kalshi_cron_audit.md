@@ -64,7 +64,25 @@ The 5:30 / 6:00 / 6:00 AM trio each ran the claims digest + web searches indepen
 - Superseded jobs are DISABLED, not deleted; payloads intact with PROMPT-LAW text. Rollback = set enabled:true (see agents/kalshi-morning-brief.md).
 - REGISTRY.md updated to match.
 
-## 6. Open Items (not cron-scoped but surfaced)
+## 6. The One Prediction Database (Thad directive, Sep 3 5:13 AM)
+
+"All Jobs should be working toward making a better prediction model. That means one database that they can each make changes to."
+
+**Implemented same morning:** `data/kalshi_model.db` (SQLite WAL, git-backed) with shared API `scripts/kalshi_db.py`.
+
+| Table | Contents | Who writes |
+|---|---|---|
+| predictions | every pick: source, kind, event, market, side, shares, odds, model_prob vs market_prob, settled result + P&L | paper trader, morning brief, longshot tracker, manual trades |
+| forecasts | model forecast history (city-day centers) + graded outcomes | weather_daily, grading steps |
+| learnings | lessons + rule changes with hits/misses counters | grading, weekly review, prompt evolution |
+| model_state | THE LIVING MODEL PARAMS: claims weights (Kalshi 0.70/analyst 0.10/recent 0.20), sigma 3.5K, TWC +1.5F, sizing caps, target accuracy 80% | learning loop writes; every job READS (never hardcode) |
+| snapshots | 4h price history for timing analysis (3,305 rows migrated) | kalshi-price-snapshots (dual-write) |
+
+**Migration done Sep 3:** 44 forecast records, 27 band picks, 1 grading record, 10 signal-accuracy rows, 3,305 snapshots. Zero skips.
+
+**Why this matters:** every job now contributes to ONE model. The morning brief syncs everything (STEP 2b), reads accuracy vs the 80% target, and reads model params from the DB. The learning loop updates weights in the DB, and the next prediction uses them. Prediction -> grade -> learn -> adjust weights -> predict better. The loop is closed and inspectable in one file.
+
+## 7. Open Items (not cron-scoped but surfaced)
 
 - Backups: doctor reports NO successful backup ever; 2 attempts produced zero archives. Needs a working backup path (workspace is git-backed, which covers code but not gateway state).
 - openclaw status CLI hung twice on this box (unverified cause).

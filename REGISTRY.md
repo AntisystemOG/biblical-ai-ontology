@@ -5,7 +5,7 @@
 | Cron Name | Schedule | Status | Notes |
 |-----------|----------|--------|-------|
 | kalshi-weather-morning-scan | 5:00 AM CDT daily | Removed (Sep 3) | Superseded by kalshi-morning-brief |
-| kalshi-morning-brief | 5:45 AM CDT Mon-Fri | Active (Sep 3) | CONSOLIDATED morning job - replaces the-edge-morning + kalshi-daily-predictions + kalshi-job-morning (all DISABLED Sep 3, payloads intact for rollback); agent `agents/kalshi-morning-brief.md`; includes FRED-verification of claims history + market-center gate rules |
+| kalshi-morning-brief | 5:45 AM CDT Mon-Fri | Active (Sep 3) | CONSOLIDATED morning job - replaces the-edge-morning + kalshi-daily-predictions + kalshi-job-morning (all DISABLED Sep 3, payloads intact for rollback); agent `agents/kalshi-morning-brief.md`; includes FRED-verification of claims history + market-center gate rules + DB sync (STEP 2b). Force-run test Sep 3: OK, delivered 4.2 min |
 | kalshi-position-monitor | Hourly | Active | Stop-loss check via kalshi_position_table.py |
 | kalshi-price-snapshots | Every 4h | Active (fixed Sep 3) | Now runs `scripts/kalshi_snapshots.py` (dynamic event discovery - old payload snapped dead Aug tickers); model pins cleared Sep 3 (old `ollama-cloud/glm-5.2` naming rejected by modelPolicy after update) |
 | the-edge-nightly | 9 PM Mon-Thu | Active | Pick prep |
@@ -14,6 +14,7 @@
 | kalshi-weekly-review | Sat 10 AM | Active | Weekly grading + learning report |
 | kalshi-prompt-evolution | Fri | Active | Prompt learning loop |
 | twc-update-probe | Cron | Active | TWC settlement source watch |
+| ONE PREDICTION DB (Sep 3, Thad) | - | Live | `data/kalshi_model.db` via `scripts/kalshi_db.py` - all jobs read/write; model params in model_state (no hardcoding); sync via kalshi_db_migrate.py in morning brief; migrated: 3305 snapshots, 44 forecasts, 27 band picks, claims signal accuracy |
 | Removed Sep 3 | - | - | Dead jobs deleted: kalshi-buy-alert-aug18, kalshi-buy-alert-aug19, kalshi-buy-alert-aug19-morning, kalshi-pre-close-check, kalshi-weather-morning-scan, miami-longshot-watch, lotto-exit-watch (function absorbed by kalshi-position-monitor) |
 | ny-watch | Hourly 11:00-19:00 CT, Aug 31 2026 only | Removed (Sep 1) | NY band exit watcher; agent `agents/ny-watch.md`; script `scripts/ny_watch_0831.py`; rule-table exits, act-then-report. Market KXHIGHNY-26AUG31 settled 09-01 07:00Z; job fired hourly past its window on Sep 1 and was removed at 21:48 CT Sep 1 (verdict SELL-DEAD on Sep 1 weather data was inapplicable to settled market; no trade possible or executed) |
 

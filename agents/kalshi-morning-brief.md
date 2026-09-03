@@ -20,5 +20,15 @@
 - Pre-order gate (kalshi_pre_order_check.py) before ANY order; never buy bands 2F+ above market center; MIA blacklist active
 - Buying = consult Thad first. Selling losing weather positions = act then report.
 
+## The One Prediction Database (Thad directive Sep 3, 5:13 AM)
+All jobs feed `data/kalshi_model.db` (SQLite WAL) via `scripts/kalshi_db.py`:
+- `predictions` - every pick (source, kind, event, market, side, odds, model_prob vs market_prob, settled result + pnl)
+- `forecasts` - model forecast history (city-day centers) + graded outcomes
+- `learnings` - lessons + rule changes (hits/misses counters)
+- `model_state` - THE LIVING MODEL PARAMS (claims weights, sigma, TWC adj, caps, target accuracy). Jobs READ params from here - do not hardcode. Learning loop WRITES updates here.
+- `snapshots` - 4h price history for timing analysis
+- Sync: `scripts/kalshi_db_migrate.py` (idempotent, run by morning brief STEP 2b). Snapshots script dual-writes JSONL + DB.
+- API: record_prediction, settle_prediction, accuracy, record_learning, get_state/set_state, record_forecast, record_snapshot.
+
 ## Rollback
 If this brief fails 2 mornings in a row: re-enable the-edge-morning, kalshi-daily-predictions, kalshi-job-morning (disabled 2026-09-03, payloads intact with [PROMPT-LAW] text), then debug this one.
