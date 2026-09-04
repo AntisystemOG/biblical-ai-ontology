@@ -43,6 +43,8 @@ This is the most important thing in this file. Everything else serves this.
 
 **RULE: NO-heavy core strategy (2026-08-29).** Thad asked if NO predictions are easier to call — yes, adopted. NO on bands ≥4F from consensus center is the CORE book: wins in 5-6 of 7 outcomes, fees near zero on favorites (P(1-P) fee math), TWC +bias and all documented weather failure modes (storms/marine/lake breeze) push days cooler → away from high bands. Empirical: 6/6 NO favorites won Aug 27-29. Guardrails: never pay ≥94¢ for NO without ≥5F cushion + storm help; never bet NO against >85% consensus without data advantage; ≤2% stays on YES lotteries (cheap convexity, e.g. MIA 88-89 + NY 81-82 Aug 29). Full rules in Edge Scanner config.json `strategy`.
 
+**RULE: Thad's thumbs-up = agreement, no reply needed (2026-09-04).** A 👍 from Thad means he agrees with the plan/proposal — treat it as a silent acknowledgment and carry on. No reply unless action is pending.
+
 ## BUDGET RULE
 
 **CRITICAL (2026-03-29):** Thad explicitly said "make sure we use all the ollama tokens we can, they expire and start over"
