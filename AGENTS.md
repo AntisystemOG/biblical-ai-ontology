@@ -72,6 +72,16 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+### Exit Strategy — Standard Rule (Added Sep 3, 2026)
+**No exit plan, no order.** Every pick (weather, claims, any market) requires a WRITTEN exit strategy BEFORE entry, recorded in the DB with the fill (predictions.exit_plan):
+1. **Dead condition** — what makes the win condition mathematically impossible (station/peak math, event resolution)
+2. **Decision windows** — when to check (peak hours for weather, print time for claims, event date for Fed)
+3. **Salvage trigger + mechanics** — dead = sell at bid (act-then-report, pre-authorized)
+4. **Profit-lock rule** — winning at 40-90c: sell on >30% giveback from intraday high; winning at 90c+: hold to settlement (no fee at 1.00)
+5. **Border case protocol** — check the settlement source page (weather.com/kalshi) before acting
+- Morning brief flags any open position with no recorded exit plan (kalshi_db.missing_exit_plans()).
+- Templates: agents/sep4-exit-watch.md (weather peak-window pattern); claims = hold-to-settlement always (PROMPT-LAW); event markets ride to event.
+
 ### Trading Authority (Added Aug 27, 2026; EXPANDED Aug 31, 2026)
 **Selling ANY weather position that is turning for the worst: no permission needed. Act, then report.** Thad's grant (Aug 31) covers all of it:
 - Losing / station-falsified legs (station math kills the win condition → SELL)

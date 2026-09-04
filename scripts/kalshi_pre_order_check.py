@@ -315,6 +315,9 @@ def main():
     for fl in flags:
         print(f"!! RED FLAG: {fl}")
     print()
+    # STANDING RULE Sep 3 (Thad): no exit plan, no order
+    print("EXIT-PLAN RULE: every pick MUST have a recorded exit strategy (dead condition, salvage trigger, decision windows, profit-lock) - record it in the DB with the fill (predictions.exit_plan). No plan = no order.")
+    print()
     # Reminder of the V2 order semantics bug this tool guards against
     if side == "NO":
         print(f"V2 NOTE: this NO buy will be sent as sell-YES @ {(1-price):.2f} - the client handles conversion.")

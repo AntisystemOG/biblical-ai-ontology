@@ -27,6 +27,7 @@ def _ensure_schema(conn):
       event TEXT NOT NULL, market TEXT, pick TEXT NOT NULL,
       side TEXT, shares REAL, entry_price REAL,
       model_prob REAL, market_prob REAL,
+      exit_plan TEXT,
       status TEXT DEFAULT 'open', result TEXT, pnl REAL, settled_at TEXT,
       content_hash TEXT UNIQUE
     );
@@ -61,13 +62,19 @@ def _hash(*vals):
 # ---------- predictions ----------
 def record_prediction(source, kind, event, pick, market=None, side=None,
                       shares=None, entry_price=None, model_prob=None,
-                      market_prob=None, ts=None):
+                      market_prob=None, ts=None, exit_plan=None):
     conn = connect()
     t = ts or _now()
     ch = _hash(source, event, market, pick, t)
-    conn.execute("INSERT OR IGNORE INTO predictions (ts,source,kind,event,market,pick,side,shares,entry_price,model_prob,market_prob,content_hash) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
-                 (t, source, kind, event, market, pick, side, shares, entry_price, model_prob, market_prob, ch))
+    conn.execute("INSERT OR IGNORE INTO predictions (ts,source,kind,event,market,pick,side,shares,entry_price,model_prob,market_prob,exit_plan,content_hash) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                 (t, source, kind, event, market, pick, side, shares, entry_price, model_prob, market_prob, exit_plan, ch))
     conn.commit(); conn.close()
+
+def missing_exit_plans():
+    """Standing rule Sep 3: no exit plan = no order. Flag violations for the brief."""
+    conn = connect()
+    rows = conn.execute("SELECT ticker_ref, pick FROM (SELECT market AS ticker_ref, pick FROM predictions WHERE status='open' AND (exit_plan IS NULL OR exit_plan=''))").fetchall()
+    conn.close(); return [dict(r) for r in rows]
 
 def settle_prediction(event, market, result, pnl, settled_at=None):
     conn = connect()
