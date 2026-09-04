@@ -22,12 +22,12 @@ Quarterly on 13F filing deadline dates at 6:00 AM CDT (America/Chicago)
 
 ## Task
 1. Read portfolio CSV from latest file in C:\Users\thadd\Desktop\Portfolio Positions\
-2. Fetch latest Q4 2025 13F holdings for tracked managers:
+2. Fetch latest available 13F holdings for tracked managers (the file below previously pinned "Q4 2025" — always use the freshest filed quarter instead):
    - Steven Cohen (Point72)
    - Daniel Sundheim (D1 Capital)
    - David Tepper (Appaloosa)
    - Philippe Laffont (Coatue)
-   - Alexander Aschenbrenner (SIT)
+   - Leopold Aschenbrenner (Situational Awareness LP) — corrected from "Alexander Aschenbrenner (SIT)" Sep 4, 2026; his fund imploded late July 2026 (sold most stocks to Citadel) so treat its filings as historical
 3. Find overlaps between whale positions and portfolio holdings
 4. Write your report per the Daily Digest Output section below (section title: Whale Watch)
 

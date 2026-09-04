@@ -136,3 +136,8 @@ sessions_spawn(
 - KNOWN LIMIT: cron payload reinforcement lines NOT applied - automations update blocked by "scheduled account policy must match the persisted job owner" from this session (same gate that stopped the Aug 31 [PROMPT-LAW] payload hardening). Agent files are the operative instructions (payloads are thin shims: "Read agents/X.md and execute"), so consolidation works regardless. Payload-level patch remains OPEN for both programs.
 - financial-advisor.md carries an explicit SUPERSEDES note over its Aug 31 payload path override (payload says write to data\reports\...; digest wins).
 - Kalshi reporting jobs (kalshi-weekly-review etc.) untouched by design.
+## 2026-09-04 06:00 - whale-watch quarterly run (cron)
+- Ran whale-watch on Q2 2026 13Fs (filed Aug 14; holdings as of Jun 30) - agent file previously pinned stale "Q4 2025" data; corrected to always fetch latest filed quarter.
+- Manager fix: "Alexander Aschenbrenner (SIT)" is actually Leopold Aschenbrenner, Situational Awareness LP (fund imploded late Jul 2026, sold most stocks to Citadel). Corrected in agents/whale-watch.md.
+- Key overlaps: MU (4/5 managers), TSM (4/5), AMZN + SPCX + GOOG (SPCX: D1 61.9%), INTC (Coatue NEW), AI-infra cluster (CORZ/APLD/RIOT/CLSK/SEI/BE/HUT/CEG/VRT).
+- Note: registry table above lists whale-watch as "Daily 6:00 AM" but agents/whale-watch.md says quarterly on 13F deadline dates - needs Thad confirmation of intended cadence.
