@@ -5,6 +5,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 <!-- TOC (auto-generated) -->
 - Memory Dream
 - Whale Watch
+- History Rhymes
 <!-- /TOC -->
 
 ---
@@ -92,3 +93,96 @@ TEM, RXRX, CBLL, HTFL, COIN, BFLY, U, WULF, VG, LITE, XYZ, CIFR, NBIG, TAP, BUD,
 - Point72 runs 1,943 positions; its small trims/adds are noise, not signal. Coatue/Tepper/SA/D1 concentration is the real signal.
 
 **Sources:** ko.io (Point72, Appaloosa), whalstreet.com (D1), danielscrivner.com (Coatue, Situational Awareness), Business Insider (SA blowup), 13f.info (filing metadata). All data as filed 8/14/2026.
+
+---
+
+<!-- section:History Rhymes -->
+## History Rhymes (07:02 CT)
+
+*Data: equities through Thu Sep 3, 2026 close (yfinance); futures/FX/crypto as of ~7:00 AM CT Fri Sep 4. Valuation estimates are approximations carried from prior reports — no web search available this run.*
+
+### Market Snapshot (Sep 3, 2026 close)
+
+| Metric | Level | 1D | 1M | 3M | Off 52-wk High |
+|---|---|---|---|---|---|
+| S&P 500 | 7,747.71 | +1.1% | +0.3% | +2.2% | -0.7% |
+| Nasdaq | 26,584 | +1.4% | +0.8% | -0.9% | -1.9% |
+| Dow | 53,686 | +1.2% | -1.2% | +4.1% | -1.2% |
+| Russell 2000 | 2,968 | +0.5% | -1.7% | +1.1% | -3.3% |
+| 10Y Treasury | 4.76% | -0.7% | +3.1% | +6.4% | at 52-wk high zone |
+| 13W Treasury (Fed proxy) | 3.74% | -0.9% | +0.4% | +3.3% | -6.9% |
+| 10Y–3M curve | +1.02% (steep, un-inverted) | — | — | — | — |
+| VIX | 14.11 | — | -6.9% | -34.4% | -54.6% |
+| Crude Oil | $90.81 | -0.5% | +17.5% | +0.3% | +43% y1 |
+| Gold | $4,516 | +0.5% | +6.5% | +4.1% | +26.7% y1 |
+| Bitcoin | $81,185 | -0.1% | +28.9% | +29.8% | **-34.9%** off high |
+| USD Index | 99.06 | flat | -0.9% | -1.0% | -2.5% |
+
+### Under-the-Surface Breadth (the tell)
+
+Indices are at records, but the leaders are not:
+
+| Name | Off 52-wk High | 3M |
+|---|---|---|
+| NVDA | -3.0% | +4.5% |
+| MSFT | -5.1% | +19.4% |
+| AAPL | -3.4% | +5.6% |
+| GOOGL | **-14.9%** | -7.9% |
+| AMZN | -8.8% | +2.0% |
+| META | **-21.5%** | -2.6% |
+| TSLA | -23.2% | -10.1% |
+| AVGO | **-25.7%** | **-14.6%** |
+| MU | -21.0% | -3.8% |
+| SNDK | **-33.4%** | -11.6% |
+
+Six of the ten biggest weights/theme names are 15–33% below their highs while the index prints records. Add small caps lagging (Russell -3.3% off high) and Thursday's staples carnage — Campbell's **-9% on a 36% dividend cut**, General Mills -4%, Kraft -3% — and you have the same shape as two famous tops: **March 2000** (Dow making highs while Nasdaq internals cracked) and **October 2007** (SPX highs while breadth peaked months earlier and consumer/credit showed the first hairline fractures). Meanwhile speculative tail behavior is heating up exactly as it does late in rallies: SunPower +60% in a day, ChargePoint +74%, crypto-treasury proxies (Strategy +14%) — melt-up froth in the tails.
+
+### Valuation & Macro Context
+
+| Indicator | Level (approx.) | Historical frame |
+|---|---|---|
+| Shiller CAPE | ~40–42 | Top ~1% of 155 yrs; 1929 ≈ 33, 2000 ≈ 44 |
+| Top-10 concentration | ~36–40% | Above the 2000 peak (~27%) — highest ever |
+| Fed policy | Cutting cycle; funds ~3.7% (13W proxy) | Cuts underway but **rate-hike bets appeared this week** before "waning" Thu |
+| 10Y yield | 4.76%, rising through cuts | The 2007 pattern: Fed easing while long yields climb on inflation/fiscal fear |
+| Oil | $90.81, +43% y1 | Energy shock into a late-cycle tape (1973 / 1990 / 2007-08) |
+| Gold | $4,516, +27% y1 | Debasement hedge demand — 1970s-flavored |
+| Consumer staples | Dividend cuts, multi-% down days | Rare; consumer stress signals of 2007-08 |
+
+### Rhyme 1 — 1998 LTCM: the blowup-in-the-shadows [MEDIUM-HIGH]
+
+The live parallel. Situational Awareness went from 1,000%-gain wunderkind to selling its book to Citadel in late July after a 67% drawdown triggered margin calls — concentrated, levered, unhedged at the worst moment (cut puts from 11 to 1). That is the LTCM template almost beat for beat: a celebrated concentrated fund implodes, and the question becomes whether its liquidation ripples through dealer balance sheets. In 1998 the Fed answered with three cuts, the market V-bottomed October 8, and then ripped ~40% into the 2000 blowoff. **If** dealers contain the damage and the Fed keeps supplying cuts, this rhyme resolves melt-up-ward. The difference from 1998: back then CAPE was ~25-30 and falling; today it's ~40+. Bailout liquidity works far better from reasonable valuations.
+
+### Rhyme 2 — 1999-2000 dot-com valuation [HIGH — the valuation rhyme]
+
+CAPE ~40-42 vs ~44 in March 2000; top-10 concentration now *exceeds* 2000; AI-infra replacing fiber as the capex megaproject; retail froth in tails (crypto-treasury stocks, +60%/+74% single-day movers). The critical difference vs. 2000: **the leaders' earnings are real.** NVDA/MSFT/GOOGL generate hundreds of billions in genuine profit — 1999's telcos burned cash on dark fiber the way some AI datacenter bets may, but the mega-cap core is Microsoft-1997, not Pets.com. That's why this rhyme has so far produced 1995-1999 behavior (grind up, sharp violent shakeouts like the July memory-chip crash — MU -47%/SNDK -29% intramonth — then recovery) instead of a terminal top. 1999's lesson: the melt-up can run *longer* and *farther* than valuation says, then correct 30-50%+ in months when the marginal buyer exhausts.
+
+### Rhyme 3 — 2007 macro rot [HIGH — the macro rhyme]
+
+The setup now matches summer/fall 2007 more than any single year since: Fed cutting while the 10Y *rises* through 4.75% (then: 5.3%); oil surging (then: $80→$147); VIX pinned ~10-16 on record complacency; concentrated leadership; consumer stress leaking through staples; a leveraged-fund blowup in the shadows (then: two Bear Stearns funds, Aug 2007). October 2007 put in the index top *while the Fed was already cutting* — the cuts didn't save the tape because long rates and energy kept saying inflation, and the credit plumbing was cracked under a calm surface. The 2007 map says: watch credit spreads and the long end, not the index.
+
+### Rhyme 4 — 1970s stagflation-lite [MEDIUM]
+
+Oil +43% y1, gold $4,500, sticky ~3% CPI, weak consumer, small caps starved. The specific 1972-73 echo: a narrow "Nifty Fifty" index leadership at extreme valuations while the broad economy deteriorated — resolved by the 1973-74 ~48% index decline that finally ended only at maximum capitulation. Not yet the base case, but oil through ~$100 with hike-bets returning would promote it.
+
+### Timing: September + Year-2 of the presidential cycle
+
+September is historically the worst equity month (1929, 1937, 1987, 2001, 2002, 2008, 2011, 2015, 2020 all bottomed or broke in September). Independently, **year 2 of the presidential cycle** has produced the most reliable mid-cycle correction of any calendar slot — typically a Q3/Q4 low (1962, 1966, 1970, 1974, 1978, 1982, 1990, 1998, 2002, 2018, 2022) followed by a strong year-3. The last two years of this cycle's own pattern: July's memory-chip / hedge-fund-blowup shakeout was the first leg. Today's **jobs report (8:30 AM ET)** is the decision window: cooling labor + surging oil = the 2007/stagflation-lite mix confirmed; solid labor + yields calming = 1998/1999 melt-up path stays alive.
+
+### What Confirms / Breaks Each Rhyme
+
+| Signal | Confirms bear rhymes (2000/2007/1970s) | Keeps melt-up alive (1998/1999) |
+|---|---|---|
+| 10Y yield | Breaks 5.0% and holds | Falls back under 4.5% |
+| VIX | Rises >20 *while* SPX makes highs (divergence) | Stays 12-16, spikes bought |
+| Breadth | NYSE new lows expand, Russell breaks June lows | Russell reclaims highs |
+| Oil | Through $95-100 | Rolls back to low $80s |
+| Hike bets | Return and build | Stay "waned" (current state) |
+| Jobs (today) | Payrolls soft + wages up (stagflation mix) | Payrolls solid, no wage spike |
+| Credit | Spreads widen under calm equities | Stay tight |
+
+### Bottom Line
+
+The market is running a **1999-2000 × 2007 hybrid**: real-earnings leadership (1990s) with 2007's macro rot — cuts fighting rising long yields, energy surging, consumer cracking, leverage blowing up in the shadows, and complacency (VIX 14) sitting on top of record concentration. The single most important line in the data: **the 10Y rose ~6% while the Fed was cutting** — that combination marked Oct 2007 and would mark this cycle if 5% breaks. Base case remains: violent-but-bought shakeouts (1999 style) into year-end, with September + the year-2 cycle window arguing the *first* genuine mid-cycle correction attempt lands in Sep–Nov 2026. Positions already carry the standing rule: written exit plans, no averaging into the leveraged theme cluster (NBIG), and treat any VIX < 13 + widening-credit tape as the 2007-July alarm.
+
+*Method note: web_search tool unavailable this run — parallels built from yfinance market data, overnight headlines (Yahoo), the 13F whale context in today's digest, and prior-report valuation approximations (CAPE ~40-42). Yields per the Aug 27 raw-percent fix: 10Y = 4.76% (not 47.6).*
