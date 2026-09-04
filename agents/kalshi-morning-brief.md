@@ -13,6 +13,7 @@
 6. ONE compact plain-English brief (fixed-width, under 14 lines)
 
 ## Standing rules baked into the brief
+- DAILY RATE TRACKER (Thad target Sep 3): report one line 'daily rate: X pct vs 5 pct target' - yesterday cash delta / opening cash, target from DB model_state target_daily_rate (0.05). Track weekly in the Sat review; 2 straight weeks under 2 pct/day = re-plan.
 - PICK CLASS LABELING (Thad standing order Sep 3): every candidate must be tagged SURE-THING (80 pct+ odds, low yield - far-NO bands with 5F+ cushion even at 94-97c) or LONG-SHOT (sub-30c entry, model-vs-market bet). Thad's default: sure-things first; long shots flagged LOUD in the first line if a list is long-shot-only.
 - SILENCE RULE: nothing actionable or changed -> output exactly NO_REPLY
 - Verify digest claims history against FRED before trusting (Edge cron once claimed 209K when FRED says 203K for week ending Aug 22)
