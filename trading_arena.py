@@ -460,7 +460,7 @@ def main() -> int:
 
     # Market snapshot
     snapshot_prices = {}
-    for t in UNIVERSE[:30]:
+    for t in UNIVERSE:
         try:
             snapshot_prices[t] = get_last_close(prices, t)
         except Exception:
