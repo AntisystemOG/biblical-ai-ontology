@@ -6,6 +6,9 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Memory Dream
 - Whale Watch
 - History Rhymes
+- Daily Brief
+- Truth-Based Trading
+- Trading Arena
 <!-- /TOC -->
 
 ---
@@ -186,3 +189,312 @@ September is historically the worst equity month (1929, 1937, 1987, 2001, 2002, 
 The market is running a **1999-2000 × 2007 hybrid**: real-earnings leadership (1990s) with 2007's macro rot — cuts fighting rising long yields, energy surging, consumer cracking, leverage blowing up in the shadows, and complacency (VIX 14) sitting on top of record concentration. The single most important line in the data: **the 10Y rose ~6% while the Fed was cutting** — that combination marked Oct 2007 and would mark this cycle if 5% breaks. Base case remains: violent-but-bought shakeouts (1999 style) into year-end, with September + the year-2 cycle window arguing the *first* genuine mid-cycle correction attempt lands in Sep–Nov 2026. Positions already carry the standing rule: written exit plans, no averaging into the leveraged theme cluster (NBIG), and treat any VIX < 13 + widening-credit tape as the 2007-July alarm.
 
 *Method note: web_search tool unavailable this run — parallels built from yfinance market data, overnight headlines (Yahoo), the 13F whale context in today's digest, and prior-report valuation approximations (CAPE ~40-42). Yields per the Aug 27 raw-percent fix: 10Y = 4.76% (not 47.6).*
+
+---
+
+<!-- section:Daily Brief -->
+## Daily Brief (08:02 CT)
+
+# Daily Brief — Friday, September 4, 2026
+
+**Positions reference:** Portfolio_Positions_Jul-31-2026 CSV (Fidelity BrokerageLink + Laitram 401k)
+
+---
+
+## Market Overview
+
+**Futures (pre-jobs, per WSJ/FXStreet):** S&P 500 futures +0.06% near 7,4xx implied; Dow futures -0.06% near 53,710; Nasdaq futures gaining. Closes Thursday: S&P 500 7,748.80 (+0.07%), Dow 53,698.50 (+0.08%), Nasdaq 100 29,501.40 (+0.10%), Russell 2000 2,968.48.
+
+**The day's hinge:** August jobs report released 7:30 AM CT — consensus ~+53K nonfarm. Setup into it: Fed Governor Waller comments "soothed bonds" Thursday (shares inching higher globally), markets pricing a September cut, and next week's CPI is the second gate. Soft-landing tape intact but the tape is waiting on the print.
+
+**The week's other hinge:** US–Iran tit-for-tat strikes resumed. Brent ~$96, steepest weekly oil gain since mid-July, diesel at record high.
+
+**Spectrum read on the market narrative:**
+- **Bulls (business press, 24/7 Wall St, Motley Fool):** AI capex supercycle broadening — memory, storage, power, data-center shells all printing record margins; "memory cycle may have broken permanently."
+- **Bears (GuruFocus, AInvest, Simply Wall St):** Valuation rot — CORZ 52% overvalued, BE's "$20B backlog" vs $493M audited, Intel's foundry still 95% internal revenue.
+- **Convergent fact:** The rally is narrow and story-driven. Jobs print + Iran escalation decide the week.
+
+---
+
+## Key Stories
+
+### 1. August Jobs Report — Released 7:30 AM CT (print lands during market open)
+**Bias Spectrum:** WSJ (Center) ← Reuters (Center) → Fox/CNBC framing (varies)
+
+**What's Being Said:**
+- **Center (WSJ, Reuters):** Consensus ~+53K jobs; ADP private payrolls came in just +38K (Wed); BLS benchmark revision showed -79K fewer jobs over 12 months through March — data soft but "broadly resilient" per BofA Institute.
+- **Left angle:** Slowing hiring = economy cooling, supports rate-cut case; job security anxiety narrative.
+- **Right angle:** Emphasis on inflation risk if Fed cuts into an Iran oil spike; "wage-price" framing.
+
+**The Convergent Truth:** Hiring is decelerating (ADP +38K, BofA softness, consensus just 53K). Nobody disputes the trend is down from 2025's pace.
+
+**Blindspots:**
+- Business press barely mentions the BLS benchmark revision as a *credibility* story (post-2025 BLS turmoil).
+- Few connect jobs-soft + oil-spiking = stagflation-adjacent risk for the Fed's dual mandate.
+
+**Likely Reality:** A print near or below consensus (+53K or less) cements September cut odds and is risk-on for equities; a hot number collides with the Iran oil spike and hits long-duration AI names hardest. Watch the unemployment rate as much as the headline.
+
+---
+
+### 2. US–Iran Escalation: Strikes on IRGC, Kuwait/UAE Hit, Brent $96
+**Bias Spectrum:** Fox (Right) ← Reuters (Center) → CNBC/Euronews (Center-Left)
+
+**What's Being Said:**
+- **Right (Fox):** Live-war framing — "Iran attacks Kuwait with missiles and drones after US strikes"; Israel has "taken control of strategic Ali al-Taher"; Strait of Hormuz focus.
+- **Center (Reuters, CNBC):** US military began striking IRGC targets in Iran around the Strait of Hormuz Sept 1 (1600 GMT); Iran urged US to "comply with interim deal" after Trump threatened more strikes; Iran hit US positions in Jordan, Kuwait, UAE; Trump says renewed hostilities won't last "too long."
+- **Left (Al-Monitor, France24, Euronews):** Emphasis on the **deadly wedding strike probe** (Vance confirmed US is investigating), fears of renewed all-out Middle East war, civilian harm.
+
+**The Convergent Truth:** There IS an active US–Iran exchange of strikes (biggest since July), it involves Gulf states' territory, and oil is repricing: Brent near $96, diesel at record, steepest weekly gain since mid-July.
+
+**Blindspots:**
+- **Right** omits the wedding-strike civilian casualties investigation.
+- **Left** omits that Iran's retaliation is hitting *host* nations (Kuwait, UAE) — this widens the conflict beyond US-Iran bilateral.
+- **Business press** largely treats it as an oil-supply story; the Hormuz shipping risk premium is the real macro variable.
+
+**Likely Reality:** "Won't last too long" (Trump) vs "widening conflict" (Reuters) — truth is in between: strikes continue, but both sides telegraph bounded escalation. Oil carries a war premium that a de-escalation headline would deflate quickly. Energy longs (VDE/XOP/SHEL) benefit near-term; a ceasefire headline would give back the premium fast.
+
+---
+
+### 3. Google Wins Ad-Tech Antitrust Case; Amazon Hit With FTC Ad Suit
+**Bias Spectrum:** Motley Fool/SA (pro-business) ← Reuters (Center) → progressive outlets (pro-regulation)
+
+**What's Being Said:**
+- **Convergent:** Judge Leonie Brinkema (Wednesday) declined the DOJ's request to force a Chrome/ad-tech divestiture — Google keeps AdX and its tools. Stock +1.6% Thursday. Separately, Amazon fell ~3% Tuesday on an FTC lawsuit over its advertising practices, then recovered to $258.90 by Thursday's close (+1.54%).
+- **Right/business framing:** Antitrust overreach losing steam; "dodged a breakup — big win for investors"; Berkshire reportedly in on Alphabet.
+- **Left framing:** Regulators still pressing on ad-market concentration; the ad businesses are the shrinking/regulated corner (AdX "the one business that is shrinking").
+
+**The Convergent Truth:** Two of the biggest ad businesses on earth are under regulatory pressure simultaneously — and the market shrugged both off within 48 hours.
+
+**Blindspots:**
+- Coverage separates the two stories; together they signal ad-tech is the regulatory target zone — relevant to Meta, Trade Desk, and Thad's AMZN/GOOGL concentration.
+- Alphabet entered September on a **four-month losing streak (longest since 2015)** — the antitrust win is a narrative reversal tool, but ad business softness is the underlying worry (Gemini 3.8 Flash is the counter-story).
+
+**Likely Reality:** Legal cloud lifting is genuinely bullish for GOOGL (valuation signal 24/7 Wall St keeps buying); the FTC-Amazon suit is likely a multi-year overhang, not an earnings event. Both stocks' Thursday recovery says the market agrees.
+
+---
+
+### 4. AI-Infrastructure Complex: Anthropic $35B Deal Touches Hut 8; Miners' Contract/Revenue Gap
+**Bias Spectrum:** Crypto press (bullish) ← Traders Union/Rittenhouse (neutral) → AInvest/Noah (skeptical)
+
+**What's Being Said:**
+- **Bullish:** Anthropic signed a ~$35B cloud deal with Nvidia-backed Lambda; Hut 8's Beacon Point (Texas) campus supplies 350 MW — "validates the miner-to-AI pivot." HUT shares rose on the news (then fell — sell-the-news).
+- **Skeptical (Noah Intelligence):** Listed bitcoin miners have announced **$70B in AI contracts** but generated only **$341M in first-half revenue**. CORZ: secured $600M senior secured credit facilities Aug 27; +6% Sept 3 on crypto rally/financing; but stalled at $18.1 resistance and GuruFocus flags it 52.1% overvalued vs GF Value.
+
+**The Convergent Truth:** Contracts are real, signed, and enormous. Revenue is tiny and back-loaded. The gap is the whole trade.
+
+**Blindspots:**
+- Bull coverage doesn't model the multi-year revenue ramp or the financing cost of the $600M facilities.
+- Bear coverage doesn't price the option value of contracted capacity in a power-scarce AI market — Lambda/Anthropic choosing miner sites proves the power-first thesis.
+- Rittenhouse's Q2 earnings recap of "powered shell providers" is the sector's actual scorecard — nobody in mainstream coverage reads it.
+
+**Likely Reality:** The pivot thesis is intact but priced for perfection. Names that convert (signed PPAs, energized capacity) re-rate; those with MOUs drift. Watch who discloses *revenue recognition start dates*, not contract totals.
+
+---
+
+### 5. Intel: Tripled in a Year, Now the Valuation Fight
+**Bias Spectrum:** Motley Fool (bullish) ← 24/7 Wall St/TS2 (skeptical) → JPMorgan (whipsawed)
+
+**What's Being Said:**
+- Intel tripled in a year ($24 → ~$89, +1.8% Friday); JPMorgan called it a top short, then nearly doubled its price target; AMD "quietly eating Intel's lunch" on data-center margins; foundry still **95% internal revenue**, external foundry sales minimal — the $454B market cap is the question.
+
+**The Convergent Truth:** The turnaround is real (blockbuster data-center quarter for both AMD and Intel); the foundry revenue mix is not yet external-proof.
+
+**Blindspots:**
+- Bull pieces don't stress-test what happens to the multiple if foundry external wins stay 5% of revenue.
+- Bear pieces understate the geopolitical put — US CHIPS backing makes Intel structurally protected.
+
+**Likely Reality:** INTC at ~$91 (Thad's avg cost $45.66 — +99% unrealized) is a hold-with-trailing-discipline position; the stock is momentum-driven now and vulnerable to any Fed/oil shock that compresses long-duration growth multiples.
+
+---
+
+### 6. Micron/Memory: Nvidia Says Pricing Is "Extreme"
+**Bias Spectrum:** InvestorPlace/24/7 (bull) ← StockTi (neutral) → Motley Fool (cautious)
+
+**What's Being Said:**
+- Memory prices surging as AI data centers drain supply; Nvidia publicly calls memory pricing "extreme"; MU rebounded 2.4% Thursday after early weakness; Q3 gross margin reported at 84.9% with Q4 revenue guidance cited around $50B (per StockTi); stock closed Aug 31 at $958.73, still ~21% below its June ATH; Motley Fool: "not buying the dip" — Fed's September decision could hit MU harder than its earnings.
+
+**The Convergent Truth:** Memory is supply-tight, pricing is extraordinary, and MU's economics are transformed. Every side agrees on the cycle's strength.
+
+**Blindspots:**
+- Almost no coverage asks what happens to memory contracts if the AI capex financing (debt-funded hyperscaler capex) cracks.
+- The "cycle is dead" thesis (24/7 Wall St: "the memory cycle may have broken permanently") is unfalsifiable at cycle peaks — that's exactly what was said in 2018 and 2021.
+
+**Likely Reality:** Fundamentals are the best in memory history; the risk is duration (rates) + customer concentration, not demand. MU at ~$958 vs Thad's $874.66 (+139% unrealized) — momentum intact, but September FOMC is the real earnings event.
+
+---
+
+### 7. OPEC+ Full Rollback + War Premium: The Energy Squeeze
+**Bias Spectrum:** Forbes (business) ← Reuters/CNBC (Center) → The National (Gulf perspective)
+
+**What's Being Said:**
+- OPEC+ rolled back all remaining "voluntary" cuts effective September (~188K bd collective addition) — decided amid "uneasy pause in Iran war." Yet oil is up sharply on the US–Iran fighting: Brent ~$96.
+
+**The Convergent Truth:** Two opposing forces — supply returning (bearish) and war/geography risk (bullish) — and the war premium is currently winning. Diesel at record high is the cleanest signal of real scarcity/refinery tightness.
+
+**Blindspots:**
+- Gulf-state coverage (The National) underplays the OPEC+ spare-capacity question if Hormuz closes.
+- US press underplays that OPEC+ adding supply *during* a war spike is a deliberate price-cap signal — they're trying to cap the premium.
+
+**Likely Reality:** Energy complex (SHEL at 12-month high, $92.33 ADR; VDE/XOP riding) has both a war tailwind and a supply headwind. SHEL specifically: US retail deal + share issuance "reshaping growth story" per European press. Neutral-to-positive near term; premium is event-driven and reversible.
+
+---
+
+## Portfolio News
+
+### AMZN — Amazon ($258.90, +1.54% Thu; avg cost $232.32)
+**News:** FTC lawsuit over advertising practices (Sept 2, -3%); recovered by Thursday. AWS posted fastest growth in 18 quarters. Skeptics note the $62.6B quarterly profit was "mostly a paper gain" (investment marks).
+**Market Implication:** **Neutral.** FTC suit is headline risk with low near-term earnings impact; AWS acceleration is the real driver. 9.95% of brokerage account — fine to hold through the legal noise.
+
+### INTC — Intel ($91.13 CSV; ~$89-91, avg $45.66)
+**News:** Tripled YoY; JPMorgan target whiplash; foundry 95% internal; AMD competition.
+**Market Implication:** **Neutral/Bullish momentum, fragile.** +99% unrealized. A hot jobs print or Iran escalation hits high-multiple names first. No action trigger — but this is now a momentum position, not a value one.
+
+### MU — Micron (~$958 vs $874.66 CSV)
+**News:** Memory pricing "extreme" per Nvidia; record margins; FOMC risk flagged.
+**Market Implication:** **Bullish fundamentals / macro-vulnerable.** Strongest fundamental story in the portfolio right now.
+
+### STX — Seagate (~$852 CSV; off 27% from highs per Barchart Aug 28)
+**News:** YTD gains double the industry; record HAMR margins; FY27 FCF guide $4.1B; dip-buying calls with 36% upside target.
+**Market Implication:** **Neutral/Bullish.** Storage is the same AI-demand story as memory at a cheaper multiple. Thad's cost basis $419.71 — +103% unrealized.
+
+### CORZ — Core Scientific ($21.81 CSV → ~$18, -17% since July)
+**News:** $600M credit facilities (Aug 27), +6% Sept 3 on crypto rally, but stalled at $18.1 resistance; GuruFocus flags 52% overvaluation; Legal & General adding shares.
+**Market Implication:** **Caution.** This is one of the few portfolio names *below* its July price. The financing extends runway but dilution/interest cost is real. Watch $18.1 resistance — a clean break up is bullish; rejection is a tell.
+
+### HUT — Hut 8 ($108.27 CSV)
+**News:** Anthropic/Lambda $35B deal uses Beacon Point (350 MW, Texas). Stock rose then fell (sell-the-news).
+**Market Implication:** **Bullish story, choppy price.** First direct Anthropic linkage in Thad's book. The miner contract/revenue gap (story 4) is the risk backdrop.
+
+### RIOT, WULF, APLD, NBIG (miners + 2x leveraged themes ETF)
+**News:** Sector-wide: $70B announced AI contracts vs $341M H1 revenue. Crypto rally lifting all boats Sept 3 (+6% CORZ, similar tape).
+**Market Implication:** **Elevated risk.** NBIG is 2x leveraged — any jobs-print miss or Iran escalation day hits this hardest. This is the position to watch on a red tape.
+
+### BE — Bloom Energy ($207.12 CSV; +8.5% Sept 3)
+**News:** Power Connect launch (Aug), guidance-beating momentum, +8.5% Thursday while FuelCell/Plug barely moved — a stock-specific signal, not a sector one.
+**Blindspot Check:** AInvest piece claims the celebrated "$20B backlog" sits at **$493M in audited books** — a 40x discrepancy in how backlog is defined. That's the single most important number in the BE story right now.
+**Market Implication:** **Bullish momentum / unresolved audit question.** If the audited backlog number is the honest one, the multiple is stretched.
+
+### SHEL / VDE / XOP — Energy (SHEL $92.33 ADR at 12-month high)
+**News:** Brent $96 war premium, OPEC+ rollback, Shell US retail deal + buyback narrative.
+**Market Implication:** **Bullish near-term.** Thad's energy book (VDE $7.5K, XOP $6.3K, SHEL $2.9K) is the direct beneficiary of the Iran premium. Exit discipline: the premium deflates fast on de-escalation headlines.
+
+### GOOGL — Alphabet ($333.66 CSV)
+**News:** Brinkema ruling keeps AdX; Berkshire in; 4-month losing streak broken with Gemini 3.8 Flash momentum.
+**Market Implication:** **Bullish.** Regulatory overhang clearing is the re-rating catalyst bears said would never come.
+
+### Defensives (JNJ, PM, KO, GEHC, MKL, WM, YUM, V)
+**News:** No individual headlines this cycle; JNJ/PM/KO all red Wednesday (typical risk-on rotation out of defensives into AI tape).
+**Market Implication:** Neutral. Their weakness = market's risk-on appetite, which the jobs print will confirm or kill.
+
+---
+
+## Blindspot Report
+
+1. **The miner contract/revenue gap** ($70B announced vs $341M H1 revenue) — bullish coverage (contracts = certainty) and bearish coverage (contracts = vaporware) both skip the middle: *when* revenue starts and at what margin. This is the biggest un-priced variable in Thad's HUT/RIOT/WULF/APLD/CORZ complex.
+2. **Bloom's backlog discrepancy** — $20B claimed vs $493M audited. If true as reported, one of the market's favorite power stories is running on unaudited framing.
+3. **The wedding-strike probe** — a civilian-casualty investigation is a political escalation wildcard. Left press covers it as atrocity; right press as investigation footnote; market press not at all. A probe outcome (e.g., findings, apologies, coalition strain) could move oil and defense quickly.
+4. **Jobs report + oil spike = policy collision.** A soft jobs print (cut-friendly) alongside $96 Brent (inflationary) is a stagflation mix the current bull narrative hasn't priced. Watch the 2s10s and gold next week alongside CPI.
+5. **Intel's foundry mix** — 95% internal revenue under a $454B market cap. Bulls sell the foundry dream; bears the current mix; the truth will show up in *external* foundry bookings, which nobody reports quarterly.
+
+---
+
+## Pre-Market Outlook
+
+**Bias: Neutral-to-Cautiously-Bullish into the print, with a war-premium caveat.**
+
+- Jobs print is out/landing (7:30 AM CT). Consensus ~+53K after ADP +38K. Soft print = cut = risk-on for AI complex (MU, INTC, STX, AMZN, NBIG-2x). Hot print = multiple compression, defensives + energy catch bid.
+- Iran: strikes ongoing; Brent $96. Energy book benefits; the rest of the tape carries an event risk premium. Trump's "won't last too long" is the de-escalation signal to watch — headline would hit oil and lift the broader market.
+- **Position watch for Thad:** NBIG (2x) and the miner complex are the highest-beta names on any red tape; CORZ below its July basis with resistance overhead is the name closest to a technical decision point.
+- **Nothing here requires action before the open.** Jobs print + CPI next week are the decision gates. Per standing rules: exits need station/window math or written triggers — odds noise alone is never an exit.
+
+---
+
+*Sources spanned: Reuters, CNBC, WSJ, Fox News, Al-Monitor, France24, Euronews, OilPrice, The National, Forbes, Motley Fool, 24/7 Wall St, Seeking Alpha, AInvest, Simply Wall St, GuruFocus, Barchart, StockTi, Rittenhouse Research, Noah Intelligence, MarketBeat, ADP, BofA Institute. Spectrum labels applied per Ground News methodology.*
+
+**Done.**
+
+---
+
+<!-- section:Truth-Based Trading -->
+## Truth-Based Trading (09:01 CT)
+
+# Truth-Based Trading — Friday, September 4, 2026 (9:00 AM CDT)
+
+*Data freshness: allocation bins from the 2026-09-02 audit (2 days stale). BTC live via CoinGecko. Payrolls live via CNBC (BLS direct fetch 403-blocked). No live broker quote access this run — verify trim-window prices before acting.*
+
+## 1. The Brutal Truth
+
+- **Base rates, not stories:** SPIVA's standing verdict — roughly 87–90% of active large-cap managers trail the S&P 500 over 15 years. The 13% who beat are not identifiable in advance, and last cycle's winners mostly aren't this cycle's. FXAIX at ~0.015% expense remains the retirement gold standard.
+- **The Whale Watch is decoration, not data:** Frozen Q2 13F snapshot is now **day 64 stale**; no new filings until Nov 16. Copying it means buying yesterday's news at today's prices, wrapped in a 2%+20% fee structure if done through the managers themselves. Edge: imaginary.
+- **Today's fork resolved — hot:** August payrolls **+162K**, well above expectations ("jobless summer" narrative broken); unemployment **4.1%**. Fed Governor Waller signaled support for **holding** rates at the September meeting. Translation: the "Warsh hike" tail from Wednesday is thinner, but there's **no cut coming either** — the 10Y (~4.78%) stays elevated, and speculative, rate-sensitive sleeves get zero relief.
+- **Fee math, unchanged and dominant:** 1% drag on the ~$489k investable base ≈ **~$425k surrendered over 25 years**. Index-fee equivalent ≈ ~$22k. The single most reliable "alpha" available is closing the fee and Foundation gaps, not finding the next story.
+
+## 2. Portfolio Audit (bins as of 9/2 — verify before executing)
+
+| Sleeve | Actual | Target | Verdict |
+|---|---|---|---|
+| Foundation (indexes) | **21.00%** | 70% | Critical underweight — the whole game |
+| Moats (evidence-based) | **39.24%** | 25% | Overweight, but tolerable quality |
+| Speculation | **39.75%** | 5% | **8x over limit** |
+
+- **INTC (~5.10%)** — narrative hold on *unconfirmed* SK Hynix HBM4E talks. One speculative name bigger than the entire speculation budget. Narrative, not evidence.
+- **Bitcoin miners (CORZ, RIOT, HUT, WULF, CLSK, CIFR — 7.81%)** — BTC at **$79,365** (+3% vs Wednesday's $77,040), still above the $75K danger line. Miners rallying on BTC strength with flat fundamentals = the sell-into-strength trigger stays **active**.
+- **SNDK ($1,553 as of 9/2)** — the **1,550–1,600 Roth trim window is live** (21.6% Roth concentration). Price was inside the window Wednesday; verify it still is today.
+- **AI semis/storage ($32.8k) + AI power ($12.5k)** — two labels, one capital pool. When the narrative breaks, the cluster re-rates together. Not diversification.
+
+## 3. The Three Buckets
+
+- **Foundation (buy first, always):** The ~$241k BrokerageLink sweep remains the largest single lever. Foundation-first flow until 70% is reached — regardless of how good the stories feel.
+- **Moats:** TSM, gold/silver sleeve, FTXG re-binned here on 9/2. Overweight but evidence-backed; no action required beyond trimming if funding Foundation.
+- **Speculation:** Cap at 5%. Miners are the cleanest trim into today's BTC strength. INTC requires evidence (a signed, confirmed contract), not talks.
+
+## 4. The Math
+
+- **Current path:** 21/39/40 with 39.75% in high-variance names = sequence-risk exposure a retirement plan can't amortize. One bad narrative year on 40% of the book costs more than the Foundation gap gains in five good ones.
+- **Target path (70/25/5):** At a conservative 6% nominal, ~$489k compounds to roughly **$2.1M in 25 years**; at 8% ≈ $3.3M. Variance drag from the current concentration quietly shaves the expected figure.
+- **Fee visualization:** 1% active-style drag ≈ **~$425k lost** over 25 years; 0.05% index ≈ ~$22k. Every "smart money" copy that costs >0.5% forfeits the edge it claims to buy.
+
+## 5. Action Items
+
+**Immediate (this week):**
+1. **SNDK Roth trim** — price was $1,553 Wednesday, inside the 1,550–1,600 window. Verify today's quote; execute trim if still in-window.
+2. **Trim miners into BTC strength** ($79,365, +3%) per the standing sell-into-strength trigger — narrative bid, not fundamental bid.
+3. **Begin Foundation-first deployment** of the ~$241k BrokerageLink sweep — start the automatic monthly buys this week, not this quarter.
+
+**Short-term (this month):** Walk Speculation from 39.75% toward 5% on strength; INTC needs a confirmed contract to earn Moat status, otherwise it's a trim.
+
+**Long-term (this quarter):** Re-check SPIVA next scorecard; draft Investment Policy Statement codifying 70/25/5 with drift bands (±5%) and a written rule: no single speculative name >2%.
+
+## 6. Biblical Anchor
+
+> *"The plans of the diligent lead surely to abundance, but everyone who is hasty comes only to poverty."* — Proverbs 21:5
+
+Hot payrolls, cold discipline. The market's dopamine today is one jobs print; the wealth in 25 years is the boring sweep deployment and the trim executed on strength, not adrenaline.
+
+---
+*Status: Complete — fork read (payrolls +162K, hold-leaning Fed), bins audited against 9/2 memory, action window flags live.*
+
+---
+
+<!-- section:Trading Arena -->
+## Trading Arena (15:01 CT)
+
+**Trading Arena — Final Standings (Friday, Sep 4, 3:01 PM CT close-out)**
+
+Session start 2026-08-14 · $10,000 each · benchmark = SPY buy-and-hold · run 37
+
+| Rank | Trader (Strategy) | Equity | P&L vs $10K | Return | vs SPY ($9,975.91, -0.24%) |
+|---|---|---|---|---|---|
+| 🥇 1 | Wolf 🐺 (Sector Rotation) | $10,261.76 | +$261.76 | +2.62% | +$285.85 |
+| 🥈 2 | Fox 🦊 (Contrarian) | $10,113.00 | +$113.00 | +1.13% | +$137.09 |
+| 🥉 3 | Owl 🦉 (Value) | $10,067.80 | +$67.80 | +0.68% | +$91.89 |
+| 4 | Shark 🦈 (Momentum) | $9,773.05 | -$226.95 | -2.27% | -$202.86 |
+| 5 | Turtle 🐢 (Trend) | $9,607.70 | -$392.30 | -3.92% | -$368.21 |
+
+- **Benchmark (SPY):** $9,975.91 (-0.24% since session start)
+- **Best strategy of the day:** Wolf (sector rotation) — held XLK + SMH, closed +2.62% and beat SPY by $285.85
+- **Worst strategy of the day:** Turtle (trend following) — concentrated META + NVDA, closed -3.92%
+- **Last interval (2:31→3:01 PM):** Wolf +$14.37 and Turtle +$11.96 gained into the close; Fox gave back -$17.48. SPY ticked +$4.08.
+- 3 of 5 traders beat the S&P 500 benchmark; value/rotation baskets outperformed, momentum/trend lagged.
+
+Dashboard: `Spocks Reports/market/trading_arena.html` (OneDrive Desktop copy synced).
