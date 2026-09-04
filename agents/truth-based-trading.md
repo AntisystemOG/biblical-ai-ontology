@@ -104,8 +104,8 @@ Scripture that grounds the patience required
 
 ## Output
 
-**Markdown Report:**
-`C:\Users\thadd\.openclaw\workspace\Spocks Reports\truth_based_trading\YYYY-MM-DD_truth_based_trading.md`
+**Daily Digest section (markdown):**
+Append the full report per the Daily Digest Output section below (section title: Truth-Based Trading).
 
 **No PDF:** This is for reading, not marketing.
 
@@ -151,4 +151,14 @@ This agent is designed to be uncomfortable. It challenges:
 - The narrative of beating the market
 
 The goal isn't to be right. The goal is to be wealthy in 25 years.
+
+## Daily Digest Output (MANDATORY - replaces separate report files)
+
+Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-MM-DD.md`). Do NOT create separate report files. Do NOT generate PDFs.
+
+1. Write your full markdown report to:
+   `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\truth_based_trading.md`
+2. Run:
+   `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "Truth-Based Trading" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\truth_based_trading.md"`
+3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.
 

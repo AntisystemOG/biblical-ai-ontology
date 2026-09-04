@@ -29,10 +29,19 @@ Quarterly on 13F filing deadline dates at 6:00 AM CDT (America/Chicago)
    - Philippe Laffont (Coatue)
    - Alexander Aschenbrenner (SIT)
 3. Find overlaps between whale positions and portfolio holdings
-4. Generate report and convert to PDF using the PDF Generator skill
-5. Save PDF to C:\Users\thadd\.openclaw\workspace\Spocks Reports\whale_watch\YYYY-MM-DD_whale_watch.pdf
+4. Write your report per the Daily Digest Output section below (section title: Whale Watch)
 
 ## Important Notes
 - Use the read tool to read files, NOT import/require
 - Use PowerShell command to find latest CSV: Get-ChildItem "C:\Users\thadd\Desktop\Portfolio Positions\*.csv" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-- Generate output as PDF only (use PDF Generator skill) — NO markdown
+- Output = Daily Digest section (markdown) - no PDF, no separate report files
+
+## Daily Digest Output (MANDATORY - replaces separate report files)
+
+Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-MM-DD.md`). Do NOT create separate report files. Do NOT generate PDFs.
+
+1. Write your full markdown report to:
+   `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\whale_watch.md`
+2. Run:
+   `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "Whale Watch" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\whale_watch.md"`
+3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.

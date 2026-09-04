@@ -126,3 +126,13 @@ sessions_spawn(
 - Skills fixed: crypto-prices + telegram-notify SKILL.md given required frontmatter description (were erroring 10-23x/day on skills scan).
 - Gateway restart scheduled 03:20:30 CT one-shot (gateway-restart-apply-20260902) to apply config; port probe + fallback start included.
 - 20 startup_failed stability snapshots Aug 31-Sep 1 were the legacy sessions.json migration blocker; migration already completed, gateway running clean since Sep 1 evening.
+
+## 2026-09-04 02:50 CDT - Report consolidation: ONE daily digest doc (Thad directive)
+- All NON-Kalshi cron reports now append into ONE document: `Spocks Reports\Spock_Daily_YYYY-MM-DD.md` (auto-TOC; one file per day replaces 9 scattered report folders + PDFs).
+- Helper: `scripts/digest_append.py --report <title> --file <md> [--date] [--keep]` - idempotent (same-title section replaced on rerun), UTF-8, scratch files under `.openclaw/tmp/digest/` deleted after append.
+- Agent files updated with a "Daily Digest Output (MANDATORY)" section + fixed stale OneDrive paths + removed PDF instructions. Section titles: memory-dreaming "Memory Dream" (3 AM), whale-watch "Whale Watch" (6 AM), history-rhymes "History Rhymes" (7 AM), daily-brief "Daily Brief" (8 AM), truth-based-trading "Truth-Based Trading" (9 AM), financial-advisor "Financial Advisor" (Mon 9 AM), top-100-strategists "Top 100 Strategists" (disabled), long-term-holds "Long-Term Holds" (Mon 10 AM), trading-arena "Trading Arena" (HTML dashboard every run; digest section only on final run >= 2:30 PM CT).
+- PDF generation REMOVED for all 9. Legacy per-report folders = archive only.
+- long-term-holds data sources now read yesterday's digest first (folders listed as legacy archive).
+- KNOWN LIMIT: cron payload reinforcement lines NOT applied - automations update blocked by "scheduled account policy must match the persisted job owner" from this session (same gate that stopped the Aug 31 [PROMPT-LAW] payload hardening). Agent files are the operative instructions (payloads are thin shims: "Read agents/X.md and execute"), so consolidation works regardless. Payload-level patch remains OPEN for both programs.
+- financial-advisor.md carries an explicit SUPERSEDES note over its Aug 31 payload path override (payload says write to data\reports\...; digest wins).
+- Kalshi reporting jobs (kalshi-weekly-review etc.) untouched by design.

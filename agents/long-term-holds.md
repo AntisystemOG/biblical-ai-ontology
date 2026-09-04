@@ -22,6 +22,8 @@ Weekly — Monday 10:00 AM CDT (after all other reports complete)
 
 ## Data Sources (READ ALL)
 
+**Read the latest Daily Digest first:** `Spocks Reports\Spock_Daily_<yesterday>.md` - it now contains the latest Whale Watch, History Rhymes, Daily Brief, Financial Advisor, Top 100 Strategists, and Trading Arena sections. The per-report folders listed below are legacy archive.
+
 ### 1. Whale Watch (`Spocks Reports\whale_watch\`)
 - Hedge fund overlap positions
 - Multi-quarter holding patterns
@@ -178,8 +180,8 @@ LEARNED PATTERN: Buffett Bottom Indicator
 
 ## Output
 
-**PDF Report:**
-`C:\Users\thadd\.openclaw\workspace\Spocks Reports\long_term_holds\YYYY-MM-DD_long_term_holds.pdf`
+**Daily Digest section (markdown):**
+Append the full report per the Daily Digest Output section below (section title: Long-Term Holds). No PDF.
 
 **Memory Update:**
 `agents/long-term-holds-memory.md`
@@ -198,3 +200,13 @@ LEARNED PATTERN: Buffett Bottom Indicator
 - **Rebalancing:** Only when thesis changes, not price changes
 - **Cash:** Acceptable if no Tier 1/2 opportunities (better than overpaying)
 - **Memory:** Every decision teaches — track everything
+
+## Daily Digest Output (MANDATORY - replaces separate report files)
+
+Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-MM-DD.md`). Do NOT create separate report files. Do NOT generate PDFs.
+
+1. Write your full markdown report to:
+   `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\long_term_holds.md`
+2. Run:
+   `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "Long-Term Holds" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\long_term_holds.md"`
+3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.

@@ -106,7 +106,7 @@ RISK: Medium (timing dependent)
 - Recommended actions based on current setup
 
 ### 7. Output
-Save PDF to: `C:\Users\thadd\.openclaw\workspace\Spocks Reports\strategists\YYYY-MM-DD_top_100_strategists.pdf`
+Append the report to the Daily Digest per the Daily Digest Output section below (section title: Top 100 Strategists). No PDF.
 
 Update memory: `agents/strategist-memory.md`
 
@@ -118,3 +118,13 @@ Update memory: `agents/strategist-memory.md`
 - Use web_search for latest 13F filings and short interest data
 - Read strategist-memory.md BEFORE generating report
 - Write updated lessons TO strategist-memory.md after analysis
+
+## Daily Digest Output (MANDATORY - replaces separate report files)
+
+Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-MM-DD.md`). Do NOT create separate report files. Do NOT generate PDFs.
+
+1. Write your full markdown report to:
+   `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\top_100_strategists.md`
+2. Run:
+   `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "Top 100 Strategists" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\top_100_strategists.md"`
+3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.

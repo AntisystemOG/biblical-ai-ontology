@@ -98,7 +98,7 @@ When searching, categorize sources by bias:
 
 ## Output Format
 
-Generate as **PDF report** using the PDF Generator skill. Include any charts/images generated during analysis.
+Build the report as markdown using the structure below, then append it to the Daily Digest per the Daily Digest Output section (section title: Daily Brief). No PDF.
 
 PDF structure:
 ```
@@ -147,7 +147,17 @@ PDF structure:
 - **Identify blindspots** — what is each side NOT saying?
 - **Synthesize, don't summarize** — tell Thad where truth likely lies
 - Use web_search tool with site: filters to target specific outlets
-- Deliver via Telegram (markdown format)
+- Do NOT send the full report via Telegram - the report lives in the Daily Digest
+
+## Daily Digest Output (MANDATORY - replaces separate report files)
+
+Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-MM-DD.md`). Do NOT create separate report files. Do NOT generate PDFs.
+
+1. Write your full markdown report to:
+   `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\daily_brief.md`
+2. Run:
+   `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "Daily Brief" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\daily_brief.md"`
+3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.
 
 ## Bias Reference (Quick Guide)
 

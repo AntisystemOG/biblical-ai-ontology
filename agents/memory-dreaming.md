@@ -21,13 +21,22 @@ Daily at 3:00 AM CDT
    - Tasks completed
    - Patterns and insights
 3. Generate dream-like narrative reflection
-4. Convert to PDF using the PDF Generator skill
-5. Save PDF to C:\Users\thadd\.openclaw\workspace\Spocks Reports\memory_dreaming\YYYY-MM-DD_dream.pdf (workspace - tools.fs.workspaceOnly blocks OneDrive/Desktop writes; filename = memory day being dreamed, written next morning at 3 AM)
+4. Write your dream report to the Daily Digest per the Daily Digest Output section below (section title: Memory Dream). Digest date = TODAY (the morning it runs), even though the dream covers yesterday's memory file
 5. Update MEMORY.md with distilled learnings (weekly)
 
 ## Important Notes
 - Runs during low-activity hours
 - Synthesizes information without user input
-- Generates narrative-style reflections as PDF
-- Saves to Spocks Reports\memory_dreaming\
+- Writes narrative-style reflections into the Daily Digest
+- Section title: Memory Dream
+
+## Daily Digest Output (MANDATORY - replaces separate report files)
+
+Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-MM-DD.md`). Do NOT create separate report files. Do NOT generate PDFs.
+
+1. Write your full markdown report to:
+   `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\memory_dream.md`
+2. Run:
+   `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "Memory Dream" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\memory_dream.md"`
+3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.
 - Helps with long-term memory consolidation
