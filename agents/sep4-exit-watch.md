@@ -30,7 +30,9 @@ Prints per city: obs latest/max, TWC proxy (obs+1.5), peak window status, live b
 | 3 | Verdict WINNING and bid >= 0.90 | HOLD to settlement (no fee at 1.00, never sell a 95c+ winner) |
 | 4 | Verdict WINNING and bid 0.40-0.90 | Optional profit-lock: sell allowed if bid giveback >30% from intraday high; default HOLD (peak math locked) |
 | 5 | Verdict CLOSE/WATCH | No action; report only if moved materially |
+| 5b | EARLY-DEATH TIMING (Thad: do not lose everything): if by 14:00 CT the proxy is 3F+ BELOW a win range AND obs climb rate cannot reach it (would need more than ~4F in the remaining peak window), treat as DEAD NOW - salvage sell at current bid instead of waiting for peak close (bids die fast post-peak; early salvage recovers more) |
 | 6 | All cities peak passed (after 17:00 CT) | Final pass: salvage dead positions, cancel unfilled resting orders whose band is dead; report final board |
+| 7 | DEN pair hedge: 94-95 + 96+ together cover proxy 95.0 through 96.9 AND >= 97.0. Both die ONLY if proxy ends below 95.0 (TWC <= 93) - in that case salvage BOTH immediately (rule 5b applies from 14:00 CT) |
 
 ## Authority
 - Selling losing/weather positions + cancelling resting orders: PRE-AUTHORIZED (act, then report).
