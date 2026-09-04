@@ -26,6 +26,11 @@ MAX_PRICE = 0.96       # never pay above 96c (spread/fee guard)
 MIN_CUSHION = 5.0      # 5F+ from adjusted forecast to band edge
 STAKE_PCT = 0.05       # 5 pct of paper bankroll per position
 MAX_BETS = 5
+DAILY_TARGET = 0.05    # SAME GOAL AS THE MAIN MODEL: 5 pct daily return (Thad Sep 3)
+LOTTO_STAKE_PCT = 0.02 # lotto class 2 pct (mirrors live ladder)
+LOTTO_MAX = 2          # max lotto paper bets/day
+LOTTO_ODDS = (0.15, 0.45)  # model odds window for lotto class
+LOTTO_MAX_PRICE = 0.25
 
 def norm_cdf(z):
     return 0.5 * (1.0 + __import__("math").erf(z / __import__("math").sqrt(2.0)))
@@ -137,8 +142,74 @@ def main():
         hist.append(entry)
         out.append(f"{city} {b['tail']} {b['direction']} {shares:.0f}sh @ {b['price']:.2f} (model {b['win_prob']:.0%}, cushion {b['cushion']:.1f}F)")
 
+    # LOTTO section: mirror the live strategy mix so the paper book can reach the 5 pct/day goal.
+    # In paper, lotto risk is FREE - testing the long-shot class is how we learn its true hit rate.
+    lottos = []
+    for series, book in sorted(books.items()):
+        city, code, _ = SERIES_TO_CITY.get(series, (series, "?", 2.0))
+        if city not in CITIES:
+            continue
+        lat, lon, _ = CITIES[city]
+        p = fetch_nws_forecast(lat, lon, tomorrow)
+        if not p:
+            continue
+        nws_high = p.get("temperature")
+        if nws_high is None:
+            continue
+        adjusted = nws_high + 1.5
+        for ticker, m in book.items():
+            if ticker in open_tickers or ticker.upper() in {t.upper() for t in open_tickers}:
+                continue
+            tail = ticker.rsplit("-", 1)[-1]
+            if not tail.startswith("B"):
+                continue
+            try:
+                mid = float(tail[1:])
+            except Exception:
+                continue
+            lo, hi = mid - 0.5, mid + 0.5
+            yes_ask = float(m.get("yes_ask") or 0)
+            if not (LOTTO_MAX_PRICE >= yes_ask > 0):
+                continue
+            z_lo = (lo - 0.5 - adjusted) / SIGMA_F
+            z_hi = (hi + 0.5 - adjusted) / SIGMA_F
+            prob = norm_cdf(z_hi) - norm_cdf(z_lo)
+            if not (LOTTO_ODDS[0] <= prob <= LOTTO_ODDS[1]):
+                continue
+            ev = prob / yes_ask
+            if ev < 1.3:
+                continue
+            lottos.append((city, ticker, tail, yes_ask, prob, ev))
+    lottos.sort(key=lambda x: -x[5])
+    for city, ticker, tail, price, prob, ev in lottos[:LOTTO_MAX]:
+        stake = round(cash * LOTTO_STAKE_PCT, 2)
+        shares = round(stake / price, 2) if price else 0
+        entry = {
+            "date": tomorrow, "prediction_date": datetime.now().strftime("%Y-%m-%d"),
+            "city": city, "bet_type": "band",
+            "direction": "YES", "ticker": ticker,
+            "band_low": float(tail[1:]) - 0.5, "band_high": float(tail[1:]) + 0.5,
+            "threshold": None,
+            "purchase_price": price, "bet_amount": stake, "shares": shares,
+            "status": "open", "placed_at": datetime.now().isoformat(),
+            "rationale": f"paper lotto (mirrors live 2 pct class): model {prob:.0%} vs market {price:.0%}, EV {ev:.2f}x",
+            "exit_plan": "peak-window watcher: dead after peak outside range = salvage; winning >=90c = hold; 30 pct giveback = lock",
+        }
+        hist.append(entry)
+        out.append(f"LOTTO {city} {tail} YES {shares:.0f}sh @ {price:.2f} (model {prob:.0%}, EV {ev:.2f}x)")
+
+    # daily target bookkeeping: write the goal into the portfolio so every report measures against it
+    ppath = HIST.parent / "portfolio.json"
+    try:
+        port = json.loads(ppath.read_text(encoding="utf-8"))
+        port["daily_target_pct"] = DAILY_TARGET
+        port["goal_note"] = "same goal as main model: 5 pct daily return (Thad Sep 3)"
+        ppath.write_text(json.dumps(port, indent=1), encoding="utf-8")
+    except Exception:
+        pass
+
     HIST.write_text(json.dumps(hist, indent=1), encoding="utf-8")
-    print(f"sure-thing paper bets placed: {len(out)}")
+    print(f"sure-thing paper bets placed: {len(out)} | paper daily target: {DAILY_TARGET:.0%} (goal = main model)")
     for d in dbg:
         print("  diag:", d)
     for o in out:
