@@ -122,9 +122,10 @@ def main():
         if best:
             bets.append((city, best))
 
-    # stake 5 pct of paper bankroll each, max MAX_BETS
+    # stake 5 pct of paper bankroll per city (Thad Sep 3: ALL cities get paper picks
+    # so we learn which cities are sure-things vs coin-flips - per-city track record)
     out = []
-    for city, b in bets[:MAX_BETS]:
+    for city, b in bets:
         stake = round(cash * STAKE_PCT, 2)
         shares = round(stake / b["price"], 2) if b["price"] else 0
         entry = {
@@ -181,7 +182,11 @@ def main():
                 continue
             lottos.append((city, ticker, tail, yes_ask, prob, ev))
     lottos.sort(key=lambda x: -x[5])
-    for city, ticker, tail, price, prob, ev in lottos[:LOTTO_MAX]:
+    seen_cities = set()
+    for city, ticker, tail, price, prob, ev in lottos:
+        if city in seen_cities:
+            continue  # one lotto per city for coverage
+        seen_cities.add(city)
         stake = round(cash * LOTTO_STAKE_PCT, 2)
         shares = round(stake / price, 2) if price else 0
         entry = {

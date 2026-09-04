@@ -99,6 +99,22 @@ def accuracy(source=None, kind=None):
     n, w = r["n"] or 0, r["w"] or 0
     return {"total": n, "wins": w, "rate": (w / n) if n else 0.0}
 
+def city_accuracy():
+    """Per-city settled W/L - learns which cities are sure-things vs coin-flips."""
+    conn = connect()
+    rows = conn.execute("""
+        SELECT CASE
+             WHEN market LIKE 'KXHIGH%' THEN substr(market, 1, 9)
+             WHEN event LIKE 'KXHIGH%' THEN substr(event, 1, 9)
+             ELSE substr(event, 1, instr(event || '-', '-') - 1)
+           END AS city_key,
+           COUNT(*) n,
+           SUM(CASE WHEN result='WIN' THEN 1 ELSE 0 END) w
+        FROM predictions WHERE status='settled'
+        GROUP BY city_key ORDER BY n DESC""").fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
+
 # ---------- learnings ----------
 def record_learning(lesson, source=None, rule_change=None):
     conn = connect()
