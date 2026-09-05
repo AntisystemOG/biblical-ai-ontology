@@ -7,6 +7,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Whale Watch
 - History Rhymes
 - Daily Brief
+- Truth-Based Trading
 <!-- /TOC -->
 
 ---
@@ -461,3 +462,97 @@ _Position weights from the Jul 31 portfolio CSV (most recent on file). Friday's 
 
 ---
 *Sources spanning the spectrum: AP, Reuters, CNBC, PBS/AP, Fox Business, Bloomberg, Business Insider, Motley Fool, Seeking Alpha, 24/7 Wall St, Kitco, OilPrice, FXStreet, CNA, Benzinga, CryptoSlate, TechCrunch, plus aggregator desks (ainvest, GuruFocus, Simply Wall St, tradingkey, ts2). Bias labels applied per source table in the agent brief.*
+
+---
+
+<!-- section:Truth-Based Trading -->
+## Truth-Based Trading (09:01 CT)
+
+# Truth-Based Trading — Saturday, September 5, 2026 (9:00 AM CDT) — Weekly Edition
+
+*Weekend edition (markets closed Monday, Sep 7; next session Tuesday Sep 8). This run re-reads Friday's fork, not a new one. Allocation bins from the Jul 31 CSV, re-computed this run (36 days stale — re-export a fresh CSV this week; live deltas since Jul 31 run +4% to +21% on several names). Live broker quote access unavailable this run; verify all trim-window prices before acting.*
+
+## 1. The Brutal Truth
+
+- **Base rates, not stories:** SPIVA's standing verdict — roughly 87–90% of active managers trail the S&P 500 over 15 years, and last cycle's winners are mostly not this cycle's. The Whale Watch section above is **frozen Q2 13F data** — holdings as of June 30, filed Aug 14, now **day 67 stale**. D1 putting 61.9% of a $34.8B book into SpaceX is *their* conviction about June, bought at June's prices. Cohen added STX/PG/JNJ; Coatue 19x'd Micron; Tepper holds AMZN/MU/TSM. At a 90-day lag, behind a 2%+20% fee wall if copied through the managers themselves, the edge is imaginary. Read it to know where the crowd is crowded — never to copy.
+- **Fee math, unchanged and dominant:** a 1% annual drag on the ~$489k investable base ≈ **~$425k surrendered over 25 years** vs. the 0.02% index path (~$22k). SPIVA is the receipt; the fee is the mechanism; FXAIX at 0.015% remains the retirement gold standard.
+- **Friday's fork resolved HOT — that is the week's one new fact.** August payrolls **+162K** (well above consensus), unemployment 4.1%. The "jobless summer" narrative is dead, the Fed-cut catalyst is wounded, and the market's Friday behavior was a **rotation, not a rout**: S&P -0.4% / Dow -270 while Russell 2000 and Nasdaq 100 *closed higher* and SOX printed +3% led by memory and optical. The market didn't sell risk — it sold duration. Translation for this book: no rate relief, the 10Y (~4.78%, at a 52-week high) does the disciplining, and the funded-by-cash-flow AI names got rewarded on the very day the debt-funded ones got repriced. Waller signaled hold for Sept 15–16 — the hike tail is thinner, but the squeeze on speculative duration stays on.
+- **The hidden inflation channel:** diesel hit a record at the pump; Brent ~$96 with US–Iran strikes ongoing. Energy inflation into an inflation-focused Fed is the chain nobody's coverage pairs together. It is exactly the regime this portfolio's Foundation-first fix is built to survive.
+
+## 2. Portfolio Audit (bins re-computed this run from Jul 31 CSV; ~$492.6k total incl. sweep)
+
+| Bucket | Target | Actual | Verdict |
+|---|---|---|---|
+| **Foundation** (indexes, bonds, Treasuries, target-date) | 70% | **~16.5%** (~$47.5k) | Critical underweight — the whole game |
+| **Moats** (evidence-based individual: AMZN, GOOGL, WMT, V, SPOT, CART, energy sleeve, defensives, gold/silver, FTXG, TSM) | 25% | **~39%** (~$193k) | Overweight with decent material |
+| **Speculation** (INTC, miners, MU/STX/SNDK, AMD, SPCX, biotech/medtech, AI power, crypto, TSLA) | 5% | **~40%** (~$199k) | **~8x over limit** |
+
+*(Bins re-computed from raw CSV rows this run; they land within ~1 pt of the 9/2 audit's 21/39/40 — same conclusion, no binning games changed it: **speculation runs ~8x its limit, Foundation less than a quarter of its floor.** The re-computed Foundation figure also picks up every small index/bond row, which is why it reads lower than prior cuts that used a narrower sleeve list.)*
+
+**The three numbers that matter:**
+1. **$241,119** — the BrokerageLink sweep, still idle, still the single largest wealth lever. At ~3.5% real purchasing-power bleed it forfeits **~$8k/year** and, deployed Foundation-first, is worth **~$267k** of extra terminal wealth over 25 years. This remains the ask that outranks every ticker below.
+2. **INTC ~5.1% ($12.6k)** — one narrative name bigger than the entire speculation budget, riding *unconfirmed* SK Hynix HBM4E talks. Friday it rallied +4.5% to ~$95.80 with the chip complex. The standing plan is written and needs no new judgment: trim 1/3 into a confirmed $95–100 reclaim, trail below $87.26, hard cap 5%. **Price touched the zone Friday — the plan is live, not the excitement.**
+3. **SNDK** — the 1,550–1,600 Roth trim window went live Wednesday at $1,553.40 (21.6% of the Roth). Friday's tape had SanDisk +8–12%. If it printed anywhere in-window Friday, the rules-based trim is actionable Tuesday at the open — the plan was set before the price arrived; don't move the target now that it's here.
+
+**Position-by-position (Friday's tape vs. standing plans):**
+
+| Holding | Weight | Friday's evidence | Class | Action |
+|---|---|---|---|---|
+| AMZN | ~10% of taxable | Friday's rotation favored cash-flow engines; legal overhang (FTC + states) unchanged | MOATS | Hold; trim if >12% |
+| FXAIX / index+bond sleeve | ~16.5% | The only bucket that wins a 1999-2000-rhyme decade | FOUNDATION | Every new dollar here first |
+| INTC | 5.1% | +4.5% to ~$95.80 — entered trim zone on a *rumor*, which is exactly what the standing plan assumes | SPECULATION | Trim 1/3 on confirmed $95–100 reclaim; trail $87.26 |
+| Miner sleeve (CORZ/RIOT/HUT/WULF/CLSK/CIFR) | ~7.8% | BTC rejected $82,240 intraday, slid to ~$79–80K on the print; **Riot's $573M bridge loan matures in December — before Anthropic rent begins** (the blindspot under the $9.1B headline) | SPECULATION | Trim toward 5% limit into strength; BTC <$75K = automatic review |
+| MU / STX / SNDK | ~6.6% | SOX +3% on a hawkish day — either earnings power wins or a crowded trade ignoring macro; coverage reports only the first | SPECULATION | SNDK trim in-window; MU no new money (cyclical at peak metrics); STX same discipline on its reclaim |
+| SPCX | ~2.5% | No price discovery; D1's 61.9% is their conviction, not your evidence | SPECULATION | No action possible; no new money |
+| Biotech/medtech (BFLY/HTFL/CBLL/RXRX/TEM) | ~5% | BFLY's Monday pop fully retraced in one session — single-day bounces aren't signals; TEM trim trail below $60 stands | SPECULATION | TEM trim per plan; cluster capped at 5% |
+| AI power (CEG/GEV/SEI/BE/VRT) | ~5% | **BE joins the S&P 500** (announced after Friday's close, +6.6% after hours) — that is an index-flow mechanic, not a cheaper multiple; forced buyers arrive on the effective date | SPECULATION | Hold; do not chase the inclusion pop — index-flow bounces mean-revert once the buying is forced, not voluntary |
+| AMD | ~1.3% | +4.7% Friday with the complex; whale consensus flip from three directions stands | SPECULATION | Review/trim stands — top Nov 13F item |
+| Crypto wrap (FBTC/COIN) | ~1.6% | August ETF inflows $3.52B = institutional demand intact; COIN +10% on single-stock perps filing — with a live CME lawsuit attached | SPECULATION | No adds |
+| TSLA | ~1.4% | -19% YTD; margin compression unchanged | SPECULATION | No new money; cut-list |
+| GOOGL/GOOG, WMT, V, SPOT, CART | ~9% | Quiet, evidence-based | MOATS | Hold; SPOT exit test = two consecutive whale-trim quarters (Nov 13Fs) |
+| Energy sleeve (VDE/XOP/SHEL/SEI/CEG) | ~10% | Brent ~$96, diesel at record — the hedge did its job | MOATS | Hold; headline-driven premium can unwind on one escort headline |
+| Defensives + gold/silver + FTXG + TSM | ~10% | Ballast doing its job in a hike regime | MOATS | Hold; TSM remains the Nov 16 size-up candidate (0.16% held) |
+| Sweep + FDRXX | ~49.6% | The decision that outranks every row above | — | Deploy Foundation-first (ask pending Thad) |
+
+## 3. The Three Buckets
+
+- **FOUNDATION — buy first, always.** The sweep is larger than the entire Foundation bucket. Foundation-first automatic monthly buys until 70%, regardless of how good any story feels. This week's tape was the argument made in public: on the day the Fed-hike trade revived, the *only* things that got rewarded were cash-flow engines — and even they are one 10Y print from repricing.
+- **MOATS — overweight but honest.** The problem isn't quality; it's that Foundation isn't funded. Trimming Moats to fund Foundation is acceptable; trimming Speculation is mandatory.
+- **SPECULATION — walk from ~40% toward 5% on strength, not weakness.** Friday supplied strength in exactly the right places (INTC $95.80, SNDK +8–12%, miners on a $79–80K BTC). The standing triggers were built for days like Friday. Execution waits for Tuesday's open and Thad's approval; the analysis was due today and is done.
+
+## 4. The Math
+
+- **Current path:** ~40% of the book in rate-sensitive, narrative-correlated speculation into a bear-steepening tape (History Rhymes above: the 2007 configuration — Fed easing, stocks near highs, long end at a 52-week high, crude $91.50 — plus CAPE ~42 and top-10 concentration above the dot-com peak). One bad narrative year on 40% of the book costs more than five good Foundation years gain back.
+- **Target path (70/25/5):** ~$489k at a conservative 6–7% nominal ≈ **$2.1–2.65M in 25 years** (~$1.15–1.25M in today's dollars at 3–3.7% CPI). If the 1999–2000 rhyme plays out as a flat real decade at CAPE 42, Foundation loses least and compounds hardest after; a 40%-speculation book risks permanent impairment instead.
+- **Fee visualization:** 1% drag ≈ **~$425k lost** over 25 years; 0.05% index ≈ ~$22k. A 2%+20% manager costs roughly half of terminal wealth. Every "smart money" copy that costs >0.5% forfeits the edge it claims to buy — and at a 67-day 13F lag, it buys stale news at today's prices.
+- **The sweep, restated:** idle cash costs ~$8k/year in real purchasing power and ~$267k of terminal wealth. It is the only decision on this page that doesn't depend on a single print, rumor, or headline.
+
+## 5. Action Items
+
+*(All sell-side actions await Thad's approval per the Aug 31 grant — weather-market autonomy only. Nothing was executed.)*
+
+**Immediate (Tuesday's open — markets closed Monday, Sep 7):**
+1. **Verify SNDK's Friday/weekend print.** In or near the 1,550–1,600 window → execute the rules-based Roth trim (plan set 9/2; do not move the target).
+2. **INTC:** price hit ~$95.80 Friday. On a *confirmed* HBM4E contract → trim 1/3 per standing plan; on rumor-only → hold the plan, don't upgrade the classification.
+3. **Miner trim into strength** toward the 5% limit (BTC ~$79–80K after rejecting $82K; Riot's December bridge-loan maturity is the solvency-timing risk under the Anthropic headline).
+4. **Do not chase BE's index-inclusion pop** — forced flows mean-revert after the effective date.
+5. **No new money into any speculative sleeve** — the fork resolved hawkish-leaning-hold; there is no cut coming to rescue duration.
+
+**Short-term (this month):**
+6. **Deploy the $241k sweep Foundation-first** (FXAIX/VTI/VXUS until Foundation ≥ 70%) — start the automatic monthly buys this month, not this quarter. *This is the ask.*
+7. Re-export a fresh portfolio CSV — Jul 31 is 36 days stale and live deltas (SNDK +21% off Jul 31, miners -16/-23%, AMZN +8%) now misstate real risk.
+
+**Long-term (this quarter):**
+8. **Nov 16 Q3 13Fs adjudicate:** GEV exit test, AMD reversal test, INTC two-sided resolution, SPOT trim-or-exit, TSM size-up.
+9. Draft the Investment Policy Statement codifying 70/25/5 with ±5% drift bands and a written rule: no single speculative name >2%.
+
+## 6. Biblical Anchor
+
+> *"By wisdom a house is built, and through understanding it is established."* — **Proverbs 24:3**
+
+A house isn't built by the strongest beam — it's built by the plan that knows which beams carry the roof. This book's roof is carried by Foundation and the sweep decision; the miners, the memory names, the HBM rumors are trimmings that catch the eye. The week gave one clean answer (162K payrolls, no rate relief, cash-flow rewarded and duration repriced) and one standing temptation (Friday's strength everywhere you're overweight). Wisdom is the same as it was Wednesday: fund the foundation first, sell strength per the written plan, and let the boring compounder do the 25-year work.
+
+---
+*Data freshness: bins re-computed this run from the Jul 31 CSV; Friday tape + news from the Daily Brief (Sep 5) and History Rhymes (Sep 5) sections above; Whale Watch confirmed frozen Q2 13F (day 67). Not investment advice — Thad makes final decisions.*
+
+**Done** — weekly edition written, bins re-computed from raw CSV, digest appended, memory updated.
