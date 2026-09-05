@@ -180,8 +180,8 @@ def main():
             yes_ask = float(m.get("yes_ask") or 0)
             if not (LOTTO_MAX_PRICE >= yes_ask > 0):
                 continue
-            z_lo = (lo - 0.5 - adjusted) / SIGMA_F
-            z_hi = (hi + 0.5 - adjusted) / SIGMA_F
+            z_lo = (lo - adjusted) / SIGMA_F
+            z_hi = (hi - adjusted) / SIGMA_F
             prob = norm_cdf(z_hi) - norm_cdf(z_lo)
             if not (LOTTO_ODDS[0] <= prob <= LOTTO_ODDS[1]):
                 continue
