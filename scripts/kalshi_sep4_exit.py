@@ -83,3 +83,38 @@ for series, info in CITY.items():
             else:
                 v = "WATCH - below range, window open"
             print(line, "|", v)
+            # SPIKE-SELL check (Sep 4 lesson: NY +66% morning spike was best exit, passed up)
+            # For same-day lottery positions (entry <= 30c): if bid >= 1.5x entry avg AND
+            # station obs_max proxy NOT within 1F of win range -> SPIKE-SELL candidate
+            if sh > 0:
+                try:
+                    entry_cost = float(m.get("yes_price_dollars") or m.get("last_price_dollars") or 0)
+                except Exception:
+                    entry_cost = 0.0
+                # Use the POS dict for entry price if available
+                pos_entry = None
+                for pt, psh in POS.items():
+                    if pt == tail:
+                        # Approximate entry from the market's yes_price at buy time;
+                        # we don't have fill history here, so use the POS dict's implied entry.
+                        # The POS dict values are share counts, not prices. We need entry price.
+                        # Fall back to the ticker's last known fill price from the positions API.
+                        break
+                # Get entry avg from Kalshi positions API (more reliable)
+                try:
+                    for p in pos.get("market_positions", []):
+                        if p.get("ticker", "") == ticker:
+                            pfp = float(p.get("position_fp") or 0)
+                            if pfp > 0:
+                                tcost = float(p.get("total_traded_dollars") or 0) + float(p.get("fees_paid_dollars") or 0)
+                                entry_avg = tcost / abs(pfp) if abs(pfp) else 0
+                                if entry_avg > 0 and entry_avg <= 0.30 and bid is not None and bid > 0:
+                                    if bid >= 1.5 * entry_avg:
+                                        # Check if obs_max proxy is within 1F of win range
+                                        if twc_proxy is not None:
+                                            in_range = (twc_proxy >= LO - 1.0 and (HI is None or twc_proxy <= HI + 1.0))
+                                            if not in_range:
+                                                print(f"        *** SPIKE-SELL candidate (take the money): bid {bid:.2f} >= 1.5x entry {entry_avg:.2f}, obs_max proxy {twc_proxy}F not within 1F of win range [{LO},{HI}] ***")
+                                break
+                except Exception:
+                    pass

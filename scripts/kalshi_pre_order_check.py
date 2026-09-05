@@ -187,6 +187,49 @@ def _market_center(k, ticker, series):
     except Exception:
         return None
 
+
+def _same_day_lottery_exposure(k, ticker, new_cost, new_price):
+    """Aggregate same-day YES-lottery exposure across all cities.
+
+    Sums total cost of ALL open positions with entry avg <= 30c that resolve
+    on the SAME date as `ticker`, plus the proposed new order cost.
+    Returns (total_exposure, settled_bankroll, pct, breach: bool).
+    Settled bankroll = current cash balance (post-settlement, pre-order)."""
+    try:
+        date_part = ticker.split("-")[1]  # e.g. "26SEP04"
+    except (IndexError, ValueError):
+        date_part = ""
+    if not date_part:
+        return 0.0, 0.0, 0.0, False
+
+    total_exposure = 0.0
+    try:
+        positions = k.get_positions().get("market_positions", [])
+        for p in positions:
+            t = p.get("ticker", "")
+            if date_part not in t:
+                continue
+            fp = float(p.get("position_fp") or 0)
+            if fp <= 0:
+                continue  # only YES positions (positive fp)
+            sh = abs(fp)
+            cost = float(p.get("total_traded_dollars") or 0) + float(p.get("fees_paid_dollars") or 0)
+            avg_entry = cost / sh if sh else 0
+            if avg_entry <= 0.30:
+                total_exposure += cost
+    except Exception:
+        pass
+
+    total_exposure += new_cost  # include the proposed order
+
+    bal = int(k.get_balance().get("balance", 0)) / 100.0
+    pct = (total_exposure / bal) if bal else 1.0
+    LOTTERY_DAY_CAP_PCT = 0.03  # 3% of settled bankroll, all cities combined
+    breach = pct > LOTTERY_DAY_CAP_PCT
+    return total_exposure, bal, pct, breach
+
+
+
 def main():
 
     if len(sys.argv) not in (5, 6):
@@ -264,12 +307,23 @@ def main():
     # SIZING GATE (added Aug 30 after Aug 29 MIA oversize: 43sh @ $0.06 = $2.70 ~5% of cash,
     # plus a second same-city leg = ~8% total. Lottery cap is 2%.)
     LOTTERY_CAP_PCT = 0.02   # cheap-band YES lotteries: 2% of cash max
+    LOTTERY_DAY_CAP_PCT = 0.03  # aggregate same-day YES-lottery cap: 3% of settled bankroll (all cities combined)
     GENERAL_CAP_PCT = 0.08   # sure-thing/edge ladder top
     EVENT_CAP = 20.00        # per city-day event cap
     pct = (cost / bal) if bal else 1.0
     flags = []
     if price <= 0.30 and pct > LOTTERY_CAP_PCT * 1.10:  # 10% tolerance for fee/float noise
         flags.append(f"LOTTERY OVERSIZE: ${cost:.2f} = {pct:.0%} of cash (cap 2%)")
+    # AGGREGATE SAME-DAY YES-LOTTERY CAP (Sep 4 lesson: $7.22 on three YES lotteries all lost)
+    # Total exposure on positions with entry <= 30c, same date, all cities combined, must stay <= 3% of settled bankroll.
+    if price <= 0.30:
+        try:
+            agg_expo, agg_bankroll, agg_pct, agg_breach = _same_day_lottery_exposure(k, ticker, cost, price)
+            print(f"Same-day YES-lottery exposure (all cities, entry<=30c): ${agg_expo:.2f} / ${agg_bankroll:.2f} bankroll = {agg_pct:.1%} (cap {LOTTERY_DAY_CAP_PCT:.0%})")
+            if agg_breach:
+                flags.append(f"AGGREGATE LOTTERY CAP BREACH: same-day YES-lottery exposure ${agg_expo:.2f} = {agg_pct:.1%} of bankroll (cap {LOTTERY_DAY_CAP_PCT:.0%})")
+        except Exception as _e:
+            print(f"(aggregate lottery cap check skipped: {_e})")
     if pct > GENERAL_CAP_PCT * 1.05:
         flags.append(f"GENERAL OVERSIZE: {pct:.0%} of cash (cap 8%)")
     try:

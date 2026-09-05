@@ -155,7 +155,31 @@ def fetch_live_rows(k):
         # book is dead. Only value from our-side bid; if bid is 0 our position is worth $0
         # minus whatever the exit ask would cost. Value = bid (conservative, mark-to-market).
         price_used = bid
-        cost = mkt_float(p.get("total_traded_dollars")) + mkt_float(p.get("fees_paid_dollars"))
+        # COST FIX (Sep 5): total_traded_dollars can be inflated (showed $40.02 for 75sh @ 4c).
+        # Recompute: cost = shares * entry_price, sanity-checked.
+        raw_traded = mkt_float(p.get("total_traded_dollars"))
+        raw_fees = mkt_float(p.get("fees_paid_dollars"))
+        raw_cost = raw_traded + raw_fees
+        # Sanity check: per-share cost should be in [0.01, 1.00] for a valid YES/NO position
+        per_share_raw = raw_cost / shares if shares else 0
+        if shares > 0 and 0.01 <= per_share_raw <= 1.00:
+            cost = raw_cost  # looks correct
+        elif shares > 0:
+            # total_traded is wrong (e.g. includes settlement or is in cents).
+            # Try to get avg_entry_price from the API if available.
+            avg_entry_api = mkt_float(p.get("avg_entry_price") or p.get("average_price_dollars"))
+            if 0.01 <= avg_entry_api <= 1.00:
+                cost = shares * avg_entry_api + raw_fees
+            else:
+                # Last resort: use our_side_ask as a conservative entry proxy
+                ask_proxy = our_side_ask(market, side)
+                if 0.01 <= ask_proxy <= 1.00:
+                    cost = shares * ask_proxy + raw_fees
+                else:
+                    # Can't determine a sane cost - report the raw value but flag it
+                    cost = raw_cost
+        else:
+            cost = raw_cost
         value = shares * price_used
         rows.append(
             {

@@ -45,6 +45,12 @@ This is the most important thing in this file. Everything else serves this.
 
 **RULE: Thad's thumbs-up = agreement, no reply needed (2026-09-04).** A 👍 from Thad means he agrees with the plan/proposal — treat it as a silent acknowledgment and carry on. No reply unless action is pending.
 
+**RULE: Per-day YES-lottery cap ≤ 3% settled bankroll (2026-09-05).** Aggregate same-day exposure on YES positions with entry ≤ 30c, all cities combined, must stay ≤ 3% of settled bankroll. The pre-order gate enforces this and flags RED when breached. <!-- project: github.com/AntisystemOG/biblical-ai-ontology -->
+
+**RULE: Same-day lottery bid spike ≥ 1.5x entry without station support = sell signal (2026-09-05).** For same-day lottery positions (entry ≤ 30c), if current bid ≥ 1.5x entry avg price AND station obs_max proxy is NOT within 1F of the win range, it's a SPIKE-SELL candidate — take the money. NY's +66% morning spike on Sep 4 was the day's best exit and was passed up. <!-- project: github.com/AntisystemOG/biblical-ai-ontology -->
+
+**RULE: Never extrapolate same-day weather settlement from overnight bids (2026-09-05).** TWC official daily max is the only truth. Overnight bids reflect speculation, not settlement; acting on them as if they were the official result leads to bad entries and bad exits. <!-- project: github.com/AntisystemOG/biblical-ai-ontology -->
+
 ## BUDGET RULE
 
 **CRITICAL (2026-03-29):** Thad explicitly said "make sure we use all the ollama tokens we can, they expire and start over"
