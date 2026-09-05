@@ -38,8 +38,13 @@ def norm_cdf(z):
 def main():
     c = Kalshi()
     hist = json.loads(HIST.read_text(encoding="utf-8"))
-    open_tickers = {h.get("ticker") for h in hist if h.get("status") == "open"}
-    cash = 91.29  # paper bankroll (portfolio.json)
+    ppath = HIST.parent / "portfolio.json"
+    port = json.loads(ppath.read_text(encoding="utf-8"))
+    open_tickers = ({h.get("ticker") for h in hist if h.get("status") == "open"}
+                    | {p.get("ticker") for p in port.get("open_positions", []) if p.get("status") == "open"})
+    cash = float(port.get("cash", 0.0))  # paper bankroll, live from portfolio.json
+    budget = cash   # running spend guard so nightly stakes can't overcommit the bankroll
+    pending = []    # entries to be written into portfolio.open_positions
     tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
     want = (datetime.now() + timedelta(days=1)).strftime("%y%b%d").upper()  # 26SEP04
 
@@ -127,6 +132,9 @@ def main():
     out = []
     for city, b in bets:
         stake = round(cash * STAKE_PCT, 2)
+        if stake < 1.0 or budget - stake < 0:
+            continue
+        budget = round(budget - stake, 2)
         shares = round(stake / b["price"], 2) if b["price"] else 0
         entry = {
             "date": tomorrow, "prediction_date": datetime.now().strftime("%Y-%m-%d"),
@@ -140,7 +148,7 @@ def main():
             "rationale": f"sure-thing ladder: {b['cushion']:.1f}F cushion, model odds {b['win_prob']:.0%}, paper test of 95pct class",
             "exit_plan": "peak-window watcher: dead after peak outside range = salvage; winning >=90c = hold; 30 pct giveback = lock",
         }
-        hist.append(entry)
+        pending.append(entry)
         out.append(f"{city} {b['tail']} {b['direction']} {shares:.0f}sh @ {b['price']:.2f} (model {b['win_prob']:.0%}, cushion {b['cushion']:.1f}F)")
 
     # LOTTO section: mirror the live strategy mix so the paper book can reach the 5 pct/day goal.
@@ -188,6 +196,9 @@ def main():
             continue  # one lotto per city for coverage
         seen_cities.add(city)
         stake = round(cash * LOTTO_STAKE_PCT, 2)
+        if stake < 1.0 or budget - stake < 0:
+            continue
+        budget = round(budget - stake, 2)
         shares = round(stake / price, 2) if price else 0
         entry = {
             "date": tomorrow, "prediction_date": datetime.now().strftime("%Y-%m-%d"),
@@ -200,21 +211,21 @@ def main():
             "rationale": f"paper lotto (mirrors live 2 pct class): model {prob:.0%} vs market {price:.0%}, EV {ev:.2f}x",
             "exit_plan": "peak-window watcher: dead after peak outside range = salvage; winning >=90c = hold; 30 pct giveback = lock",
         }
-        hist.append(entry)
+        pending.append(entry)
         out.append(f"LOTTO {city} {tail} YES {shares:.0f}sh @ {price:.2f} (model {prob:.0%}, EV {ev:.2f}x)")
 
-    # daily target bookkeeping: write the goal into the portfolio so every report measures against it
-    ppath = HIST.parent / "portfolio.json"
-    try:
-        port = json.loads(ppath.read_text(encoding="utf-8"))
-        port["daily_target_pct"] = DAILY_TARGET
-        port["goal_note"] = "same goal as main model: 5 pct daily return (Thad Sep 3)"
-        ppath.write_text(json.dumps(port, indent=1), encoding="utf-8")
-    except Exception:
-        pass
+    # daily target bookkeeping + portfolio integration: open bets live in
+    # portfolio.open_positions (cash debited) so the 8 PM run's grade_settled
+    # grades them automatically. history.json keeps graded entries only.
+    port["daily_target_pct"] = DAILY_TARGET
+    port["goal_note"] = "same goal as main model: 5 pct daily return (Thad Sep 3)"
+    for entry in pending:
+        port.setdefault("open_positions", []).append(entry)
+        port["cash"] = round(float(port.get("cash", 0)) - entry["bet_amount"], 2)
+        port["total_wagered"] = round(float(port.get("total_wagered", 0)) + entry["bet_amount"], 2)
+    ppath.write_text(json.dumps(port, indent=1), encoding="utf-8")
 
-    HIST.write_text(json.dumps(hist, indent=1), encoding="utf-8")
-    print(f"sure-thing paper bets placed: {len(out)} | paper daily target: {DAILY_TARGET:.0%} (goal = main model)")
+    print(f"sure-thing paper bets placed: {len(pending)} | paper daily target: {DAILY_TARGET:.0%} (goal = main model)")
     for d in dbg:
         print("  diag:", d)
     for o in out:
