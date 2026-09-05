@@ -240,7 +240,18 @@ See: INVESTING.md (tracks learning & personal plan)
 - Much better for local processing
 - Will eventually migrate Spock there
 
-## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-09-02)
+## 🧠 MEMORY DREAMING SYNTHESIS (Updated 2026-09-05)
+
+**September 2–5 Cycle (added 2026-09-05):**
+- **Claims NO win #3 straight (Sep 3):** week ending Aug 29 print = 206K vs our blended 206.3K forecast (0.3K error); market center drifted to 208.3K overnight and was WRONG — hold-to-settlement (PROMPT-LAW) won again. +$1.14 net, 41% ROI. Next cycles: Sep 10 normal week (buy window T-3 opens Monday), Sep 17 holiday-distorted (smaller size).
+- **Sep 4 ridge lottery died (~$5.56 cost, ~-$5.0 net):** NWS 96 → actual 92; market center 92.4 RIGHT for the 5th straight time on raw-NWS premium. MIA storms/NY showers matched the Edge morning SELL flags. The sep4-exit watcher's 14:02 station-math salvage (T95 at bid, 2c) was the only good exit. Lesson: same-day longshots on forecast revisions = no; only gaps with a MECHANISM (storm caps, marine layers, lake breeze) are real edges — never the plain "NWS says hotter" premium.
+- **Paper classes split (Sep 4):** sure-thing 95% class first sample WIN (+25% on stake) — keep running; lotto 0/3, ALL misses one band ABOVE the band (warm-skew: TWC settles 1.5-2F hot and days overperform forecasts → lotto YES bands sit one band ABOVE the adjusted forecast band). Lotto prob-window width bug fixed in sure_thing_paper.py (was 0.5F too wide, inflated 3-5% into "38%").
+- **One ledger, one truth (Sep 4):** sure-thing/lotto bets were written to history.json ONLY — never portfolio.open_positions, cash never debited, ungradeable (8 orphaned bets). Reconciled into portfolio with cash debit; history = graded-only. Integration bugs make settled futures impossible.
+- **Kalshi cron audit (Sep 3):** 40 jobs → morning trio combined into kalshi-morning-brief (5:45 AM Mon–Fri, isolated, Telegram); 7 dead jobs deleted; stale model pins cleared (old ollama-cloud/glm-5.2 naming rejected by modelPolicy post-update — use ollama/*:cloud family or inherit). edge-morning reverted twice (~05:00 namespace reversion) — re-verify after updates.
+- **One Prediction Database (Sep 3):** data/kalshi_model.db (SQLite WAL) + scripts/kalshi_db.py — predictions/forecasts/learnings/model_state tables; model params are LIVING DATA jobs read (never hardcode); migrated 3305 snapshots.
+- **Cloud hosting ledger (Sep 3):** data/cloud_hosting/cost_vs_losses.md with STRICT attribution rule (loss counts only if outage hits a peak/exit/buy window AND provable dollar miss); review one-shot Sep 24, 9 AM CT (cloud-hosting-review, self-deleting).
+- **digest.py claims history STILL recites wrong prints** (recites 206/209/200/198K; FRED-verified actual 200/212/207/203K) — TODO: pull FRED ICSA directly before next weekly grade.
+- **Gateway night flaps recurring** (~00:03 and 2–5 AM windows, self-recover in minutes); watchdog payload patched with APPEND-ONLY memory law (Add-Content only, never whole-file writes) after it clobbered a daily memory file 3rd time.
 
 **August 30 – September 1 Cycle (added 2026-09-02):**
 - **TWC +1.5F premium DOUBLE-COUNT was the Aug 31 killer (all NY/CHI settled LOST, ~$4.81 bleed).** Kalshi settles on TWC, so market center already embeds the +1.5F warmth — buying bands ABOVE market center because NWS+TWC exceeded it paid the bias twice (NY "+3F gap" was bogus edge). Fix coded in `kalshi_pre_order_check.py`: `_market_center()` computes YES-mid-weighted center from the live band ladder; RED FLAG when model center ≥2F above market center (needs Thad override). Tested: MIA Sep 2 gap -2.7F, no flag; MIA blacklist still fires.
