@@ -4,6 +4,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 
 <!-- TOC (auto-generated) -->
 - Memory Dream
+- Whale Watch
 <!-- /TOC -->
 
 ---
@@ -68,3 +69,77 @@ The account stands at $66.40 cash with the Fed legs riding to September 16. The 
 *Verdict: a losing night run well. The thesis lost; the system won. That is what compounding discipline looks like in the dark.*
 
 🖖
+
+---
+
+<!-- section:Whale Watch -->
+## Whale Watch (06:02 CT)
+
+# Whale Watch — Q2 2026 13F Season
+
+**Run date:** Sat Sep 5, 2026 (off-cycle run; next scheduled: Mon Nov 16, 2026 — Q3 13F deadline Nov 15 falls on a Sunday)
+**Filings analyzed:** Q2 2026 13Fs (holdings as of Jun 30, 2026; all filed Aug 14, 2026)
+**Portfolio snapshot:** Jul 31, 2026 Fidelity CSV (latest available). Note: whale positions are 10 weeks stale and the market has moved — July's AI rout already happened *after* these snapshot dates.
+
+## The Filing Class of Aug 14, 2026
+
+| Fund | 13F Value | Positions | Signature Move |
+|---|---|---|---|
+| Point72 (Cohen) | $90.7B | ~1,943 | Diversified; added STX, PG, JNJ, SNOW, ORCL; trimmed AMZN, MU, AMD, INTC, TSM |
+| Coatue (Laffont) | $48.6B | ~71 | **19-fold Micron add (+1,794%)**, new SpaceX/Intel/Cerebras/Hut 8 |
+| D1 Capital (Sundheim) | $34.8B | 55 | **61.9% of the entire book into SpaceX ($21.5B, NEW)** |
+| Appaloosa (Tepper) | $7.7B | 27 | Concentrated: AMZN 16%, MU 15%, TSM 10.5%, GOOG 8.7% |
+| Situational Awareness (Aschenbrenner) | $10B (from $45B peak) | — | **HISTORICAL ONLY — fund imploded late July, sold liquid book to Citadel** |
+
+## ⚠️ The Situational Awareness Cautionary Tale (read this first)
+
+Aschenbrenner's fund rode SNDK + MU to **>$11B in long exposure** as of Jun 30 — then the memory trade cracked in July: SNDK −55% and MU −36% in 29 days (Jun 30→Jul 29). A $45B fund collapsed to ~$10B and was forced to sell much of its liquid portfolio to Citadel at the bottom. Its other holdings (TSM, Bloom Energy, NIO) fell 20–46% in the same window while SPY fell just 2.3% — the damage was entirely concentrated in the AI/memory trade. The fund survives on a ~$5B private Anthropic stake.
+
+**Why this matters to your book:** your Roth is ~35% memory (SNDK 21.6% + STX 13.4%), plus MU ($6.8K) and BE ($3.9K) in taxable — this is precisely the trade that broke a $45B fund in a month. Your positions were recovering as of the Jul 31 CSV (MU $874.66, SNDK $1,279.96 — both well off the Jul 29 lows) and the recovery **continued into September**: on Sep 4, MU rallied ~6% to ~$1,017, SNDK +10%, STX +6%, on a $95B AI-server backlog and tight NAND supply. The trade is back near its June highs — which is exactly the crowding/leverage level where the July break happened.
+
+## Overlap Matrix — Whale Positions vs Your Holdings
+
+✅ = whale adding/new · ⚠️ = whale trimming · ➖ = holding (no material change)
+
+| Ticker | Your Position (Jul 31) | Point72 ($90.7B) | D1 ($34.8B) | Appaloosa ($7.7B) | Coatue ($48.6B) |
+|---|---|---|---|---|---|
+| AMZN | $24.8K (largest holding) | ⚠️ Trim, #3 holding $1.24B | — | ✅ Add, 16% of book | ✅ Add +49%, 5.8% |
+| SPCX (SpaceX) | $6.3K | — | ✅ **NEW, 61.9% of book** | — | ✅ **NEW, 6.5%** |
+| INTC | $12.6K | ⚠️ Trim | — | — | ✅ **NEW, 3.5%** |
+| STX | $6.3K | ✅ Add | — | — | — |
+| MU | $6.8K | ⚠️ Trim | — | ⚠️ Trim −41% (still 15%) | ✅ **Add +1,794%, 7.5%** |
+| SPOT | $5.1K | ⚠️ Trim | ✅ Add | — | — |
+| GOOGL/GOOG | $5.2K | — | ✅ Add | ✅ Add (GOOG 8.7%) | ✅ Add +13% |
+| CART | $4.3K | — | ✅ Add, 3.1% of book | — | — |
+| AMD | $3.4K | ⚠️ Trim | — | — | ✅ New (0.1%, tiny) |
+| CEG | $2.3K | — | — | — | ➖ 2.4% holding |
+| NFLX | $2.2K | — | — | — | ⚠️ Trim −32% |
+| DIS | $1.9K | — | ✅ Add | — | — |
+| JNJ | $1.5K | ✅ Add | — | — | — |
+| DHR | $1.5K | — | ⚠️ Trim | — | — |
+| PG | $1.3K | ✅ Add | — | — | — |
+| APP | $866 | — | ➖ Hold | — | — |
+| VRT | $229 | — | — | — | ⚠️ Trim −18% |
+| TSM | $387 | ⚠️ Trim | — | ✅ Add, 10.5% | ➖ Trim −4%, still 8.8% (#1 holding) |
+| HUT | $2.1K | — | — | — | ✅ **NEW, 2.3%** |
+
+*(19 of your names appear in whale top-lists; ETFs/mutual funds excluded.)*
+
+## Key Themes
+
+**1. SpaceX became a whale consensus trade overnight.** Sundheim put 61.9% of D1's entire $34.8B book into SpaceX (new position) and Laffont opened 6.5%. Your SPCX holding ($6.3K via secondary vehicle) now sits alongside the two largest whale commitments in this filing class.
+
+**2. Memory: the whales disagree violently — and the trade already cracked once.** Coatue added 19-fold to MU; Tepper trimmed his MU stake 41% (while it still tops 15% of his book); Point72 trimmed MU but *added* STX. Then July proved the downside case (SA collapse). Since then the trade has fully round-tripped and is pressing June highs again. Your memory cluster (MU/SNDK/STX ≈ $16.8K across accounts) is in the single most two-sided trade in this filing class.
+
+**3. Your core four are whale-core too.** AMZN (P72 #3 holding, Tepper 16% add, Coatue +49%), GOOG (added by Tepper/Coatue/D1), TSM (Tepper add, Coatue's #1 holding), INTC (Coatue new 3.5% — the only whale *buying* your 2nd-largest position; P72 trimmed).
+
+**4. Power/AI infrastructure: whales are buying the producers.** Tepper added Vistra and NRG; Coatue holds Constellation Energy and opened Eaton/Forgent Power positions. Your adjacent complex (CEG, GEV, VRT, SEI, WULF, CORZ, BE ≈ $14K) rides the same theme — though note Coatue *trimmed* VRT −18%.
+
+**5. Whale-trimmed watch list:** NFLX (Coatue −32%), SPOT (P72 trim vs D1 add — split), MU (P72, Tepper), VRT (Coatue), AMD (P72).
+
+## Data Notes
+- Point72 files across multiple entities (CPV Partners, 72 Investment Holdings, Point72 Private Investments file separately); figures reflect the main Point72 Asset Management filing.
+- Whale stances are as of Jun 30, 2026; both the July rout and the Aug–Sep recovery happened after that snapshot. Your CSV is Jul 31.
+- Situational Awareness treated as historical per agent notes (fund sold liquid book to Citadel; retains ~$5B Anthropic private stake).
+
+**Status: Complete** — Q2 2026 13Fs fetched for all five tracked managers; overlap matrix built from Jul 31 portfolio CSV; report appended to daily digest. Next scheduled run: Nov 16, 2026 (Q3 13Fs).
