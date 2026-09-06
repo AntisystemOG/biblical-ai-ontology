@@ -6,6 +6,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Memory Dream
 - Whale Watch
 - History Rhymes
+- Daily Brief
 <!-- /TOC -->
 
 ---
@@ -221,3 +222,157 @@ Sometimes a bond-led repricing is just that: 1994's 10Y surge flattened equities
 The Sep 2026 texture rhymes most strongly with **1999-2000 (valuation + rates shape + concentration)** overlaid on **2007 (oil, VIX complacency, cutting Fed)**, with 1987's September seasonality as the near-term risk window. History's verdict on this combination: the market doesn't die of bad news — it dies of a repriced discount rate while the news is still good. The bear case doesn't need a recession to start; it needs the 10Y to keep doing what it has done for six straight months. Respect the 1994-95 counter-scenario (chop, then higher) if AI earnings keep landing — but at VIX 14.5, hedges have rarely been this cheap relative to the density of the rhymes.
 
 *Pattern analysis, not a prediction and not investment advice. Approximate valuation figures (CAPE, concentration, forward P/E) carried from the agent's prior-run baselines; price/yield data is live yfinance through Sep 4, 2026.*
+
+---
+
+<!-- section:Daily Brief -->
+## Daily Brief (08:03 CT)
+
+# Daily Brief — Sunday, September 6, 2026
+## Ground News Cross-Spectrum Analysis
+
+**Coverage window:** Aug 31 – Sep 6, 2026 (Friday Sep 4 close + weekend war developments). Markets are closed Sunday; this brief sets up Monday's open.
+
+## Market Overview
+
+**Friday close (Sep 4):** Dow -0.51%, S&P 500 -0.38% (~7,719), Nasdaq -0.29% — a third straight wobble after a strong August jobs report (+162K, unemployment steady 4.1%) "fueled hawkish Fed bets." This is an extraordinary macro setup: **the market is pricing rate-HIKE odds, not cuts**, while Trump publicly demands cuts and threatens trade consequences if the Fed doesn't deliver. 10Y Treasury raced toward 5% midweek (52-week high 4.78% at Friday close). Crude ended the week higher (~$91.5 WTI, headlines cite $96 Brent spikes; diesel at a record) as the **US-Iran war re-escalated** after a month-long lull. VIX 14.5 — the options market is far calmer than the bond market. Stocks hover just -1% from the S&P's 52-week high; small caps (Russell +18.6% YTD) are still leading, which is not a typical late-cycle top signature.
+
+### 1. US–Iran War Re-Escalation — Oil, Diesel, and the "Price of Money"
+**Bias Spectrum:** Left (CNN) ← Center (Reuters/AP/OilPrice) → Right (NY Post)
+
+**WHERE THEY AGREE (Convergent Facts):**
+- US struck mainland Iran Sep 1 — first strikes there in over a month — after Iranian attacks on ships in the Strait of Hormuz; Iran retaliated Sep 1–2.
+- Escalation continued into the weekend: US struck three Iranian tankers Sep 5 in retaliation for missile attacks (CNN, Sep 5).
+- Hormuz oil flows have plunged from ~20M bpd; Iran's exports have stalled under blockade (Al-Monitor, Sep 1; OilPrice, Sep 5). Treasury Secretary Bessent (Sep 6): Iran has only ~30M barrels left to sell to China.
+- OPEC+ froze October output; Gulf exporters are racing to build alternative routes. Oil +4% on Sep 1, diesel at record highs, crude +60% YTD.
+- Yields rose on the war (10Y toward 5%) — CNN Business called it "the war is raising the price of money."
+
+**WHERE THEY DIFFER:**
+- **Left Says (CNN/Globe and Mail):** Frames it as a dangerous stalemate the US wants to "manage" but Iran wants to break; emphasizes inflation fears and bond-market stress; retaliation cycle and escalation risk. Focus on the cost to the global economy.
+- **Center Says (Reuters/AP):** Factual market linkage — "Wall Street slides as US strikes Iran again, oil spikes and Fed bets firm up." Notes dealmaking continues (Washington's Venezuela oil pact).
+- **Right Says (NY Post):** Leads with Trump's counter-Fed pressure — threatens trade with "dozens of countries" if the Fed won't cut after the strong jobs report; frames yields/oil as the story to fix. Gasparino column: Wall Street worried about GOP midterm odds partly on consumer weakness (Home Depot, McDonald's signals).
+
+**Blindspots:**
+- Left sources omit: the OPEC+ production freeze and alternative-route buildup (supply-side adaptation), and the Venezuela oil pact offset.
+- Right sources omit: the tanker strikes Sep 5 and blockade economics — the specific mechanism keeping crude bid; also rarely connect their own "consumer is weak" reporting to the inflation the war is creating.
+- Center sources cover but underplay: that a *strong* NFP + war-inflation is the exact combination that historically forces a central bank's hand — the hawkish-hike path is getting firmer while Trump squeezes the Fed politically.
+
+**Likely Reality:** A live shooting war with the world's chokepoint at ~50% flow. Convergent facts say the supply shock is real and sticky; the political fight over the Fed adds a second, independent pressure on yields. The risk asymmetry into Monday: renewed escalation headlines gap oil/energy up and bonds down; a ceasefire rumor does the reverse. **This is now the market's primary clock — it overrides earnings.**
+
+### 2. Fed: Rate-HIKE Odds Firming While Trump Demands Cuts
+**Bias Spectrum:** Left (CNN) ← Center (Reuters/AP) → Right (NY Post)
+
+**WHERE THEY AGREE:** August payrolls came in strong (+162K, 4.1% unemployment); yields jumped Friday; stocks closed lower on "hawkish Fed bets." FOMC is Sep 16; CPI lands next week — both sides agree that data is now decisive.
+
+**WHERE THEY DIFFER:**
+- **Left Says:** The war + strong jobs = inflation re-acceleration; the Fed may have to hike into an election-pressure campaign. Bond market stress is the real story.
+- **Center Says:** Plainly reports the rate-hike odds resurfacing and the Friday sell-off it caused; flags next week's CPI as the pivot.
+- **Right Says:** Trump's demand for cuts + trade threats; a Fed governor's dovish signal drove Thursday's +580 Dow relief rally when hike odds briefly dropped.
+
+**Blindspots:**
+- Left omits: Trump's political pressure cuts both ways — his threats are a reason the Fed may over-tighten to prove independence.
+- Right omits: a Fed hike into an oil-supply shock would hit the consumer they're already worried about, via mortgages, autos, and capex.
+- Center omits: little — Reuters/AP are closest to the mechanism. Note the internal contradiction nobody resolves: strong jobs (hawkish) + weak retail guidance (LULU -18% Friday, HD/McD signals) = a "hard landing vs. sticky inflation" squeeze where both can be true in different sectors.
+
+**Likely Reality:** The market's hawkish repricing is data-driven and will not be overruled by tweets. Base case for Sep 16 FOMC: no cut, hawkish hold, possibly explicit hike-signal language. That keeps upward pressure on the 10Y — which is the single biggest valuation risk to Thad's bond sleeves (VBND, BND, MAWIX, FXNAX, and the 2031 Treasury).
+
+### 3. Memory Complex Diverges From the Chip Complex (MU, SNDK, STX, WDC)
+**Bias Spectrum:** Left/CNBC-family (Yahoo Finance, AInvest) ← Center (Bloomberg) → Retail-Right (24/7 Wall St, stockminded)
+
+**WHERE THEY AGREE:** While the S&P fell 0.4% Friday on Fed fears, **SanDisk rose ~8–10% and Micron ~4–5%** — AI storage demand + tight NAND supply keeps the pricing cycle accelerating. Intel +4%, AMD +3% Friday — chips "shrugged off" rate-hike odds. The rally is one of the year's dominant trades.
+
+**WHERE THEY DIFFER:**
+- **Bull framing (Yahoo/24-7/stockminded):** Structural AI demand, NAND under-supply, pricing power — "this time is different."
+- **Bear/caution framing (Bloomberg May, AInvest Sep 4):** "The Memory Rally Is Real. But It's a Pricing Story, Not an AI Miracle" — low valuations may be signaling *peak earnings*; May's Bloomberg piece flagged exactly this risk before the July crack that saw SNDK -55%/MU -36% in 29 days. The Aug 6 Reuters piece ("high expectations eclipse strong earnings") is the recurring pattern: good numbers, better expectations.
+
+**Blindspots:**
+- Bulls omit: the July round-trip is precedent — the same tape produced a 30-55% drawdown in 4 weeks this summer. Whales are two-sided: Coatue added MU 19-fold; Tepper trimmed MU 41% (still 15% of his book).
+- Bears omit: pricing contracts rolling over quarter-by-quarter keeps beats landing; the "peak earnings" call has been wrong for four straight quarters.
+- Neither side prices: what a Fed *hike* does to a levered, cyclical, high-multiple complex that trades on 2027 estimates.
+
+**Likely Reality:** Momentum is real but this is the most crowded, most two-sided trade in the portfolio (~$7.8K across MU/SNDK/STX). The pricing story can keep working through September; a hawkish FOMC Sep 16 is the identifiable kill-switch. No fresh sell signal — but no adding either.
+
+### 4. SpaceX Reclaims $2T Valuation; Starship Flight 13 Success, Flight 14 Next
+**Sources:** Gate News (Sep 4), thenextweb, ts2.tech, Startup Fortune — no mainstream-left/right coverage found (blindspot in itself)
+
+**Convergent facts:** Starship Flight 13 returned intact Friday after deploying 20 Starlink V3 satellites — first undamaged heatshield recovered; Raptor relight demonstrated. SpaceX reclaimed a **$2 trillion valuation** this week; Flight 14 is being prepped for a historic orbital attempt (FCC filing), after slipping into September. D1 Capital's 13F showed 61.9% of its book in SpaceX (Q2 filing).
+
+**Blindspots:** Partisan outlets ignored it entirely; financial press treats the $2T mark as pre-IPO narrative rather than a priced asset. Nobody has reconciled a $1.85–2T valuation with Starship cadence economics in public.
+
+**Likely Reality:** Flight 14 orbital success would be the largest single catalyst Thad's SPCX position (~$6.3K, -20.6% from Jul 31 marks) has had all year; a failure reopens the discount. The D1 concentration is the bull signal; the -20.6% Jul-31 drawdown is the entry discount. Watch for a launch date announcement.
+
+### 5. Gold Miners: Best August Since 1994 (+33%); Metal Holds $4,450
+**Sources:** livegoldprices (Sep 2/4), Motley Fool (Sep 2), Sprott Money (Sep 4), AInvest (Sep 5)
+
+**Convergent facts:** Gold steadied above $4,450 into NFP and Hormuz escalation — the safe-haven bid is rebuilding. Newmont jumped 34.5% in August; gold miners closed their strongest August since 1994 (+33%). The "debasement trade" narrative (Treasury intervention chatter) is being revived.
+
+**WHERE THEY DIFFER:** Technicians (Sprott) still frame September as selloff-or-breakout; fundamentalists (Fool, AInvest) argue miners' cash-flow spread makes the $4,400 headline noise — miners are the trade, not bullion.
+
+**Blindspots:** Almost nobody connects this to the *rate-hike* scenario — gold miners rallying +33% in a month while hike odds rise is unusual and implies the market is buying fiscal/debasement risk more than inflation risk. That's a hedge signal, not a yield story.
+
+**Likely Reality:** With war escalation continuing over the weekend, gold and miners start Monday with the wind at their back. NEM, GLDM, PHYS, SGOL, PSLV all benefit; NEM's move has already happened (+34.5% Aug) — don't chase, but don't trim either.
+
+---
+
+## Portfolio News (by theme — Jul 31 CSV is the latest position baseline)
+
+### Energy Complex — XOP, VDE, SHEL, VG, LBRT
+**News:** Oil ended the week higher on renewed US-Iran strikes; diesel at record; Hormuz flows down ~50% from ~20M bpd; OPEC+ froze October output. Crude +60% YTD.
+**Market Implication:** **Bullish** for XOP (+2.83% on the week's last session per Jul 31 CSV), VDE, SHEL. VG (Venture Global LNG) benefits from re-routing demand; LBRT benefits from domestic drilling intensity. War escalation headlines are the gap risk — in Thad's favor for once.
+
+### Memory/Semis — MU, SNDK, STX, INTC, AMD, TSM, LITE
+**News:** SNDK +8–10%, MU +4–5%, INTC +4%, AMD +3% Friday while the index fell. Nvidia's $5B Intel stake now worth ~$30B; Intel foundry momentum (Nvidia Feynman packaging deal, Google TPU orders) continues.
+**Market Implication:** **Bullish but crowded.** INTC ($91.13 Jul 31, +99.6% open profit then) keeps finding customer wins. FOMC Sep 16 is the risk date for the whole complex.
+
+### AI Data-Center Power — BE, CORZ, CEG, APLD, HUT, WULF, RIOT, CLSK, CIFR, SEI, GEV, VRT
+**News:** No fresh BE/APLD headlines found this week (last: BE-Brookfield financing expanded to $25B in July; CORZ-AMD 1.1–2.5GW deal July–August; CEG raised FY guidance in August). BTC resilience (~$80K) supports the miner cohort; ETF inflows ($987M last week) keep the bid under CORZ/HUT/WULF/RIOT/CLSK/CIFR.
+**Market Implication:** **Neutral-to-bullish.** Rate-hike risk hits these high-duration names first — if 10Y takes out 5%, this is the sleeve that bleeds first. CEG guidance raise is the quality anchor.
+
+### Crypto — BTC (~$80K), COIN, FBTC, FETH, XYZ
+**News:** Bitcoin held ~$79,900–80,000 all week (+~2.5%), defying the $96-oil war spike. US spot Bitcoin ETFs pulled in ~$987M for the week; Standard Chartered and Strategy widening institutional access. Headlines frame it as "surviving a perfect storm of bearish news."
+**Market Implication:** **Neutral-to-mildly-bullish.** Inflows into a -36%-off-high asset during a shooting war is genuine demand, not leverage. FOMC Sep 16 and CPI next week are the tests.
+
+### Mega Caps — AMZN, GOOGL, TSLA, NFLX, AAPL, DIS, SPOT
+**News:** Tesla -5.92% Friday ($354.08, led megacap declines; no single catalyst confirmed in coverage — high-beta + rate fears). Netflix -5.35% ($78.25, post-split). Amazon nearly flat (-0.15%, $258.51) — remarkably resilient. Alphabet $338.46.
+**Market Implication:** **Neutral.** AMZN's relative strength on a hawkish day is the standout. TSLA remains the portfolio's most momentum-fragile name (-30.4% open loss at Jul 31 marks).
+
+### Bonds & Rates — VBND, BND, FXNAX, MAWIX, 2031 Treasury
+**News:** 10Y at 4.78%, 52-week high, racing toward 5% on war-inflation + hawkish Fed bets. Bear steepening continues (History Rhymes: 10Y spread vs 13-week bill +1.03).
+**Market Implication:** **Bearish.** This is the portfolio's most exposed theme — every basis point toward 5% hurts the bond sleeves and the 2007-rhyme comparison. Watch 5.00% as the trigger level flagged in the weekly review.
+
+### Gold/Metals — NEM, GLDM, PHYS, SGOL, PSLV
+**News:** See Story 5 — miners +33% in August (best since 1994), metal $4,450, safe-haven bid rebuilding on Hormuz.
+**Market Implication:** **Bullish**, with NEM already extended (+34.5% in August).
+
+### Healthcare/Consumer — JNJ, PM, KO, WMT, HD, GEHC, TEM, BFLY, HTFL, RXRX, CBLL, YUM, STZ, BUD, TAP, CART, U, APP, SPOT
+**News:** No fresh headline risk found this week. Context: LULU -18% Friday on slashed guidance + CEO handoff is the consumer-weakness datapoint; Gasparino reports Wall Street reading HD/McDonald's as midterm-relevant softness.
+**Market Implication:** **Neutral.** Staples are doing their defensive job in a hawkish tape. Watch HD (held) against the consumer-weakness narrative on any guidance news.
+
+### SpaceX — SPCX
+**News:** See Story 4. $2T valuation reclaimed; Flight 14 orbital attempt upcoming.
+**Market Implication:** **Bullish setup into a binary event** (launch date announcement → launch).
+
+---
+
+## Blindspot Report
+
+1. **The Fed's reaction function is being reported as two separate stories.** Left press covers "war = inflation = hawkish Fed." Right press covers "Trump demands cuts." Almost nobody connects them: political pressure plus war-inflation makes a September surprise hike MORE likely, not less — and hike odds are what 24/7 Wall St says chips "shrugged off" Friday. They won't shrug off an actual hike.
+2. **Consumer data contradicts NFP — both can't drive the same Fed.** Strong payrolls (+162K) alongside LULU -18% guidance cuts and HD softness means a K-shaped economy. If CPI next week confirms services inflation, the hike case hardens; if it confirms consumer cooling, equities get the "Fed saved" relief rally. This is THE trade-setter for Sep 16.
+3. **Gold miners +33% in a hawkish month** is being read as a bullion story; it's more consistent with debasement/fiscal risk pricing. If that reading is right, it's a warning about the long end (10Y→5%) that equity-obsessed coverage is missing.
+4. **Bessent's "30M barrels" line (Sep 6, weekend)** — if accurate, Iran's export clock runs out within weeks; that's a supply-shock deadline the Sunday shows haven't fully priced.
+5. **SpaceX has no institutional coverage** despite a $2T mark and D1's 61.9% concentration — retail-only price discovery is itself the risk.
+
+## Pre-Market Outlook (Monday, Sep 7 open)
+
+**Bias: Neutral-to-cautiously-bullish equities / Bearish bonds / Bullish energy & gold.**
+
+- Weekend escalation continued (Sep 5 tanker strikes, Sep 6 Bessent blockade comments). Monday likely opens with energy bid, yields firm, defensives/staples steady, high-beta tech tested.
+- Thad's book is oddly well-shaped for this tape: energy (XOP/VDE/SHEL/VG), gold/metals (NEM + miners + silver), and resilient AMZN are the hedges; the memory complex and crypto miners are the pro-cyclical exposure that a hawkish CPI/FOMC week will pressure.
+- Calendar that matters: **CPI next week, FOMC Sep 16, claims cycle Sep 10** (buy window opens Monday per the claims playbook — normal week).
+- Key levels: 10Y 5.00% (trigger from weekly review), WTI $100 (trigger), VIX 20 (trigger). None hit Friday; all are one war-headline away.
+- SpaceX: watch for a Flight 14 launch-date announcement — catalyst for SPCX.
+
+**Suggested focus for the week:** protect bond-sleeve duration decisions until after CPI; let energy/gold run; no adds to memory complex or crypto miners before FOMC.
+
+---
+*Sources by bias — Left: CNN, Globe and Mail; Center: Reuters, AP, Bloomberg, OilPrice, Al-Monitor, CNA, Utility Dive, Data Center Knowledge; Right: NY Post, Fox News. Market data: Friday Sep 4 closes + Sep 5–6 weekend reporting. Portfolio baselines: Fidelity CSV Jul 31, 2026 (latest available on Desktop).*
