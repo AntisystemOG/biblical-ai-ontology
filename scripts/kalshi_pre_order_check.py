@@ -321,6 +321,18 @@ def main():
             print("!! RED FLAG: your side is the UNLIKELY side per our forecast model !!")
     print(f"Cash available: ${bal:.2f} -> order {'OK' if cost <= bal else 'EXCEEDS CASH'}")
 
+    # Regime-shift blackout (improvement 2, Sep 5): no new entries during forecast instability
+    try:
+        import kalshi_db as _kdb2
+        _today = datetime.now().strftime("%Y-%m-%d")
+        for _s in _kdb2.all_state():
+            if _s["key"].startswith("regime_shift_") and _today in str(_s["value"]):
+                print(f"!! REGIME BLACKOUT: {_s['key']} active today - {_s['value']}")
+                print("   New entries during a revision window need Thad override.")
+                break
+    except Exception:
+        pass
+
     # SIZING GATE (added Aug 30 after Aug 29 MIA oversize: 43sh @ $0.06 = $2.70 ~5% of cash,
     # plus a second same-city leg = ~8% total. Lottery cap is 2%.)
     LOTTERY_CAP_PCT = 0.02   # cheap-band YES lotteries: 2% of cash max
