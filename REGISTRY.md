@@ -142,3 +142,8 @@ sessions_spawn(
 - Manager fix: "Alexander Aschenbrenner (SIT)" is actually Leopold Aschenbrenner, Situational Awareness LP (fund imploded late Jul 2026, sold most stocks to Citadel). Corrected in agents/whale-watch.md.
 - Key overlaps: MU (4/5 managers), TSM (4/5), AMZN + SPCX + GOOG (SPCX: D1 61.9%), INTC (Coatue NEW), AI-infra cluster (CORZ/APLD/RIOT/CLSK/SEI/BE/HUT/CEG/VRT).
 - Note: registry table above lists whale-watch as "Daily 6:00 AM" but agents/whale-watch.md says quarterly on 13F deadline dates - needs Thad confirmation of intended cadence.
+
+## 2026-09-06 02:55 CDT - watchdog v2 (Spock, gateway flap)
+- gateway-watchdog cron (dce67810): script payload (no model), */15 America/Chicago, probes x3 over ~2min, restarts via schtasks, APPEND-ONLY memory line on restart, silent when healthy, Telegram announce on restart. Owned by dashboard session.
+- NEW Windows task 'OpenClaw Watchdog': every 15 min, runs scripts/gateway_watchdog.ps1 (gateway-independent recovery; survives full gateway death). Shares flap-breaker marker with the cron watchdog. Happy path tested (exit 0 in 1s).
+- Anti-flap: gateway process age <3min = never restart (startup window ~2min); no restart within 10min of the last one.
