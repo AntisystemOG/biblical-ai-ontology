@@ -4,6 +4,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 
 <!-- TOC (auto-generated) -->
 - Memory Dream
+- Whale Watch
 <!-- /TOC -->
 
 ---
@@ -49,3 +50,86 @@ Saturday was a day of two ledgers, and I dreamed them as twin rivers.
 - Open threads: station-convention decision (KORD vs KMDW) parked for Thad; entry-hour optimizer + day-ahead entries validating through the paper week; `kalshi_edge.db` 0-byte mystery; board cost-column bug; digest.py FRED history fix.
 
 *And tomorrow, the ridge — Denver's 94F — would have been right. The market knew the day before we did, again. The lesson is never "we were wrong about heat"; it is "we were wrong about which day."*
+
+---
+
+<!-- section:Whale Watch -->
+## Whale Watch (06:07 CT)
+
+# Whale Watch
+
+**Run:** Sunday, Sep 6, 2026 — 6:05 AM CT | **Data:** Q2 2026 13F filings (holdings as of Jun 30, 2026, filed Aug 14, 2026) vs portfolio CSV Jul-31-2026 | **Sources:** 13f.info holdings data (SEC EDGAR accessions 0000919574-26-005520, 0001172661-26-003662, 0001656456-26-000003, 0000919574-26-005478, 0000935836-26-000418)
+
+## TL;DR
+
+- **Tepper's top 4 positions are ALL in your book**: AMZN (#1, $1.19B), MU (#2, $1.13B), TSM (#3, $788M), GOOG (#4, $654M). His only bearish position is an AAPL put ($242M).
+- **Coatue's #1 position is TSM ($4.26B)** and #3 is MU ($3.63B) — plus 13 more overlaps including a $1.12B HUT (Hut 8) position, 12x bigger than yours relative to fund size.
+- **D1's #2 position is CART/Instacart ($1.07B)**, and its #1 is SpaceX ($21.5B — 62% of the fund). You own SPCX shares too.
+- **Crowded-trade warning:** memory (MU/SNDK/STX) is the most whale-crowded corner of your portfolio — and the one that just blew up Situational Awareness LP.
+- Point72 overlaps nearly everything (3,900+ positions) — treat as noise, not signal.
+
+## Fund-by-Fund
+
+### Appaloosa LP (David Tepper) — $7.7B, 27 positions
+Tepper's book is a concentrated bet you're already making:
+
+| His rank | Ticker | His value | In your portfolio? |
+|---|---|---|---|
+| #1 | AMZN | $1,192M | ✅ Yes ($22.3K + Roth) |
+| #2 | MU | $1,125M | ✅ Yes ($6.8K) |
+| #3 | TSM | $788M | ✅ Yes (Roth $387) |
+| #4 | GOOG | $654M | ✅ Yes ($2.0K) |
+| — | AMD | $115M | ✅ Yes ($3.4K) |
+| — | AAPL | **PUT** $242M | ⚠️ You own AAPL long |
+
+Also in his book (not yours): UBER, EWY (Korea ETF), META, VST, NVDA, NRG. **His #1 bearish position is an AAPL put** — worth knowing since you hold AAPL shares.
+
+### Coatue Management (Philippe Laffont) — $48.6B, 66 positions
+15 of 66 positions overlap your portfolio. His top-10: TSM, LRCX, MU, SPCX, AMAT, GEV, AMZN, AVGO, ETN, GOOGL.
+
+| Ticker | His value | Note |
+|---|---|---|
+| TSM | $4,258M | **His #1 position** |
+| MU | $3,627M | #3 |
+| GEV | $3,005M | GE Vernova — grid/power theme |
+| AMZN | $2,821M | |
+| GOOGL | $1,735M | |
+| INTC | $1,687M | Intel is a whale favorite |
+| CEG | $1,151M | Constellation Energy |
+| HUT | $1,122M | **Hut 8 — you own it too** |
+| APP | $603M | AppLovin |
+| SPOT | $602M | |
+| NFLX | $336M | |
+| GOOG | $321M | |
+| VRT | $270M | Vertiv |
+| AMD | $56M | |
+| TSLA | $25M | |
+
+### D1 Capital (Daniel Sundheim) — $34.8B, 55 positions (top-10 = 77% of book)
+- **#1 SPCX (SpaceX) $21.5B — 62% of the entire fund.** You own SPCX ($6.3K across accounts) — same boat as Sundheim's largest position.
+- **#2 CART (Instacart) $1,068M** — you own CART.
+- #8 DHR (Danaher) $435M — you own DHR.
+- Other overlaps: APP $345M, DIS $277M, GOOGL $264M, SPOT $261M, TSLA $169M, AMZN $150M, U (Unity) $102M, GOOG $30M, STX $29M.
+- Not in your book: JHX, NU, JCI, MELI, USFD, SHW, RDDT.
+
+### Point72 (Steve Cohen) — $90.7B, 3,923 rows (multi-strategy — overlap = noise)
+Biggest single-stock longs in your book: AMZN $1.19B long, AMD $907M, PG $935M, STX $820M, TSM $786M, MU $617M, INTC $480M. His #2 fund-wide position is CRDO (Credo, $1.74B) — not in your portfolio. **Hedge warning:** he runs large PUT books on JNJ ($484M), TSLA ($199M), MU ($381M), SNDK ($168M), APP ($99M) — Point72 hedges everything, so these are positioning, not necessarily bearish conviction.
+
+### Situational Awareness LP (Leopold Aschenbrenner) — HISTORICAL ONLY
+His final 13F: 26 positions, $20.2B — **SNDK ($5.67B) + MU ($5.57B) = ~55% of the book**, plus BE ($1.94B), TSM ($1.29B), CORZ, APLD, RIOT, CLSK — 8 of his positions are in your portfolio. The fund then sold its entire public stock book to Citadel in late July 2026 after the AI/memory trade unraveled (~67% drawdown month). **Lesson: the memory trade you share with the whales was crowded enough to destroy its biggest bull. Size accordingly.**
+
+## Overlap Themes
+
+1. **Memory/semis (MU, SNDK, STX, TSM)** — most crowded whale theme in your book. Tepper #2, Coatue #1/#3, SA ~55%. You're at ~$16.8K across MU/SNDK/STX — riding a crowded trade that already claimed one fund.
+2. **AI power (GEV, CEG, VRT, BE)** — Coatue holds all four; you own all four too.
+3. **Amazon + Alphabet** — long at every fund tracked; your largest single-name exposure (AMZN $22.3K, GOOGL/GOOG $4.8K) matches the crowd.
+4. **Digital-asset infra (HUT, RIOT, CORZ, APLD, CLSK, CIFR, WULF)** — Coatue's $1.1B HUT is the standout conviction overlap; Point72/SA touched the rest smaller.
+5. **Consumer/tech (CART, APP, SPOT, DIS, U, DHR)** — D1's specialty; CART is his #2.
+
+## Watch-Outs
+
+- **AAPL:** Tepper's largest bearish position is an AAPL put ($242M).
+- **Memory concentration:** MU + SNDK + STX ≈ 8% of your equity book; the whale crowd is longest exactly here (and the SA implosion shows how fast it can turn).
+- **Stale data:** 13F positions are as of Jun 30 — two months old; Tepper/Coatue may have already trimmed memory into the August run-up.
+
+*Point72/D1/Appaloosa/Coatue data: 13f.info (SEC EDGAR). Portfolio: Fidelity CSV Jul-31-2026. Values in $ thousands where noted "K", millions "M".*

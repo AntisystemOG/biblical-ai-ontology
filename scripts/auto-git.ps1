@@ -7,7 +7,7 @@ param(
     [string]$Action
 )
 
-$workspace = "C:\Users\thada\OneDrive\Desktop\Spocks Reports\workspace"
+$workspace = "C:\Users\thadd\.openclaw\workspace"
 $repoUrl = "https://github.com/AntisystemOG/spock-workspace.git"
 
 # Check if git exists
