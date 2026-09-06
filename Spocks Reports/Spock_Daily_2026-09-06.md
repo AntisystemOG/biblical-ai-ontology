@@ -5,6 +5,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 <!-- TOC (auto-generated) -->
 - Memory Dream
 - Whale Watch
+- History Rhymes
 <!-- /TOC -->
 
 ---
@@ -133,3 +134,90 @@ His final 13F: 26 positions, $20.2B — **SNDK ($5.67B) + MU ($5.57B) = ~55% of 
 - **Stale data:** 13F positions are as of Jun 30 — two months old; Tepper/Coatue may have already trimmed memory into the August run-up.
 
 *Point72/D1/Appaloosa/Coatue data: 13f.info (SEC EDGAR). Portfolio: Fidelity CSV Jul-31-2026. Values in $ thousands where noted "K", millions "M".*
+
+---
+
+<!-- section:History Rhymes -->
+## History Rhymes (07:01 CT)
+
+**Data through Friday, Sep 4, 2026 close (yfinance).** Markets closed Sunday; Monday Sep 7 is Labor Day — next session is Tuesday Sep 8, a holiday-shortened week (claims Thursday, FOMC Sep 15-16).
+
+### Current Market Snapshot (Fri Sep 4 close)
+
+| Metric | Level | 1D | 1M | 3M | 6M |
+|---|---|---|---|---|---|
+| S&P 500 | 7,718.6 | -0.4% | -0.5% | +4.2% | +13.0% |
+| Nasdaq | 26,507 | -0.3% | -0.7% | +2.2% | +16.5% |
+| Dow | 53,414 | -0.5% | -1.2% | +5.2% | +11.4% |
+| Russell 2000 | 2,975.7 | +0.3% | **-1.9%** | +4.2% | +15.1% |
+| 10Y Treasury | **4.78%** | +3bp | +12bp | +23bp | +70bp |
+| 2Y Treasury | **4.55%** | +4bp | +19bp | +27bp | +88bp |
+| 13-wk T-bill | 3.76% | +2bp | +5bp | +13bp | +16bp |
+| VIX | 14.53 | +1.5% | -2.5% | -23.2% | -31.3% |
+| USD Index | 99.16 | +0.2% | -0.4% | -0.9% | +0.2% |
+| Crude (WTI) | **$91.48** | +0.2% | **+17.0%** | +0.2% | +0.6% |
+| Gold | $4,476.6 | -0.3% | +3.1% | +3.3% | -13.0% |
+| Bitcoin | $79,923 | +0.1% | **+23.9%** | +24.9% | +17.3% |
+| NVDA | $230.36 | +0.8% | +2.9% | +10.4% | +25.8% |
+| MSFT | $499.70 | -2.0% | +0.1% | **+21.6%** | +22.2% |
+| AAPL | $319.97 | -2.5% | +2.2% | +6.2% | +23.2% |
+| TSLA | $354.08 | **-5.9%** | +7.8% | **-13.4%** | -12.7% |
+
+*Yields quoted raw percent per yfinance (Aug 27 gotcha honored); bp changes computed from levels. 6M % changes are relative, so +17.25% on the 10Y = +0.70pp (4.08%→4.78%).*
+
+### The Setup in One Paragraph
+
+Equities sit at/near record highs (S&P 7,718) after a strong 6 months (+13%), but momentum has stalled (-0.5% over the past month) just as the bond market — not the Fed — is repricing inflation risk: Friday's hot August payrolls beat sent the 2Y (+19bp/mo) and 10Y (+70bp over 6 months) higher **while** the front bill (3.76%) says the Fed still cuts. Meanwhile crude just jumped +17% in a month to $91, gold holds near $4,476 (more than double its 2024 level), Bitcoin ripped +24% in a month, and the VIX at 14.5 signals near-total complacency. Cutting into rising long yields, an oil spike, and record concentration is one of the rarest — and most historically loaded — macro textures there is.
+
+### The Distinctive Signature: Fed Cutting, Bond Vigilantes Rising
+
+The curve's shape (3M 3.76% < 2Y 4.55% < 10Y 4.78%) with the 2Y *rising fastest* is a market pricing **cuts now, re-tightening later** — an easing Fed that the bond market expects to be forced to reverse. That exact forward-path shape has appeared only a handful of times:
+
+- **1999-2000** — Fed cut fall 1998 (LTCM), then 10Y went 4.6%→6.8% while the Fed re-hiked to 6.5%; equities rallied into March 2000, then broke.
+- **1980-81** — brief easing into year-end, inflation forced re-tightening, double-dip.
+- **1967-68** — Fed eased as inflation re-accelerated; gold ran; the bill came due 1968-70.
+
+### Key Historical Rhymes (ranked)
+
+**1. 1999-2000 dot-com analog — similarity: HIGH (the primary rhyme).**
+The full checklist is checking boxes again: CAPE ~40-45 (approximate; top-1% of 155 years, vs ~44 at the 2000 peak), record top-10 index concentration (~36-40% vs ~27% in 2000), tech ≈ one-third of the index, speculative retail temper (Bitcoin +24%/month echoes 1999 IPO mania), mega-cap growth dominance (MSFT +21.6%/3M = the Cisco trade), and — critically — **the same rates shape**: Fed easing bias priced while intermediate/long yields grind higher into the top. In 1999-2000 the "this time is different" story was the internet; today it's AI. The market topped in March 2000 not on bad news but on rising long yields + a Fed that had stopped cutting. The rhyme's key lesson: **watch the 10Y and the Fed's September statement, not the earnings headlines.**
+
+**2. 2007 — similarity: MODERATE-HIGH (the macro-texture rhyme).**
+September 2007: crude breaking toward $90-100 records (today: $91), the Fed mid-cutting-cycle, S&P at all-time highs (top came Oct 9, 2007), VIX 13-15 (today: 14.5), and stress hiding beneath a calm surface (then subprime/credit; now 4.78% long yields + $91 oil pressing margins). The 2007 rhyme says: low VIX + record crude + early Fed cuts is a **top-forming texture, not a launch pad**. Energy leadership while tech wobbles (TSLA -13.4%/3M, small caps -1.9%/1M) also echoes 2007's rotation into commodities.
+
+**3. 1972-73 Nifty Fifty — similarity: MODERATE (the concentration + oil-shock rhyme).**
+Extreme large-cap-quality concentration (Mag 7 ≈ Nifty Fifty), an energy price spike building (+17% crude in a month), a Fed easing while inflation re-accelerates. 1972's concentrated leaders then spent 1973-74 under the twin squeeze of an oil shock and rising yields. Lesson: concentrated quality leaders are **not** a safe haven when the shock is inflationary — they derate with everything else.
+
+**4. 1987 — similarity: MODERATE (the momentum + seasonality rhyme).**
+A relentless 1H melt-up (S&P +13%/6M vs 1987's similar arc), long yields grinding higher (1987: 7%→10%; today 4.08%→4.78% in 6 months), gold strong into the peak, and September — the month of the 1987 breakdown after the Aug 25 top. Today's mechanical flows (vol-targeting, CTAs, options gamma) play the portfolio-insurance role. 1987 is the rhyme that says: **September with rising yields after a melt-up is historically the most dangerous month of the year to be maximally long at low hedge cost.**
+
+**5. Counter-scenario (the base-rate check): 1994-95 / 2013 / Oct 2023.**
+Sometimes a bond-led repricing is just that: 1994's 10Y surge flattened equities for a year but produced no bear — followed by the 1995 soft-landing melt-up; 2013 and Oct 2023's 5% scare both resolved with equities higher once the yield spike passed. If the AI earnings engine (NVDA +25.8%/6M) keeps compounding, this is the benign path: a 5-10% yield-driven chop, not a 2000.
+
+### Pattern Scorecard
+
+| Dimension | Sep 2026 reading | Closest historical match | Similarity |
+|---|---|---|---|
+| Valuation (CAPE ~40-45, top-10 ~36-40%) | Extreme | Mar 2000 | High |
+| Leadership concentration (Mag 7 = index) | Extreme | 1972 / 2000 | High |
+| Fed easing bias + rising 2Y/10Y | Present | 1999-2000 | High |
+| Oil shock building ($91, +17%/mo) | Present | 1973 / 2007-08 | Moderate |
+| VIX complacency (14.5) at highs | Present | Sep-Oct 2007 | Moderate-High |
+| Gold ~2x in ~2 years (debasement bid) | Present | 1970s decade-long | Moderate |
+| 1M speculative burst (BTC +24%) | Present | Late 1999 / 2020-21 | Moderate |
+| September after melt-up, rising yields | Present | Sep 1987 / Sep 2007 | Moderate-High |
+| Earnings engine still compounding (AI caps) | Present | 1995 / 1997 | The counterweight |
+
+### What the Rhymes Agree On (the convergent signals)
+
+1. **The 10Y at 4.78% is the market's real Fed.** In 2000, 2007, and 1987, equity tops arrived as long yields peaked, not as news soured. Watch 4.9-5.0% as the zone where every rhyme above turns hostile.
+2. **A September statement that hints "done cutting" is the trigger** — that was the March 2000 mechanic exactly.
+3. **Concentration cuts both ways**: the same Mag-7 weight that lifted the index is the mechanism that would amplify a downside move; the 1972-73 rhyme says quality does not hedge an inflation shock.
+4. **Oil at $91 with a +17%/month velocity is the quiet tell** — in 1973 and 2007 the energy bid preceded the equity problem by weeks-to-months.
+5. **The 1994-95 counter-scenario is live** and would look like sideways chop with painful bond headlines, then new highs. The discriminator between 2000-path and 1994-path: **AI-capex earnings delivery through Q3-Q4 reports.**
+
+### Bottom Line
+
+The Sep 2026 texture rhymes most strongly with **1999-2000 (valuation + rates shape + concentration)** overlaid on **2007 (oil, VIX complacency, cutting Fed)**, with 1987's September seasonality as the near-term risk window. History's verdict on this combination: the market doesn't die of bad news — it dies of a repriced discount rate while the news is still good. The bear case doesn't need a recession to start; it needs the 10Y to keep doing what it has done for six straight months. Respect the 1994-95 counter-scenario (chop, then higher) if AI earnings keep landing — but at VIX 14.5, hedges have rarely been this cheap relative to the density of the rhymes.
+
+*Pattern analysis, not a prediction and not investment advice. Approximate valuation figures (CAPE, concentration, forward P/E) carried from the agent's prior-run baselines; price/yield data is live yfinance through Sep 4, 2026.*
