@@ -264,8 +264,17 @@ def main():
         win = f"max temp IN {lo}-{hi}" if side == "YES" else f"max temp NOT in {lo}-{hi}"
         series = ticker.split("-")[0]
         f = _live_nws(series, ticker)
+        # Model upgrade Sep 4: apply learned city bias + per-city sigma
+        try:
+            import kalshi_db as _kdb
+            _code = series.replace("KXHIGH", "")
+            if f is not None:
+                f = f + _kdb.city_bias(_code)
+            _sig = _kdb.city_sigma(_code)
+        except Exception:
+            _sig = SIGMA_WEATHER
         if f is not None:
-            p_in_nws = p_below(f, hi, SIGMA_WEATHER) - p_below(f, lo - 1, SIGMA_WEATHER)
+            p_in_nws = p_below(f, hi, _sig) - p_below(f, lo - 1, _sig)
             odds = (1 - p_in_nws) if side == "NO" else p_in_nws
         # MARKET-CENTER SANITY (NY Aug 31 lesson: TWC premium is already inside
         # market prices - buying bands above market center on NWS+TWC double-counts)
@@ -283,8 +292,16 @@ def main():
             win = f"max > {thr}" if side == "YES" else f"max <= {thr}"
         series = ticker.split("-")[0]
         f = _live_nws(series, ticker)
+        try:
+            import kalshi_db as _kdb
+            _code = series.replace("KXHIGH", "")
+            if f is not None:
+                f = f + _kdb.city_bias(_code)
+            _sig = _kdb.city_sigma(_code)
+        except Exception:
+            _sig = SIGMA_WEATHER
         if f is not None and thr:
-            p_yes_nws = p_below(f, thr, SIGMA_WEATHER) if st == "less" else 1 - p_below(f, thr, SIGMA_WEATHER)
+            p_yes_nws = p_below(f, thr, _sig) if st == "less" else 1 - p_below(f, thr, _sig)
             odds = p_yes_nws if side == "YES" else 1 - p_yes_nws
     elif st == "greater_or_equal":
         thr = m.get("floor_strike") or m.get("cap_strike")

@@ -52,6 +52,15 @@ def _ensure_schema(conn):
       blended REAL, market_center REAL, model_center REAL,
       ci_low REAL, ci_high REAL, note TEXT, content_hash TEXT UNIQUE
     );
+    CREATE TABLE IF NOT EXISTS forecast_revisions (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      city TEXT NOT NULL, target_date TEXT NOT NULL, nws REAL NOT NULL,
+      ts TEXT NOT NULL, revision_vs_prior REAL
+    );
+    CREATE TABLE IF NOT EXISTS market_semantics (
+      ticker TEXT PRIMARY KEY, strike_type TEXT,
+      lo REAL, hi REAL, fetched_at TEXT
+    );
     """)
     conn.commit()
 
@@ -152,6 +161,72 @@ def all_state():
     conn = connect()
     rows = conn.execute("SELECT key, value, updated_at, updated_by FROM model_state ORDER BY key").fetchall()
     conn.close(); return [dict(r) for r in rows]
+
+# ---------- model parameters (bias + sigma per city, learned nightly) ----------
+def city_bias(code, default=0.0):
+    """Learned NWS-vs-actual bias for a city (positive = NWS runs hot).
+    Requires 3+ graded days - a 1-day bias is noise, not signal (NY Sep 5 lesson)."""
+    v = get_state(f"city_bias_{code}")
+    if not v:
+        return default
+    try:
+        n_days = int(str(v).split("over last")[1].strip().split()[0])
+        if n_days < 3:
+            return default
+        return float(str(v).split("F")[0].replace("+", ""))
+    except Exception:
+        return default
+
+def city_sigma(code, default=2.0):
+    """Learned per-city forecast sigma (falls back to default until 3+ graded days)."""
+    v = get_state(f"city_sigma_{code}")
+    if not v:
+        return default
+    try:
+        n_days = int(str(v).split("over last")[1].strip().split()[0])
+        if n_days < 3:
+            return default
+        return max(1.5, float(str(v).split("F")[0].replace("+", "")))
+    except Exception:
+        return default
+
+def blended_center(code, nws_forecast, market_center=None, twc_adj=1.5):
+    """Improvement 3: blend market center (primary) with bias-corrected NWS.
+    Weights: market 0.6 / model 0.4 - the learning loop tunes these from accuracy data."""
+    bias = city_bias(code)
+    sigma = city_sigma(code)
+    model_c = nws_forecast + twc_adj + bias
+    if market_center is None:
+        return model_c, model_c, sigma
+    blended = round(0.6 * market_center + 0.4 * model_c, 1)
+    return blended, model_c, sigma
+
+def record_revision(city, target_date, nws):
+    """Improvement 5: track forecast revisions; flag regime shifts (>4F move)."""
+    conn = connect()
+    ts = _now()
+    prior = conn.execute("SELECT nws FROM forecast_revisions WHERE city=? AND target_date=? ORDER BY ts DESC LIMIT 1",
+                         (city, target_date)).fetchone()
+    rev = (nws - prior["nws"]) if prior else None
+    conn.execute("INSERT INTO forecast_revisions (city,target_date,nws,ts,revision_vs_prior) VALUES (?,?,?,?,?)",
+                 (city, target_date, nws, ts, rev))
+    conn.commit(); conn.close()
+    if rev is not None and abs(rev) > 4.0:
+        set_state(f"regime_shift_{city}", f"{ts}: NWS revised {rev:+.1f}F for {target_date} - widen sigma x1.75, shrink stakes", by="kalshi_learn")
+        return True
+    return False
+
+def market_semantics(ticker):
+    conn = connect()
+    r = conn.execute("SELECT strike_type, lo, hi FROM market_semantics WHERE ticker=?", (ticker,)).fetchone()
+    conn.close()
+    return (r["strike_type"], r["lo"], r["hi"]) if r else None
+
+def save_market_semantics(ticker, strike_type, lo, hi):
+    conn = connect()
+    conn.execute("INSERT OR REPLACE INTO market_semantics (ticker,strike_type,lo,hi,fetched_at) VALUES (?,?,?,?,?)",
+                 (ticker, strike_type, lo, hi, _now()))
+    conn.commit(); conn.close()
 
 # ---------- snapshots / forecasts ----------
 def record_snapshot(event, market, yes_bid=None, yes_ask=None, no_bid=None, no_ask=None, volume=None, ts=None):

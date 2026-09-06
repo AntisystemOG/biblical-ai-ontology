@@ -154,10 +154,24 @@ for code, pairs in per_city.items():
                 n = None
             if n is not None:
                 errs.append(n - a)
+                # Improvement 5: forecast-revision tracking (regime-shift detector)
+                try:
+                    shifted = db.record_revision(cname, d, n)
+                    if shifted:
+                        stats["learnings"] += 1
+                except Exception:
+                    pass
     if errs:
         bias = round(sum(errs) / len(errs), 2)
         db.set_state(f"city_bias_{code}", f"{bias:+.2f}F over last {len(errs)} graded days (positive = NWS runs hot)", by="kalshi_learn")
         stats["bias"] += 1
+        # Improvement 2: per-city sigma (std of errors) once we have 3+ graded days
+        if len(errs) >= 3:
+            mean = sum(errs) / len(errs)
+            var = sum((e - mean) ** 2 for e in errs) / len(errs)
+            sigma = round(var ** 0.5, 2)
+            db.set_state(f"city_sigma_{code}", f"{sigma:.2f}F over last {len(errs)} graded days", by="kalshi_learn")
+            stats["bias"] += 1
 conn.close()
 
 print(f"kalshi_learn {now:%Y-%m-%d %H:%M}: {stats}")

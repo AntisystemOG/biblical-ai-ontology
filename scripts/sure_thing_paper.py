@@ -10,6 +10,7 @@ sys.path.insert(0, r"C:\AI Projects\Prediction Market\Kalshi")
 sys.path.insert(0, r"C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner")
 from kalshi_client import Kalshi
 from weather_predictor import fetch_nws_forecast, CITIES
+import kalshi_db as db
 
 HIST = Path(r"C:\AI Projects\Prediction Market\Kalshi\Kalshi Edge Scanner\data\weather\paper_trader\history.json")
 SERIES_TO_CITY = {
@@ -76,7 +77,12 @@ def main():
         if nws_high is None:
             print(f"  NWS-FETCH-FAILED {city} - no temp in period")
             continue
-        adjusted = nws_high + 1.5  # TWC premium (documented); downward caps via city rules not applied here (clear-sky ridge case)
+        adjusted = nws_high + 1.5  # TWC premium
+        # Improvements 1+2: apply learned city bias + per-city sigma
+        bias = db.city_bias(code)
+        sigma = db.city_sigma(code)
+        adjusted = adjusted + bias
+        SIGMA_F = sigma
         best = None
         seen = 0
         rej = {"no_ask": 0, "price": 0, "odds": 0, "cushion": 0}
@@ -107,8 +113,50 @@ def main():
                     continue
                 z = cushion / SIGMA_F
                 win_prob = norm_cdf(z)
+            elif tail.startswith("T"):
+                # Improvement 4: T-markets via semantics cache (rules_primary resolved once, stored in DB)
+                sem = db.market_semantics(ticker)
+                if sem is None:
+                    try:
+                        mm = c.get_market(ticker)
+                        mm = mm.get("market", mm) if isinstance(mm, dict) else {}
+                        stype = mm.get("strike_type")
+                        thr = mm.get("floor_strike") or mm.get("cap_strike")
+                        if stype == "greater" and thr is not None:
+                            sem = ("greater", float(thr), None)
+                            db.save_market_semantics(ticker, "greater", float(thr), None)
+                        elif stype == "less" and thr is not None:
+                            sem = ("less", None, float(thr))
+                            db.save_market_semantics(ticker, "less", None, float(thr))
+                    except Exception:
+                        sem = None
+                if sem is None:
+                    rej["cushion"] += 1
+                    continue
+                stype, s_lo, s_hi = sem
+                seen += 1
+                if stype == "greater":
+                    dist = adjusted - s_lo
+                    if dist >= MIN_CUSHION:
+                        direction, price, cushion = "YES", yes_ask, dist
+                    elif -dist >= MIN_CUSHION:
+                        direction, price, cushion = "NO", no_ask, -dist
+                    else:
+                        rej["cushion"] += 1
+                        continue
+                else:
+                    dist = s_hi - adjusted
+                    if dist >= MIN_CUSHION:
+                        direction, price, cushion = "YES", yes_ask, dist
+                    elif -dist >= MIN_CUSHION:
+                        direction, price, cushion = "NO", no_ask, -dist
+                    else:
+                        rej["cushion"] += 1
+                        continue
+                z = cushion / SIGMA_F
+                win_prob = norm_cdf(z)
             else:
-                rej["cushion"] += 1  # T-markets excluded: threshold semantics ambiguous without rules_primary
+                rej["cushion"] += 1
                 continue
             if win_prob < MIN_ODDS:
                 rej["odds"] += 1
