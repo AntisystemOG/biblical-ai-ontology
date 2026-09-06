@@ -329,7 +329,7 @@ any complex string formatting — write it to a file first.
 ### PowerShell Inline Variables Stripped in exec (Sep 6, 2026)
 **CRITICAL:** `$`-variables/expressions in inline PowerShell sent through exec get stripped before execution (`if (Test-Path $f)` becomes `if (Test-Path )` → parse error; `$(Get-Date ...)` inside paths → broken paths). Same failure class as the Python inline rule above. This is what killed the cron gateway-watchdog's flap-breaker check on Sep 6.
 **Rule:** Any PowerShell needing variables → write a `.ps1` file under `scripts/`, then run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File <path>`. Variable-free one-liners (curl.exe -w, schtasks, literal-path Test-Path) are fine inline.
-Gateway restarts: Task Scheduler task **OpenClaw Watchdog** (every 15 min) runs `scripts/gateway_watchdog.ps1` — never re-implement that logic inline from a heartbeat.
+Gateway restarts: Task Scheduler task **OpenClaw Watchdog** (every 5 min, battery-safe, StartWhenAvailable) runs `scripts/gateway_watchdog.ps1` v3 — 2 probes, kills a hung gateway by CommandLine match, restarts via `schtasks /run "OpenClaw Gateway"` (gateway.vbs → gateway.cmd), 60s verify, logs to `logs/gateway-watchdog.log`, APPEND-ONLY daily memory line on restart. If the task drifts, re-register with `scripts/setup-gateway-watchdog-task.ps1` — never re-implement that logic inline from a heartbeat.
 
 ### Kalshi API (Aug 13, 2026)
 - Field names use `_dollars` suffix: `yes_ask_dollars`, not `yes_ask`

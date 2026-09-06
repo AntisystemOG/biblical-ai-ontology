@@ -150,3 +150,10 @@ sessions_spawn(
 
 ## 2026-09-06 03:30 CDT - load governor (Spock)
 - NEW Windows task 'OpenClaw Load Governor': every 5 min, scripts/load_governor.ps1 - user active (<5min input idle) = gateway node BelowNormal; idle >=10min = Normal. Change-log: workspace .openclaw/tmp/load_governor.log.
+
+## 2026-09-06 05:15 CDT - watchdog v3 (Spock, dashboard session)
+- Evidence from tonight's outage: v2 task DID fire (marker written 4:40:45, Gateway task run 4:40:55) but restart FAILED on the hung gateway - schtasks /end cannot kill a gateway process started outside the task, and the replacement instance died on the occupied port. Gateway (PID 9272, up since 4:36:22) self-recovered by ~4:52.
+- cron gateway-watchdog layer (dce67810) confirmed gone (job not found) - NOT recreating it; a cron cannot act when the gateway is dead. Windows layer is now the single authoritative watchdog.
+- gateway_watchdog.ps1 v3: 2 probes ~30s; flap breaker via marker mtime <10min (no date parsing); age guard <3min; hung-kill by CommandLine match BEFORE restart; restart via schtasks "OpenClaw Gateway" (gateway.vbs -> gateway.cmd canonical chain); 60s verify; logs to workspace logs/gateway-watchdog.log (1MB rotation); APPEND-ONLY daily memory line on every restart; -TestDown simulates down path safely.
+- Task "OpenClaw Watchdog" re-registered: every 5 min (was 15 - blind window ate tonight's outage), AllowStartIfOnBatteries + DontStopIfGoingOnBatteries (was battery-blocked), StartWhenAvailable, IgnoreNew, 10-min execution limit. Installer updated: scripts/setup-gateway-watchdog-task.ps1.
+- Tested: healthy path silent exit 0; scheduled runs 4:58 and 5:08 both Result 0; TestDown writes log + test marker only. Live restart path deliberately untested (would kill the healthy gateway) - first real outage is the live test.

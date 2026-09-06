@@ -1,82 +1,45 @@
-# Setup Gateway Watchdog Scheduled Task (Fixed v2)
-# Run as Administrator in PowerShell
-# Uses Interactive logon so it can access user PATH and npm
+# setup-gateway-watchdog-task.ps1 - v3 (2026-09-06)
+# (Re)registers the "OpenClaw Watchdog" scheduled task.
+#   - every 5 minutes (was 15: the blind window ate tonight's outage)
+#   - AllowStartIfOnBatteries + DontStopIfGoingOnBatteries (was battery-blocked!)
+#   - StartWhenAvailable (catches up missed runs), IgnoreNew, 10-min execution limit
+#   - runs scripts/gateway_watchdog.ps1 (v3)
+# No elevation required: per-user interactive task.
+# Idempotent: safe to re-run; -Force replaces the existing task.
 
-$TaskName = "OpenClaw-Gateway-Watchdog"
-$ScriptPath = "$env:USERPROFILE\.openclaw\workspace\scripts\gateway-watchdog-reliable.ps1"
+$TaskName   = 'OpenClaw Watchdog'
+$ScriptPath = "$env:USERPROFILE\.openclaw\workspace\scripts\gateway_watchdog.ps1"
 
-Write-Host "Setting up Gateway Watchdog Scheduled Task..." -ForegroundColor Cyan
-
-# Check admin
-$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
-if (-not $isAdmin) {
-    Write-Host "ERROR: Run as Administrator!" -ForegroundColor Red
+if (-not (Test-Path $ScriptPath)) {
+    Write-Host "ERROR: watchdog script missing at $ScriptPath" -ForegroundColor Red
     exit 1
 }
 
-# Remove existing task
-$existing = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
-if ($existing) {
-    Write-Host "Removing old task..." -ForegroundColor Yellow
-    Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
+$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+if (-not $isAdmin) {
+    Write-Host 'Note: running without elevation - fine for per-user interactive tasks' -ForegroundColor Yellow
 }
 
-# Find openclaw
-$openclawPath = (Get-Command openclaw -ErrorAction SilentlyContinue).Source
-if (-not $openclawPath) {
-    $openclawPath = "$env:APPDATA\npm\openclaw.cmd"
-}
-
-Write-Host "OpenClaw found at: $openclawPath" -ForegroundColor Gray
-
-# Create action - run PowerShell with full user PATH
-$Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$ScriptPath`" -Silent"
-
-# Create trigger - every 5 minutes starting now
-$Trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 5) -RepetitionDuration (New-TimeSpan -Days 3650)
-
-# Settings - allow on battery, wake computer if needed
-$Settings = New-ScheduledTaskSettingsSet `
+$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$ScriptPath`""
+$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1) -RepetitionInterval (New-TimeSpan -Minutes 5) -RepetitionDuration (New-TimeSpan -Days 3650)
+$settings = New-ScheduledTaskSettingsSet `
     -AllowStartIfOnBatteries `
     -DontStopIfGoingOnBatteries `
     -StartWhenAvailable `
-    -RunOnlyIfNetworkAvailable:$false `
     -MultipleInstances IgnoreNew `
-    -ExecutionTimeLimit (New-TimeSpan -Minutes 2)
+    -ExecutionTimeLimit (New-TimeSpan -Minutes 10)
+$principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive
 
-# Run as current user with highest privileges
-$Principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive -RunLevel Highest
-
-# Register
 try {
-    Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Settings $Settings -Principal $Principal -Force
-    
-    Write-Host ""
-    Write-Host "✅ Task created!" -ForegroundColor Green
-    Write-Host ""
-    Write-Host "Test it now:" -ForegroundColor Yellow
-    Write-Host "  Start-ScheduledTask -TaskName '$TaskName'" -ForegroundColor White
-    Write-Host ""
-    Write-Host "To check logs:" -ForegroundColor Yellow
-    Write-Host "  notepad `$env:USERPROFILE\.openclaw\workspace\logs\gateway-watchdog.log" -ForegroundColor White
-    Write-Host ""
-    Write-Host "To test the watchdog script directly:" -ForegroundColor Yellow
-    Write-Host "  & '$ScriptPath'" -ForegroundColor White
-    
-    # Run it once immediately
-    Write-Host ""
-    Write-Host "Running first check now..." -ForegroundColor Cyan
-    Start-ScheduledTask -TaskName $TaskName
-    
+    Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings -Principal $principal -Force -ErrorAction Stop | Out-Null
+    Write-Host "Registered '$TaskName': every 5 min, battery-safe, StartWhenAvailable" -ForegroundColor Green
 } catch {
-    Write-Host "❌ Failed: $_" -ForegroundColor Red
-    if ($_.Exception.Message -match "Interactive") {
-        Write-Host ""
-        Write-Host "Try manual setup:" -ForegroundColor Yellow
-        Write-Host "1. Win+R → taskschd.msc" -ForegroundColor White
-        Write-Host "2. Create Task → Run whether user is logged on or not" -ForegroundColor White
-        Write-Host "3. Triggers: One time, repeat every 5 min indefinitely" -ForegroundColor White
-        Write-Host "4. Actions: powershell.exe -File '$ScriptPath' -Silent" -ForegroundColor White
-    }
+    Write-Host "ERROR: failed to register task: $_" -ForegroundColor Red
     exit 1
 }
+
+# Visible test run right away
+Start-ScheduledTask -TaskName $TaskName
+Write-Host 'Test run triggered. Verify with:' -ForegroundColor Cyan
+Write-Host '  schtasks /query /tn "OpenClaw Watchdog" /fo LIST /v'
+Write-Host '  Get-Content "$env:USERPROFILE\.openclaw\workspace\logs\gateway-watchdog.log" -Tail 10'
