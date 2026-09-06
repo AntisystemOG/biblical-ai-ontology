@@ -7,6 +7,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Whale Watch
 - History Rhymes
 - Daily Brief
+- Truth-Based Trading
 <!-- /TOC -->
 
 ---
@@ -376,3 +377,81 @@ The Sep 2026 texture rhymes most strongly with **1999-2000 (valuation + rates sh
 
 ---
 *Sources by bias — Left: CNN, Globe and Mail; Center: Reuters, AP, Bloomberg, OilPrice, Al-Monitor, CNA, Utility Dive, Data Center Knowledge; Right: NY Post, Fox News. Market data: Friday Sep 4 closes + Sep 5–6 weekend reporting. Portfolio baselines: Fidelity CSV Jul 31, 2026 (latest available on Desktop).*
+
+---
+
+<!-- section:Truth-Based Trading -->
+## Truth-Based Trading (09:01 CT)
+
+# Truth-Based Trading — Sunday, September 6, 2026 (Sunday Edition)
+
+**Run:** 9:00 AM CT | **Bins baseline:** Fidelity CSV Jul 31, 2026 (latest available; markets closed Saturday/Sunday — no mark changes since the 9/5 weekly audit) | **Live check:** BTC via CoinGecko (only market trading today) | *Pattern analysis, not investment advice — Thad executes.*
+
+## 1. The Brutal Truth
+
+- **The base rate hasn't moved:** roughly 9 in 10 active large-cap funds underperform their benchmark over 15–20 years (SPIVA). Nothing that happened this week changes the odds that *picking* beats *owning the index*.
+- **Whale-following is a fee with a 90-day delay.** Today's Whale Watch confirmed the Q2 13Fs are 68 days stale (next refresh Nov 16) and that Tepper's top 4 (AMZN, MU, TSM, GOOG) are already in this book, Coatue's #1 is TSM, and D1 has 61.9% of its fund in SpaceX — a name this book also owns. Owning what the whales own is not an edge; it is a crowded trade you paid a 90-day option lag to join. The one whale datapoint that carries information: **the memory complex (MU/SNDK/STX) is the most crowded corner of the whole book — and it just blew up Situational Awareness LP.** Crowded + cyclical = trim into strength, never add.
+- **The bond market is the real Fed.** 10Y at 4.78% (52-week high, +70bp in 6 months) with the market pricing *hike* odds while Trump demands cuts. Every historical rhyme that matters — 1999-2000 (primary), 2007 texture, 1987 September — turns hostile in the 4.9–5.0% zone. CPI lands next week; FOMC is Sep 16.
+- **Fee mathematics (recomputed, supersedes the stale $425k figure):** on the ~$490k investable book at 7% nominal over 25 years — index at ~0.03% fees → **~$2.6M**; 1% drag → **~$2.1M (−$556k)**; a 2-and-20 hedge fund (~3.6% net) → **~$1.2M (−55% of terminal wealth)**. The agent-file rule holds: −40%+ from fees alone.
+- **The cash sweep is the largest controllable leak:** $241,119 sitting at ~4% money-market. Deployed at equity rates that's ~$665k nominal / **~$330k in today's dollars** over 25 years (~$8–9k/yr real bleed). Even the conservative end of this estimate dwarfs any single stock decision in the book.
+
+## 2. Portfolio Audit (narrative stripped)
+
+**Bins (recomputed 9/5 from raw Jul 31 CSV; unchanged today):**
+
+| Bucket | Actual | Target | Verdict |
+|---|---|---|---|
+| **Foundation** | ~16.5% (~21% excl. sweep) | 70% | **~50 pts underweight — the only bucket with a buy mandate** |
+| **Moats** | ~39% | 25% | Overweight but evidence-backed; trim into strength, don't add |
+| **Speculation** | ~40% (≈$197k) | ≤5% | **8× the limit — the defining problem of this book** |
+| NARRATIVE | embedded above | 0% | INTC/TSLA-style story positions live inside the spec bucket |
+
+**Sleeve classification (carried from prior audits, updated with Friday's tape):**
+
+- **FOUNDATION (index + bond sleeves):** broad index funds; BND, VBND, FXNAX, MAWIX, 2031 Treasury. *Evidence:* the only sleeve with a ~90% historical win rate. *Risk:* 10Y toward 5% hurts every bond position — **no duration changes until after CPI + FOMC Sep 16.** The sweep deploys here, Foundation-first.
+- **MOATS:** AMZN (Tepper #1; nearly flat Friday on a hawkish day — the standout), GOOG, TSM (Coatue #1), MU/SNDK/STX (real cash flow from AI storage demand — but the most whale-crowded trade alive, so strength is for trimming), energy (XOP/VDE/SHEL/VG — the war hedge that is working, $91.5 WTI), NEM + gold complex (miners +33% in August, best month since 1994 — extended; evidence says hold, discipline says no adds), staples JNJ/PM/KO/WMT (doing their defensive job).
+- **SPECULATION (8× limit):**
+  - *Bitcoin miners* CORZ/RIOT/HUT/WULF/CLSK/CIFR (~7.8%): BTC **$79,794 live this morning** (+0.2%), holding above the $75K danger line — **sell-into-strength trigger armed, not fired.** New falsification clock: Riot's $573M December bridge maturity before Anthropic rent begins.
+  - *AI debt-builders* (APLD, BE-style): the tape is specifically starving these; no adds before FOMC.
+  - *INTC (5.1% single name):* Friday +4% on Nvidia's stake now worth ~$30B and real customer wins (Feynman packaging, Google TPU orders). But the HBM4E talks that drove the run remain **unconfirmed** — a 99%+ run on unconfirmed talks is the textbook exit-into-strength zone, not an entry. **$95–100 trim zone entered 9/5 (~$95.80); still live.**
+  - *Biotech cluster* (BFLY, TEM, RXRX, CBLL, HTFL): binary event outcomes, no cash-flow floor.
+  - *SPCX:* D1 holds 61.9% of its fund in it; price discovery is retail-only at a $2T mark. Concentration risk wearing a halo.
+  - *Crypto beta* (COIN, FETH, FBTC): BTC +24%/month into a shooting war — parabolic-cluster behavior.
+- **NARRATIVE (avoid):** any "AI pivot" add. The AI cash-flow engines (MU/SNDK/AMZN) have earnings; the debt-funded ghosts do not. Friday's tape funded the former and starved the latter — that separation is the thesis working, not failing.
+
+## 3. The Three Buckets — One-Lever Summary
+
+Every analysis converges on the same move: **$241k sweep → Foundation.** Trimming spec from ~40% to 5% is the second lever and requires only obeying the base rate that parabolic clusters re-rate together — it does not require calling a top. Everything else in the book is noise around these two actions.
+
+## 4. The Math
+
+- **25-year projection (7% nominal, ~$490k):** index path ~$2.6M → 1% drag −$556k → 2/20 path −$1.4M. Fees are the only guaranteed return in finance, and they compound in the wrong direction.
+- **Sweep cost:** $241k at ~4% vs deployed → ~$665k nominal forgone over 25 years (~$330k real at 3% inflation). Waiting a year costs ~$17k nominal. CPI/FOMC can be the excuse to wait — or the schedule can make waiting impossible.
+- **Spec trim math:** cutting ~$197k of speculation to the 5% limit on strength converts narrative risk into Foundation units. If the AI engine keeps delivering (the 1994-95 benign path), you keep ~39% Moats + new index units; if the 2000-path arrives, the trim happened before the re-rating, not after.
+
+## 5. Action Items
+
+**Immediate (next session is Tuesday Sep 8 — Labor Day Monday):**
+1. **SNDK Roth trim:** verify the print; if inside the 1,550–1,600 window (live since 9/2 at $1,553.40; +8–10% Friday), execute per the standing plan (21.6% Roth concentration). Already decided — not a new call.
+2. **INTC trim:** still in the $95–100 zone on unconfirmed HBM4E talks +4% Friday. Trim into strength; do not wait for confirmation — unconfirmed is the reason to sell, not to hold.
+3. **No adds** to memory complex, crypto miners, or any speculation before CPI (next week) + FOMC (Sep 16).
+
+**Short-term (this month):**
+4. **Sweep deployment schedule — write it now:** e.g., 1/3 after CPI confirms, 1/3 after FOMC Sep 16, 1/3 by Oct 1 hard date. Tranching removes the fear decision; the hard date removes the drift.
+5. **Bond sleeves:** no duration changes until after CPI + FOMC (10Y 5.00% is the trigger level from the weekly review).
+6. **Spec 40% → 5% on strength:** miner sell-into-strength trigger stays mechanical (BTC-linked), INTC/SNDK trims are the first cuts; keep working the list.
+
+**Long-term (this quarter):**
+7. **Auto-invest recurring Foundation buys** until the 70% target is met — future capital flows Foundation-first regardless of how good the next story sounds.
+8. **Watch levels:** 10Y 5.00%, WTI $100, VIX 20, BTC $75K. Any hit → re-run the audit with fresh bins.
+
+## 6. Biblical Anchor
+
+> *"Dishonest money dwindles away, but whoever gathers money little by little makes it grow."* — Proverbs 13:11
+
+And: *"The plans of the diligent lead to profit as surely as haste leads to poverty."* — Proverbs 21:5
+
+The 40% speculation bucket is the hasty fortune the Proverbs warn about; the sweep deployment and the index path are the "little by little." Compounding *is* the biblical wealth mechanism — diligence dressed in mathematics. The market's fear (war, hikes, 5% yields) is not the investor's problem; the investor's problem is abandoning the plan during the noise.
+
+---
+*Sources: Whale Watch (Q2 13Fs via 13f.info, stale until Nov 16), History Rhymes (yfinance through Sep 4), Daily Brief (Ground News cross-spectrum, Sep 5–6 weekend reporting), live BTC via CoinGecko Sep 6. Bins from Jul 31 Fidelity CSV per 9/5 recompute. Fee projections use stated nominal assumptions; they are arithmetic, not forecasts.*
