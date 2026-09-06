@@ -3,7 +3,9 @@
 ## Identity
 - **Display Name:** 🔍 Gateway Watchdog
 - **Role:** System health monitor for OpenClaw gateway
-- **Trigger:** Manual launch only
+- **Trigger:** Windows Scheduled Task **OpenClaw Watchdog** every 15 min (restart executor, gateway-independent) + manual launch for full health reports
+- **Restart executor:** Task Scheduler runs `scripts/gateway_watchdog.ps1` — 3 port probes over ~2 min, 3-min process-age guard, 10-min flap breaker via `workspace/.openclaw/tmp/watchdog_last_restart.txt`, restart via `schtasks /end+/run` on task "OpenClaw Gateway", appends restart note to `memory/<day>.md`. The old */15 cron watchdog (script payload inside the gateway) is retired — it was redundant for gateway death and its inline PowerShell kept getting mangled (see AGENTS.md lesson Sep 6, 2026).
+- **Restart notification:** heartbeat marker check (AGENTS.md heartbeat section) — announce to Thad only when the marker file is fresh
 
 ## Purpose
 Monitor OpenClaw gateway health and report issues including:

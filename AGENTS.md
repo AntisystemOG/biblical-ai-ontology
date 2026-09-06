@@ -209,6 +209,8 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Tip:** Batch similar periodic checks into `HEARTBEAT.md` instead of creating multiple cron jobs. Use cron for precise schedules and standalone tasks.
 
+**Gateway watchdog marker check (every heartbeat):** If `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\watchdog_last_restart.txt` was modified within the last ~25 minutes, the Windows watchdog restarted the gateway — verify `curl.exe -s -o NUL -w "%{http_code}" http://127.0.0.1:18789/` returns 200 and tell Thad the watchdog had to restart the gateway (include the timestamp from the marker file).
+
 **Things to check (rotate through these, 2-4 times per day):**
 
 - **Emails** - Any urgent unread messages?
@@ -323,6 +325,11 @@ exec -> python -c "print(f'{x["key"]}')"  # BREAKS every time
 This caused 8+ syntax errors and wasted significant time on Aug 13. The pattern is: 
 if the Python code has f-strings with nested quotes, dict access with string keys, or 
 any complex string formatting — write it to a file first.
+
+### PowerShell Inline Variables Stripped in exec (Sep 6, 2026)
+**CRITICAL:** `$`-variables/expressions in inline PowerShell sent through exec get stripped before execution (`if (Test-Path $f)` becomes `if (Test-Path )` → parse error; `$(Get-Date ...)` inside paths → broken paths). Same failure class as the Python inline rule above. This is what killed the cron gateway-watchdog's flap-breaker check on Sep 6.
+**Rule:** Any PowerShell needing variables → write a `.ps1` file under `scripts/`, then run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File <path>`. Variable-free one-liners (curl.exe -w, schtasks, literal-path Test-Path) are fine inline.
+Gateway restarts: Task Scheduler task **OpenClaw Watchdog** (every 15 min) runs `scripts/gateway_watchdog.ps1` — never re-implement that logic inline from a heartbeat.
 
 ### Kalshi API (Aug 13, 2026)
 - Field names use `_dollars` suffix: `yes_ask_dollars`, not `yes_ask`
