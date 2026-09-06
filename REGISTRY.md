@@ -147,3 +147,6 @@ sessions_spawn(
 - gateway-watchdog cron (dce67810): script payload (no model), */15 America/Chicago, probes x3 over ~2min, restarts via schtasks, APPEND-ONLY memory line on restart, silent when healthy, Telegram announce on restart. Owned by dashboard session.
 - NEW Windows task 'OpenClaw Watchdog': every 15 min, runs scripts/gateway_watchdog.ps1 (gateway-independent recovery; survives full gateway death). Shares flap-breaker marker with the cron watchdog. Happy path tested (exit 0 in 1s).
 - Anti-flap: gateway process age <3min = never restart (startup window ~2min); no restart within 10min of the last one.
+
+## 2026-09-06 03:30 CDT - load governor (Spock)
+- NEW Windows task 'OpenClaw Load Governor': every 5 min, scripts/load_governor.ps1 - user active (<5min input idle) = gateway node BelowNormal; idle >=10min = Normal. Change-log: workspace .openclaw/tmp/load_governor.log.
