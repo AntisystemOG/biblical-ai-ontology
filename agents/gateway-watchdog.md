@@ -3,9 +3,11 @@
 ## Identity
 - **Display Name:** 🔍 Gateway Watchdog
 - **Role:** System health monitor for OpenClaw gateway
-- **Trigger:** Windows Scheduled Task **OpenClaw Watchdog** every 15 min (restart executor, gateway-independent) + manual launch for full health reports
-- **Restart executor:** Task Scheduler runs `scripts/gateway_watchdog.ps1` — 3 port probes over ~2 min, 3-min process-age guard, 10-min flap breaker via `workspace/.openclaw/tmp/watchdog_last_restart.txt`, restart via `schtasks /end+/run` on task "OpenClaw Gateway", appends restart note to `memory/<day>.md`. The old */15 cron watchdog (script payload inside the gateway) is retired — it was redundant for gateway death and its inline PowerShell kept getting mangled (see AGENTS.md lesson Sep 6, 2026).
-- **Restart notification:** heartbeat marker check (AGENTS.md heartbeat section) — announce to Thad only when the marker file is fresh
+- **Trigger:** Windows Scheduled Task **OpenClaw Watchdog** every 5 min (battery-safe, gateway-independent) + manual launch for full health reports. If the task drifts, re-register via `scripts/setup-gateway-watchdog-task.ps1` — never re-implement watchdog logic inline from a heartbeat (exec strips `$variables`; see AGENTS.md lesson Sep 6, 2026).
+- **Restart executor (v3):** Task Scheduler runs `scripts/gateway_watchdog.ps1` v3 — 2 port probes 20s apart; healthy → silent exit; 10-min flap breaker via `workspace/.openclaw/tmp/watchdog_last_restart.txt`; node procs <3 min old → left alone (booting); ≥3 min old with dead port → `Stop-Process -Force` (hung-kill); restart via `schtasks /end+/run` on "OpenClaw Gateway" (canonical gateway.vbs → gateway.cmd chain); 60s verify loop; all activity logged to `logs/gateway-watchdog.log`; APPEND-ONLY memory line tagged `gateway-watchdog(task v3)`. `-TestDown` switch simulates the down path safely (no kill/start, test marker only).
+- **Load Governor (separate task, every 5 min):** `scripts/load_governor.ps1` demotes the gateway node to BelowNormal CPU priority while Thad is actively using the PC (input idle <5 min), restores Normal at idle ≥10 min. Change-only log: `workspace/.openclaw/tmp/load_governor.log`.
+- **Restart notification:** heartbeat marker check (AGENTS.md heartbeat section) — announce to Thad only when the marker file is fresh (<25 min); v3's own log is the authoritative restart record.
+- The old */15 cron watchdog (script payload inside the gateway) is retired — redundant for gateway death, and its inline PowerShell kept getting mangled. Superseded by v3 on Sep 6 (commit 9007c3f).
 
 ## Purpose
 Monitor OpenClaw gateway health and report issues including:
