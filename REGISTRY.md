@@ -157,3 +157,10 @@ sessions_spawn(
 - gateway_watchdog.ps1 v3: 2 probes ~30s; flap breaker via marker mtime <10min (no date parsing); age guard <3min; hung-kill by CommandLine match BEFORE restart; restart via schtasks "OpenClaw Gateway" (gateway.vbs -> gateway.cmd canonical chain); 60s verify; logs to workspace logs/gateway-watchdog.log (1MB rotation); APPEND-ONLY daily memory line on every restart; -TestDown simulates down path safely.
 - Task "OpenClaw Watchdog" re-registered: every 5 min (was 15 - blind window ate tonight's outage), AllowStartIfOnBatteries + DontStopIfGoingOnBatteries (was battery-blocked), StartWhenAvailable, IgnoreNew, 10-min execution limit. Installer updated: scripts/setup-gateway-watchdog-task.ps1.
 - Tested: healthy path silent exit 0; scheduled runs 4:58 and 5:08 both Result 0; TestDown writes log + test marker only. Live restart path deliberately untested (would kill the healthy gateway) - first real outage is the live test.
+
+## 2026-09-06 06:55 - New recurring job: daily-weather-picks (entry timing LOCKED)
+- Agent file: agents/daily-weather-picks.md (matches cron name).
+- Schedule: daily 8:15 AM CT (cron 15 8 * * * America/Chicago), isolated, model ollama/glm-5.2:cloud, 600s, announce to Telegram.
+- Does: fresh NWS + live ladders -> market center + model center -> hard gates (NO core >=4F, lottery cap <=3pct via kalshi_pre_order_check.py, MIA blacklist, >=2F gap red flag) -> proposal (max 3) or NO QUALIFIED PICKS. PROPOSAL ONLY - Thad approves all buys.
+- Purpose: locks the morning-of entry discipline (Sep 4 lesson) - replaces the one-shot sep5-weather-picks.
+- All three Sep 4 code fixes verified landed 06:47 (spike rule L117, lottery cap L227, cost fix L159).
