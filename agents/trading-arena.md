@@ -28,7 +28,7 @@ Monday-Friday, 8:30 AM - 3:00 PM CDT, every 30 minutes during market hours
 ## Important Notes
 - Runs every 30 minutes during market hours only
 - Embed snapshot data directly in HTML (file:// protocol blocks fetch)
-- Requires market hours check (skip on weekends/holidays)
+- Requires market hours check (skip on weekends/holidays). 2026 US market holidays (NYSE closed, skip the whole day): Thu Jan 1, Mon Jan 19 (MLK), Mon Feb 16 (Washington), Fri Apr 3 (Good Friday), Mon May 25 (Memorial), Fri Jun 19 (Juneteenth), Fri Jul 3 (observed), Mon Sep 7 (Labor Day), Thu Nov 26 (Thanksgiving), Fri Dec 25 (Christmas). Quick verify: last SPY daily bar date — if it is not today, treat as a non-trading day and skip (no trader runs, no HTML update, no digest touch).
 
 ## Daily Digest Output (MANDATORY)
 
