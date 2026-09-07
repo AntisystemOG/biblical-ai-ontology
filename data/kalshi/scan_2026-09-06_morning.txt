@@ -1,0 +1,97 @@
+KALSHI CLAIMS DIGEST | Sep 06 22:04 CDT | Timing: T-4 (early watch)
+Portfolio: $53.3849 cash | $21.33 in live positions | book $74.71 | 6 open
+  KXHIGHNY-26SEP07-B81.5: YES | 4.00 sh @ $0.52 | P&L: $+0.04 (+8%) | HOLD
+  KXHIGHCHI-26SEP07-B76.5: YES | 8.00 sh @ $0.56 | P&L: $-0.16 (-29%) | HOLD (underwater - consensus can be wrong)
+  KXJOBLESSCLAIMS-26SEP10-210000: NO (>=210K) | 11.00 sh @ $7.37 | P&L: $+1.43 (+19%) | HOLD to settlement (profitable)
+  KXHIGHCHI-26SEP06-B81.5: NO | 5.00 sh @ $4.5 | P&L: $+0.45 (+10%) | HOLD to settlement (profitable)
+  KXFEDDECISION-26SEP-C25: YES | 23.39 sh @ $0.4678 | P&L: $+0.00 (+0%) | HOLD
+Recent claims: 206K -> 209K -> 200K -> 198K | 4wk avg: 200K
+Kalshi consensus: 203.5K | Our forecast: 202.6K (+/-4K)
+TOP EDGES:
+  KXJOBLESSCLAIMS-26SEP10-195000: YES @ 0.78 | edge +21% | return 28% | vol 61
+  KXJOBLESSCLAIMS-26SEP10-205000: NO @ 0.56 | edge +19% | return 79% | vol 231
+  KXJOBLESSCLAIMS-26SEP10-215000: NO @ 0.85 | edge +15% | return 18% | vol 1,253
+LEARNED LESSONS (auto-evolved from track record):
+  - CAUTION: kalshi_market_consensus has high error (47185). Use as secondary signal only.
+  - WARNING: historical_trend is only 43% accurate, avg error 46170. Discount this source.
+  - CAUTION: analyst_consensus has high error (43723). Use as secondary signal only.
+  - SPECULATION (discount): kalshi_market_consensus, historical_trend, analyst_consensus
+  - PATTERN: NO bets win 32% vs YES bets 11%. Prefer NO side.
+  - AVOID: 200K threshold has 4 losses, 0 wins. Skip this threshold.
+  - FORECAST SOLID: Last prediction within 1,000 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 821 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 1,298 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 250 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 450 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 128 of actual. Approach is working.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST SOLID: Last prediction within 1,419.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 1,794.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 2,288.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 1,605.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 1,616.0 of actual. Approach is working.
+  - FORECAST SOLID: Last prediction within 2,303.0 of actual. Approach is working.
+  - FORECAST MISS: Last prediction was off by 202,525.0. Check if structural shift happened.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST MISS: Last prediction was off by 202,886.0. Check if structural shift happened.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST MISS: Last prediction was off by 203,479.0. Check if structural shift happened.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - FORECAST MISS: Last prediction was off by 205,402.0. Check if structural shift happened.
+  - RANGE TOO TIGHT: Actual fell outside our 80% CI. Widen the range.
+  - GOAL: Need 5% improvement to hit 4/5 target. Current: 24/32 (75%). Be more selective.
+ACTION: Monitor. No rush.
+
+WEATHER MARKET DIGEST | Sep 06 22:04 CDT
+
+DATA THAT MATTERS (FACT):
+  - NWS observations (actual temps, not forecasts)
+  - Storm probability (>40% = subtract 5 degrees)
+  - Wind direction (upslope/onshore = cooler)
+  - Cloud cover (>75% = subtract 2 degrees)
+
+DATA THAT IS SPECULATION:
+  - weathershogun (didn't predict Denver miss)
+  - globalmeteo (no storm/wind detail)
+  - weatheronthisday (historical norms mislead in storms)
+
+Denver:
+  KXHIGHDEN-26SEP07-T93 | YES 0.03 / NO 0.98 | vol 214
+  KXHIGHDEN-26SEP07-T86 | YES 0.02 / NO 0.99 | vol 432
+  KXHIGHDEN-26SEP07-B92.5 | YES 0.24 / NO 0.78 | vol 589
+
+New York:
+  KXHIGHNY-26SEP07-T84 | YES 0.01 / NO 1.00 | vol 1177
+  KXHIGHNY-26SEP07-T77 | YES 0.03 / NO 0.98 | vol 733
+  KXHIGHNY-26SEP07-B83.5 | YES 0.03 / NO 0.98 | vol 926
+
+Miami:
+  KXHIGHMIA-26SEP07-T93 | YES 0.09 / NO 0.92 | vol 2419
+  KXHIGHMIA-26SEP07-T86 | YES 0.03 / NO 0.98 | vol 2719
+  KXHIGHMIA-26SEP07-B92.5 | YES 0.47 / NO 0.56 | vol 1262
+
+Chicago:
+  KXHIGHCHI-26SEP07-T83 | YES 0.02 / NO 0.99 | vol 896
+  KXHIGHCHI-26SEP07-T76 | YES 0.01 / NO 1.00 | vol 687
+  KXHIGHCHI-26SEP07-B82.5 | YES 0.10 / NO 0.91 | vol 277
+
+NOTE: Apply city-specific storm/wind adjustments before predicting.
+Run weather_analysis.py with live NWS data for full predictions.
+
+LONG SHOTS (high risk / high reward ΓÇö small bets only):
+  KXFEDDECISION-27JUL-H26: YES @ 0.02 | return 4900% | vol 1,172 | Will the Federal Reserve Hike rates by >
+  KXFEDDECISION-27APR-H26: YES @ 0.02 | return 4900% | vol 23,003 | Will the Federal Reserve Hike rates by >
+  KXFEDDECISION-26DEC-C26: YES @ 0.02 | return 4900% | vol 16,097 | Will the Federal Reserve Cut rates by >2
+=====================================================
+WEB FINDINGS (appended 2026-09-06 22:05 CDT)
+=====================================================
+- Last release (Thu Sep 3, week ending Aug 29): 206.0K actual vs 205K expected, prior week revised to 204.0K (Newsquawk). Matches digest series (206K is latest).
+- Street context: IBKR economist mid-Aug noted median estimates ~208K; market landing zone low-to-mid 200s. Robinhood Sep 3 market had "Above 195K" at 89c pre-print.
+- This week: release Thu Sep 10 for week ending Sep 5 (pre-Labor Day week, normal Thursday schedule; the Labor Day holiday disrupts the Sep 17 release instead).
+- Digest vs street: our forecast 202.6K (+/-4K) vs Kalshi consensus 203.5K — no material news moving the forecast. No structural shift signals in headlines.
+- Top edges on the board (awaiting Mon-Wed buy window): 195K YES @ 0.78 (+21% edge), 205K NO @ 0.56 (+19%, 79% return), 215K NO @ 0.85 (+15%). Existing 210K NO (11 sh @ $7.37, +19%) HOLD to settlement. Digest ACTION: Monitor. No rush.
