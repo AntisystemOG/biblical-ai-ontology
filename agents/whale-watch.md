@@ -31,6 +31,12 @@ Quarterly on 13F filing deadline dates at 6:00 AM CDT (America/Chicago)
 3. Find overlaps between whale positions and portfolio holdings
 4. Write your report per the Daily Digest Output section below (section title: Whale Watch)
 
+## Data Sources (proven Sep 7, 2026)
+- **13f.info per-filing JSON endpoint:** `https://13f.info/data/13f/{accession-without-dashes}` — returns full holdings per filing as JSON `{"data": [[ticker, name, class, cusip, value($000), pct, shares, ...], ...]}`. Get filing IDs from manager pages (`https://13f.info/manager/{cik}-{slug}`), then fetch each quarter's JSON. No auth needed.
+- Q2 2026 filing IDs (reference): Point72 `000091957426005520`, Coatue `000091957426005478`, D1 Capital `000117266126003662`, Appaloosa `000165645626000003`, Situational Awareness `000093583626000418`.
+- Parse workflow (proven Sep 7): fetch JSONs with curl into `.openclaw/tmp/whale_watch/`, parse with a python script (file, not inline), intersect manager books with portfolio tickers, build overlap tables. See `.openclaw/tmp/whale_watch/parse_ww.py`.
+- 13F filing calendar: ~Feb 14 / May 15 / Aug 14 / Nov 14 (45 days after quarter end, bumped to next business day). Freshest quarter = most recent date that has passed.
+
 ## Important Notes
 - Use the read tool to read files, NOT import/require
 - Use PowerShell command to find latest CSV: Get-ChildItem "C:\Users\thadd\Desktop\Portfolio Positions\*.csv" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
