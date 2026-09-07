@@ -2,7 +2,7 @@
 
 **Purpose:** Track long-term holdings, performance vs inflation, and learned patterns for compounding wealth.
 
-**Last Updated:** 2026-09-01
+**Last Updated:** 2026-09-07
 
 ---
 
@@ -37,7 +37,9 @@
 | ZTS | Terry Smith fresh rotation signal | ~$165-175 | HIGH | Smith quality rotation candidate |
 | UNH | Regulatory clarity + manager accumulation | ~$450 | MEDIUM | No manager accumulation |
 | DVN / CVE | Energy dip / Iran escalation | Current level | MEDIUM | Raymond James / energy hedge |
-| VICI | Rate-regime clarity (Sept Fed decision) | Tactical income only | MEDIUM | 7.0% yield, 1% off 52-wk low, 4 upgrade headlines |
+| VICI | Rate-regime clarity (post-FOMC gate, Sep 15-16); CPI-linked escalators, 0.96x book, 7.2% yield, zero sells | Tactical income only | MEDIUM | FA deep-dive 2026-09-07: 7.2% yield, D/E 0.60, target +27% |
+| CI | Post-FOMC gate (10Y kill-zone discipline) | ~$282 or better | MEDIUM | 2026-09-07 FA screen #1: fwd P/E 8.4 (66% below healthcare median), FCF $8B, insiders 13 buys vs 4 sells, target +21%; PBM-reform risk is the discount |
+| TXT | Post-FOMC gate; insider-buying pattern first live case | ~$79 (insiders paid $95.98) | MEDIUM | 2026-09-07 FA screen #4: 10 buys vs 1 sell, Exec Chairman +10,300 @ $95.98 (21% above market), FLRAA ramp, target +29% |
 | VST / NRG | Power-complex dip | Watchlist | MEDIUM | Tepper holds 4.5% / 3.3% |
 
 ### AVOID LIST (Permanent/Tactical)
@@ -146,6 +148,7 @@
 | 2026-05-12 | ~3.4% | Starting point | — | — | First LTH report issued |
 | 2026-08-24 | ~3.0-3.5% | Tracking | TBD | TBD | CAPE ~42x; Treasury buyback regime; Iran energy risk premium |
 | 2026-09-01 | ~3.0-3.7% | Tracking | TBD | TBD | Warsh hawkish Jackson Hole; Sept HIKE odds 52-57%; Brent >$90 (Iran, 6-mo war); CAPE 42; 10Y 4.74% |
+| 2026-09-07 | ~3.0-3.7% | Tracking | TBD | TBD | 10Y 4.78% (12bp from 4.90-5.00% kill zone); negative ERP (ey 4.4% < 10Y); NFP +162K 3x beat; Brent ~$97 tanker war; Aug CPI this week + FOMC Sep 15-16; sweep $241.1K (~49%) = the single lever; book 16.5/39/40 vs 70/25/5 |
 
 **Tracking Method:**
 - Compare portfolio total return vs S&P 500 vs CPI.
@@ -235,6 +238,15 @@
 - **Raised target:** Gold allocation toward 5%; foundation index exposure toward 70%.
 - **Market Context:** 1965-66/1979/1999 macro composite; CAPE ~42x; 10Y ~4.74%; geopolitical risk embedded.
 
+### 2026-09-07: Weekly Update — Deployment Week, Not a New-Risk Week
+- **No new entries (by design):** 10Y 12bp from the 1999–2000 rhyme kill zone (4.90–5.00%), CPI Thu + FOMC Sep 15–16 inside 10 days. All Tier 2 entries gated post-FOMC.
+- **Confirmed:** AMZN (4-whale, real FCF), GOOGL (4-whale), TSM (5-whale, $387 held = top size-up asymmetry) as highest conviction; TSM = first post-FOMC tranche.
+- **New patterns:** (1) SA implosion = concentration cautionary case — 4-manager same-thesis crowding is shared fate at exit (SNDK 28% of SA book; fund imploded late July, exit overhang on memory complex). (2) Insider-buying pattern first live case: TXT (10 buys vs 1 sell, Exec Chairman @ $95.98 = 21% above market). (3) Regime gate codified: 10Y 4.90–5.00% break = falsifies primary rhyme, reprices high-duration spec; entries gated post-FOMC.
+- **Promoted:** Sponsorship A/B to n=1 full-month WIN (MU −6.4% vs SNDK −14.6%/STX −17.3% off the same Aug 17 peak) — hold the sponsored name, trim the momentum-only name.
+- **Actionables issued:** INTC trim 1/3 into $95–100 (LIVE); SNDK Roth trim 1,550–1,600; kill NBIG; TEM light-trim on low-60s retest; sweep tranche schedule post-CPI → post-FOMC → Oct 1.
+- **Watchlist adds:** CI (8.4x fwd, FCF $8B, insider net buying), TXT; VICI gate refined post-FOMC. Q3 13Fs Nov 16 adjudications queued (INTC two-sided test, GEV divergence, SPOT reduction, CEG joins).
+- **Market Context:** 1999–2000 rhyme HIGH with RUT-leading twist (breadth broadening extends runway); 1970s stagflation rhyme MEDIUM-rising (Brent $97, Aramco strike); gold −16% off high = the one 1970s line NOT confirming.
+
 ### Lessons from Recent Reports
 1. **Quality over quantity** — 6 Tier 1 holdings better than 20 mediocre.
 2. **Manager signals matter** — Independent accumulation increases confidence; SIT participation is especially validating.
@@ -298,8 +310,8 @@
 ---
 
 **Memory File:** `agents/long-term-holds-memory.md`  
-**Report Location:** `Spocks Reports/long_term_holds/`  
-**Next Update:** August 24, 2026 (or following next strategist/whale-watch cycle)  
+**Report Location:** Daily Digest append via `scripts/digest_append.py --report "Long-Term Holds" --file .openclaw/tmp/digest/long_term_holds.md` (no separate report files, no PDFs)  
+**Next Update:** Monday, September 14, 2026 (post-CPI, pre-FOMC window; TSM tranche decision expected)  
 **Maintained by:** Long-Term Holds Agent 🖖
 
 ---

@@ -8,6 +8,8 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - History Rhymes
 - Daily Brief
 - Truth-Based Trading
+- Financial Advisor
+- Long-Term Holds
 <!-- /TOC -->
 
 ---
@@ -486,3 +488,229 @@ Diligence here is not finding the next story — it's executing the unglamorous 
 **Bottom line:** Nothing about today requires prediction. It requires two trims on strength (INTC, SNDK), one armed trigger (miners), one schedule (sweep → Foundation), and one silence (no spec adds before CPI/FOMC). The edge was never the whales' filings — it's the 25-year fee math and the discipline to act on strength, not excitement.
 
 *Data: Jul-31-2026 portfolio CSV (standing baseline), Whale Watch Q2 13Fs (6/30 book), History Rhymes (Sep 4 close data), Daily Brief (weekend developments), CoinGecko BTC ($79,368, Sep 7 ~9 AM CT). Not investment advice.*
+
+---
+
+<!-- section:Financial Advisor -->
+## Financial Advisor (09:09 CT)
+
+# Financial Advisor — Weekly Value Screen
+
+**Run:** Monday, Sep 7, 2026, 9:00 AM CDT · **Data as of:** Friday, Sep 4, 2026 close (US markets closed Monday Sep 7 — Labor Day)
+
+## Method
+1. Pulled real Yahoo Finance quotes for a 259-name large-cap reference pool (banks, insurers, energy, healthcare, telecom/media, staples, retail, industrials, materials, tech, REITs, utilities).
+2. Screened: market cap ≥ $10B, P/E (ttm) between 0 and 15 → **53 names passed**.
+3. Ranked by relative cheapness vs sector median P/E + balance-sheet quality + dividend + analyst stance/target upside; enforced sector diversity.
+4. Deep-dived 11 semifinalists via Yahoo quoteSummary (valuation, balance sheet, analyst trend); verified insider activity via Yahoo/SEC Form 4 feed (openinsider.com was unreachable this run).
+5. **All prices and metrics below are fetched API data — nothing simulated.**
+
+### Sector median P/E (from reference pool)
+| Sector | Median P/E | Sector | Median P/E |
+|---|---|---|---|
+| Insurance | 11.8 | Retail/Cons Disc | 17.3 |
+| Telecom/Media | 13.1 | Energy | 17.1 |
+| Banks | 15.4 | Utilities | 20.6 |
+| Staples | 22.8 | Materials | 23.3 |
+| Healthcare | 24.9 | Technology | 27.2 |
+| Industrials | 28.4 | REITs | 27.4 |
+
+*(Medians are from this curated pool, not the full sector universe — treat relative discounts as approximate.)*
+
+---
+
+## Top 5 Value Picks
+
+### 1. Cigna Group (CI) — Healthcare/PBM
+| Price | P/E ttm | P/E fwd | PEG | Div | Payout | ROE | FCF |
+|---|---|---|---|---|---|---|---|
+| $282.52 | 11.7 | 8.4 | 0.77 | 2.2% | 25% | 16.8% | $8.0B/yr |
+
+- **Vs sector:** Healthcare pool median P/E 24.9 → CI is ~53% below (ttm), ~66% below on forward earnings.
+- **Balance sheet:** OCF $10.3B, FCF $8.0B/yr; D/E 0.74; low payout leaves ample room for buybacks/debt.
+- **Analysts:** 24 covering, mean 1.67 (Buy), zero sells; mean target $341 → **+21%**. Buy counts steady MoM (SB6/B13).
+- **Insiders:** net **+11.7K shares over 6 months** (13 buys vs 4 sells); May sale by CEO was routine exercise-related.
+- **Thesis:** Cheapest major managed-care/PBM on forward earnings (8.4x) with growing EPS ($24.2 → $33.5 fwd) driven by Evernorth specialty pharmacy. PBM-reform headline risk is the discount driver; exit from Medicare Advantage already de-risks the book.
+- **Risks:** PBM legislation, Express Scripts contract loss, ACA-exchange margin pressure.
+- **Valuation refs:** Graham number ≈ $296 (+5%); mean target +21%.
+
+### 2. TotalEnergies (TTE) — Energy (ADR)
+| Price | P/E ttm | P/E fwd | PEG | Div | Payout | ROE | FCF |
+|---|---|---|---|---|---|---|---|
+| $88.59 | 11.1 | 8.7 | 0.82 | 4.8% | 49% | 14.5% | $13.5B/yr |
+
+- **Vs sector:** Energy median 17.1 → ~35% below ttm, ~49% below forward.
+- **Balance sheet:** $31.7B cash vs $62.9B debt (net debt ~1x EBITDA), FCF $13.5B comfortably funds the $4.24/yr dividend.
+- **Analysts:** mean 2.33 (Buy); target $96.20 → **+9%**. Thin US coverage (10).
+- **Insiders:** foreign private issuer — no US Form-4 activity in 6m; last recorded executive buys Mar 2025 (neutral signal).
+- **Thesis:** Cheapest integrated major vs XOM/CVX multiples, with LNG growth projects and a shareholder-return program; earnings +106% y/y in the pool data.
+- **Risks:** oil/price cyclicality, European windfall taxes/regulation, FX; ADR dividend withholding nuances.
+- **Valuation refs:** Graham number ≈ $102 (+15%).
+
+### 3. VICI Properties (VICI) — REIT (gaming)
+| Price | P/E ttm | P/E fwd | P/B | Div | ROE | Debt |
+|---|---|---|---|---|---|---|
+| $25.42 | 9.9 | 8.5 | 0.96 | 7.2% | 9.8% | $17.8B |
+
+- **Vs sector:** REIT median P/E 27.4 (GAAP-distorted group) — VICI's real edge: **trades below book (0.96x)** with a 7.2% yield.
+- **Balance sheet:** D/E 0.60 — modest for a REIT; 100% occupancy, triple-net casino leases with CPI-linked escalators.
+- **Analysts:** 24 covering, mean 1.84 (Buy), zero sells; mean target $32.33 → **+27%**.
+- **Insiders:** only compensation grants in 6m — neutral.
+- **Thesis:** Rent from Caesars/MGM/Venetian escalates annually; yield-on-cost compounds for a buyer today. Rate-driven REIT selloff has mispriced the credit quality of the tenant pool.
+- **Risks:** tenant concentration (gaming), rising long rates, GAAP EPS noise (earnings growth -41% is accounting, not cash).
+- *(Graham number not meaningful for REIT book values.)*
+
+### 4. Textron (TXT) — Industrials/Aerospace
+| Price | P/E ttm | P/E fwd | PEG | Div | ROE | D/E |
+|---|---|---|---|---|---|---|
+| $79.07 | 14.9 | 10.9 | 0.92 | 0.1% | 12.1% | 0.52 |
+
+- **Vs sector:** Industrials median 28.4 → ~48% below ttm, ~62% below forward.
+- **Balance sheet:** D/E 0.52, current ratio 1.86, modest $4.2B debt.
+- **Analysts:** mean 2.19 (Buy); holds shrinking 11→9, target $102.07 → **+29%**.
+- **Insiders:** **net +26.3K shares over 6 months (10 buys vs 1 sell)** — incl. open-market purchase of 10,300 sh @ $95.98 by Exec Chairman T. Kennedy on May 1. Strongest insider-buying profile of this screen.
+- **Thesis:** Forward EPS $7.26 vs $5.31 ttm (+37%) as Bell FLRAA (Army) ramps and Cessna backlogs deliver; the market still prices it like the trough.
+- **Risks:** FLRAA execution/margin, business-jet cycle, government budget timing.
+- **Valuation refs:** Graham (fwd EPS) ≈ $87.50 (+11%); mean target +29%.
+
+### 5. British American Tobacco (BTI) — Staples (ADR)
+| Price | P/E ttm | P/E fwd | PEG | Div | Payout | ROE |
+|---|---|---|---|---|---|---|
+| $55.35 | 14.1 | 10.6 | 1.37 | 6.0% | 85% | 13.4% |
+
+- **Vs sector:** Staples median 22.8 → ~38% below ttm, ~54% below forward.
+- **Balance sheet:** D/E 0.72, FCF $3.5B; payout elevated (85%) but covered; deleveraging continues. UK has **no dividend withholding tax** on ADRs.
+- **Analysts:** mean 1.43 (**Strong Buy**, 6 analysts); mean target $70.43 → **+27%**.
+- **Insiders:** UK filers — no US Form-4 data (unavailable, not negative).
+- **Thesis:** Smokeless portfolio (Vuse/glo) inflecting while the market prices it like pure decline; trades at a deep discount to Altria/MoMA peers on forward earnings.
+- **Risks:** secular volume decline, regulation/litigation, FX (GBP), high payout ratio.
+
+---
+
+## Honorable Mentions (same screen, not top-5)
+| Ticker | Sector | PE ttm | PE fwd | Div | Notes |
+|---|---|---|---|---|---|
+| ALL | Insurance | 5.2* | 9.4 | 1.7% | *ttm EPS has one-timers; analyst consensus only Hold |
+| PRU | Insurance | 11.1 | 8.2 | 4.6% | Price above mean target (-7%) |
+| HBAN | Banks | 13.1 | 9.1 | 3.6% | +19% to target; Veritex/Cadence deals |
+| BMY | Pharma | 14.7 | 10.2 | 3.8% | FCF $8.1B; consensus target ≈ price |
+| RIO | Materials | 14.0 | 11.9 | 4.5% | Price ≈ mean target |
+| HPQ | Tech hardware | 12.5 | 10.4 | 3.7% | Negative equity (buybacks); consensus below price |
+
+## Cheap-for-a-Reason (screened out)
+- **EIX / PCG** — wildfire liability overhang (not a free lunch).
+- **CHTR** — 4x P/E but heavy leverage + cord-cutting.
+- **PBR** — 5.1x P/E, 8%+ yield, but Brazil political/FX risk and dividend withholding.
+- **AA** — aluminum at trough-cycle earnings.
+
+## Caveats
+- Sector medians computed from the 259-name curated pool, not full universes.
+- Analyst targets/ratings are Yahoo consensus snapshots; specific upgrade events were not individually verified this run (insider source: Yahoo/SEC Form-4 feed; openinsider.com unreachable).
+- This is a research screen, not investment advice. ADRs (TTE, BTI) add FX/tax considerations.
+
+*Sources: Yahoo Finance quote API (pool + finalists), Yahoo quoteSummary modules, Yahoo insider feed. Fetched 2026-09-07 ~14:05 UTC.*
+
+---
+
+<!-- section:Long-Term Holds -->
+## Long-Term Holds (10:02 CT)
+
+# Long-Term Holds — Monday, September 7, 2026
+
+**Run:** Monday, Sep 7, 2026, 10:00 AM CT (cron, weekly) · **Data day:** Fri Sep 4 close (Labor Day — market closed) · **13F basis:** Q2 2026 (positions 6/30, filed 8/14) · **Position baseline:** Jul-31 CSV
+
+**Sources consumed:** Daily Digest Sep 7 in full — Whale Watch (Q2 13Fs, quad overlaps), History Rhymes (1999–2000 rhyme upgraded to HIGH, 10Y 4.78% = 12bp from the 4.90–5.00% kill zone), Daily Brief (NFP +162K 3× beat, Brent ~$97 tanker war, CPI week), Truth-Based Trading audit (Foundation 16.5% / Moats 39% / Spec 40%, sweep $241,119), Financial Advisor value screen (CI, TTE, VICI, TXT, BTI); strategist memory (sponsor A/B test, Tepper exit ×2, catalyst-gated squeeze); long-term-holds memory; Trading Arena standings (9/4).
+
+---
+
+## 1. Executive Summary
+
+- **Regime:** CPI ~3.0–3.7% (Aug print lands this week). 10Y **4.78%** — 12bp from the standing 4.90–5.00% kill zone. **Negative ERP** (forward earnings yield ~4.4% < 10Y) — a condition seen only in 2000 and 2007. FOMC Sep 15–16. The 1999–2000 rhyme is HIGH with one runway-extending twist (RUT +19.9% *leads* — breadth broadening, not narrowing).
+- **The highest-return long-term action this week is not a stock pick — it's deployment.** $241,119 (~49% of investable) sits in the sweep at ~4% nominal ≈ **+0.3–1.0% real** — a guaranteed inflation bleed while the Foundation target is 70%. Standing math: forgone compounding ≈ **−$665k nominal / −$330k real over 25 years**. Tranche schedule (from the Sep 7 audit, adopted): **post-CPI → post-FOMC (Sep 16) → Oct 1 hard date.**
+- **Top 3 conviction holds:** **AMZN** (all 4 active whales, Tepper #1 at 15.4%, real FCF behind the story), **GOOGL** (quad overlap, +12.8% since Jul 31), **TSM** (all 5 whales — and still only **$387** held: the single largest size-up asymmetry in the book, gated to post-FOMC).
+- **New entries this week: NONE — by design.** 12bp from the kill zone with CPI + FOMC inside 10 days = a *deployment* week, not a new-risk week. Two new watchlist candidates gated the same way: **CI** and **TXT** (insider-buying pattern, first live case).
+- **Actionable trims (live):** INTC 1/3 into **$95–100** (zone LIVE — reclaimed $95.80 Fri), SNDK Roth trim 1,550–1,600 (verify Tue print), **kill NBIG**, TEM light-trim on low-60s retest.
+- **Cash allocation:** ~49% sweep ($241.1K of ~$492.6K investable) → tranche-deploy into Foundation indexes; post-deployment cash target 10–15% dry powder for the FOMC window.
+
+---
+
+## 2. Tier 1: Core Holdings (70% target — actual ~16.5% Foundation + ~39% Moats)
+
+The gap is not a market view — it is an unexecuted transfer. Moats slightly rich vs the 25% target but tolerable *if* residents keep earning it (per Sep 7 audit: AMZN/GOOGL/BE/CEG/staples qualify; INTC at narrative prices does not — that's a Tier-2/Spec problem, listed in §5).
+
+| Asset | Manager(s) | Entry | Conviction | Thesis | Moat |
+|-------|-----------|-------|------------|--------|------|
+| **Foundation indexes** (deploy sweep $241K in tranches) | SPIVA base-rate: ~87–90% of active funds underperform over 15y | Tranches post-CPI → post-FOMC → Oct 1 | HIGH | 0.015% fee; 7%/25yr ≈ $2.66M terminal vs fee-drag −$556k | Diversification itself |
+| **AMZN** (~$22.8K, your #1 stock) | Tepper 15.4% (#1), Coatue $2.8B, Cohen $1.2B, Sundheim | Q4 2025 | HIGH | AWS +37% with real FCF; watch $220B capex strain as the thesis risk | Platform + logistics |
+| **GOOGL** (~$5.2K) | All 4 active whales | Q4 2025 | HIGH | Search/cloud cash cow compounding through the AI cycle | Search + network |
+| **BRK.B** | Buffett permanent capital | Portfolio | HIGH | Cash fortress + insurance float; deflation/drawdown hedge | Permanent capital |
+| **V** | Point72 (multi-manager quality implied) | Portfolio | HIGH | Two-sided network, pricing power, >50% margins | Network |
+| **Staples/ballast** (WMT, JNJ, PM, KO, PG, WM, MKL, DHR, HD, YUM…) | Cohen's diversified book only — that's fine | Portfolio | HIGH (as ballast) | XLY −3.4% vs XLP +10.3% says household strain; ballast is doing its job | Brand + distribution |
+
+**Tier 1 rule this week:** rebalance only on thesis change, never price. Nothing in the Tier 1 thesis set changed this week. The only Tier 1 *action* is the sweep deployment schedule.
+
+---
+
+## 3. Tier 2: Growth Compounders (20% target)
+
+| Asset | Manager(s) | Entry | Conviction | Growth / Path | Status |
+|-------|-----------|-------|------------|---------------|--------|
+| **TSM** | **All 5 whales** (Coatue #1, Tepper #3, Point72, SA pre-implosion) | Token $387 | HIGH — **top size-up candidate** | Foundry monopoly on AI silicon | Size in tranches **post-FOMC only** |
+| **MU** (~$6.8K, +152–156% since Jul 31) | Tepper 14.6% (#2), Coatue #3, Cohen; SA dead | 2026 | MEDIUM-HOLD | DRAM +50–60%, fabs booked; sponsor test WON ×2 (−6.4% vs SNDK −14.6%/STX −17.3% off the same Aug 17 peak) | Hold, **no new money** — pricing-led cycles seed oversupply 18–24mo out |
+| **CEG** (~$2.3K) | Coatue $1.2B, Cohen | Q4 2025 | MEDIUM-HIGH | Data-center power; −1.9% off high; SI 2.8% clean | Hold; watch Q3 13F for new joins |
+| **BE** (~$3.9K) | Cohen (SA 9.4% dead — exit overhang noted) | Portfolio | MEDIUM | Brookfield $25B, Oracle 2.8 GW, Q2 rev >$1B; **Oracle earnings Thu = catalyst** | Hold; fuel-cell permit moat |
+| **NFLX** (~$2.2K) | Coatue $336M, Cohen | Q4 2025 | MEDIUM | Streaming scale | Hold |
+| **CI** *(watchlist — NEW)* | None of the 5-cohort; value-screen case | — | MEDIUM | Fwd P/E 8.4 (66% below healthcare median), FCF $8B/yr, ROE 16.8%, insiders net +11.7K (13 buys vs 4 sells), Evernorth specialty growth, target +21% | Gate: post-FOMC; PBM-reform headline risk is the discount, not a flaw |
+| **TXT** *(watchlist — NEW)* | None; insider-buying pattern | — | MEDIUM | Fwd P/E 10.9, **10 buys vs 1 sell, Exec Chairman bought 10,300 @ $95.98 (21% above Fri close $79.07)**, FLRAA Army ramp +37% fwd EPS, target +29% | Gate: post-FOMC; first live case of the insider pattern — track it |
+
+**TSM sizing logic:** 5/5 whale sponsorship at $387 is a consensus position without the consensus dollars. The only reason to wait is the regime gate (10Y 12bp from kill zone, CPI + FOMC in 10 days). Post-FOMC, TSM is the first Tier 2 tranche ahead of any new name.
+
+---
+
+## 4. Tier 3: Inflation Hedges (10% target)
+
+| Asset | Type | Hedge Mechanism | Conviction | Note |
+|-------|------|-----------------|------------|------|
+| **VDE/XOP/SHEL** (~$16.8K) | Energy complex | Real-asset supply constraint; Brent $97 risk premium | HOLD | XLE +45% YTD is 1970s-rhyme fuel; **pre-write the de-escalation exit** (a talks headline takes $8–10 off Brent in days) |
+| **Gold complex** (~$4.9K: GLDM, SGOL, NEM, PHYS, PSLV) | Monetary hedge | Store of value | HOLD SMALL | Gold −16% off $5,318, below 200-day — the one 1970s line NOT confirming; no adds until it reclaims trend |
+| **VICI** *(watchlist — gate: post-FOMC)* | Gaming REIT income | **CPI-linked escalators** on 100%-occupied triple-net leases; 0.96× book, 7.2% yield, D/E 0.60 | MEDIUM | The rare listed instrument with a *direct* inflation-passthrough mechanism; rates are the gate, hence post-FOMC |
+| **TTE** *(optional candidate)* | Integrated energy ADR | Cheapest major (8.7× fwd), 4.8% yield, net debt ~1×, FCF $13.5B | MEDIUM | Adds on de-escalation dips only; ADR withholding nuance |
+| **Duration** (~$22.2K: T-note, VBND, RFHTX…) | Fixed income | Deflation/recession hedge | HOLD | Don't panic-trade duration into CPI week; it is the book's other-regime insurance |
+
+---
+
+## 5. Cut List (What to Avoid)
+
+**Execute-live this week:**
+- **NBIG — KILL.** A 2× leveraged ETF is the purest anti-Foundation instrument in the book. Any strength = exit.
+- **INTC — trim 1/3 into $95–100 (zone LIVE), trail below $87.26.** Tepper exit signal validated ×2 (−13.5% n=2, 75% confidence); Mizuho PT $92 below Friday's $95.80 reclaim; AI demand *promised*, not contracted. Coatue's counter-signal ($1.7B, 3.5%) adjudicates at Nov 16 13Fs — trim is thesis-neutral sizing, not a verdict.
+- **SNDK — Roth trim window 1,550–1,600** (verify Friday print Tuesday). **STX — trim-into-strength bias stands.** Momentum-only names; SA's implosion (it held SNDK at 28% of its book) now hangs an exit overhang over the whole memory complex.
+- **TEM — light-trim on the low-60s retest** (catalyst 10+ days spent). RXRX/HTFL/CBLL — trim candidates on strength; zero whale footprint across all 5 funds.
+
+**Standing avoid:**
+- **SPCX** — cap, no adds; illiquid, −21% vs cost, thesis-based not evidence-based at entry.
+- **GEV — DO NOT ADD** (900 broke 8/31; −17.9% vs cost while CEG sits −1.9% off high); exit completes Nov 16 if Point72/Coatue cut.
+- **Miners→AI basket** — Speculation, sell-into-strength trigger **ARMED not fired**; RIOT's bridge loan expires before rent starts; BTC $79,368 above the $75K danger line.
+- **TSLA** — trim-on-strength (−30% vs cost; margin compression + negative FCF).
+- **Permanent:** WOLF, KSS. **Tactical:** NVDA (no new money until −20% correction), MU new money, any high-SI name without a fresh specific catalyst (rule: SI is fuel, the catalyst is the spark).
+
+---
+
+## 6. Strategy Playbook Update
+
+1. **Sponsorship A/B test — WON (n=1 full month, promoted).** Off the shared Aug 17 peak: MU −6.4% vs SNDK −14.6% / STX −17.3%. Manager sponsorship visibly dampened the drawdown. Rule upgraded: *within any theme, hold the sponsored name and trim the momentum-only name.*
+2. **SA implosion — new case class.** Max-concentration single thesis (SNDK 28%, MU 27.5% of one fund) → fund death in July + sector-wide exit overhang. Lesson: 4-manager crowding on one thesis is *shared fate at exit*, not diversified conviction. Size for the crowd, not just the signal.
+3. **Regime gate codified.** 10Y 4.90–5.00% = the 1999–2000 rhyme's kill switch; a break historically reprices exactly the high-duration speculative sleeve (40% of this book). All Tier 2 entries gated post-FOMC regardless of price signals.
+4. **Insider-buying pattern — first live case.** TXT: 10 buys vs 1 sell, Exec Chairman paid $95.98 (21% above market). Promoted from "no active cases" to tracking; adjudication = FLRAA ramp delivery.
+5. **Trading Arena corroboration (low-reliability source, directional only):** diversified/quality baskets (Wolf +2.62% XLK/SMH, Fox +1.13%, Owl staples +0.68%) beat the momentum duo (Turtle META/NVDA −3.92%) over the month; SPY −0.24%. Consistent with the sponsorship-over-momentum pattern.
+
+---
+
+## 7. Memory Update
+
+- **Performance vs inflation (row added):** 2026-09-07 — CPI ~3.0–3.7% (Aug print this week); book 16.5/39/40 vs 70/25/5 targets; anchor P&L (Aug 28 basis): MU +155.7%, SNDK +140.8%, STX +97.7/121.9%, INTC +96.0%, AMZN +14.7%, TSM +27.3%; terminal-wealth lever unchanged: all-Foundation ≈ $2.66M; fee drag −$556k; sweep-idle −$665k.
+- **Watchlist changes:** +CI, +TXT (both post-FOMC gated); VICI trigger refined to rate-regime gate; TSM confirmed as first post-FOMC tranche; MSFT/MA/ZTS/UNH unchanged (no fresh signals this week).
+- **Nov 16 adjudications queued:** INTC two-sided test (Tepper exit vs Coatue entry), GEV divergence (P72/Coatue cut?), SPOT D1/Coatue reduction, new CEG joins.
+- **Manager reliability:** unchanged; Tepper exit-reversal holds 75% (n=2 — no raise without a 3rd case). SA added to the lesson file as the concentration-cautionary case.
+
+*Next weekly run: Monday, Sep 14, 2026 — after CPI (Thu) and into the FOMC window; TSM tranche decision expected.*
