@@ -164,3 +164,9 @@ sessions_spawn(
 - Does: fresh NWS + live ladders -> market center + model center -> hard gates (NO core >=4F, lottery cap <=3pct via kalshi_pre_order_check.py, MIA blacklist, >=2F gap red flag) -> proposal (max 3) or NO QUALIFIED PICKS. PROPOSAL ONLY - Thad approves all buys.
 - Purpose: locks the morning-of entry discipline (Sep 4 lesson) - replaces the one-shot sep5-weather-picks.
 - All three Sep 4 code fixes verified landed 06:47 (spike rule L117, lottery cap L227, cost fix L159).
+
+## 2026-09-07 03:10 CDT - console-flash fix for 5-min tasks (Spock)
+- Thad: "the watchdog keeps popping up a powershell window" - Task Scheduler allocates a console window for powershell.exe before -WindowStyle Hidden applies, so every run flashed; BOTH 'OpenClaw Watchdog' and 'OpenClaw Load Governor' ran powershell directly (both every 5 min).
+- Fix: hidden WScript launchers (scripts/gateway_watchdog_launcher.vbs, scripts/load_governor_launcher.vbs) - WScript.Shell.Run(powershell, 0, True) creates the window hidden from the start; True=wait keeps task instance spanning the script run (IgnoreNew overlap protection intact). Same pattern as gateway.vbs.
+- Watchdog re-registered via updated setup-gateway-watchdog-task.ps1 (action = wscript.exe //B <launcher>); Load Governor action swapped in place via scripts/fix-load-governor-window.ps1 (Set-ScheduledTask -Action only, trigger/settings preserved).
+- Verified 03:07 AM: both actions show wscript launchers, both test runs Result 0, gateway healthy (200).
