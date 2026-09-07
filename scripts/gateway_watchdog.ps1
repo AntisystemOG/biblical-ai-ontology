@@ -6,7 +6,7 @@
 #   - age guard: gateway node procs < 3 min old -> leave alone (still starting up)
 #   - hung kill: gateway node procs >= 3 min old -> Stop-Process -Force (hung but holding port)
 #   - restart via schtasks /run "OpenClaw Gateway" (gateway.vbs -> gateway.cmd = canonical launcher)
-#   - verify up to 60s after start; everything logged to workspace\logs\gateway-watchdog.log
+#   - verify up to 120s after start (cold start on this loaded box can exceed 60s); everything logged to workspace\logs\gateway-watchdog.log
 #   - daily memory note on restart (APPEND-ONLY: Add-Content only, never whole-file writes)
 # -TestDown simulates the down path (breaker/age-guard/logging) without touching the real
 #  gateway or the real restart marker. Safe to run while the gateway is healthy.
@@ -91,9 +91,9 @@ $runOut = schtasks /run /tn $GatewayTask 2>&1
 Write-Log ("schtasks end: {0} | run: {1}" -f ($endOut -join ' '), ($runOut -join ' '))
 
 # --- verify ---
-for ($i = 1; $i -le 6; $i++) {
+for ($i = 1; $i -le 12; $i++) {
     Start-Sleep -Seconds 10
     if (Test-GatewayPort) { Write-Log ("gateway back up after ~{0}s" -f ($i * 10)); exit 0 }
 }
-Write-Log 'ERROR: gateway still not responding 60s after restart attempt - next cycle retries after flap breaker expires'
+Write-Log 'ERROR: gateway still not responding 120s after restart attempt - next cycle retries after flap breaker expires'
 exit 0
