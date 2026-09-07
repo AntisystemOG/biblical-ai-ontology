@@ -5,6 +5,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 <!-- TOC (auto-generated) -->
 - Memory Dream
 - Whale Watch
+- History Rhymes
 <!-- /TOC -->
 
 ---
@@ -137,3 +138,58 @@ And the discipline that says no: **zero Sep 6 picks** — three of four cities R
 **Schedule note:** this cron is configured *daily* 6:00 AM but the agent spec says *quarterly* (13F deadline dates) — registry flagged this Sep 4 pending your call. Say the word and I'll set it to quarterly (e.g., Feb/May/Aug/Nov 17, first safe morning after each 45-day deadline). Daily runs just re-report the same quarter between filings.
 
 *Data: 13f.info filing JSONs — accessions 0000919574-26-005520 (Point72), 0000919574-26-005478 (Coatue), 0001172661-26-003662 (D1), 0001656456-26-000003 (Appaloosa), 0000935836-26-000418 (SA).*
+
+---
+
+<!-- section:History Rhymes -->
+## History Rhymes (07:01 CT)
+
+# History Rhymes
+
+**Run:** Monday, Sep 7, 2026, 7:00 AM CT (cron) · **Data through:** Fri Sep 4 close (US markets closed Labor Day) · Sources: yfinance (25 instruments) + MarketWatch RSS (Sep 7)
+
+## What changed this week — the setup
+
+| Signal | Level | Why it matters |
+|---|---|---|
+| **10Y Treasury** | **4.78%** — within 2bp of its 52-wk high (4.80%), +~60bp YTD | **Entering the standing 4.90–5.00% watch zone** (12–22bp away). This is the trigger flagged when the primary rhyme was set. |
+| **Curve (10Y vs 13W)** | 4.78% vs 3.76% = **+102bp steep** | Within the past 52 weeks this curve was *inverted* (13W hi 4.00 vs 10Y lo 3.95). Full inversion→re-steepening cycle = textbook **late-cycle** signature. |
+| **Front end vs long end** | 13W 3.76% prices an easing path; 10Y makes new highs | **Long-end-up-into-easing** — the exact interest-rate fingerprint of the 1999–2000 rhyme. |
+| **WTI crude** | **$91.48**, +59% YTD, **+6.7% in 5 sessions** | Supply shock: reports of a Houthi strike on a **Saudi Aramco refinery** (Sep 7 headlines). Energy inflation arriving into an easing bias. |
+| **Equity risk premium** | Forward P/E ~22–23x → earnings yield ~4.4% **< 10Y 4.78%** | **Negative ERP.** Stocks now yield less than cash-equivalent bonds — a condition seen at exactly two other moments in 40 years: 2000 and 2007. |
+| **Small caps** | RUT +19.9% YTD — **leading** SPX (+12.8%) | A twist the pure-1999 script doesn't have (see Rhyme #1 twist). |
+| **Consumer** | XLY **-3.4% YTD** (only negative sector); XLP +10.3% | Discretionary lagging staples = household strain beneath a calm index. |
+| **VIX / credit** | VIX 15.2; HYG within 0.4% of 52-wk high | Zero stress priced. Complacent volatility is fuel, not fire — but it means nothing is hedged. |
+
+Sector YTD rotation: **XLE +45.3** · XLK +30.4 · XLI +13.6 · XLV +11.7 · XLP +10.3 · XLF +7.0 · XLU +2.3 · **XLY -3.4** — energy + tech leading together while discretionary goes negative.
+
+## The rhymes, ranked
+
+### 1. 1999–2000 dot-com — **PRIMARY (HIGH)** — with one important twist
+**What matches:** Valuation (CAPE ~42, top 1% of history); record top-10 concentration (~36–40%, above the dot-com peak's ~27%); tech share of the index (~32%) at the 2000 peak (~33%); the rate fingerprint — Fed easing bias into a *rising* long end (then: 10Y 4.6%→6.5% during 1999–2000 hikes; now: 10Y +60bp YTD while the front end prices cuts); oil tripling (1999: ~$11→$25; 2026: +59% YTD on a Mideast supply shock); negative ERP; tech leadership (XLK +30% YTD ≈ 1999's +78% run rate); and the AI-capex story playing the Y2K-capex role. Whale Watch ties in: Tepper's #2 and Coatue's #3 are MU; the "OpenAI Astra reignited the memory-chip trade" headlines are the same narrow-leadership engine.
+**The twist:** In 1999, small caps *lagged* badly (RUT +3% vs SPX +20%). Today RUT **leads** by 7 points. Breadth is broadening, not narrowing — that historically extends the runway (1995–96-style) rather than narrowing it into a single-sector blowoff. The rhyme's shape is 2000's valuation on 2017's breadth.
+**Kill/falsify:** 10Y closing through **5.00%** (the standing watch zone); FOMC **Sep 15–16** is the next scheduled stress point.
+
+### 2. 1973–74 / 1970s stagflation — **SECONDARY (MEDIUM), rising**
+Energy leading the market by 15 points (XLE +45%), a physical supply shock to Saudi oil infrastructure (the 1973 embargo echo), gold $4,476 after a parabolic run, dollar below both moving averages. Gold's own divergence — **-16% off its $5,318 high, below its 200-day** — is the one line of the 1970s script not being followed (in the 70s gold kept rising into the endgame).
+**Escalation trigger:** WTI through **$95–100** converts this from secondary to co-primary. The Aramco headline is exactly how that rhyme gets promoted.
+
+### 3. 2016–17 reflation → 2018 rate shock — **MEDIUM (the twist's rhyme)**
+Small-cap leadership + energy leadership + steepening curve + rising long rates is the 2016–17 reflation signature. That rhyme ended not in a valuation crash but in a **rate-shock correction** (Jan–Feb 2018: 10Y 2.4%→2.9%, VIX 50, -7% SPX in days). The 2026 analog: a 10Y break of 4.90–5.00% into a calm VIX-15 market is the same fuel-air mix. Current calm (VIX 15, HYG at highs) is what made Feb 2018 so violent — positioning was one-sided.
+
+### 4. What is NOT rhyming — the negatives that keep us honest
+- **Not 2007 (yet):** credit is untroubled (HYG +2.2% YTD, near highs), the curve is steep, not inverted. 2007's signature — credit cracking under an inverted curve — is absent.
+- **Not 2000's breadth:** one negative sector today vs. narrowing leadership into March 2000.
+- **Not 1979's gold:** gold is confirming nothing — its 200-day break argues *against* the inflation-endgame reading.
+
+## Net read
+The 1999–2000 primary rhyme **gains confirmation this week** on three independent legs: the 10Y reached 4.78% (12bp from the watch zone), the curve completed its inversion→+100bp re-steepening (late-cycle), and oil +59% YTD on a live supply shock (the 1999 oil-tripling analog) — all while the ERP sits negative. The RUT twist says the *timing* mechanism is more 2017-broadening than 1999-narrowing: broadening rhymes end in rate shocks, not simultaneous sector blowoffs. **The single variable to watch is the 10Y through 4.90–5.00%, with FOMC Sep 15–16 as the resolution date.**
+
+## Watch list (next 7 days)
+1. **10Y** — a daily close ≥ 4.90% opens the watch zone; ≥ 5.00% is the rhyme's kill-switch. (Fri close: 4.78, high 4.80.)
+2. **FOMC Sep 15–16** — easing into a rising long end gets its next stress test.
+3. **Claims print** — date shifts this week (Sep 10 vs 11, Labor Day); forecast 203.5K vs the 210K NO threshold (11sh NO @ 0.67 open in the book). Verify the release date before the open.
+4. **Oil** — Aramco escalation; WTI > $95 promotes the 1970s rhyme to co-primary.
+5. **Memory-chip bid** — MU/Astra headlines sustain the whale-concentrated trade; a fade there de-risks the concentration leg of the 1999 rhyme.
+
+*Not investment advice. Data: yfinance (Sep 4 close, raw-percent yields) + MarketWatch RSS (Sep 7). CAPE/P-E figures approximate per August baseline.*
