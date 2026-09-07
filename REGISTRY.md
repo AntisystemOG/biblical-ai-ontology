@@ -137,6 +137,7 @@ sessions_spawn(
 - KNOWN LIMIT: cron payload reinforcement lines NOT applied - automations update blocked by "scheduled account policy must match the persisted job owner" from this session (same gate that stopped the Aug 31 [PROMPT-LAW] payload hardening). Agent files are the operative instructions (payloads are thin shims: "Read agents/X.md and execute"), so consolidation works regardless. Payload-level patch remains OPEN for both programs.
 - financial-advisor.md carries an explicit SUPERSEDES note over its Aug 31 payload path override (payload says write to data\reports\...; digest wins).
 - Kalshi reporting jobs (kalshi-weekly-review etc.) untouched by design.
+## 2026-09-07 06:00 - whale-watch run (cron) <!-- project: github.com/AntisystemOG/biblical-ai-ontology -->
 - Ran whale-watch again Sep 7 06:00 (cron is daily 0 6 * * *; agent file says quarterly) - re-reported same Q2 2026 13Fs; digest_append replaced section (no dup).
 - New durable data source discovered: 13f.info per-filing JSON endpoint https://13f.info/data/13f/{accession-without-dashes} - full holdings lists per manager; added to agents/whale-watch.md.
 - Cadence mismatch STILL pending Thad: daily cron vs quarterly spec (agent file). Not changed without confirmation; flagged in report.
