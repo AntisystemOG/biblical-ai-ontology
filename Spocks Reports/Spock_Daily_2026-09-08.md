@@ -6,6 +6,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Memory Dream
 - Whale Watch
 - History Rhymes
+- Daily Brief
 <!-- /TOC -->
 
 ---
@@ -211,3 +212,151 @@ Both standing triggers sit one daily close away on the same morning: **oil needs
 7. **Claims (date shifted this week, likely Thu):** forecast ~203.5K vs the 210K NO in the book — verify release date before the open.
 
 *Not investment advice. Data: yfinance (cash close Sep 4; futures/FX/metals through Sep 8 pre-open; raw-percent yields) + MarketWatch/WSJ RSS (Sep 8). CAPE/P-E figures approximate per August baseline.*
+
+---
+
+<!-- section:Daily Brief -->
+## Daily Brief (08:01 CT)
+
+# Daily Brief — Tuesday, September 8, 2026
+
+## Market Overview
+
+**Futures (pre-market):** S&P 500 futures -0.1% (~7,711) | Dow futures -0.6% (-300+ pts) | Nasdaq futures +0.4% — tech holding up while cyclicals slip.
+
+**The two forces this morning:**
+1. **Iran war escalation → oil at six-week high.** Brent pushed toward $98 intraday. Iran attacked Israel and Gulf countries Monday, hours after state TV named Ayatollah Mojtaba Khamenei as his father's successor. US destroyed 3 Iranian oil tankers near Kharg Island (Sep 5) after IRGC attacks on US naval ships; Iran claims a strike on a US unmanned vessel in the Strait of Hormuz.
+2. **Fed rate-HIKE bets rising** (yes, hikes, not cuts). August payrolls +162K vs ~53K consensus, unemployment steady at 4.1%, and July's -23K was revised away entirely. Yields jumped; September hike odds rebounded. CPI this week + FOMC decision ahead.
+
+**Crypto:** BTC ~$78.3K (-1.5%), lost the $80K and $79K levels as rate-hike bets pressure risk assets. First weekly close above $80K since May did not hold.
+
+**New wrinkle:** U.S.–Canada tariff war escalation cited as fresh Dow-futures pressure today.
+
+---
+
+## Key Stories
+
+### 1. Iran War Escalation — Oil Toward $98, Successor Named, Tankers Destroyed
+**Bias Spectrum:** Left (CNN, Guardian) ← Center (AP, Reuters) → Right (Fox, NY Post, Washington Examiner)
+
+**WHERE THEY AGREE (Convergent Facts):**
+- Mojtaba Khamenei formally named supreme leader successor Monday; Iran launched reprisal attacks on Israel and Gulf states hours later (AP).
+- US military destroyed 3 Iranian crude tankers near Kharg Island / Gulf of Oman on Sep 5 after IRGC attacks on US naval ships (Fox live blog, NY Post, Washington Examiner all confirm).
+- Iran claims a strike on a US (unmanned) vessel entering the Strait of Hormuz; US disputes part of the account (AP, NY Post wire, Washington Examiner).
+- Oil at a six-week high; Brent intraday push toward $98; Asian markets tumbled Monday; US equity futures down modestly Tuesday.
+
+**WHERE THEY DIFFER:**
+- **Left (CNN/Guardian):** Frames a spiraling retaliation cycle — "Iran retaliates after US strikes, defying Trump's warning it could be hit 'much harder.'" Emphasis on escalation risk, regional civilian toll, US Embassy Riyadh-type incidents.
+- **Center (AP/Reuters):** Straight chronology + market impact. Reuters runs the key analytic piece: **"Why isn't oil above $100 despite supply disruptions?"** — the answer (OPEC spare capacity, rerouted shipping, demand softness) is the whole story for markets.
+- **Right (Fox/NY Post/WashEx):** Frames Iran as "unprovoked" aggressor, Trump decisive ("more painful response" warning); NY Post notes **pump-price relief could come soon** — a consumer-angle story the war framing crowds out.
+
+**Blindspots:**
+- **Left omits:** the market math — why oil stays under $100 (spare capacity, freight rerouting) and that energy equities are absorbing it calmly.
+- **Right omits:** Gulf-state vulnerability and the risk that Hormuz incidents (unmanned vessels) escalate into shipping insurance shock rather than just tanker losses.
+- **Center covers:** the quiet question both sides skip — this war has run since Feb/March and markets have partially priced it; the *incremental* spike Monday was succession + retaliation timing, not a new theater.
+
+**Likely Reality:** The war is real, ongoing, and now has a consolidated supreme leader (Mojtaba) plus direct tanker warfare. Oil's floor has moved up structurally, but supply elasticity is keeping it below $100. The market is treating this as an inflation/oil premium, not a risk-off event — Nasdaq futures positive proves it. Watch Hormuz shipping insurance rates, not headlines, for the real escalation signal.
+
+### 2. August Jobs Shock — +162K, Fed Now Leaning Toward a HIKE
+**Bias Spectrum:** Left (NYT, CNBC) ← Center (Reuters, WSJ) → Right (NY Post, Fox Business)
+
+**WHERE THEY AGREE (Convergent Facts):**
+- Nonfarm payrolls +162,000 vs ~53,000 consensus (nearly triple).
+- Unemployment rate steady at 4.1%; July's reported -23,000 decline revised away entirely.
+- Treasury yields rose on the print (Reuters: "Strong August jobs report sends yields higher").
+- September **rate-hike** odds rebounded (PNC: "September hike odds rebound"); markets now treat the Fed as biased toward tightening, with CPI this week the next checkpoint.
+
+**WHERE THEY DIFFER:**
+- **Left (NYT):** "U.S. Hiring Jumps, an Encouraging Sign for the Economy" — jobs strength as good news, soft-pedals the tightening implication.
+- **Center (Reuters/PNC):** Leads with the policy consequence — yields up, hike odds up; treats strength as a two-edged signal.
+- **Right:** Emphasis split between growth celebration and attack on Fed credibility for having leaned dovish too long.
+
+**Blindspots:**
+- **Left omits:** that good jobs news is bad news for leveraged growth/credit this week — the rate-hike reframing is the actual market story.
+- **Right omits:** the wage side and the oil interaction — hike bets + $98 Brent is a squeeze on consumers the growth narrative ignores.
+- **Center covers both:** three-month average payrolls now solid; the July negative print was noise.
+
+**Likely Reality:** The labor market re-accelerated. A September hike is genuinely on the table — this is a regime shift for positioning: bad for bonds (VBND, BND, the 2031 Treasury), bad for crypto miners, bad for high-multiple AI names' financing costs, and it neutralizes the usual "Fed put." CPI this week is the swing factor.
+
+### 3. U.S.–Canada Tariff War Re-Escalation
+**Convergent Facts:** Dow futures hit with an additional ~300-pt drag today on renewed U.S.–Canada tariff escalation; petroleum is in the threatened scope.
+**Blindspot:** US energy names with Canadian exposure (VDE holds Canadian producers) face a cost/pass-through squeeze that headlines don't price; XOP (US-only E&P) is the relative winner in the portfolio.
+**Likely Reality:** Bluster phase, but it stacks onto the oil premium — another inflation input the Fed can't ignore.
+
+### 4. Bloom Energy (BE) — S&P 500 Inclusion vs. Execution Reality
+**Bias Spectrum:** Bullish retail/crypto press ← Business wires → Skeptical analysts
+
+**WHERE THEY AGREE:**
+- BE was confirmed for S&P 500 inclusion Sep 4; shares jumped ~13% on the announcement.
+- BE remains in today's pre-market focus lists (StockTwits/TradingView: MU, ORCL, INTC, BE in focus).
+- Background context everyone has: Oracle partnership expanded (after a $400M warrant), Nebius $2.6B AI-cloud deal, CEO holding shares.
+
+**WHERE THEY DIFFER:**
+- **Bullish side:** S&P inclusion = forced index buying, data-center demand thesis intact.
+- **Bearish side (Sep 7-8 pieces):** "S&P headline isn't the story — the valuation is." Execution risks mounting: fuel-cell delivery delays stalling Stargate/Oracle data-center projects, New Mexico pipeline rejection (Oracle/BE fell on it), grid delays, community opposition, scandium supply-chain scrutiny.
+
+**Likely Reality:** Index inflows provide near-term support, but the Jul 18 "growth story is starting to crack" (BE -39% from June peak then) thread hasn't been refuted — delivery timelines are the stock's real test. Thad's position: +31% total gain at last snapshot; treat S&P-inclusion pop as an exit-management window, not a new-money signal. No permission needed to trim if you decide to — but buying more needs consultation per standing rules.
+
+### 5. Core Scientific (CORZ) — AMD Pivot + $600M Credit Line
+**Convergent Facts:** CORZ secured $600M in new credit facilities (Sep 1, JPMorgan/Morgan Stanley involvement) — stock *fell* 5.6% on it (dilution/leverage read). Pivoted to a 2.5GW AI data-center pact with AMD after the CoreWeave deal collapsed. Rising Treasury yields (post-jobs) are raising AI-buildout financing costs, pressuring APLD/CIFR/CORZ (Sep 3).
+
+**Likely Reality:** CORZ is now a rate-sensitive AI-infrastructure name wearing a bitcoin-miner jersey. Higher-for-longer yields are a direct headwind to the buildout math; the AMD pact is the long-term thesis but it's financed in this yield environment. Rate decision this week is the swing factor.
+
+---
+
+## Portfolio News
+
+### BE — Bloom Energy
+**News:** S&P 500 inclusion confirmed Sep 4 (+13%); execution-risk pieces circulating Sep 7-8.
+**Market Implication:** **Neutral-to-cautiously-positive near term** (index inflows), **valuation/execution risk beyond that.** Delivery delays on Oracle-linked projects are the specific thing to watch.
+
+### CORZ — Core Scientific
+**News:** $600M credit facilities (fell 5.6% on it); AMD 2.5GW AI data-center pact; yield-sensitive financing.
+**Market Implication:** **Bearish near-term** if hike odds firm (financing costs), **bullish long-term** if AMD pact de-risks the CoreWeave collapse. FOMC this week decides which dominates.
+
+### RIOT / HUT / WULF / APLD — Crypto & Digital Infrastructure
+**News:** BTC ~$78.3K, below $79K/$80K; Fed hike bets directly pressuring crypto; yields slamming AI-buildout financing names.
+**Market Implication:** **Bearish short-term.** BTC lost $80K support with $76K as the next flagged level. These names have beta >1 to both BTC and yields right now.
+
+### SHEL / VDE / XOP — Energy
+**News:** Oil at six-week high on Iran war; Brent toward $98; Reuters asks why it isn't higher yet.
+**Market Implication:** **Bullish.** The clear portfolio tailwind this morning. XOP also side-steps the Canada-tariff angle that touches VDE's Canadian producer exposure. NY Post's pump-relief angle (refinery/inventory dynamics) is the one caveat — retail crack spreads can compress even as crude holds.
+
+### INTC / MU / AMD — Semis
+**News:** MU, INTC in today's focus lists with futures mixed. No fresh overnight INTC headline found; context: 18A in production, government stake converted to ~$36B equity, foundry 49% sale cap (no full spinoff), Apple chip deal underpinning the foundry pivot. MU was the Jul 31 snapshot's biggest gainer (+18.35% that day).
+**Market Implication:** **Neutral.** Nasdaq futures positive suggests semis can hold; the rate story, not company news, is what moves them this week.
+
+### VBND / BND / 2031 Treasury — Bonds
+**News:** Yields jumped on jobs strength; September hike odds rebounded.
+**Market Implication:** **Bearish this week.** CPI is the next leg. If the hike is real, the 1.625% 2031 note stays a drag.
+
+### Defensives (WMT, KO, PM, JNJ, PG) & Staples
+**News:** No fresh headlines; futures tape slightly risk-off.
+**Market Implication:** **Neutral-to-mildly-positive.** They were the red column in the Jul 31 snapshot — a hike-cycle tape historically favors them over unprofitable growth.
+
+---
+
+## Blindspot Report
+
+1. **The rate-HIKE story is undercovered relative to its importance.** Political coverage (left and right) is consumed by Iran; financial press treats hike odds as a side note. A September hike alongside $98 oil would be a genuine regime marker for the whole portfolio — especially the crypto and AI-infrastructure sleeves.
+2. **Succession math:** Left coverage of Mojtaba's succession focuses on legitimacy/retaliation; right coverage focuses on retaliation. Neither is asking whether a *consolidated* leadership makes negotiation more or less likely — that's the actual tail-risk question for oil.
+3. **Hormuz insurance rates** are the real oil-spike tell (tanker losses ≠ shipping shutdown). Nobody in today's coverage is quoting them.
+4. **Canada tariff + oil premium interaction:** if petroleum tariffs actually land while Brent runs toward $98, US refiners' input costs and Midwest pump prices decouple from global crude — a consumer inflation shock with zero Fed-friendly offset.
+
+---
+
+## Pre-Market Outlook
+
+**Overall: Neutral, rate-decision-dominated.** Energy is the portfolio's best-positioned sleeve this morning; crypto/digital-infrastructure is the most exposed.
+
+- **Bullish:** SHEL, VDE, XOP (oil premium + geopolitics); BE (index-inclusion flows, near term).
+- **Neutral:** INTC, MU, AMZN, SPOT, GOOGL (Nasdaq futures green; no company-specific overnight shocks).
+- **Bearish short-term:** RIOT, HUT, WULF, APLD, CORZ, NBIG (2x lever) — BTC below support + hike bets + financing costs.
+- **Bearish this week:** VBND, BND, the 2031 Treasury note — until CPI and the FOMC land.
+
+**This week's decision points:** CPI print (mid-week) and the September FOMC decision. A hawkish surprise hits the crypto sleeve hardest; a dovish surprise re-rates CORZ/APLD financing math fastest. Energy needs no decision — the tailwind is doing the work.
+
+**Suggested watch items:** Hormuz shipping insurance quotes; BE delivery-timeline news (Oracle/Stargate projects); CORZ follow-through on AMD pact details; any Fed speaker walking back or confirming the September-hike framing.
+
+---
+*Sources: AP, Reuters, CNN, The Guardian, CNBC, NYT, Fox News, NY Post, Washington Examiner, Bloomberg, PNC Economics, StockTwits/TradingView, crypto.news, TokenPost, Gate News. Portfolio data: Fidelity positions CSV dated Jul 31, 2026 (latest available — prices in "Market Implication" calls are directional, not marked to today).*
