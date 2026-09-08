@@ -5,6 +5,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 <!-- TOC (auto-generated) -->
 - Memory Dream
 - Whale Watch
+- History Rhymes
 <!-- /TOC -->
 
 ---
@@ -147,3 +148,66 @@ Plus **AAPL**: Cohen $109M put vs $142M long (hedged), and **Tepper is put-only 
 **Schedule note:** the agent spec says quarterly (Feb/May/Aug/Nov 15) but this cron still fires daily at 6:00 AM — pending your call since Sep 4. Daily runs just re-report the same quarter between filings (today's run added the XYZ correction).
 
 *Data: 13f.info filing JSONs — accessions 0000919574-26-005520 (Point72), 0000919574-26-005478 (Coatue), 0001172661-26-003662 (D1), 0001656456-26-000003 (Appaloosa), 0000935836-26-000418 (SA). Cross-checked Sep 6 + Sep 7 fetches — identical. Values are 13F-reported ($000, as of 6/30/2026); option rows split put/call from longs.*
+
+---
+
+<!-- section:History Rhymes -->
+## History Rhymes (07:03 CT)
+
+# History Rhymes
+
+**Run:** Tuesday, Sep 8, 2026, 7:00 AM CT (cron) · **Data through:** cash close Fri Sep 4 (Labor Day Sep 7) + Globex/futures Sep 8 pre-open · Sources: yfinance (28 instruments) + MarketWatch/WSJ RSS (Sep 8)
+
+## Overnight changes — both standing triggers are now at the doorstep
+
+| Signal | Sep 7 run | Now (Sep 8) | Read |
+|---|---|---|---|
+| **WTI crude** | $91.48 | **$93.91** (+2.7% overnight, +9.5%/5d, +63.6% YTD) — highest in >3 months | Houthis struck Saudi **civilian AND energy sites** (73 injured per Saudi-led coalition). Promotion trigger (close >$95) is ~1% away; **Brent is already near $100**. |
+| **10Y Treasury** | 4.78% (Sep 4 close), 52-wk high 4.80% | Yields **rising in European trade** on oil + "increased likelihood of a rate hike next week" (WSJ) | Cash market reopens today after the 3-day gap. A close ≥4.80 = fresh 52-wk high; ≥4.90 opens the standing watch zone; ≥5.00 = kill-switch. |
+| **Brent** | ~$97 (weekend) | **~$100** — "Oil Nears $100, Dow Futures Dip" (WSJ) | Triple-digit Brent is 1973/1979/2022 territory. |
+| **ES / NQ futures** | — | ES 7,699 (−0.3%), NQ 29,557 (−0.03%) | Modest red, oil-driven, orderly. Tech still outperforming (NQ > ES). |
+| **MU** | — | **$1,016.59** (+6.1% Fri, +256% YTD, −16% off its $1,213 high) | Memory-chip leg of the concentration trade intact (Tepper #2, Coatue #3 in MU). |
+| **Yen / DXY** | — | **Yen at a 6-month high** on carry-unwind + Treasury-selldown flows (MW); DXY 98.97, below both MAs, *falling while yields rise* | New watch item: the historical de-grossing fuse (1998, 2007, Aug-2024). |
+| **VIX / HYG** | 15.23 / −0.4% off high | 15.75 / −0.4% off high | Still zero stress priced — nothing hedged into a two-trigger week. |
+
+Sector YTD unchanged through Friday: **XLE +45.3 · XLK +30.4 · RUT +19.9 > SPX +12.8 · XLY −3.4 (only negative)** — energy + tech leading together, small caps still leading broad, discretionary still straining.
+
+## The rhymes, ranked (changes from Sep 7 marked)
+
+### 1. 1999–2000 dot-com — PRIMARY (HIGH) — rate fingerprint approaching a full match
+- **New confirmation leg:** the market now prices a **possible first HIKE** at FOMC Sep 15–16 (WSJ, European trade). The rhyme's one fingerprint mismatch — "easing bias vs rising long end" — is closing: 2026 is starting to echo 1999-2000, where the Fed *hiked* (Jun 1999 → May 2000) into a rising long end, negative ERP, record concentration, and oil that had tripled.
+- **Citi's cycle study (MW today):** after the first hike of a cycle, US equities historically stumble modestly — and 1999's version was chop, then a *blowoff into March 2000*. A first hike is not the kill-switch; **the 10Y is**.
+- **10Y doorstep:** 4.78% with the 52-wk high at 4.80% and overnight yields rising. Today's cash open is the first confirmation window in 4 sessions.
+- **Mechanics note:** the Fed entered blackout (~Sep 5), so hike-odds repricing is running **unopposed** into CPI — one hot print has outsized power. Same mechanics as June 1999.
+- **Kill/falsify unchanged:** daily close through **5.00%** = kill-switch. FOMC Sep 15–16 = resolution date.
+
+### 2. 1970s stagflation — SECONDARY (MEDIUM) → **PROMOTION WATCH: one close from co-primary**
+- The trigger written when this rhyme was set: *"WTI through $95–100 converts this from secondary to co-primary."* WTI sits at $93.91 with Brent ~$100 and Saudi energy infrastructure struck again — the exact escalation path flagged. Iran's promised Hormuz "restricted zone" declaration is still pending and is the next catalyst.
+- **Base-rate caution (falsifiability both ways):** the last direct precedent — Abqaiq, Sep 2019 — spiked oil ~15% in a day and gave it all back within ~2 weeks as supply repaired. Promotion requires **sustained closes >$95**, not a print. A reversal below $90 demotes this again.
+- What still argues against it: gold ($4,446, −16.4% off its high, **below its 200-day**) refuses to confirm the 1970s endgame. What argues for it: the **dollar is falling while yields rise** — the stagflationary pairing; a clean 1999 rhyme had a firm dollar.
+- WSJ already connected the mechanics (Sep 1): *"Oil Prices Push Global Bond Market Closer to the Edge — rising energy costs are the inflationary trigger."*
+
+### 3. 2016–17 reflation → 2018 rate shock — MEDIUM, rising with the rates leg
+- A 10Y within 2bp of its 52-wk high into a VIX-15 / HYG-at-highs market is the same fuel-air mix as Jan–Feb 2018: one-sided positioning + rate repricing = fast, violent de-grossing. The modern template is **Aug-2024's yen-carry unwind** (VIX 12→65 intraday, SPX −6% in a day, recovered in weeks).
+- **New fuse: the yen at a 6-month high**, attributed to carry-trade unwind + U.S. Treasury selldown (MW). That is the classic mechanism that turns calm into forced selling — and it pairs with the MW chip-chart piece telling investors to watch the *currency market* for money flowing in and out of chip stocks (the most crowded, most exposed trade).
+- **Broadening still argues this rhyme over 1999-narrowing:** RUT leads SPX YTD by 7 points; Morgan Stanley is publicly calling for the next leaders to be "AI adopters"; WSJ reports software (Salesforce, Workday) holding fundamentals despite share pain. Leadership is widening, not narrowing — 2017-style broadening historically ends in a **rate shock, not a simultaneous sector blowoff**.
+
+### 4. What is NOT rhyming — updated
+- **Gold vs oil disagree:** oil is screaming 1970s; gold is below its 200-day and −16% off its high. The two inflation witnesses are in conflict — the dollar's path is the tiebreaker.
+- **Not 2007:** credit untroubled (HYG +2.2% YTD, 0.4% from its high), curve steep (+102bp), not inverted.
+- **Not 2000's breadth:** one negative sector today vs narrowing leadership into March 2000.
+- **Dollar anomaly:** yields up + hike odds up, yet DXY falls below both MAs and the yen surges — inconsistent with a clean 1999 script (firm dollar), consistent with a debasement/stagflation undertone.
+
+## Net read
+Both standing triggers sit one daily close away on the same morning: **oil needs a close >$95** (Brent is already ~$100) and **the 10Y needs a close ≥4.80** to print a fresh 52-wk high (4.90 opens the watch zone, 5.00 is the kill-switch). Overnight flow — Saudi energy sites struck, hike odds rising during blackout, Brent nearing triple digits, futures red but orderly, VIX still 15.75 — says the market is treating this as an oil headline, not a regime change. That calm (HYG 0.4% from highs, RUT leading, nothing hedged) is the same one-sided positioning that made Feb-2018 and Aug-2024 violent. **This week's sequence — CPI → FOMC Sep 15–16 — is the resolution window. A 10Y close >4.90 into a priced hike moves the primary rhyme into its watch zone; two WTI closes >$95 promote the 1970s rhyme to co-primary. Either alone is a warning. Both together is the late-cycle signal.**
+
+## Watch list (today → FOMC)
+1. **10Y cash open (today):** first close in 4 sessions. ≥4.80 = fresh 52-wk high (confirmation leg); ≥4.90 = watch zone opens; ≥5.00 = kill-switch.
+2. **WTI close vs $95** (Brent vs $100): sustained closes promote the 1970s rhyme to co-primary. Watch for Iran's Hormuz restricted-zone declaration.
+3. **CPI (this week — verify exact date):** the Fed decider, landing while the Fed is in blackout — unopposed repricing risk (June-1999 mechanics).
+4. **FOMC Sep 15–16:** a first hike completes the 1999–2000 rate fingerprint. Hike + 10Y < 4.90 = 1999-style chop, not crash. Hike + 10Y ≥ 5.00 = kill-switch.
+5. **USDJPY / VIX term structure:** further yen strength = carry-unwind fuse (Aug-2024 template); watch the front of the VIX curve for the first stress flicker.
+6. **Oracle (Thu):** AI-capex proxy into FOMC; a miss cuts the MU/memory leg (Tepper #2, Coatue #3) out from under the whales' quad-overlap book.
+7. **Claims (date shifted this week, likely Thu):** forecast ~203.5K vs the 210K NO in the book — verify release date before the open.
+
+*Not investment advice. Data: yfinance (cash close Sep 4; futures/FX/metals through Sep 8 pre-open; raw-percent yields) + MarketWatch/WSJ RSS (Sep 8). CAPE/P-E figures approximate per August baseline.*
