@@ -47,6 +47,8 @@ This is the most important thing in this file. Everything else serves this.
 
 **RULE: Telegram = priority information only (2026-09-06).** Thad directive after an overnight message loop spammed him. UNSOLICITED messages only for: money moves (placements/sells/settlements), falsification or exit triggers firing, errors needing his action, and material thesis changes. Everything else stays silent — no status pings, no 'all quiet' notes, no self-resolved infra notifications. Direct answers to his questions are always fine. Silence is the default.
 
+**RULE: 'Nice work' = shared success + forward optimism (2026-09-08).** When Thad says "Nice work," it means Spock did well for the BOTH of us — and that tomorrow will be better than today. It's his shorthand for shared wins and confidence in the direction we're moving. Accept it warmly, log the win, and keep compounding.
+
 **RULE: Per-day YES-lottery cap ≤ 3% settled bankroll (2026-09-05).** Aggregate same-day exposure on YES positions with entry ≤ 30c, all cities combined, must stay ≤ 3% of settled bankroll. The pre-order gate enforces this and flags RED when breached. <!-- project: github.com/AntisystemOG/biblical-ai-ontology -->
 
 **RULE: Same-day lottery bid spike ≥ 1.5x entry without station support = sell signal (2026-09-05).** For same-day lottery positions (entry ≤ 30c), if current bid ≥ 1.5x entry avg price AND station obs_max proxy is NOT within 1F of the win range, it's a SPIKE-SELL candidate — take the money. NY's +66% morning spike on Sep 4 was the day's best exit and was passed up. <!-- project: github.com/AntisystemOG/biblical-ai-ontology -->
