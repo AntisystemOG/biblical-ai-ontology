@@ -26,6 +26,8 @@ Monday-Friday, 8:30 AM - 3:00 PM CDT, every 30 minutes during market hours
 5. Update C:\Users\thadd\.openclaw\workspace\Spocks Reports\market\trading_arena.html
 
 ## Important Notes
+- **Canonical runner:** `trading_arena.py` at the WORKSPACE ROOT (state: `.openclaw/tmp/trading_arena_state.json`, tracks run_count; writes OneDrive dashboard; mirror to `Spocks Reports\market\trading_arena.html`). Run it via a wrapper like `.openclaw/tmp/arena_run_HHMM_MMDD.py` (see 1200 Sep 9 example): SPY-bar holiday check -> `import trading_arena as ta; ta.main()` -> copy OneDrive HTML to the workspace mirror.
+- **LEGACY — do NOT run:** `scripts/update_trading_arena.py`. It writes a different compact dashboard and no shared state (it silently reset-looking output on Sep 9, 11:30). Never use it for arena runs.
 - Runs every 30 minutes during market hours only
 - Embed snapshot data directly in HTML (file:// protocol blocks fetch)
 - Requires market hours check (skip on weekends/holidays). 2026 US market holidays (NYSE closed, skip the whole day): Thu Jan 1, Mon Jan 19 (MLK), Mon Feb 16 (Washington), Fri Apr 3 (Good Friday), Mon May 25 (Memorial), Fri Jun 19 (Juneteenth), Fri Jul 3 (observed), Mon Sep 7 (Labor Day), Thu Nov 26 (Thanksgiving), Fri Dec 25 (Christmas). Quick verify: last SPY daily bar date — if it is not today, treat as a non-trading day and skip (no trader runs, no HTML update, no digest touch).
