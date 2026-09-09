@@ -209,7 +209,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **Tip:** Batch similar periodic checks into `HEARTBEAT.md` instead of creating multiple cron jobs. Use cron for precise schedules and standalone tasks.
 
-**Gateway watchdog marker check (every heartbeat):** If `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\watchdog_last_restart.txt` was modified within the last ~25 minutes, the Windows watchdog restarted the gateway — verify `curl.exe -s -o NUL -w "%{http_code}" http://127.0.0.1:18789/` returns 200 and tell Thad the watchdog had to restart the gateway (include the timestamp from the marker file).
+**Gateway watchdog marker check (every heartbeat):** RETIRED 2026-09-08 — the Windows watchdog and local gateway auto-start tasks are disabled (cloud migration). Skip this check unless Thad re-enables the tasks; the marker file `.openclaw/tmp/watchdog_last_restart.txt` stays for history.
 
 **Things to check (rotate through these, 2-4 times per day):**
 
@@ -330,6 +330,7 @@ any complex string formatting — write it to a file first.
 **CRITICAL:** `$`-variables/expressions in inline PowerShell sent through exec get stripped before execution (`if (Test-Path $f)` becomes `if (Test-Path )` → parse error; `$(Get-Date ...)` inside paths → broken paths). Same failure class as the Python inline rule above. This is what killed the cron gateway-watchdog's flap-breaker check on Sep 6.
 **Rule:** Any PowerShell needing variables → write a `.ps1` file under `scripts/`, then run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File <path>`. Variable-free one-liners (curl.exe -w, schtasks, literal-path Test-Path) are fine inline.
 Gateway restarts: Task Scheduler task **OpenClaw Watchdog** (every 5 min, battery-safe, StartWhenAvailable) runs `scripts/gateway_watchdog.ps1` v3 through hidden `scripts/gateway_watchdog_launcher.vbs` — 2 probes, kills a hung gateway by CommandLine match, restarts via `schtasks /run "OpenClaw Gateway"` (gateway.vbs → gateway.cmd), 120s verify, logs to `logs/gateway-watchdog.log`, APPEND-ONLY daily memory line on restart. If the task drifts, re-register with `scripts/setup-gateway-watchdog-task.ps1` — never re-implement that logic inline from a heartbeat.
+**DISABLED 2026-09-08 (Thad: cloud migration):** all three tasks — 'OpenClaw Watchdog', 'OpenClaw Gateway' (logon auto-start), 'OpenClaw Load Governor' — are disabled via `schtasks /change /tn <name> /disable`. Re-enable any with `schtasks /change /tn <name> /enable` if the local gateway ever returns.
 
 ### Task Scheduler Console Flash (Sep 7, 2026)
 Task actions that run `powershell.exe` directly flash a console window in the interactive session — `-WindowStyle Hidden` only hides it AFTER the window exists, so it flashes on every run (Thad saw it every 5 min from both the watchdog and load governor). Fix: point the task at a WScript launcher VBS that runs PowerShell via `WScript.Shell.Run ..., 0, True` — window hidden from the start, task instance still spans the script run (IgnoreNew overlap protection holds). Existing launchers: `gateway_watchdog_launcher.vbs`, `load_governor_launcher.vbs`, same pattern as `gateway.vbs`.

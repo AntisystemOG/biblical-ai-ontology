@@ -7,6 +7,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Whale Watch
 - History Rhymes
 - Daily Brief
+- Trading Arena
 <!-- /TOC -->
 
 ---
@@ -360,3 +361,23 @@ Both standing triggers sit one daily close away on the same morning: **oil needs
 
 ---
 *Sources: AP, Reuters, CNN, The Guardian, CNBC, NYT, Fox News, NY Post, Washington Examiner, Bloomberg, PNC Economics, StockTwits/TradingView, crypto.news, TokenPost, Gate News. Portfolio data: Fidelity positions CSV dated Jul 31, 2026 (latest available — prices in "Market Implication" calls are directional, not marked to today).*
+
+---
+
+<!-- section:Trading Arena -->
+## Trading Arena (15:02 CT)
+
+**Final standings — Tue Sep 8, 2026 (3:00 PM CT close), $10,000 start each**
+
+- **1. Wolf (sector rotation)** — $10,338.43 (**+$338.43** / +3.38%) — day: **+$76.67** — beats S&P 500 by $417.43 — holds SMH, XLK
+- **2. Fox (contrarian)** — $10,049.95 (**+$49.95** / +0.50%) — day: −$63.05 — beats S&P 500 by $128.95 — holds NFLX, HD, CRM, MA, V
+- **3. Owl (value)** — $10,040.36 (**+$40.36** / +0.40%) — day: −$27.44 — beats S&P 500 by $119.36 — holds MCD, WMT, IBM, PG, XOM
+- **4. Shark (momentum)** — $9,701.42 (**−$298.58** / −2.99%) — day: −$71.63 — trails S&P 500 by $219.58 — holds AMD, META, TSM, SMH, UNH
+- **5. Turtle (trend)** — $9,511.86 (**−$488.14** / −4.88%) — day: −$95.84 — trails S&P 500 by $409.14 — holds TSM only (single breakout)
+
+**Benchmark — S&P 500 (SPY buy & hold):** $9,921.00 (−$79.00 / −0.79%); today: −$54.91 (−0.55%) on a red tape.
+
+**Best strategy of the day:** Wolf (sector rotation, +$76.67) — the only agent that gained while the market slipped; semis (SMH) and tech (XLK) held up best.
+**Worst strategy of the day:** Turtle (−$95.84) — fully committed to one name (TSM) after its 20-day breakout, which fell with the broad market.
+
+3 of 5 agents beat the benchmark session-to-date. Dashboard: `Spocks Reports/market/trading_arena.html`.

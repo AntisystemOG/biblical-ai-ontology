@@ -1,0 +1,4 @@
+  File "<string>", line 5
+    rows = conn.execute(\
+                       ^
+SyntaxError: '(' was never closed

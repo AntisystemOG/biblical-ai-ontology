@@ -175,3 +175,10 @@ sessions_spawn(
 - Fix: hidden WScript launchers (scripts/gateway_watchdog_launcher.vbs, scripts/load_governor_launcher.vbs) - WScript.Shell.Run(powershell, 0, True) creates the window hidden from the start; True=wait keeps task instance spanning the script run (IgnoreNew overlap protection intact). Same pattern as gateway.vbs.
 - Watchdog re-registered via updated setup-gateway-watchdog-task.ps1 (action = wscript.exe //B <launcher>); Load Governor action swapped in place via scripts/fix-load-governor-window.ps1 (Set-ScheduledTask -Action only, trigger/settings preserved).
 - Verified 03:07 AM: both actions show wscript launchers, both test runs Result 0, gateway healthy (200).
+
+## 2026-09-08 23:58 CDT - local gateway stack disabled (Thad: moving to cloud)
+- Thad: "turn off the gateway watchdog and the auto exec at boot and login. we are moving to cloud"
+- Disabled via schtasks /change /tn <name> /disable, verified Scheduled Task State: Disabled + Next Run N/A for all three: OpenClaw Watchdog (5-min watchdog), OpenClaw Gateway (logon auto-start gateway.vbs->gateway.cmd), OpenClaw Load Governor (manages only the local gateway process).
+- Reversible: schtasks /change /tn <name> /enable. Scripts, installers and launchers all kept in repo for rollback.
+- Running local gateway process left untouched - serves until it stops or the laptop reboots; nothing will auto-start it afterwards.
+- Autorun scan (HKCU + HKLM Run keys, both Startup folders): no OpenClaw/gateway auto-exec entries. Startup has Ollama.lnk, Tailscale.lnk, Wispr Flow.lnk, CodeMeter - left alone.
