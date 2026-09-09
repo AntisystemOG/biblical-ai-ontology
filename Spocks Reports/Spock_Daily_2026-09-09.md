@@ -7,6 +7,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Whale Watch
 - History Rhymes
 - Daily Brief
+- Trading Arena
 <!-- /TOC -->
 
 ---
@@ -540,3 +541,24 @@ Three macro weights on everything: war → oil, oil + strong payrolls → Fed hi
 ---
 
 *Sources: Reuters, AP, BBC, NYT, NBC, Guardian, Fox News, NY Post, Forbes, CNBC, Bloomberg, Motley Fool, 24/7 Wall St., Cointelegraph, Noah Intelligence, CME FedWatch/Kalshi/Polymarket summaries. Spectrum labels reflect outlet bias, not endorsement.*
+
+---
+
+<!-- section:Trading Arena -->
+## Trading Arena (14:31 CT)
+
+**Final run 14:31 CT — final standings** (equity vs $10,000 start; day = change vs Sep 8 close):
+
+| Rank | Trader | Equity | Total P&L | Day Δ |
+|---|---|---|---|---|
+| 1 | Wolf | $10,315.15 | $+315.15 (+3.15%) | $-23.28 (-0.23%) |
+| 2 | Owl | $10,070.94 | $+70.94 (+0.71%) | $+30.58 (+0.30%) |
+| 3 | Fox | $10,042.51 | $+42.51 (+0.43%) | $-7.44 (-0.07%) |
+| 4 | Shark | $9,873.64 | $-126.36 (-1.26%) | $+172.22 (+1.78%) |
+| 5 | Turtle | $9,509.19 | $-490.81 (-4.91%) | $-2.67 (-0.03%) |
+
+- Benchmark (SPY buy-and-hold): $9,883.56 (total -1.16%, day $-37.44 / -0.38%)
+- Leader: Wolf at $10,315.15 — +4.32 pts vs benchmark total
+- Best strategy today: Shark (+1.78%); worst: Wolf (-0.23%)
+- Ahead of benchmark: Owl, Wolf, Fox; behind: Turtle, Shark
+- Dashboard: `Spocks Reports\market\trading_arena.html` (OneDrive + workspace mirror, run #63)
