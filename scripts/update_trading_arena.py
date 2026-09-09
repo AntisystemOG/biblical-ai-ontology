@@ -15,7 +15,7 @@ PREV_JSON = os.path.join(os.path.dirname(__file__), "trading_arena_prev.json")
 OUT_JSON = r"C:\Users\thadd\OneDrive\Desktop\Spocks Reports\market\trading_arena.json"
 OUT_HTML = r"C:\Users\thadd\OneDrive\Desktop\Spocks Reports\market\trading_arena.html"
 # Save a copy of the generated script under workspace for version control
-SCRIPT_COPY = os.path.join(os.path.dirname(__file__), "..", "..", "scripts", "update_trading_arena.py")
+SCRIPT_COPY = os.path.join(os.path.dirname(__file__), "update_trading_arena.py")  # script lives here; self-copy skipped
 
 START_CAPITAL = 10000.0
 SESSION_START = "2026-08-14"
@@ -465,10 +465,14 @@ def main():
         f.write(html)
     print(f"Saved HTML: {OUT_HTML}")
 
-    # Keep workspace copy of script up to date
-    import shutil
-    shutil.copyfile(__file__, SCRIPT_COPY)
-    print(f"Copied script to: {SCRIPT_COPY}")
+    # Keep workspace copy of script up to date (skip if this file IS the copy)
+    import shutil, os as _os
+    src = _os.path.abspath(__file__)
+    dst = _os.path.abspath(SCRIPT_COPY)
+    if src != dst:
+        _os.makedirs(_os.path.dirname(dst), exist_ok=True)
+        shutil.copyfile(src, dst)
+        print(f"Copied script to: {SCRIPT_COPY}")
 
 
 if __name__ == "__main__":
