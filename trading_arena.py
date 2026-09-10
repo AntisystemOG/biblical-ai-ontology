@@ -132,7 +132,8 @@ def execute_targets(
     chosen = [t for t in targets if t in prices.columns.get_level_values(0).unique()] if isinstance(prices.columns, pd.MultiIndex) else targets
     chosen = chosen[:max_positions]
     if not chosen:
-        return new_positions
+        # No actionable targets -> stay in cash (positions already sold above).
+        return new_positions, round(proceeds, 2)
 
     available_prices = {t: get_last_close(prices, t) for t in chosen}
     # Sell existing positions that are in targets so we can rebalance to equal weight
