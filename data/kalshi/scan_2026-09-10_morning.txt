@@ -1,0 +1,204 @@
+================================================================================
+  KALSHI EDGE SCANNER -- LIVE REPORT
+  Generated: 2026-09-10 00:26 CDT
+================================================================================
+
+- FRED ECONOMIC DATA (Live)
+----------------------------------------
+  [No FRED data -- API key not configured]
+
+- KALSHI MARKET CONSENSUS
+----------------------------------------
+  KXJOBLESSCLAIMS-26SEP10-235000 YES=1.0%  vol=        50
+  KXJOBLESSCLAIMS-26SEP10-230000 YES=2.0%  vol=        10
+  KXJOBLESSCLAIMS-26SEP10-225000 YES=1.0%  vol=       326
+  KXJOBLESSCLAIMS-26SEP10-220000 YES=2.5%  vol=       967
+  KXJOBLESSCLAIMS-26SEP10-215000 YES=6.5%  vol=     2,347
+  KXJOBLESSCLAIMS-26SEP10-210000 YES=14.5%  vol=     1,509
+  KXJOBLESSCLAIMS-26SEP10-205000 YES=38.0%  vol=     1,801
+  KXJOBLESSCLAIMS-26SEP10-200000 YES=59.5%  vol=     1,844
+  KXJOBLESSCLAIMS-26SEP10-195000 YES=89.5%  vol=     1,372
+  KXJOBLESSCLAIMS-26SEP10-190000 YES=92.5%  vol=       177
+  Average YES across markets: 31.6%
+
+- TOP PICKS (sorted by edge)
+----------------------------------------
+
+  #1  KXJOBLESSCLAIMS-26SEP10-235000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=1.0%  NO=99.0%  Vol=50
+      Blended: 27.9%  Edge: +26.9%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=1.0%  w=0.50  c=58%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (1%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #2  KXJOBLESSCLAIMS-26SEP10-225000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=1.0%  NO=99.0%  Vol=326
+      Blended: 27.9%  Edge: +26.9%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=1.0%  w=0.50  c=63%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (1%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #3  KXJOBLESSCLAIMS-26SEP10-230000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=2.0%  NO=98.0%  Vol=10
+      Blended: 28.4%  Edge: +26.4%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=2.0%  w=0.50  c=55%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (2%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #4  KXJOBLESSCLAIMS-26SEP10-220000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=2.5%  NO=97.5%  Vol=967
+      Blended: 28.7%  Edge: +26.2%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=2.5%  w=0.50  c=65%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (2%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #5  KXJOBLESSCLAIMS-26SEP10-215000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=6.5%  NO=93.5%  Vol=2,347
+      Blended: 30.6%  Edge: +24.1%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=6.5%  w=0.50  c=67%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (6%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #6  KXFEDDECISION-28JAN-C26
+      Q: Will the Federal Reserve Cut rates by >25bps at their January 2028 mee
+      Market: YES=6.5%  NO=93.5%  Vol=1,964
+      Blended: 30.6%  Edge: +24.1%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=6.5%  w=0.50  c=66%  Market: Will the Federal Reserve Cut rates by >25b
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (6%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #7  KXJOBLESSCLAIMS-26SEP10-185000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=94.5%  NO=5.5%  Vol=440
+      Blended: 73.2%  Edge: -21.4%  -> NO
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=94.5%  w=0.50  c=63%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=35.0%  w=0.05  c=35%  Fading extreme YES consensus (94%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #8  KXJOBLESSCLAIMS-26SEP10-190000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=92.5%  NO=7.5%  Vol=177
+      Blended: 72.2%  Edge: -20.4%  -> NO
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=92.5%  w=0.50  c=61%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=35.0%  w=0.05  c=35%  Fading extreme YES consensus (92%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #9  KXJOBLESSCLAIMS-26SEP10-210000
+      Q: How many initial jobless claims will there be the week ending Sep 5, 2
+      Market: YES=14.5%  NO=85.5%  Vol=1,509
+      Blended: 34.7%  Edge: +20.2%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=14.5%  w=0.50  c=66%  Market: How many initial jobless claims will there
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (15%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+  #10  KXFEDDECISION-28JAN-H26
+      Q: Will the Federal Reserve Hike rates by >25bps at their January 2028 me
+      Market: YES=15.5%  NO=84.5%  Vol=2,061
+      Blended: 35.2%  Edge: +19.7%  -> YES
+      Kelly: 25.0% of bankroll  ($20)
+      Fed context: FOMC meeting in 6d -> high action probability
+      Signals:
+        analyst_consensus         p=50.0%  w=0.15  c=60%  
+        kalshi_consensus          p=15.5%  w=0.50  c=67%  Market: Will the Federal Reserve Hike rates by >25
+        historical_trend          p=50.0%  w=0.10  c=55%  No historical data
+        market_momentum           p=50.0%  w=0.08  c=50%  No momentum data
+        seasonal_pattern          p=55.0%  w=0.05  c=40%  Month 9: FOMC meeting month -> higher action proba
+        contrarian                p=65.0%  w=0.05  c=35%  Fading extreme NO consensus (16%)
+        fed_calendar              p=70.0%  w=0.07  c=50%  FOMC meeting in 6d -> high action probability
+
+- LEARNING STATE
+----------------------------------------
+  No graded picks yet. Start grading to enable auto-weighting.
+
+- CURRENT WEIGHTS
+----------------------------------------
+  kalshi_consensus          0.500 #########################
+  analyst_consensus         0.150 #######
+  historical_trend          0.100 #####
+  market_momentum           0.080 ####
+  fed_calendar              0.070 ###
+  seasonal_pattern          0.050 ##
+  contrarian                0.050 ##
+
+================================================================================
+
+================================================================================
+CURRENT PORTFOLIO
+================================================================================
+  Cash: $37.5092 | Portfolio value: $35.44
+
+  Open positions (6):
+    KXHIGHDEN-26SEP09-B84.5: 0.00 shares | Cost: $4.400000
+    KXJOBLESSCLAIMS-26SEP10-195000: 7.00 shares | Cost: $5.530000
+    KXJOBLESSCLAIMS-26SEP10-210000: -24.00 shares | Cost: $18.240000
+    KXJOBLESSCLAIMS-26SEP10-215000: -3.00 shares | Cost: $2.820000
+    KXFEDDECISION-26SEP-C25: 23.39 shares | Cost: $0.467800
+    KXFEDDECISION-26SEP-H0: 12.81 shares | Cost: $8.793600
