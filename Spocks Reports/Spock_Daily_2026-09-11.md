@@ -5,6 +5,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 <!-- TOC (auto-generated) -->
 - Memory Dream
 - Whale Watch
+- History Rhymes
 <!-- /TOC -->
 
 ---
@@ -300,3 +301,79 @@ CPI prints at 7:30 AM CT — material for the Fed legs (C25 flat, H0 underwater,
 - **CORZ** (Steven Cohen): 0.0% of whale book, $1.5M
 
 *Situational Awareness LP filings are historical only — Leopold Aschenbrenner's fund sold most equities to Citadel before winding down in late July 2026.*
+
+---
+
+<!-- section:History Rhymes -->
+## History Rhymes (07:04 CT)
+
+**Data as of Thu Sep 10, 2026 close + Fri Sep 11 premarket** (yfinance 28/28 tickers, MarketWatch RSS). FOMC Sep 15-16 is 4 sessions away. Methodology: market data + fresh headlines; historical parallels from documented cycles.
+
+## Signal of the Day: The 10Y Just Entered the Watch Zone
+
+The 10-year Treasury closed at **4.94% — a fresh 52-week high** (+99bp off the 3.95% low, +78bp YTD, +5.6% in a month). The 4.9-5.0% watch zone flagged in earlier History Rhymes runs is now live, and it arrived with the S&P 500 (7,591.70) **below its 50-day for the first time in this leg** (-2.7% off the 7,799 high). The bond is leading the equity — the 1999 script.
+
+| Metric | Level | 1d | 1m | YTD | vs 52w high |
+|---|---|---|---|---|---|
+| S&P 500 | 7,591.7 | -0.6% | -2.0% | +10.9% | -2.7% (below 50d) |
+| Nasdaq Comp | 26,081.7 | -0.7% | -1.9% | +12.2% | -3.7% (above 50d) |
+| Russell 2000 | 2,890.9 | -1.0% | -5.1% | +16.5% | -5.8% (below 50d) |
+| 10Y Treasury | 4.94% | +2bp | +26bp | +78bp | 52w HIGH |
+| 13W Bill | 3.85% | +1bp | +14bp | +34bp | near high |
+| VIX | 17.1 | -4% | +20% | +15% | -45% |
+| WTI | ~$99 | -3% | +22% | +73% | -12% |
+| Gold | $4,376 | +0.3% | +0.3% | +1.2% | -17.7% |
+| Bitcoin | $77,028 | +0.6% | -0.1% | -12.0% | -38% |
+| MU | $977 | -4.9% | +7.3% | +242.7% | -19.5% |
+| HY Credit (HYG) | $78.62 | -0.5% | -0.7% | +1.5% | below 50d |
+
+ES/NQ futures +0.6% this morning — the dip is being bought again (Tom Lee's "face-ripper rally" call is the headline of the day).
+
+## Rhyme #1: 1999-2000 — The Rate Leg Just Arrived (HIGH)
+
+The structural rhyme (CAPE ~40+, top-10 concentration ~40%, AI capex = fiber capex) is established. What's new today is the **interest-rate leg**, which is how 1999-2000 actually resolved:
+
+- **Oct 1998:** 10Y bottomed ~4.2% (LTCM panic) → **rose ~260bp to 6.8% by Jan 2000** while the S&P kept grinding higher. Equities ignored the bond signal for 15 months.
+- **Aug 24, 1999:** Fed hiked; the S&P chopped **-7% into mid-October 1999** — then V-bottomed and ripped +12% into the January-March 2000 final top. Today's -2.0% m1 pullback with dip-buyers active is that same September shape.
+- **The bond peaked first:** 10Y topped in Jan 2000; the Nasdaq peaked 8 weeks later (Mar 10, 2000) after a +24% melt-up *while yields were already falling*. Translation: **when the 10Y finally rolls over from its high, that's not the all-clear — historically that's when the final blow-off leg starts.**
+- Narrow leadership: XLK +29% YTD carries the index while XLF +4.7%, XLU +0.9%, XLY -5.9%. One-decision stocks: **MU +243% YTD but already -19.5% off its high** — the Intel/Cisco late-2000 analog (the hottest names crack while the index sits near highs).
+- Rate math: 10Y at 4.94% now **exceeds the S&P's forward earnings yield** (~4.4% at ~22-23x) — the 2000 crossover. Historically, P/E compression runs follow; indexes can grind higher for quarters while multiples compress 8 straight quarters (that's what 2000-2002 did).
+
+## Rhyme #2: September-October 2007 — The FOMC-Week Pattern (MEDIUM-HIGH)
+
+- **Credit is telling the truth early:** HYG flat on the year (+1.5%), below its 50-day, while the S&P is +10.9% — exactly the Aug 2007 quant-quake pattern where credit and small caps cracked months before the index top (Oct 9, 2007).
+- **Diesel at a record >$6/gal** (above the 2008 summer peak) with BofA publicly saying "diesel prices hit the real economy" is the same oil-squeeze-precedes-the-crack warning as 2007-08: oil went $80→$147 as the consumer rolled. Today oil dipped under $100 only on Gulf-state diplomatic-talk headlines — headline relief, not a structural fix.
+- **The Sep 18, 2007 FOMC:** a surprise 50bp cut produced a 4-week +7% melt-up — into the **final top 3 weeks later**. If the Fed eases next Wednesday, history's script says the rally that follows is the *last* leg, not the beginning.
+
+## Rhyme #3: 1972-73 Nifty Fifty — Regime Risk (MEDIUM)
+
+Concentration + inflation re-acceleration + energy shock is the full pre-embargo combination:
+
+- XLE +47.2% YTD vs XLY **-5.9%** is the 1973 rotation (energy leads, discretionary cracks). XLI -8.3% m1 — cyclicals rolling over.
+- Oil ~$99 (+73% YTD), diesel at a record: an economy running at supply-shock fuel prices *during* a concentrated, valuation-stretched equity market — exactly 1972. The market ignored oil until the Oct 1973 embargo; the Nifty Fifty then took -48% over 21 months.
+- **Bitcoin -12% YTD vs gold +1.2%** — the purest-duration risk asset underperforming everything is a 1973 tell, not a 1999 tell. And gold's own -17.7% break from its ~$5,300 blow-off high is the 1980/2011 hard-asset-peak pattern: the scarcity trade got crowded and broke.
+
+## The Contrarian Script — and Why It Doesn't Refute the Rhymes
+
+Tom Lee's face-ripper case (VIX +20% in a month, sentiment washed out) is historically *part of the rhyme, not a refutation of it*. Sep-Oct 1999 chopped then rallied +12% into the top; Aug-Sep 2007 chopped then rallied +7% into the top. Both melt-ups resolved into the real damage weeks later. A face-ripper from here would be on-script — the question is what's on the other side of it.
+
+## FOMC Sep 15-16 Decision Tree (4 sessions away)
+
+1. **Cut + stocks rip** → Sep 1998 (6 more months of melt-up) or Sep 2007 (final leg into Oct top). Either way the rally is buyable short-term — but watch for the top-within-4-6-weeks tail risk if credit (HYG) and small caps don't recross their 50-days.
+2. **Hold/hawkish + 10Y closes above 5.0%** → Aug 2000 script: chop deepens, narrow leadership gets narrower, MU-style cracks spread to NVDA (-7% off high already).
+3. **Cut but 10Y still rises** (bad sign: easing into a 52w-high long end) → strongest 2000 analog; the bond market is refusing the cut.
+
+## Watch List
+
+- **10Y 5.00%** — a daily close above the zone's top is the historical P/E-compression trigger; next resistance in the 2000 parallel was ~5.1-5.25% before the bond peaked.
+- **SPX 50-day (reclaim = melt-up script live)** and RUT/HYG recrossing theirs (breadth repair = 2007 avoided for now).
+- **MU** — the single hottest momentum name at -19.5% from high; leaders' cracks led index tops in 2000 by weeks.
+- **Diesel >$6** staying above record = consumer squeeze → watch XLY (-5.9% YTD already).
+- **October window** — Sep 2000 (-5.4% Nasdaq) and the Oct 9, 2007 top both landed in this calendar stretch; today is also 9/11, when 2001's four-day close + -7.1% reopen reminded markets that geopolitical event risk is a real tail (Gulf-state headlines are the live version).
+
+## Bottom Line
+
+Three independent cycles are converging on the same map: **a final melt-up attempt is the historically normal next move** (1999's +12%, 2007's +7%), and the FOMC next week is the pivot that decides whether it starts now or waits. The structural backdrop (valuation, concentration, rate shock into a narrow market) has never rhymed more loudly with the three worst "top after one more rally" setups on record. Trade the melt-up if it comes — but with 1999/1973/2007 exits pre-planned, not with 2025's assumptions. The watch zone that mattered (10Y 4.9-5.0%) is now live: 4.94%.
+
+---
+_Data: yfinance (28/28 tickers OK), MarketWatch RSS 9/11/26. WSJ RSS returned stale items and was excluded. Historical parallels: documented cycle history; CAPE/concentration figures carried from prior-run estimates (~40+, ~36-40%). Not investment advice._
