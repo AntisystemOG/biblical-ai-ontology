@@ -61,7 +61,7 @@ sessions_spawn(
 
 | Cron Name | Agent File | Schedule (America/Chicago) | Purpose | Status |
 |-----------|------------|----------------------------|---------|
-| `whale-watch` | `agents/whale-watch.md` | Quarterly: 18th of Feb/May/Aug/Nov 6:00 AM CT (cron STILL daily 6:00 AM — quarterly expr `0 6 18 2,5,8,11 *` pending; agent-file window guard makes extra daily fires NO_REPLY) | Hedge fund 13F overlap tracker. Sep 14: first successful automated run (prior runs skipped on local-provider outage); Q2 2026 report → Sep 14 digest | ✅ Active |
+| `whale-watch` | `agents/whale-watch.md` | Quarterly: 18th of Feb/May/Aug/Nov 6:00 AM CT (quarterly expr `0 6 18 2,5,8,11 *` APPLIED Sep 14 via openclaw cron edit; agent-file window guard remains as safety net) | Hedge fund 13F overlap tracker. Sep 14: first successful automated run (prior runs skipped on local-provider outage); Q2 2026 report → Sep 14 digest | ✅ Active |
 | `history-rhymes` | `agents/history-rhymes.md` | Daily 7:00 AM | Historical market parallel analyzer | ✅ Active |
 | `daily-brief` | `agents/daily-brief.md` | Daily 8:00 AM | Ground News style morning brief | ✅ Active |
 | `financial-advisor` | `agents/financial-advisor.md` | Monday 9:00 AM | Value investing screener | ✅ Active |
