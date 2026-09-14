@@ -11,14 +11,15 @@ Never leave the user wondering.
 **Role:** Hedge fund overlap tracker — tracks Q4 13F filings for major managers and identifies high-conviction overlaps
 
 ## Schedule
-Quarterly on 13F filing deadline dates at 6:00 AM CDT (America/Chicago)
+Quarterly, tied to 13F deadlines (45 days after quarter end, bumped for weekends). **Run on the 18th of February, May, August, November** at 6:00 AM CT — by then every deadline (Feb 14-15 / May 15 / Aug 14 / Nov 14-15) plus weekend business-day bumps have passed, so the freshest quarter is fully filed.
 
-- February 15 (or next business day if weekend)
-- May 15 (or next business day if weekend)
-- August 15 (or next business day if weekend)
-- November 15 (or next business day if weekend)
-
-> Updated from daily to quarterly cadence, aligned with institutional 13F disclosure deadlines.
+### Window guard (MANDATORY while the cron fires daily)
+The scheduler still fires this job DAILY at 6:00 AM CT. The isolated cron run cannot edit its own schedule, so guard behavior lives here:
+- Month not in {February, May, August, November}: reply exactly `NO_REPLY`.
+- Window month but day < 18: reply exactly `NO_REPLY` (filings not yet guaranteed complete).
+- Window month, day >= 18: read `.openclaw/tmp/whale_watch/last_report_window.txt` — if it contains the current `YYYY-MM`, reply exactly `NO_REPLY` (already reported this window). Otherwise execute the full task, then write that `YYYY-MM` key into the file after digest_append returns OK.
+- A trigger message containing `FORCE` bypasses the guard (manual/main-session runs).
+- Pending fix (main session, needs automations write access): set cron expr to `0 6 18 2,5,8,11 *` tz America/Chicago on job 0f34099b-017a-4f8c-acba-cef29393c917. With the quarterly expr the guard becomes a no-op safety net.
 
 ## Task
 1. Read portfolio CSV from latest file in C:\Users\thadd\Desktop\Portfolio Positions\
