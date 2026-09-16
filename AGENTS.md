@@ -385,7 +385,7 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
   - Note: Previous path `C:\Python314\python.exe` is stale; use the AppData path above.
 
 ### Ollama (✅ Running)
-- Location: `C:\Users\thada\AppData\Local\Programs\Ollama`
+- Location: `C:\Users\thadd\AppData\Local\Programs\Ollama` (verified Sep 16: the thada variant does NOT exist)
 - Status: Live on port 11434
 - Models: Mistral (7B), Deepseek-r1 (8B), Gemma3 (4B)
 - Benefit: Zero-token cost for brainstorming, analysis, drafting

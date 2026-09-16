@@ -1,0 +1,14 @@
+KALSHI EDGE SCANNER -- T-1 MORNING (heartbeat fallback, 00:26 CDT Wed Sep 16)
+
+LADDER CONSENSUS (KXJOBLESSCLAIMS-26SEP17):
+235K YES 2.0% (vol 0) | 230K 2.0% | 225K 2.0% | 220K 4.0% | 215K 8.5% | 210K 28.0% | 205K 48.5% | 200K 69.5% | 195K 80.0% | 190K 87.5%
+
+POSITIONS PROJECTION (print ~203K): 195K YES wins (+80c vs 0.84 avg ~break-even on 1sh); 210K NO wins (72c vs 0.6526 avg, +10c); 215K NO wins (91.5c vs 0.8143 avg, +10c).
+
+SCANNER TOP PICK: 235K YES +26.4 pct edge = MODEL NOISE (the 50 pct no-signal filler weights + vol 0) - NOT actionable, the known long-shot trap.
+
+T-1 VERIFICATION: the forecast still valid (the model 202.9K vs the consensus ~204-205K; the FXMARE calendar 205K; the TradingEconomics Q3 227K is quarterly noise). The straddle thesis INTACT - hold per the 16/16 law to Thu 7:25 AM settlement.
+
+FED: the FOMC decision TODAY 2 PM ET (the C25/H0 legs ride to event).
+
+balance: 0.4400
