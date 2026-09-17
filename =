@@ -1,4 +1,4 @@
-  File "<string>", line 5
-    rows = conn.execute(\
-                       ^
-SyntaxError: '(' was never closed
+  File "<string>", line 74
+    print(f'  {name}: YES={m[\
+                            ^
+SyntaxError: '[' was never closed
