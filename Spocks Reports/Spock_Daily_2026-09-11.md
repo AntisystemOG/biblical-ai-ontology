@@ -6,6 +6,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Memory Dream
 - Whale Watch
 - History Rhymes
+- Daily Brief
 <!-- /TOC -->
 
 ---
@@ -377,3 +378,191 @@ Three independent cycles are converging on the same map: **a final melt-up attem
 
 ---
 _Data: yfinance (28/28 tickers OK), MarketWatch RSS 9/11/26. WSJ RSS returned stale items and was excluded. Historical parallels: documented cycle history; CAPE/concentration figures carried from prior-run estimates (~40+, ~36-40%). Not investment advice._
+
+---
+
+<!-- section:Daily Brief -->
+## Daily Brief (08:09 CT)
+
+# Daily Brief — Friday, September 11, 2026
+## Ground News Cross-Spectrum Analysis
+
+---
+
+## Market Overview
+
+**Thursday's close (Sep 10)** — fourth straight down day:
+
+| Index | Close | Change |
+|---|---|---|
+| S&P 500 | 7,591.70 | -0.58% |
+| Dow | 52,064.10 | -0.60% |
+| Nasdaq | 26,081.72 | -0.65% |
+| Russell 2000 | 2,890.95 | -1.04% |
+
+- **VIX:** 17.84 (trending up). **Breadth:** deteriorating — A/D ratio 0.503 (167 adv / 332 dec), 1 stock near a 52-wk high vs 19 near lows, only 17.7% of stocks above their 20-day MA (down from 46.7% a week ago). Leadership defensive and narrow: Comm Services +0.60% and Staples +0.05% the only green sectors; Tech -1.41% worst.
+- **Overnight drivers:** crude **+6% Thursday to >$100** (Brent near $110) on Red Sea tanker attacks; **US diesel at a record high**; Treasury yields climbing. **August CPI released 7:30 AM CT today: +0.4% m/m, 3.4% y/y — in line with forecasts.** Bitcoin ~$77K with $386M in liquidations. FOMC meets Tue-Wed (Sep 15-16, dot-plot meeting).
+
+---
+
+## Key Stories
+
+### 1. Middle East: Tanker attacks push oil back above $100
+**Bias Spectrum:** Left (CNN, NBC, Guardian) ← Center (Reuters, CNBC) → Right (Fox News, NY Post)
+
+**What's Being Said:**
+- **Left (NBC/Guardian/CNN):** Iran-Trump battle over trade routes; Iran threatens to turn the Red Sea into a second "Gate of Tears"; frames it as war escalation and an Asian energy crisis — "scraping the bottom of the barrel" for Asian importers.
+- **Center (Reuters/CNBC):** Facts-first: oil +6%, Brent and WTI both above $100 for the first time since mid-May, set to end the week above $100; US diesel at a record; Houthi strikes deepen supply fear.
+- **Right (Fox/NY Post):** "Houthi terrorists" attacked 2 Saudi-flagged tankers; Trump threatens retaliation against Iran; Fox frames the threatened Hormuz bypass route as "a new risk for US consumers"; NY Post ties oil to inflation fears ahead of the Fed decision.
+
+**The Convergent Truth:** Tanker attacks in the Red Sea are real and ongoing; both benchmarks closed above $100 Thursday (+6%); US diesel is at a record; supply fear is genuine and the war has a second front.
+
+**Blindspots:**
+- **Left omits:** the inflation/Fed-rate path consequences (war framing dominates; little on what $100+ oil does to rate expectations).
+- **Right omits:** structural nature of the disruption (blockade of Bab al-Mandab is a chokepoint problem, not a headline spike) and Asia's demand-side pain.
+- **Center covers both** but passes lightly over consumer pass-through timing (diesel → goods prices with a lag).
+
+**Likely Reality:** A genuine, persistent supply shock layered on the ongoing Iran conflict. The oil premium stays in place while the strait is threatened — "higher for longer" on energy — but any US-Iran de-escalation would unwind it quickly. This is now the dominant macro variable feeding into story 2.
+
+---
+
+### 2. August CPI 3.4% — Fed meets Tuesday with a *hike*, not cut, in play
+**Bias Spectrum:** Left (Yahoo/wire framing) ← Center (Reuters poll, prediction markets) → Right (NY Post inflation framing)
+
+**What's Being Said:**
+- **Data (all sources agree):** CPI +0.4% m/m, **3.4% y/y — matching forecasts exactly**, annual rate holding at 3.4%. Gas prices a visible driver.
+- **Center (Reuters poll, Sep 9):** Fed expected to hold rates for the rest of 2026; a *rising number of analysts* see at least one hike. Polymarket: 72% no change / **28% for a 25bp HIKE** / 1% cut at the Sep 15-16 meeting. One outlet cites 60-65% hike odds priced pre-CPI.
+- **Right (NY Post):** frames the oil spike as "inflation fears ahead of interest-rate decision" — the war is squeezing consumers and the Fed.
+
+**The Convergent Truth:** CPI is in line but historically hot (3.4%), oil just added a fresh inflation impulse, and the Fed is NOT cutting — the tail risk has flipped to a hike.
+
+**Blindspots:**
+- **Left omits:** policy-error risk of hiking into an oil shock (1970s pattern); focuses on price pain, less on policy path.
+- **Right omits:** that much of the impulse is a war premium, not domestic demand — a supply shock the Fed traditionally looks through.
+- **Center covers:** the odds, but underweights the dot-plot signalling risk Tuesday.
+
+**Likely Reality:** Hold at Sep 15-16 with a hawkish tilt is the base case; a hike is a live ~25-30% tail. Rate-cut hopes — the pillar under growth stocks, crypto, and small caps — are effectively dead until inflation rolls over. Long-duration assets and bonds stay pressured into the meeting.
+
+---
+
+### 3. Tech drifts lower; memory stocks whipsaw
+**Bias Spectrum:** Retail/business press (Motley Fool, 24/7 Wall St, Invezz, ts2.tech)
+
+**What's Being Said:**
+- **Convergent:** Tech was Thursday's worst sector (-1.41%). Memory stocks fell sharply Thursday (Micron -4.9% to $977.41) as the oil jump hit risk appetite — after rallying Tuesday on Goldman's "the worst may be over" call (SK Hynix +5%, SanDisk +3%).
+- **Bull case (Fool/Invezz):** memory contract prices could jump up to 60%; the data-center memory crunch is structural.
+- **Bear flag (ts2.tech):** the market now holds Micron to a ~$50B revenue earnings bar — expectations, not fundamentals, are the risk.
+
+**The Convergent Truth:** The memory supercycle thesis is intact (supply crunch + AI demand), but the trade is crowded and rate-sensitive; daily swings of ±5% are noise around a strong medium-term story.
+
+**Likely Reality:** Volatility, not trend-break. For Thad's MU/STX/SNDK/LITE exposure: expect chop into Micron earnings; the AI/data-center demand story (and Intel foundry wins) is the underlying driver.
+
+---
+
+### 4. Intel's foundry turn: +9% on ASML High-NA milestone
+**Bias Spectrum:** Business/trade press (Slicast, Gate, StockTi, The Index Today, CryptoBriefing)
+
+**What's Being Said:**
+- **Convergent:** INTC closed $104.47 Sep 9 (+9.1%); Intel + ASML have processed **1 million High-NA EUV wafers**; **SK Hynix is reportedly weighing its first Intel foundry order** (landmark external customer); $20B equity raise; CPU price increases announced; Jim Cramer named it a top buy.
+- **Right angle (CryptoBriefing):** Trump touts the government stake — $20 → $95+ as vindication of state intervention.
+- **Caution (StockTi):** at $106 / ~$561B market cap, "recovery priced in, foundry execution ahead."
+
+**Likely Reality:** Real foundry momentum (a SK Hynix order would be the strongest third-party validation yet), but a lot is priced in. Thad's largest single holding ($12.6K, +99.6% total) — consider trailing-stop discipline on a runner this extended.
+
+---
+
+### 5. Bitcoin miners → AI landlords (Riot's $9.1B Anthropic deal)
+**Bias Spectrum:** Trade press (AInvest, TheEnergyMag, STnews, CryptoSlate) — mainstream partisan coverage nearly absent
+
+**What's Being Said:**
+- **Riot:** signed a **20-year, $9.1B AI compute deal with Anthropic** (Sep 8) — the biggest miner-to-HPC contract yet.
+- **Core Scientific:** **conditional ERCOT status for 1 GW** at its Texas sites (today); Third Point disclosed a stake (Sep 2 13F); the bear note: it's *borrowing to build* its AI capacity.
+- **WULF / APLD / IREN:** dipped Thursday — "what today's dip really says" is the pivot names now trade on AI-capex sentiment, not bitcoin.
+
+**The Convergent Truth:** The miner→AI-HPC conversion has decoupled from bitcoin (weak at ~$77K). Deal flow (Riot-Anthropic, Third Point in CORZ, ERCOT interconnects) is the value driver; leverage is the risk.
+
+**Likely Reality:** Structurally bullish for miners with signed hyperscaler/anthropic-class contracts (RIOT, CORZ), mixed for names still in build-out (APLD, WULF, HUT) where dilution/financing headlines can gap the stock either way.
+
+---
+
+## Portfolio News
+
+### INTC — Intel ($12.6K, largest single stock)
+**News:** +9% to ~$104-106 on the 1M High-NA EUV wafer milestone with ASML; SK Hynix weighing first foundry order; $20B equity raise; CPU price hikes; Cramer top pick.
+**Spectrum Analysis:** Business press uniformly bullish; Trump-era government stake narrative on the right; skeptical analyst counterweight ("recovery priced in").
+**Market Implication:** **Bullish** but extended. Foundry execution is the swing factor; a confirmed SK Hynix order would re-rate it again. Consider tightening the trailing stop on a +100% winner.
+
+### MU / STX / SNDK / LITE — Memory & storage ($17K combined)
+**News:** Goldman "worst may be over" rally Tuesday → oil-driven selloff Thursday (Micron -4.9% to $977.41); contract prices could jump up to 60%; Micron held to a ~$50B earnings bar.
+**Market Implication:** **Neutral-to-bullish medium term, volatile near term.** Whipsaw into Micron's print is the risk; the data-center memory crunch underpins the thesis. Don't chase green days; don't panic on red ones.
+
+### RIOT / CORZ / APLD / HUT / WULF / CLSK / CIFR / NBIG — Miners-turned-AI ($22K combined)
+**News:** Riot's $9.1B/20-yr Anthropic deal (Sep 8); Core Scientific conditional ERCOT 1 GW approval (today) + Third Point stake; WULF/APLD dipped Thursday.
+**Blindspot Check:** This is the portfolio's largest thematic cluster, yet partisan coverage is near zero — the story lives entirely in trade/retail press; cross-check deal terms before treating headlines as revenue.
+**Market Implication:** **Bullish** on contract-backed names (RIOT, CORZ), cautious on build-out leverage (APLD, WULF). Bitcoin weakness (~$77K) matters far less for these now — watch AI capex financing news instead of the BTC chart.
+
+### COIN / FBTC / FETH — Direct crypto ($4.8K combined)
+**News:** Bitcoin $76.5-77.3K, testing the $76K support cluster during the "macro energy shock"; $386M liquidated; rate-risk pressure (oil + yields + CPI).
+**Market Implication:** **Bearish near term.** The 3.4% CPI + hike tail is the headwind; watch the FOMC dot plot Tuesday. Coinbase angle: tokenized stocks (incl. AMZN, TSLA, SPCX) now live on Base — new revenue lane, doesn't offset beta.
+
+### XOP / VDE / SHEL / SEI / LBRT / VG — Energy ($21.5K combined)
+**News:** Oil +6%, both benchmarks >$100 (first time since mid-May), Brent near $110, US diesel at record high; Red Sea/Hormuz-bypass chokepoints threatened.
+**Market Implication:** **Bullish — the portfolio's hedge is working.** E&P (XOP), integrated (SHEL), energy ETF (VDE), frac/services (LBRT, SEI), and LNG (VG) all benefit from a sustained $100+ tape. Main risk: diplomatic de-escalation unwinding the premium quickly.
+
+### CEG / GEV / BE / VRT — Power-for-AI ($6.6K combined)
+**News:** Microsoft & Meta signed multi-decade nuclear deals (Sep 3); CEG's Meta Clinton deal doesn't pay until **June 2027** (patience required); **Bloom fuel cells (328 MW) powering Microsoft's New Jersey AI data center** on the Nebius $17.4B campus deal — direct BE validation.
+**Market Implication:** **Bullish BE** (fuel-cell wins are landing in real hyperscaler projects), **neutral CEG** (contracted but back-loaded cash flow), GEV/VRT ride the same theme with rate sensitivity. Thursday's Utilities -0.98% shows rate pressure still bites this group.
+
+### TSLA — Tesla ($3.5K)
+**News:** Cybercab robotaxi launched with paying customers in Austin (the milestone investors waited for) — but the stock **fell ~6% on the news**, and **NHTSA opened a probe into the new Cybercab fleet**.
+**Spectrum Analysis:** Retail-optimist coverage (Fool) vs regulatory-risk headlines (USA Today).
+**Market Implication:** **Neutral.** Classic sell-the-news; the regulatory probe is the new overhang. Position is -30% from cost — this is a thesis-patience holding, not a trade.
+
+### AMZN — Amazon ($22.3K, largest equity exposure)
+**News:** No fresh company-specific negative catalysts found; tokenized AMZN went live on Coinbase's Base network (Sep 4-5) — a liquidity novelty, not a driver. Stock moves with macro/rates.
+**Market Implication:** **Neutral-to-soft into the FOMC.** Long-duration megacap most exposed to the 28% hike tail; the AWS/AI story remains the medium-term anchor.
+
+### VBND / BND / T-note 2031 / 401k bond sleeves
+**News:** Yields climbing all week on oil + sticky CPI; Fed hold-or-hike into Sep 15-16.
+**Market Implication:** **Bearish for duration until FOMC clarity.** A hawkish dot plot extends the pain; a confirmed hold with soft forward guidance would be the relief valve.
+
+### Gold & silver (GLDM / PHYS / SGOL / NEM / PSLV)
+**News:** No fresh overnight catalyst found in this run; the risk-off + inflation backdrop is constructive in principle.
+**Market Implication:** **Neutral-positive.** A hawkish-surprise FOMC is the main downside risk to the sleeve.
+
+### Healthcare (BFLY / TEM / RXRX / HTFL / CBLL / GEHC)
+**News:** No significant overnight headlines found for these names in this run. Health Care sector -0.55% Thursday.
+**Market Implication:** **Neutral** — macro (rates) is the tide moving them, not company news.
+
+### Defensives (KO / PM / JNJ / PG / WMT / HD / YUM / STZ / DIS / SPOT / NFLX / CART)
+**News:** Staples +0.05% Thursday — the only green sector besides Comm Services. WMT -2.74% and HD -1.46% on Jul-31 export data are the notable consumer soft spots from the last position snapshot.
+**Market Implication:** **Doing their job** — ballast in a risk-off tape. No action needed.
+
+---
+
+## Blindspot Report
+
+1. **The oil-Fed linkage is under-covered on the left.** $100+ oil and record diesel feed directly into the CPI prints the Fed watches; war-driven inflation is treated as "prices" coverage, not policy-path coverage. If Brent holds >$100 into October CPI, the hike tail grows.
+2. **The AI-power capex story is invisible to partisan media.** Riot-Anthropic ($9.1B), Bloom-Microsoft (328 MW), Meta-CEG — the biggest private capex story of the cycle lives only in trade press. Mainstream blindspot = information edge for portfolio decisions, but also means thinner liquidity/attention when these names need it.
+3. **Diesel pass-through.** Record diesel = transportation cost inflation hitting goods prices with a lag — a Q4 CPI risk nobody is leading with yet.
+4. **Miner leverage.** CORZ "borrowing to build" AI capacity is the fragility inside the theme; if AI capex sentiment turns, the debt is the amplifier. Position sizing matters more than headlines here.
+
+---
+
+## Pre-Market Outlook
+
+**Bias: cautiously defensive into the open; long energy + AI-infra, short nothing.**
+
+- **Tape:** 4 straight down days, deteriorating breadth, VIX rising — the market is leaning defensive into the FOMC.
+- **The open:** CPI just printed in line (0.4% / 3.4%) — no inflation shock, but no relief either; first-hour reaction will set the tone with oil >$100 as backdrop.
+- **FOMC Sep 15-16:** ~72% hold / ~28% hike. A hold with a hawkish dot plot pressures tech, crypto, small caps, and bonds; any cut chatter would spark a sharp relief rally in exactly the growth/crypto sleeves Thad is overweight.
+- **Winners this week:** energy (XOP/VDE/SHEL/SEI/LBRT/VG), AI-infra contract names (RIOT, CORZ, BE).
+- **Pressured:** bonds (VBND/BND/T-note), direct crypto (COIN/FBTC/FETH), long-duration megacap (AMZN, TSLA), memory (MU/STX/SNDK — whipsaw zone).
+
+**Watch list:** ① FOMC Tue-Wed (dot plot), ② Brent closing levels / new tanker incidents, ③ Micron earnings bar (~$50B), ④ SK Hynix Intel foundry order confirmation, ⑤ Core Scientific ERCOT final-to-conditional conversion.
+
+---
+
+*Sources: Reuters, CNBC, Dean Financials, NBC News, The Guardian, CNN Business, Fox News, NY Post, Yahoo Finance, 24/7 Wall St, Motley Fool, Invezz, ts2.tech, Slicast, StockTi, AInvest, TheEnergyMag, STnews, CryptoSlate, DailyCoin, Cryptonomist, CryptoSlate, Analytics Insight, Crypto Economy, USA Today, TIKR, MeasuredAI. CSV positions as of Jul-31-2026 export (latest available); prices may have moved since.*
+
+*Prepared by Spock — Ground News cross-spectrum methodology. 2026-09-11 08:05 CT.*

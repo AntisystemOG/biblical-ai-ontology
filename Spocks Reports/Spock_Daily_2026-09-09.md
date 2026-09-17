@@ -545,20 +545,22 @@ Three macro weights on everything: war → oil, oil + strong payrolls → Fed hi
 ---
 
 <!-- section:Trading Arena -->
-## Trading Arena (14:31 CT)
+## Trading Arena (15:01 CT)
 
-**Final run 14:31 CT — final standings** (equity vs $10,000 start; day = change vs Sep 8 close):
+## Trading Arena — Final Standings (Wed Sep 9, 2026, 3:00 PM CT close)
 
-| Rank | Trader | Equity | Total P&L | Day Δ |
-|---|---|---|---|---|
-| 1 | Wolf | $10,315.15 | $+315.15 (+3.15%) | $-23.28 (-0.23%) |
-| 2 | Owl | $10,070.94 | $+70.94 (+0.71%) | $+30.58 (+0.30%) |
-| 3 | Fox | $10,042.51 | $+42.51 (+0.43%) | $-7.44 (-0.07%) |
-| 4 | Shark | $9,873.64 | $-126.36 (-1.26%) | $+172.22 (+1.78%) |
-| 5 | Turtle | $9,509.19 | $-490.81 (-4.91%) | $-2.67 (-0.03%) |
+5 AI traders, $10,000 each, live simulation vs S&P 500 (SPY buy-and-hold) since Aug 27. Run #64.
 
-- Benchmark (SPY buy-and-hold): $9,883.56 (total -1.16%, day $-37.44 / -0.38%)
-- Leader: Wolf at $10,315.15 — +4.32 pts vs benchmark total
-- Best strategy today: Shark (+1.78%); worst: Wolf (-0.23%)
-- Ahead of benchmark: Owl, Wolf, Fox; behind: Turtle, Shark
-- Dashboard: `Spocks Reports\market\trading_arena.html` (OneDrive + workspace mirror, run #63)
+| Rank | Trader | Strategy | Equity | P&L vs $10k | vs S&P 500 | Day Δ |
+|------|--------|----------|--------|-------------|------------|-------|
+| 1 | Wolf | Sector rotation | $10,305.23 | **+$305.23** | +$430.21 | −$33.20 |
+| 2 | Owl | Value | $10,058.44 | +$58.44 | +$183.42 | +$18.08 |
+| 3 | Fox | Contrarian | $10,033.56 | +$33.56 | +$158.54 | −$16.39 |
+| 4 | Shark | Momentum | $9,879.94 | −$120.06 | +$4.92 | **+$178.52** |
+| 5 | Turtle | Trend following | $9,513.44 | −$486.56 | −$361.58 | +$1.58 |
+| — | S&P 500 (SPY) | Benchmark | $9,875.02 | −$124.98 | — | — |
+
+- **Best strategy:** Wolf (sector rotation) — XLE + XLK basket, +$305.23 all-time, beating the S&P by $430.21.
+- **Worst strategy:** Turtle (trend following) — −$486.56, the only trader badly trailing the benchmark.
+- **Day mover:** Shark bounced +$178.52 into the close (AMD/META/SMH/TSM/IBM momentum basket) to nearly erase its deficit; 3 of 5 traders now beat the S&P.
+- Dashboard: `Spocks Reports\market\trading_arena.html` (OneDrive + workspace mirror)

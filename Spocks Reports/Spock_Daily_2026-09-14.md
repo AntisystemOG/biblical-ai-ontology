@@ -5,6 +5,8 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 <!-- TOC (auto-generated) -->
 - Memory Dream
 - Whale Watch
+- History Rhymes
+- Daily Brief
 <!-- /TOC -->
 
 ---
@@ -289,3 +291,235 @@ The book sleeps at +$10.57 unrealized, 97 shares holding under the 16/16 law, wa
 - **CORZ** (Steven Cohen): 0.0% of whale book, $1.5M
 
 *Situational Awareness LP filings are historical only — Leopold Aschenbrenner's fund sold most equities to Citadel before winding down in late July 2026.*
+
+---
+
+<!-- section:History Rhymes -->
+## History Rhymes (07:05 CT)
+
+**Data as of Fri Sep 11, 2026 close + Mon Sep 14 premarket** (yfinance 28/28 tickers, fresh MarketWatch RSS). FOMC decision lands in 2 days (Wed Sep 16); claims print Thu Sep 17 — the week the rhymes either extend or break. Methodology: market data + fresh headlines; historical parallels from documented cycles.
+
+## Signal of the Day: The Bond Pinned at Its 52-Week High While the Leadership Story Cracks From Within
+
+Two fresh prints define today's tape:
+
+1. **The 10Y closed Friday at 4.97% — exactly its 52-week high, on the doorstep of 5%** (+81bp YTD, +99bp off the 3.95% low, +33bp in a month). The 13-week bill (3.91%) sits 2bp from its own high: **the market is pricing rate HIKES into an oil shock.** The bond-market lead this morning — "the bond market is pushing for [hikes] anyway" over gas prices — is the June-1999 mechanic: after the 1998 easing, the BOND pushed the Fed to move, and yields ran +260bp into the Jan-2000 top while equities ground higher for 15 months.
+2. **The AI-pause call hit the leadership sector premarket:** Anthropic's Dario Amodei and other frontier labs called to slow frontier-AI development; investors reacted "negatively, albeit not catastrophically" — NQ futures -1.5% vs ES -0.6%. Citi's warning is the frame: "AI has been carrying the stock market… an industry pause could pull the rug out," because AI-driven earnings revisions were the crucial factor in 2026 gains. Meanwhile WTI printed $103.48 (+3.4% live, +80% YTD) and XLE sits 0.3% from its own 52-week high.
+
+The dip was bought again Friday — the S&P **reclaimed its 50-day on the exact test** (Sep-Oct 1999 behavior: every pullback resolved at rising trend). But the leadership narrative itself is now being questioned from *inside* the industry — the first crack of that type this cycle.
+
+| Metric | Level | 1d | 1m | YTD | vs 52w high |
+|---|---|---|---|---|---|
+| S&P 500 | 7,657 | +0.9% | -1.8% | +11.9% | -1.8% (reclaimed 50d) |
+| Nasdaq Comp | 26,333 | +1.0% | -1.8% | +13.3% | -2.8% (above 50d) |
+| Russell 2000 | 2,904 | +0.5% | -4.9% | +17.0% | -5.4% (below 50d) |
+| 10Y Treasury | 4.97% | +3bp | +33bp | +81bp | 52w HIGH |
+| 13W Bill | 3.91% | +7bp | +21bp | +37bp | near high |
+| VIX | 17.5 | +10% | +15% | +17% | -44% |
+| WTI | $103.5 | +3.4% | +25.6% | +80.2% | -8.4% |
+| Gold | $4,331 | -0.8% | -1.1% | +0.1% | -18.6% (below 200d) |
+| Bitcoin | $77,714 | +1.1% | -1.1% | -11.2% | -37.7% |
+| MU | $975 | -0.2% | +2.7% | +241.9% | -19.6% |
+| NVDA | $218 | flat | -3.0% | +17.3% | -7.2% |
+| HY Credit (HYG) | $78.60 | flat | -1.0% | +1.5% | below 50d |
+
+## Rhyme #1: 1999-2000 — Narrative Cracks Are Buy Signals; Orders Are the Top Signal (HIGH)
+
+Friday's rate-leg update stands (10Y pinned at its high, hike odds repricing). What's new is the event class:
+
+- **Narrative cracks from within are mid-bubble dips, not tops.** Barron's "Burning Up" (Amazon cash-burn, May 31, 1999): Amazon halved over the summer, then **doubled into the December 1999 final top**. Greenspan's "irrational exuberance" (Dec 1996): -3%, then +40% in 14 months. DeepSeek (Jan 27, 2025): NVDA -17% in one day, recovered within weeks. The Anthropic pause call rhymes with this class — NQ -1.5% is noise unless it converts to orders.
+- **The real 2000 crack was capex orders, not headlines.** The index topped Mar 10, 2000; the confirmation came when the buyers (carriers) cut orders — Nortel/Lucent warnings in H2 2000 — and semis led the fall. **The watch-item is AI-capex guidance and semis orders, not pause essays.** Early tells are already on the board: NVDA -7% off its high, MU +242% YTD but -19.6% off its high — the Cisco/Intel analog, where the hottest name cracked first while the index sat near highs.
+- Citi's own framing is the 2000 ledger: earnings revisions carried the tape. In 2000, the revision engine (fiber capex) kept beating until Q2-Q3 2000 — which is precisely why the top felt invisible until the orders turned.
+
+## Rhyme #2: 1972-73 Nifty Fifty + the Jan-1980 Gold Break (MEDIUM-HIGH, upgraded)
+
+- **The energy squeeze is now 1973/1990-class in magnitude:** WTI +80% YTD (52w low $55 → $103). The 1973 embargo took oil +~300% in six months; 1990 doubled it in three months (S&P -16%); 2007-08 ran +84% in eleven months with the S&P topping right as oil crossed $80. Across all three, equities chopped or dipped through the squeeze's first months — tops came during (2007) or after (1973, 1990), never at the start. Oil's own break (Jul 2008: -$30 in six weeks) would be the recession-confirmation signal; it hasn't fired.
+- **The rotation is full-blown 1973:** XLE +47.7% YTD at its 52-week high vs XLY **-5.0% YTD and below its 200-day**, XLU below its 200-day (-10% off high), XLI -7.2% in a month. Two sectors carry the index; everything yield- or consumer-sensitive is rolling.
+- **Gold is the tell that broke first:** -18.6% off its $5,318 blow-off high and **below its 200-day** — the Jan-1980 pattern: gold peaked Jan 21, 1980, broke -40% in six weeks, and the equity top came 10 months later. Gold flat on the year (+0.1%) while oil runs +80% means the inflation trade has narrowed to one commodity — the "everything bid" is already unwinding. In 2008 the sequence ran equities (Oct 07) → gold (Mar 08) → oil (Jul 08); here gold broke first, consistent with a mid-sequence read: **oil is the last domino standing, and its break is the cycle-confirmation signal.**
+
+## Rhyme #3: Sep 2007 — FOMC-Week in a 5%-Yield, Oil-Shock World (MEDIUM-HIGH, unchanged)
+
+- Credit still tells the truth early: HYG +1.5% YTD, below its 50-day, while the S&P is +11.9% — the Aug 2007 quant-quake divergence, which led the Oct 9, 2007 top by months.
+- Pump-gas prices echoing the 2007 diesel squeeze: the consumer rolls first, the index grinds on leadership. A bond market begging for hikes into a supply shock is the late-Fed warning from both 1973 (too slow) and 2007-08 (easing into inflation).
+- **Wednesday's decision has two templates, and both are late-cycle:** the Sep 18, 2007 surprise 50bp cut produced a 4-week +7% melt-up into the final top 3 weeks later; a first hike lands instead on the June 30, 1999 script (chop -5-8% over ~10 weeks, then the final rip into the top). Either way the knee-jerk is tradeable, but the top signal remains orders/breadth/credit — not the decision itself. (In 1999 the last hike — May 2000, 50bp — came *after* the March top; don't read a hawkish surprise as new-cycle bearishness.)
+
+## The Contrarian Script — Falsification Checklist
+
+Tom Lee's face-ripper case and Citi's rug-pull warning are both *inside* the historical rhyme (Sep-Oct 1999 chopped, then ripped +12% into the top; pause-call dips get bought). The rhyme would break on the **1995 soft-landing template**: 10Y rolling over with HY spreads stable, breadth improving, RUT/XLY reclaiming their 50-days while energy cools. It confirms toward 1973/2000/2007 if: HY spreads widen while the SPX grinds, MU/NVDA order data cracks (the Nortel signal), and oil keeps running after gold's break.
+
+**This week:** FOMC Wed Sep 16 (Fed legs ride — odds-noise is never an exit); claims Thu Sep 17; and any AI-capex guidance cut is the single headline that rhymes with 2000's orders break.
+
+---
+
+<!-- section:Daily Brief -->
+## Daily Brief (08:02 CT)
+
+# Daily Brief — Monday, September 14, 2026
+
+*Ground News cross-spectrum methodology: "somewhere in the middle may lie the truth." Sources labeled Left / Center / Right. Synthesis at the end of each story.*
+
+⚠️ **Data note:** Latest portfolio CSV is **Jul 31, 2026** (~6 weeks old). Per-position quotes below are from today's/last-week's news, labeled as estimates. Refresh the export when convenient.
+
+---
+
+## Market Overview
+
+**Where the tape stands (Monday pre-open):** Asian shares mixed, U.S. futures edging lower (AP/WaPo). Friday (9/11) U.S. stocks rebounded, clawing back most of the week's losses as oil eased off its spurt (WaPo/AP). The week ahead is dominated by three forces:
+
+1. **Fed decision Wednesday (Sept 16)** — first meeting under Chair **Kevin Warsh**; a **rate HIKE** is now the base case (Reuters poll, Goldman flipped its forecast Sunday).
+2. **Gulf war escalation** — Saudi Arabia's East-West pipeline shut after drone strikes; oil near **$100** for the first time since July; diesel ~**$6/gal**; Labor Day gas prices hit records.
+3. **AI complex wobble** — Amodei (Anthropic) publicly urged the industry to slow model development; Altman told staff OpenAI is open to slowing and that **OpenAI's IPO will NOT happen in 2026**; AI stocks slid Monday and **SoftBank plunged**; BIS warns AI momentum shows "signs of vulnerability."
+
+**Narrative spectrum on the macro:** Center (Reuters/Axios) frames it as *inflation persistence meets a hawkish new Fed*. Left (CNN/WaPo) frames it as *AI-risk de-rating + consumer pain from oil*. Right (NYPost/Fox) frames it as *war-driven energy shock and Tehran getting squeezed*. All three are describing the same week — the synthesis is that **the hike is oil-and-services-driven inflation meeting a Fed chair with hawkish priors**, and that makes Wednesday a binary event for the whole book.
+
+---
+
+## Key Stories
+
+### 1. Fed set to HIKE Wednesday — first hike of the Warsh era
+**Bias Spectrum:** Left (CNN/WaPo) ← Center (Reuters/Axios/WSJ) → Right (NYPost)
+
+**What's Being Said:**
+- **Center (Reuters):** August CPI *accelerated* (9/11 report) — "US consumer prices accelerate in August, push Fed closer to rate hike." Reuters poll: economists say a hike Wednesday is now **likely**, with **at least one more to follow**. Goldman Sachs **flipped** its forecast to a September hike (9/14). "Fed's table is set for a rate hike, a first under Warsh." Axios (Neil Irwin): the decision "may come down to hair-splitting inflation data."
+- **Left (CNN/WaPo):** Emphasis on markets bracing, uncertainty at the FOMC; the jobs/market risk of hiking into a war-driven supply shock. Earlier this month NYPost noted a Fed governor arguing to hold — hike odds briefly dropped.
+- **Right (NYPost):** Frames inflation as sticky and Fed credibility as the issue; hawkish Warsh installed by Trump is the story; less emphasis on the market pain of hiking.
+
+**The Convergent Truth:** August CPI accelerated. The Reuters poll and Goldman both moved to "hike Wednesday." Warsh is a hawk. This is now priced as the most likely outcome — a surprise would be a *hold*, not a hike.
+
+**Blindspots:**
+- Left omits: how much of the acceleration is oil/supply-shock vs underlying demand (a war-driven spike argues for looking through it, which cuts against hiking).
+- Right omits: hiking into an active oil shock risks both a growth hit and a market break — the consumer is already retrenching (UMich sentiment deteriorated in September, inflation expectations rose).
+- Center covers the key fact both sides skip: **hiking into a supply shock is a policy-error debate inside the Fed itself** — economists split on whether Warsh follows through or signals-and-waits.
+
+**Likely Reality:** A 25bp hike Wednesday with hawkish guidance is the modal outcome; the "at least one more" signal is the part that matters for positioning. Markets have partially priced it; the shock risk is the *dot plot/forward path*, not the hike itself.
+
+---
+
+### 2. Gulf war: Saudi pipeline shut, oil near $100, Hormuz attacks continue
+**Bias Spectrum:** Left (Guardian/CNN) ← Center (Reuters/AP) → Right (NYPost/Fox/WaPo Times)
+
+**What's Being Said:**
+- **Center (Reuters):** Oil up ~3% after new strikes on Saudi and Strait of Hormuz traffic (9/13); crude above $100 for the first time since July. Saudi's East-West pipeline shut after drone attack.
+- **Left (Guardian/CNN):** Emphasis on escalation: Houthis striking Saudi cities = "significant expansion of Middle East war" (9/8); satellite images of pipeline damage; global oil-supply fears; Saudi blames drones launched from Iraq.
+- **Right (NYPost/Fox/Washington Times):** Emphasis on the U.S. campaign: 3 Iranian oil tankers destroyed near Kharg Island after **IRGC missiles hit U.S. Navy warships** (9/5, "unprovoked"); more tanker strikes to "turn the screws on Tehran" (9/8); Iran's "Operation Epic Fury" and its claimed attacks on 10 ships near Hormuz (9/9); Iranian cargo ship hit in Hormuz kills 1 (9/13).
+
+**The Convergent Facts (all sides):**
+- IRGC missiles struck U.S. Navy warships → U.S. destroyed Iranian tankers near Kharg Island (9/5-9/8).
+- Iran/Houthi retaliation expanded to shipping, Saudi cities, and now **Saudi's East-West pipeline (shut 9/12)**.
+- Oil ~$100; U.S. gasoline/diesel at record highs (Labor Day); diesel ~$6 (Morgan Stanley).
+- War is actively degrading the world's most important oil chokepoint with no de-escalation in sight.
+
+**Blindspots:**
+- Left omits: the initiating IRGC missile attacks on U.S. warships that preceded the tanker strikes.
+- Right omits: cumulative economic damage — Saudi infrastructure loss, shipping insurance costs, and that "turning the screws on Tehran" is precisely what keeps oil (and U.S. pump prices) elevated.
+- Center covers what both skip: **this is now a sustained supply shock, not a one-off headline** — the market's Friday relief (oil easing) may be premature given the pipeline outage.
+
+**Likely Reality:** Both narratives are true — Iran initiated escalation against Navy ships and the U.S. response has been proportionate-to-escalatory against Iran's oil export spine. The market-relevant fact is that neither side has an off-ramp, so oil risk premium stays elevated through Wednesday's Fed decision. **Portfolio energy names (XOP, VDE, SHEL) are direct beneficiaries; the consumer complex (WMT, CART) is the payer.**
+
+---
+
+### 3. AI stocks slide after CEOs call to slow development
+**Bias Spectrum:** Left (CNN) ← Center (Reuters/Bloomberg) → Right (Fox News)
+
+**What's Being Said:**
+- **Center (Reuters):** Anthropic CEO Dario Amodei publicly urged AI companies to slow model development (9/12); Altman told staff OpenAI is open to slowing (9/11) and **OpenAI's IPO will not happen in 2026 "amid AI safety fears"** (9/12); Reuters analysis: labs *can't afford* to slow — the safety call collides with the capex arms race; BIS warns AI market momentum shows "signs of vulnerability" (9/14). AI stocks slid Monday; SoftBank (OpenAI investor) plunged.
+- **Left (CNN):** "AI stocks slide after top industry CEOs call for slowdown" — framed as a safety-governance moment rattling a crowded trade.
+- **Right (Fox):** Amodei's call "drawing support from Elon Musk, Sam Altman" while "critics push back" — framed as elite consensus vs. skeptics; little on market mechanics.
+
+**The Convergent Truth:** The two most important AI CEOs publicly entertained slowing; the trade wobbled; a systemic-risk regulator (BIS) separately flagged AI-momentum vulnerability; SoftBank got hit. Something real happened to sentiment, not just price.
+
+**Blindspots:**
+- Left omits: that "slow down" talk from #2 (Anthropic) is also competitive strategy — asking the leader (OpenAI) to wait.
+- Right omits: the safety rationale and the BIS warning — treating it purely as hype-deflation misses that *regulators* are signaling.
+- Center covers the tell: **no one can afford to actually slow** — which is why the IPO pullback matters more than the rhetoric.
+
+**Likely Reality:** Slowdown talk is partly safety, partly positioning. The BIS warning + IPO delay is the substantive signal: the marginal AI buyer is getting cautious while capex commitments are locked in. Short-term it pressures AI-adjacent names (most of the book); it does not yet falsify the *earnings* behind memory/power (MU, STX, CEG, BE names) — demand is still real. Watch whether this is a 2-3 day sentiment wobble or the start of a de-rating.
+
+---
+
+## Portfolio News
+
+### SPCX — SpaceX ⭐ recovered above IPO-week levels
+**News:** Closed **$151.21** Friday (+2.04%), afterhours $150.28 (Finviz/exa). IPO'd June 12 as the **largest IPO in U.S. history ($75B raise)**, debuted at $150, whipsawed — slid >50% from its peak by Sept 4, then clawed back to a **$2T valuation** by Sept 3-11. Today's angle: "SpaceX's $75B IPO triggers capital rotation from Magnificent 7" (cryptobriefing, 9/14); Bloomberg (9/11): "SpaceX IPO lifts stock as Tesla shares lag."
+**Spectrum Analysis:** Center/Bloomberg focuses on the TSLA-SPCX rotation dynamic; left-leaning tech press emphasizes the volatility; right-leaning coverage skews triumphant (Musk companies winning).
+**Blindspot Check:** Nobody is covering the *retail holder* math: your basis is **$141.28** — you were -20.6% on Jul 31 at $112.20; at $151.21 you're now **+7% (~+$550 on 55.1 sh, position ~$8.3K)**. The rotation story cuts both ways: money leaving M7 for SPCX helps you, but it's also what's dragging AMZN/GOOGL/TSLA.
+**Market Implication:** **Bullish** for the position — above water again, with momentum + index-inclusion flows as the tail.
+
+### MU / SNDK / STX — memory supercycle intact
+**News:** Micron to reward Taiwan workers with bonuses worth **up to 68 months of pay** (Reuters 9/11 — a labor-war footing for the boom); China's AI chipmakers **raising prices as HBM shortage bites** (Reuters exclusive 9/10); Micron earlier boosted U.S. spending plan to **$250B**; "memory shortage to last beyond 2026."
+**Spectrum Analysis:** Center/Bloomberg reports the supply-demand facts; the angle is consistent across spectrum — nobody disputes the shortage.
+**Blindspot Check:** Little coverage of *customer destruction*: who gets priced out of DRAM/HBM if prices keep climbing? AI-hype fatigue (Story 3) is the demand-side risk nobody is connecting to memory yet.
+**Market Implication:** **Bullish** — the strongest fundamental story in the book right now. MU (+140% from basis), SNDK (+108%), STX (+103%) all still have the wind behind them.
+
+### INTC — Altera IPO is another unlock
+**News:** Silver Lake + Intel-backed **Altera preparing an IPO that could raise $2B+ as early as this year** (Reuters exclusive 9/10). INTC at $91.13 was +99.6% from basis on Jul 31.
+**Market Implication:** **Bullish** — second monetization after the foundry story; watch for the S-1.
+
+### Crypto complex — FBTC, COIN, RIOT, CORZ, HUT, CLSK, CIFR, WULF, APLD, NBIG
+**News:** BTC **~$78-80K** (CoinDesk live ~$79.7K, down ~2% intraday) — crypto "sits out the AI selloff," BTC *climbed* to $78K Monday while tech fell (CoinDesk 9/14). BTC was ~$64K on Jul 31 → late-summer rally of ~+22-25%. AP: "Gold and bitcoin went from chumps to champs very quickly this week." Reuters: rally now "set to face off against the Fed, Congress" this week.
+**Spectrum Analysis:** AP (center) covers the gold-BTC rotation; Reuters (center) frames the Fed-risk; right-leaning crypto media cheers the rally; left coverage mostly ignores it.
+**Blindspot Check:** The 11%-plunge-below-pre-second-term-levels headline (AP) is *old* news recycled in search results — don't overweight it. The real risk is Wednesday: a hawkish dot plot hits the exact trade (BTC as liquidity proxy) that's been leading.
+**Market Implication:** **Neutral-bullish into Wednesday, then binary.** Book's crypto complex is up big since the CSV; if the Fed hikes hard-guided, expect a giveback — the miners' leverage cuts both ways.
+
+### TEM — Tempus AI: strongest healthcare story
+**News:** ARPA-H **$9.5M ADVOCATE grant** to deploy the first autonomous clinical AI agent for heart failure ("Olivia") (BioSpace 9/9); launched effort to build the **largest multimodal whole-genome dataset** (Business Wire 9/11); stock ~**$59.18** vs $44.29 on Jul 31 (**+34%**). Skeptic take (AInvest 9/11): moat story vs. cash-burn story.
+**Market Implication:** **Bullish** — grant validation + data-moat narrative; the cash-burn critique is the known bear case, unchanged.
+
+### RXRX — Recursion +8.2% since earnings (Zacks 9/4)
+**Market Implication:** **Mildly bullish** — momentum off a beaten-down position (-14% total as of Jul 31).
+
+### XOP / VDE / SHEL — direct oil-war beneficiaries
+**News:** Oil ~$100 on Saudi pipeline shutdown and Hormuz strikes; diesel ~$6; Morgan Stanley: $6 diesel strengthens Tesla trucking *and* by implication E&P economics; Friday's relief rally came from oil "easing off its spurt."
+**Blindspot Check:** XOP/VDE/SHEL are the book's inflation hedge and nobody on either spectrum is flagging that **this hedge now faces the same Fed hike it's hedging** — a big Wednesday hike could snap the correlation.
+**Market Implication:** **Bullish, but event-risk heavy through Wednesday.**
+
+### CEG / SEI / GEV / BE / VRT — power-for-AI names
+**News:** No company-specific headlines this week; sector rides AI capex narrative (Oracle beat on AI cloud demand 9/10; Meta-Constellation, Three Mile Island restart, Oracle-Bloom deals are the standing backdrop). Story 3 (AI sentiment wobble) is the sector's near-term drag.
+**Market Implication:** **Neutral** — long-term demand thesis intact; short-term hostage to AI-trade mood.
+
+### AMZN — cargo crash operational blip
+**News:** Amazon paused operations with cargo partner **21 Air after a Miami cargo plane crash** (Reuters 9/14, via WSJ). Nothing fundamental — logistics contingency.
+**Market Implication:** **Neutral.** AMZN remains the largest single equity position (~$22.3K / 10% of the Jul-31 book); no thesis-changing news since the CSV.
+
+### TSLA — lagging, but diesel is a quiet tailwind
+**News:** Shares lag since the SpaceX IPO as capital rotates (Bloomberg 9/11); Sept 4 Cybercab event "underwhelmed" and drew **NHTSA interest** (-6% that day); Morgan Stanley: $6 diesel benefits Tesla Semi economics.
+**Market Implication:** **Neutral-bearish near term** — sentiment + probe + rotation outflow; Semi optionality is the offset.
+
+### WMT / CART — the consumer is the bill-payer for the war
+**News:** UMich consumer sentiment **deteriorated** in September with **inflation expectations rising** (Reuters 9/11); AP: consumers "alter spending habits as gas prices tax their budgets"; Deloitte still sees holiday sales growth *accelerating* (Reuters 9/10) — the bull counterpoint.
+**Market Implication:** **Neutral-bearish** for WMT/CART margins into the holiday quarter; WMT was already -3.1% from basis on Jul 31.
+
+### NEM / SGOL / PSLV — gold complex
+**News:** Gold rose on dip-buying "even as Fed rate hike bets rise" (Reuters 9/11) — the remarkable fact is gold *holding up* into hikes; it climbed all week on a subdued dollar and the oil rally. Gold + BTC = the week's "champs" (AP).
+**Market Implication:** **Bullish** — a gold complex that ignores hawkish Fed bets is telling you the inflation-hedge bid is real.
+
+### VBND / BND / FXNAX / Treasury note — the rate-hike losers
+**News:** No headlines needed — a Wednesday hike (and "at least one more") pushes yields up and bond prices down.
+**Market Implication:** **Bearish** — the clearest mechanical loser in the book from Story 1. The 2031 Treasury note (duration ~4.5y) takes the hit.
+
+---
+
+## Blindspot Report
+1. **Nobody mainstream is connecting Story 1 and Story 2:** hiking rates into a war-driven oil shock is the 1970s policy-error scenario — the Fed may *not* hike despite the poll consensus. That's the tail both spectra are missing.
+2. **Right-side blindspot:** the "screws on Tehran" framing ignores that every tanker destroyed *raises U.S. diesel and gasoline prices* — the right's own voters pay that bill.
+3. **Left-side blindspot:** coverage of the AI slide skips that Anthropic (the slowdown caller) is the company that benefits if rivals pause.
+4. **Memory-supercycle demand risk:** if AI capex ever actually slows (Story 3 becomes real), MU/SNDK/STX are where the reversal shows first — no one is stress-testing that link.
+5. **SPCX rotation:** coverage treats Magnificent-7 outflows as SpaceX's gain; for a portfolio holding *both*, they're hedged against each other — the risk is only in sizing.
+
+## Kalshi Position Check (per AGENTS.md morning-brief rule)
+- **25 'open' predictions missing exit plans** — but inspection shows most are *forecast-log rows* (no shares, no entry price): Denver/NY/Chicago/Miami threshold entries from Sep 5-10.
+- The **real fills** (Sep 6-10 band bets on CHI/DEN/NY, ~$2-3 staked each) **all carry exit plans** (peak-exit v2 / peak-window watcher). ✅
+- **All open positions have target dates Sep 5-11 — every one has passed.** They should be settled; the DB appears **stale**.
+- **No new entries since Sep 10, and no weather-paper-trader automation is active** (only `daily-brief` is scheduled). If the paper trader is supposed to keep running, it's idle — likely a casualty of the cloud migration. Flag for Thad: **restart or formally retire it.**
+
+## Pre-Market Outlook
+**Tilt: Bearish for risk assets near-term, bullish for the book's energy/memory/gold legs.**
+
+- **Monday:** futures lower on the AI slowdown slide (Story 3) — expect AI-adjacent names (INTC, MU, STX, CEG, BE, GEV, TEM, GOOGL, AMZN) to open soft; energy (XOP, VDE, SHEL) and gold (NEM, SGOL) firm; crypto flat-to-up (sitting out the selloff).
+- **Wednesday (FOMC):** the week's binary. Modal = 25bp hike + hawkish guidance → bonds (VBND, FXNAX, the 2031 note) and long-duration AI names take the hit; energy and gold complex weather it; crypto gives back part of the late-summer rally. A surprise *hold* (policy-error argument wins) → risk rally, BTC leads.
+- **Positioning notes:** SPCX above basis again — recovered. Crypto complex is the most vulnerable big winner to a hawkish dot plot; energy is the best-hedged leg. The consumer names (WMT, CART) stay heavy under $6 diesel.
+- **Action items for Thad (not executed — buying still requires consult):** none urgent; watch Wednesday. Consider refreshing the Jul-31 portfolio CSV so the brief isn't working from 6-week-old prices.
+
+*Sources: Reuters, AP, Axios, Bloomberg, WSJ (center); CNN, WaPo, Guardian (left); Fox News, NY Post, Washington Times (right); CoinDesk, Finviz, Forbes, CNBC, Yahoo/Zacks (specialized). Quotes for SPCX ($151.21, Sep 11 close) and TEM (~$59.18) from market pages; all other per-holding price moves are estimates pending a fresh portfolio CSV.*
+
+**Kalshi Universal Rule honored:** no Kalshi market prices were simulated or estimated; the position check used DB records only.

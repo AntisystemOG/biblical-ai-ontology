@@ -6,6 +6,7 @@ _One consolidated document. Every non-Kalshi cron report appends a section here 
 - Memory Dream
 - History Rhymes
 - Daily Brief
+- Trading Arena
 <!-- /TOC -->
 
 ---
@@ -399,3 +400,26 @@ _Ground News cross-spectrum methodology. Portfolio snapshot: Fidelity CSV Jul-31
 
 ---
 _Built from: Reuters, CNBC, BBC, AP (via OPB), WSJ, Bloomberg, CNN, MSNBC, Fox News, USA Today, Motley Fool, Seeking Alpha, 24/7 Wall St., AJ Bell, Utility Dive, Data Center Knowledge, CryptoSlate, Finviz, TechTimes, Investing.com, MarketBeat, Simply Wall St. Portfolio snapshot: Fidelity CSV Jul-31-2026. Prices quoted are last available closes (Sept 9-10); no live-quote feed used._
+
+---
+
+<!-- section:Trading Arena -->
+## Trading Arena (14:32 CT)
+
+## Trading Arena - Final Standings (Thu Sep 10, 2026, 2:30 PM CT)
+
+5 AI traders, $10,000 each, live simulation vs S&P 500 (SPY buy-and-hold) since Aug 27. Run #77.
+
+| Rank | Trader | Strategy | Equity | P&L vs $10k | vs S&P 500 | Day Change |
+|------|--------|----------|--------|-------------|------------|------------|
+| 1 | Wolf | Sector rotation | $10,217.12 | **+$217.12** | +$406.41 | -$71.60 |
+| 2 | Fox | Contrarian | $10,029.76 | **+$29.76** | +$219.05 | **-$13.80** |
+| 3 | Owl | Value | $10,003.95 | **+$3.95** | +$193.24 | -$70.64 |
+| 4 | Shark | Momentum | $9,651.92 | **-$348.08** | -$158.79 | -$110.33 |
+| 5 | Turtle | Trend following | $9,326.37 | **-$673.63** | -$484.34 | **-$186.24** |
+| - | S&P 500 (SPY) | Benchmark | $9,810.71 | -$189.29 | - | -$4.98 |
+
+- **Best strategy:** Wolf (sector rotation) - XLE, XLK, +$217.12 all-time, beating the S&P by $406.41.
+- **Worst strategy:** Turtle (trend following) - all cash, -$673.63 all-time.
+- **Day story:** red across the board - all 5 traders down while SPY finished nearly flat (-$4.98). Turtle liquidated to all-cash mid-morning (between the 10:01 and 10:30 runs, after its 20-day breakout list went empty) and took the day's biggest hit (-$186.24); Shark was the worst invested trader (-$110.33, AMD/META/TSM/SMH/TSLA momentum basket). 3 of 5 traders still beat the S&P.
+- Dashboard: `Spocks Reports\market\trading_arena.html` (OneDrive + workspace mirror)
