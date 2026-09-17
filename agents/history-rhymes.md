@@ -36,6 +36,7 @@ Thad reads ONE consolidated document per day (`Spocks Reports\Spock_Daily_YYYY-M
 
 1. Write your full markdown report to:
    `C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\history_rhymes.md`
+   **Body only** — do NOT start the file with a `## History Rhymes` heading; digest_append.py adds the stamped section title itself (a duplicate title line shows up in the digest if you include one — Sep 17, 2026).
 2. Run:
    `python "C:\Users\thadd\.openclaw\workspace\scripts\digest_append.py" --report "History Rhymes" --file "C:\Users\thadd\.openclaw\workspace\.openclaw\tmp\digest\history_rhymes.md"`
 3. The script appends the section (or replaces it on rerun) and rebuilds the digest TOC. Its output must start with `OK:` - anything else means Failed.
