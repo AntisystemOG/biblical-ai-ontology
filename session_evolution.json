@@ -22,16 +22,16 @@
     }
   ],
   "last_end": {
-    "ts": "2026-09-02 00:46",
-    "wrap": "Built session_prompt tool v1 (evolving session brief)",
-    "goal": "Next: run AGENTS.md step 0.5 every session and verify the brief sharpens; add --hit/--learn from real friction"
+    "ts": "2026-09-18 04:37",
+    "wrap": "Oracle cloud round 2: gateway+tailscale serve live, Proton VPN root cause solved, exit node advertised (awaiting console approval)",
+    "goal": "next: approve exit node + e2e test, rotate chat-exposed SSH key, restore 565MB bundle to cloud, cloud burn-in"
   },
   "stats": {
-    "generates": 5,
+    "generates": 6,
     "learns": 0,
     "hits": 0,
     "notes": 2,
-    "ends": 1
+    "ends": 2
   },
   "history": [
     {
@@ -56,6 +56,11 @@
     },
     {
       "ts": "2026-09-02 02:18",
+      "lines": 24,
+      "active": 2
+    },
+    {
+      "ts": "2026-09-18 04:37",
       "lines": 24,
       "active": 2
     }

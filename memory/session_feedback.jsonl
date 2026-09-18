@@ -1,3 +1,4 @@
 {"ts": "2026-09-02 00:46", "kind": "end", "lesson": null, "text": "Built session_prompt tool v1 (evolving session brief) | Next: run AGENTS.md step 0.5 every session and verify the brief sharpens; add --hit/--learn from real friction"}
 {"ts": "2026-09-02 02:14", "kind": "note", "lesson": null, "text": "Named the tool: The Brief"}
 {"ts": "2026-09-02 02:16", "kind": "note", "lesson": null, "text": "Renamed tool to SESSION PROMPT per Thad preference"}
+{"ts": "2026-09-18 04:37", "kind": "end", "lesson": null, "text": "Oracle cloud round 2: gateway+tailscale serve live, Proton VPN root cause solved, exit node advertised (awaiting console approval) | next: approve exit node + e2e test, rotate chat-exposed SSH key, restore 565MB bundle to cloud, cloud burn-in"}
