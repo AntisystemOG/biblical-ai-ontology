@@ -1,0 +1,11 @@
+KALSHI EDGE SCANNER -- Fri Sep 18 00:26 CDT (the first-login duty)
+
+SEP24 LADDER: 230K YES 3.0 | 225K 7.5 | 220K 12.0 | 215K 14.0 | 210K 19.0 | 205K 35.5 | 200K 50.0 (the implied print ~203-205K)
+
+THE OFFICIAL PRINT RESOLVED: 196K (the week ending Sep 12; the Haver + the VerifiedInvesting + the Street + the BreakingTheNews + the Cryptobriefing all confirm; the brief's 198K read: WRONG). The 4-week MA: 203,250 (breaking below 205K); the lowest since mid-July; the sub-200K: the 8th time since 1969.
+
+POSITIONS: the SEP24 legs HOLD (the implied: the 210K NO 81c ~flat vs the 0.817 avg; the 215K NO 86c ~flat; the 195K YES ~60c -7 pct). T-6: no action.
+
+GRADE (synchronous): 'No pending predictions to grade' - the ledger clean for the settled week; the 196K fed manually for the record.
+
+balance: 50.2527 | 3 open positions all SEP24
